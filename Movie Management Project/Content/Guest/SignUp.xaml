@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Movie_Management_Project.Content.Guest.SignUp"
+             Title="SignUp"
+             >
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+            <Image 
+                x:Name="imgSignUp"
+                Source="dotnet_bot.png"
+                HeightRequest="150"/>
+            <Label
+    
+            Text="Sign up"
+            SemanticProperties.HeadingLevel="Level1"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+            <!--#region Grid-->
+            <Grid VerticalOptions="Start">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+           
+
+                <!--#region Column 0-->
+                <Label 
+
+                Text="Email" 
+                WidthRequest="500"
+                Grid.Column="0" 
+                Grid.Row="0"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+
+                <Entry 
+                Placeholder=""
+                x:Name="txtEmail"
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="1"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                <Label 
+                Text="Password" 
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="2"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+
+                <Entry 
+                Placeholder=""
+                IsPassword="False"
+                x:Name="txtPassword"
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="3"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                <Label 
+                Text="Confirm Password"
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="4"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+
+                <Entry 
+                Placeholder=""
+                IsPassword="False"
+                x:Name="txtConfirmPassword"
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="5"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                <!--#endregion-->
+
+                <!--#region  Column 1-->
+                <Label 
+
+                Text="User Name" 
+                WidthRequest="500"
+                Grid.Column="1" 
+                Grid.Row="0"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+
+                <Entry 
+                Placeholder=""
+                x:Name="txtUserName"
+                WidthRequest="500"
+                Grid.Column="1"
+                Grid.Row="1"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                <Label 
+                Text="Phone number" 
+                WidthRequest="500"
+                Grid.Column="1"
+                Grid.Row="2"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+
+                <Entry 
+                Placeholder=""
+                x:Name="txtPhoneNumber"
+                WidthRequest="500"
+                Grid.Column="1"
+                Grid.Row="3"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                <Label 
+                Text="Gender" 
+                WidthRequest="500"
+                Grid.Column="1"
+                Grid.Row="4"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+
+                <Grid Grid.Row="5" Grid.Column="1" HorizontalOptions="Start" Padding="70,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton
+                GroupName="Gender"
+                Value="Male"
+                IsChecked="True"
+                Grid.Column="0">
+                    </RadioButton>
+                    <Label Text="Male" Grid.Column="0" Margin="30,0,0,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <RadioButton 
+                 GroupName="Gender"
+                Value="Female"
+                Grid.Column="1">
+                    </RadioButton>
+                    <Label Text="Female" Grid.Column="1" Margin="30,0,0,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                </Grid>
+
+
+
+
+                <!--#endregion-->
+
+
+            </Grid>
+
+            <!--#endregion Grid-->
+            
+            <Button
+                x:Name="btnSignUp"
+                Clicked="btnSignUp_Clicked"
+                Text="Sign up"
+                FontSize="Small"
+                HorizontalOptions="Center"
+                />
+
+            <Button 
+                Clicked="btnLogin_Clicked"
+                Text="I have an account"
+                FontSize="Small"
+                TextColor="Blue"
+                Background="Transparent"
+                BorderColor="Transparent"
+                x:Name="btnLogin"
+                HorizontalOptions="Center" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

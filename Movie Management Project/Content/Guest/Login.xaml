@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Movie_Management_Project.Content.Guest.Login"
+             Title="Login">
+
+    <ScrollView>
+        <VerticalStackLayout WidthRequest="700">
+            <Image 
+                x:Name="imgLogin"
+                Source="dotnet_bot.png"
+                HeightRequest="150"
+                HorizontalOptions="Center"/>
+            <Label 
+                Text="Login"
+                FontSize="32"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Margin="0,0,0,30"/>
+            <Label
+                Text="Email"
+                FontSize="20"
+                HorizontalOptions="Start"/>
+            <Entry
+                x:Name="txtEmail"
+                VerticalTextAlignment="Center"
+                FontSize="Small"/>
+            <Label
+                Text="Password"
+                FontSize="20"
+                HorizontalOptions="Start"/>
+            <Entry
+                x:Name="txtPassword"
+                VerticalTextAlignment="Center"
+                FontSize="Small"
+                IsPassword="True"/>
+
+            <Button
+                Text="Forgot Password"
+                x:Name="btnForgotPassword"
+                Clicked="btnForgotPassword_Clicked"
+                FontSize="18"
+                TextColor="Blue"
+                BorderColor="Transparent"
+                Background="Transparent"
+                HorizontalOptions="End"/>
+
+            <Button
+                Text="Login"
+                x:Name="btnLogin"
+                FontSize="18"
+                Margin="0,20,0,40"
+                BackgroundColor="#512BD4"
+                HorizontalOptions="Center"
+                />
+
+            <Button
+                Text="Create an account"
+                Clicked="btnSignUp_Clicked"
+                x:Name="btnSignUp"
+                FontSize="18"
+                TextColor="Blue"
+                BorderColor="Transparent"
+                Background="Transparent"
+                HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Movie_Management_Project.Content.User.Home"
+             Title="Home">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image 
+                x:Name="imgInformationUser"
+                Source="dotnet_bot.png"
+                HeightRequest="150"/>
+
+            <!--Grid Definition Loại phim-->
+            <Grid Margin="50,100,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!--#region Hàng Nominated-->
+                <!--Grid Definition các hàng trong từng bộ phim-->
+                <Grid Grid.Row="0" x:Name="gridNominated" Margin="0,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="Nominated Film"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        Margin="0,0,0,10"
+                        />
+
+                    <!--Phim 1-->
+                    <ImageButton
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        Clicked="ImageButton_Clicked"
+                        />
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+                    <!--Phim 2-->
+                    <Image
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+                    <!--Phim 3-->
+                    <Image
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+                    <!--Phim 4-->
+                    <Image
+                        Grid.Column="3"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="3"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+
+                </Grid>
+                <!--#endregion-->
+                <!--#region Hàng Popular-->
+                <!--Grid Definition các hàng trong từng bộ phim-->
+                <Grid Grid.Row="1" x:Name="gridPopular" Margin="0,70,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="0"
+                        Text="Popular Film"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        Margin="0,0,0,10"
+                        />
+                    <!--Phim 1-->
+                    <Image
+                        Grid.Column="0"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+
+                    <!--Phim 2-->
+                    <Image
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+                    <!--Phim 3-->
+                    <Image
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+                    <!--Phim 4-->
+                    <Image
+                        Grid.Column="3"
+                        Grid.Row="1"
+                        Source="dotnet_bot.png"
+                        WidthRequest="220"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,10"
+                        />
+                    <Label
+                        Grid.Column="3"
+                        Grid.Row="2"
+                        Text="Loki"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="Medium"
+                        />
+
+                </Grid>
+                <!--#endregion -->
+                <!--Thêm các loại phim mới (nominated, popular, new) vào đây-->
+
+
+
+
+
+            </Grid>
+            
+            
+            
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

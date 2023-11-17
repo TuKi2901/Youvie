@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Movie_Management_Project.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:User="clr-namespace:Movie_Management_Project.Content.User"
+    xmlns:Guest="clr-namespace:Movie_Management_Project.Content.Guest"
+    Shell.FlyoutBehavior="Disabled">
+
+    <Shell.TitleView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="50"/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Grid.Column="0"
+                Text="ABC"
+                Clicked="Button_Clicked"/> 
+            <Button
+                Grid.Column="1"
+                Text="âsasas"
+                Clicked="Button_Clicked"/>
+        </Grid>
+
+    </Shell.TitleView>
+
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate Guest:SignUp}"
+        />
+</Shell>
