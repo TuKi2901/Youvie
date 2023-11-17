@@ -24,6 +24,24 @@ build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.A
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Admin/AdminManager.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Admin.AdminManager.xaml
+build_metadata.AdditionalFiles.TargetPath = Content\Admin\AdminManager.xaml
+build_metadata.AdditionalFiles.RelativePath = Content\Admin\AdminManager.xaml
+
+[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Admin/MediaManager.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Admin.MediaManager.xaml
+build_metadata.AdditionalFiles.TargetPath = Content\Admin\MediaManager.xaml
+build_metadata.AdditionalFiles.RelativePath = Content\Admin\MediaManager.xaml
+
+[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Admin/UserManager.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Admin.UserManager.xaml
+build_metadata.AdditionalFiles.TargetPath = Content\Admin\UserManager.xaml
+build_metadata.AdditionalFiles.RelativePath = Content\Admin\UserManager.xaml
+
 [E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Guest/ForgotPassword.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Guest.ForgotPassword.xaml
