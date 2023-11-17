@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3EwMTkteVtP9nNVscdg/2clAM6O5q098frdf8SruQIkidgQTh1Cu9KeB4HTIAT+qSc2+BUxfsL226J49bViKMA==",
+  "dgSpecHash": "sCAGj1PahZZqgtaxhvDlNU/MWbLdMZfHSok7T6qxWPz+m+mqnccU/676Lbbz3nI95484D9bpe7TszyKjMy1R0g==",
   "success": true,
   "projectFilePath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\inputkit.maui\\4.3.5\\inputkit.maui.4.3.5.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.13\\microsoft.aspnetcore.components.7.0.13.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.13\\microsoft.aspnetcore.components.analyzers.7.0.13.nupkg.sha512",
@@ -26,8 +25,6 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\plainer.maui\\1.6.4\\plainer.maui.1.6.4.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\uraniumui\\2.5.6\\uraniumui.2.5.6.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",
