@@ -21,10 +21,6 @@ namespace Movie_Management_Project.Content.Guest
             await Navigation.PushAsync(new Login());
         }
 
-        private async void btnSignUp_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new User.Home());
-        }
 
         /*private void OnCounterClicked(object sender, EventArgs e)
         {
