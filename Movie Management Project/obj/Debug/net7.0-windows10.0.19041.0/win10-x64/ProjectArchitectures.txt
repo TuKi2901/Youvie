@@ -1,1 +1,1 @@
-D:\FPT Polytechnic\Backup Project\Movie Management Project\Movie Management Project\GUI.csproj;x64
+D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\GUI.csproj;x64
