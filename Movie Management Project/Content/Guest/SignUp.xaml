@@ -175,7 +175,6 @@
             
             <Button
                 x:Name="btnSignUp"
-                Clicked="btnSignUp_Clicked"
                 Text="Sign up"
                 FontSize="Small"
                 HorizontalOptions="Center"
