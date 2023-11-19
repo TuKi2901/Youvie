@@ -15,6 +15,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -263,8 +283,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -311,7 +329,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -2055,6 +2072,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -2303,8 +2340,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -2351,7 +2386,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -4095,6 +4129,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -4343,8 +4397,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -4391,7 +4443,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -6135,6 +6186,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -6383,8 +6454,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -6431,7 +6500,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -8175,6 +8243,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -8423,8 +8511,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -8471,7 +8557,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -10215,6 +10300,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -10463,8 +10568,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -10511,7 +10614,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -12255,6 +12357,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -12503,8 +12625,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -12551,7 +12671,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -14295,6 +14414,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -14543,8 +14682,6 @@
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
-<<<<<<< HEAD
-=======
       "Plainer.Maui/1.6.4": {
         "type": "package",
         "compile": {
@@ -14591,7 +14728,6 @@
           }
         }
       },
->>>>>>> Kiet
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -16322,6 +16458,26 @@
       }
     },
     "net7.0-ios16.1": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -16569,8 +16725,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -16617,10 +16771,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/android-arm": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -16868,8 +17041,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -16916,10 +17087,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/android-arm64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -17167,8 +17357,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -17215,10 +17403,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/android-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -17466,8 +17673,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -17514,10 +17719,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/android-x86": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -17765,8 +17989,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -17813,10 +18035,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/iossimulator-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -18064,8 +18305,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -18112,10 +18351,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/maccatalyst-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -18363,8 +18621,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -18411,10 +18667,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-ios16.1/win10-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -18662,8 +18937,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -18710,10 +18983,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -18961,8 +19253,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -19009,10 +19299,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/android-arm": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -19260,8 +19569,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -19308,10 +19615,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/android-arm64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -19559,8 +19885,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -19607,10 +19931,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/android-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -19858,8 +20201,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -19906,10 +20247,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/android-x86": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -20157,8 +20517,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -20205,10 +20563,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/iossimulator-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -20456,8 +20833,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -20504,10 +20879,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/maccatalyst-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -20755,8 +21149,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -20803,10 +21195,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-maccatalyst16.1/win10-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -21054,8 +21465,6 @@
         "build": {
           "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -21102,10 +21511,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -21480,8 +21908,6 @@
             "rid": "win10-x86"
           }
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -21528,10 +21954,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/android-arm": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -21878,8 +22323,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -21926,10 +22369,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/android-arm64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -22276,8 +22738,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -22324,10 +22784,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/android-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -22674,8 +23153,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -22722,10 +23199,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/android-x86": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -23072,8 +23568,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -23120,10 +23614,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/iossimulator-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -23470,8 +23983,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -23518,10 +24029,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/maccatalyst-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -23868,8 +24398,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -23916,10 +24444,29 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     },
     "net7.0-windows10.0.19041/win10-x64": {
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -24272,8 +24819,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
-<<<<<<< HEAD
-=======
       },
       "Plainer.Maui/1.6.4": {
         "type": "package",
@@ -24320,7 +24865,6 @@
             "related": ".pdb"
           }
         }
->>>>>>> Kiet
       }
     }
   },
@@ -24341,6 +24885,40 @@
         "lib/net6.0-android31.0/GoogleGson.aar",
         "lib/net6.0-android31.0/GoogleGson.dll",
         "lib/net6.0-android31.0/GoogleGson.xml"
+      ]
+    },
+    "InputKit.Maui/4.3.5": {
+      "sha512": "NWkw1m8HHjh6QrABkBVIdjC3/O5pUyhr2KLnrRe1KZ60kRT9vdVCSPpH0jKuTr359pTtWZCw0H9jAO5omUwZRA==",
+      "type": "package",
+      "path": "inputkit.maui/4.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/icon512.png",
+        "contentFiles/any/net7.0-android33.0/icon512.png",
+        "contentFiles/any/net7.0-ios16.1/icon512.png",
+        "contentFiles/any/net7.0-maccatalyst16.1/icon512.png",
+        "contentFiles/any/net7.0-windows10.0.19041/icon512.png",
+        "contentFiles/any/net7.0/icon512.png",
+        "icon512.png",
+        "inputkit.maui.4.3.5.nupkg.sha512",
+        "inputkit.maui.nuspec",
+        "lib/net7.0-android33.0/InputKit.Maui.aar",
+        "lib/net7.0-android33.0/InputKit.Maui.dll",
+        "lib/net7.0-android33.0/InputKit.Maui.pdb",
+        "lib/net7.0-android33.0/InputKit.Maui.xml",
+        "lib/net7.0-ios16.1/InputKit.Maui.dll",
+        "lib/net7.0-ios16.1/InputKit.Maui.pdb",
+        "lib/net7.0-ios16.1/InputKit.Maui.xml",
+        "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll",
+        "lib/net7.0-maccatalyst16.1/InputKit.Maui.pdb",
+        "lib/net7.0-maccatalyst16.1/InputKit.Maui.xml",
+        "lib/net7.0-windows10.0.19041/InputKit.Maui.dll",
+        "lib/net7.0-windows10.0.19041/InputKit.Maui.pdb",
+        "lib/net7.0-windows10.0.19041/InputKit.Maui.xml",
+        "lib/net7.0/InputKit.Maui.dll",
+        "lib/net7.0/InputKit.Maui.pdb",
+        "lib/net7.0/InputKit.Maui.xml"
       ]
     },
     "Microsoft.AspNetCore.Authorization/7.0.13": {
@@ -25676,8 +26254,6 @@
         "tools/x86/GenXbf.dll"
       ]
     },
-<<<<<<< HEAD
-=======
     "Plainer.Maui/1.6.4": {
       "sha512": "KnhR6iMFGqD1aI3o4LXpXQ1B0YnjR+sMf2Ce2bASdXIlV7PbSpOI43enEVvTE4MyFB7v+r0dQvfhqd/cyF5Ucw==",
       "type": "package",
@@ -25772,7 +26348,6 @@
         "uraniumui.material.nuspec"
       ]
     },
->>>>>>> Kiet
     "Xamarin.Android.Glide/4.13.2.2": {
       "sha512": "Z//Q0sKJ97g8wxuJ3z1kka76sSUHA7WGV7yUPGS7IwwciHrPxpEwEju5cxBAbwqYd2+Ug1ecvW3X+q5/tUh6cw==",
       "type": "package",
@@ -27781,11 +28356,8 @@
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
-<<<<<<< HEAD
-=======
       "UraniumUI >= 2.5.6",
       "UraniumUI.Material >= 2.5.6",
->>>>>>> Kiet
       "Xamarin.Android.Glide >= 4.13.2.2",
       "Xamarin.AndroidX.Browser >= 1.4.0.3",
       "Xamarin.AndroidX.Legacy.Support.V4 >= 1.0.0.15",
@@ -27806,13 +28378,9 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
-<<<<<<< HEAD
-      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
-=======
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
       "UraniumUI >= 2.5.6",
       "UraniumUI.Material >= 2.5.6"
->>>>>>> Kiet
     ],
     "net7.0-maccatalyst16.1": [
       "Microsoft.AspNetCore.Components >= 7.0.13",
@@ -27822,13 +28390,9 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
-<<<<<<< HEAD
-      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
-=======
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
       "UraniumUI >= 2.5.6",
       "UraniumUI.Material >= 2.5.6"
->>>>>>> Kiet
     ],
     "net7.0-windows10.0.19041": [
       "Microsoft.AspNetCore.Components >= 7.0.13",
@@ -27838,34 +28402,30 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.101",
-<<<<<<< HEAD
-      "Microsoft.WindowsAppSDK >= 1.2.221209.1"
-=======
       "Microsoft.WindowsAppSDK >= 1.2.221209.1",
       "UraniumUI >= 2.5.6",
       "UraniumUI.Material >= 2.5.6"
->>>>>>> Kiet
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\": {},
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
+      "projectUniqueName": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
-      "packagesPath": "C:\\Users\\TuanDepTrai\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\obj\\",
+      "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\TuanDepTrai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -27948,8 +28508,6 @@
             "version": "[7.0.100-1.23211.1, )",
             "autoReferenced": true
           },
-<<<<<<< HEAD
-=======
           "UraniumUI": {
             "target": "Package",
             "version": "[2.5.6, )"
@@ -27958,7 +28516,6 @@
             "target": "Package",
             "version": "[2.5.6, )"
           },
->>>>>>> Kiet
           "Xamarin.Android.Glide": {
             "target": "Package",
             "version": "[4.13.2.2, )",
@@ -28133,8 +28690,6 @@
             "target": "Package",
             "version": "[7.0.100-1.23211.1, )",
             "autoReferenced": true
-<<<<<<< HEAD
-=======
           },
           "UraniumUI": {
             "target": "Package",
@@ -28143,7 +28698,6 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.5.6, )"
->>>>>>> Kiet
           }
         },
         "imports": [
@@ -28252,8 +28806,6 @@
             "target": "Package",
             "version": "[7.0.100-1.23211.1, )",
             "autoReferenced": true
-<<<<<<< HEAD
-=======
           },
           "UraniumUI": {
             "target": "Package",
@@ -28262,7 +28814,6 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.5.6, )"
->>>>>>> Kiet
           }
         },
         "imports": [
@@ -28370,8 +28921,6 @@
             "target": "Package",
             "version": "[1.2.221209.1, )",
             "autoReferenced": true
-<<<<<<< HEAD
-=======
           },
           "UraniumUI": {
             "target": "Package",
@@ -28380,7 +28929,6 @@
           "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.5.6, )"
->>>>>>> Kiet
           }
         },
         "imports": [
@@ -28479,5 +29027,13 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

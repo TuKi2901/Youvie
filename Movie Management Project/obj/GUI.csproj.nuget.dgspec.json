@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj": {}
+    "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj": {}
   },
   "projects": {
-    "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj": {
+    "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
+        "projectUniqueName": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
-        "packagesPath": "C:\\Users\\TuanDepTrai\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\obj\\",
+        "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TuanDepTrai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,8 +101,6 @@
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
             },
-<<<<<<< HEAD
-=======
             "UraniumUI": {
               "target": "Package",
               "version": "[2.5.6, )"
@@ -111,7 +109,6 @@
               "target": "Package",
               "version": "[2.5.6, )"
             },
->>>>>>> Kiet
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -286,8 +283,6 @@
               "target": "Package",
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
-<<<<<<< HEAD
-=======
             },
             "UraniumUI": {
               "target": "Package",
@@ -296,7 +291,6 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.5.6, )"
->>>>>>> Kiet
             }
           },
           "imports": [
@@ -405,8 +399,6 @@
               "target": "Package",
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
-<<<<<<< HEAD
-=======
             },
             "UraniumUI": {
               "target": "Package",
@@ -415,7 +407,6 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.5.6, )"
->>>>>>> Kiet
             }
           },
           "imports": [
@@ -523,8 +514,6 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
-<<<<<<< HEAD
-=======
             },
             "UraniumUI": {
               "target": "Package",
@@ -533,7 +522,6 @@
             "UraniumUI.Material": {
               "target": "Package",
               "version": "[2.5.6, )"
->>>>>>> Kiet
             }
           },
           "imports": [
