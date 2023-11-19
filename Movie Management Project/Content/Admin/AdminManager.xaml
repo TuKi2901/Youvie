@@ -1,15 +1,109 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:material ="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.Admin.AdminManager"
-             Title="AdminManager">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="MediaManager">
+
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,300,0"/>
+            <Label Text="Admin" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,-50,0,0"/>
 
 
-    </VerticalStackLayout>
+            <SearchBar x:Name="searchBarAdmin" 
+            Grid.Column="2"
+            WidthRequest="300" 
+            HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id Admin" Margin="0,0,25,60"
+            />
+
+            <Grid x:Name="gridAdmin"
+                  ColumnDefinitions="Auto"
+                  RowDefinitions="Auto, Auto, Auto">
+
+                <Grid x:Name="gridMenuAdmin"
+                      Grid.Row="0" Grid.Column="0"
+                      ColumnDefinitions="150, 500, 150, 500" 
+                      RowDefinitions="Auto, Auto"
+                      HorizontalOptions="Center" Margin="25,0,200,0">
+
+                    <Label Text="Email" Grid.Column="0" Grid.Row="0"
+                           VerticalOptions="Center" 
+                           Margin="0,0,0,20"
+                           />
+                    <Entry x:Name="txtEmailAdmin" Grid.Column="1" Grid.Row="0" 
+                           VerticalOptions="Center"
+                           WidthRequest="500"
+                           Margin="0,0,100,20"/>
+
+                    <Label Text="Password" 
+                           Grid.Column="0" Grid.Row="1" 
+                           VerticalOptions="Center" 
+                           Margin="0,0,0,20"/>
+                    <Entry x:Name="txtPasswordAdmin" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" 
+                           Margin="0,0,100,20"
+                           WidthRequest="500" />
+
+                    <Label Text="Full Name" Grid.Column="2" Grid.Row="0" VerticalOptions="Center" Margin="0,0,0,20" />
+                    <Entry x:Name="txtNameAdmin" Grid.Column="3" Grid.Row="0" VerticalOptions="Center" Margin="0,0,0,20"/>
+
+                    <Label Text="Gender" Grid.Column="2" Grid.Row="1" VerticalOptions="Center"/>
+                    <Grid Grid.Column="3" Grid.Row="1" ColumnDefinitions="Auto,100,Auto,100">
+                        <RadioButton x:Name="rbMaleAdmin" Grid.Column="0" Value="Male"  GroupName="GenderAdmin" VerticalOptions="Center"/>
+                        <Label Text="Male" Grid.Column="1" VerticalOptions="Center"/>
+                        <RadioButton x:Name="rbFemaleAdmin" Grid.Column="2" Value="Female" GroupName="GenderAdmin" VerticalOptions="Center"/>
+                        <Label Text="Female" Grid.Column="3" VerticalOptions="Center"/>
+                    </Grid>
+
+
+                </Grid>
+
+                <Grid x:Name="gridCRUDAdmin"
+                      Grid.Column="0" Grid.Row="1" 
+                      ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="20,50,0,50">
+
+                    <Button x:Name="btnAddAdmin"
+                            Text="Add" Grid.Column="0" Margin="0,0,5,0"/>
+
+                    <Button x:Name="btnDeleteAdmin"
+                            Text="Delete" Grid.Column="1" Margin="0,0,5,0"/>
+
+                    <Button x:Name="btnUpdateAdmin"
+                            Text="Update" Grid.Column="2" Margin="0,0,5,0"/>
+
+                    <Button x:Name="btnFindAdmin"
+                            Text="Find" Grid.Column="3" Margin="0,0,5,0"/>
+
+                    <Button x:Name="btnRefreshAdmin"
+                            Text="Refresh" Grid.Column="4"/>
+                </Grid>
+
+
+
+                <Grid  x:Name="gridDataGridAdmin"
+            Grid.Row="2" Grid.Column="0"
+            ColumnDefinitions="*"
+            RowDefinitions="Auto, *">
+                    <ScrollView Grid.Row="1">
+                        <material:DataGrid ItemsSource="{Binding Items}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
+                            <material:DataGrid.Columns>
+                                <material:DataGridSelectionColumn />
+                                <material:DataGridColumn Binding="{Binding Id}" Title="Identity" />
+                                <material:DataGridColumn Binding="{Binding Name}" Title="Name" />
+                                <material:DataGridColumn Binding="{Binding Age}" Title="Age" />
+                            </material:DataGrid.Columns>
+                        </material:DataGrid>
+                    </ScrollView>
+                </Grid>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

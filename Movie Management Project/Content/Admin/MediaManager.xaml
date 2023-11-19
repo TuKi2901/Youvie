@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material ="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
-             xmlns:local1="clr-namespace:Movie_Management_Project"
              x:Class="Movie_Management_Project.Content.Admin.MediaManager"
              Title="MediaManager">
 
@@ -52,39 +51,39 @@
                           Grid.Column="0" Grid.Row="0" 
                           ColumnDefinitions="550" RowDefinitions="Auto, Auto" Margin="0,0,0,20">
 
-                        <Grid x:Name="gridName"  
+                        <Grid x:Name="gridNameMedia"  
                               Grid.Row="0" Grid.Column="0" 
                               ColumnDefinitions="150,*" Margin="0,0,0,20">
 
                             <Label Text="Film Name" Grid.Column="0" VerticalOptions="Center" />
-                            <Entry Grid.Column="1"  VerticalOptions="Center" />
+                            <Entry x:Name="txtNameMedia" Grid.Column="1"  VerticalOptions="Center" />
                         </Grid>
 
-                        <Grid x:Name="gridReleaseDate"
+                        <Grid x:Name="gridReleaseDateMedia"
                               Grid.Row="1" Grid.Column="0"
                               ColumnDefinitions="150,Auto" Margin="0,0,0,20">
 
                             <Label Text="Release Date" Grid.Column="0"  VerticalOptions="Center" />
-                            <DatePicker Grid.Column="1"  VerticalOptions="Center" />
+                            <DatePicker x:Name="dpReleaseDateMedia" Grid.Column="1"  VerticalOptions="Center" />
                         </Grid>
                     </Grid>
 
 
-                    <Grid x:Name="gridCategory" 
+                    <Grid x:Name="gridCategoryMedia" 
                   Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, 150, 35, 150,35" RowDefinitions="125" Margin="0,0,0,20">
 
-                        <Label x:Name="lbCategory"
+                        <Label x:Name="lbCategoryMedia"
                     Text="Category" Grid.Column="0" VerticalOptions="Center" />
 
-                        <Image x:Name="imgArrow"
+                        <Image x:Name="imgArrowMedia"
                     Source="dotnet_bot.png"
                     Grid.Column="2"/>
 
-                        <Image x:Name="imgConfirmCategory"
+                        <Image x:Name="imgConfirmCategoryMedia"
                     Source="dotnet_bot.png"
                     Grid.Column="4"/>
 
-                        <ListView x:Name="listViewCategoryLeft"
+                        <ListView x:Name="listViewCategoryLeftMedia"
                     ItemsSource="{Binding Items}" Grid.Column="1" Grid.Row="0">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
@@ -107,7 +106,7 @@
                             </ListView.ItemTemplate>
                         </ListView>
 
-                        <ListView x:Name="listViewCategoryRight"
+                        <ListView x:Name="listViewCategoryRightMedia"
                     ItemsSource="{Binding Items}" Grid.Column="3" Grid.Row="0">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
@@ -133,23 +132,23 @@
                     </Grid>
 
 
-                    <Grid x:Name="gridCRUD"
+                    <Grid x:Name="gridCRUDMedia"
                 Grid.Column="0" Grid.Row="2" 
                   ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="0,0,0,20">
 
-                        <Button x:Name="btnAdd"
+                        <Button x:Name="btnAddMedia"
                     Text="Add" Grid.Column="0" Margin="0,0,5,0"/>
 
-                        <Button x:Name="btnDelete"
+                        <Button x:Name="btnDeleteMedia"
                      Text="Delete" Grid.Column="1" Margin="0,0,5,0"/>
 
-                        <Button x:Name="btnUpdate"
+                        <Button x:Name="btnUpdateMedia"
                      Text="Update" Grid.Column="2" Margin="0,0,5,0"/>
 
-                        <Button x:Name="btnFind"
+                        <Button x:Name="btnFindMedia"
                      Text="Find" Grid.Column="3" Margin="0,0,5,0"/>
 
-                        <Button x:Name="btnRefresh"
+                        <Button x:Name="btnRefreshMedia"
                      Text="Refresh" Grid.Column="4"/>
                     </Grid>
 
@@ -157,10 +156,10 @@
 
                     <!--#region Control Right-->
 
-                    <Grid x:Name="gridListEpisode" 
+                    <Grid x:Name="gridListEpisodeMedia" 
                   Grid.Column="1" Grid.Row="0" ColumnDefinitions="150,400" RowDefinitions="125" Margin="0,0,0,0">
                         <Label Text="List Episode" Grid.Column="0"/>
-                        <ListView x:Name="listViewEpisode" VerticalOptions="Center" HorizontalOptions="Center"
+                        <ListView x:Name="listViewEpisodeMedia" VerticalOptions="Center" HorizontalOptions="Center"
                     ItemsSource="{Binding Items}" Grid.Column="1">
                             <ListView.ItemTemplate>
                                 <DataTemplate>
@@ -228,7 +227,7 @@
 
                 </Grid>
 
-                <Grid  x:Name="gridDataGrid"
+                <Grid  x:Name="gridDataGridMedia"
                        Grid.Row="1" Grid.Column="0"
                        ColumnDefinitions="*"
                        RowDefinitions="Auto, *">
