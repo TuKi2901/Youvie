@@ -23,7 +23,7 @@ namespace Movie_Management_Project.Content.Guest
 
         private async void btnSignUp_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Content.Admin.MediaManager());
+
         }
 
 
