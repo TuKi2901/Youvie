@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using UraniumUI;
+using Microsoft.Maui.Controls;
 #if WINDOWS
     using Microsoft.UI;
     using Microsoft.UI.Xaml.Controls;
@@ -17,6 +19,9 @@ namespace Movie_Management_Project
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseUraniumUI()
+                .UseUraniumUIMaterial()
+                
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

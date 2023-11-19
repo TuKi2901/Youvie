@@ -101,6 +101,17 @@
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
             },
+<<<<<<< HEAD
+=======
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            },
+>>>>>>> Kiet
             "Xamarin.Android.Glide": {
               "target": "Package",
               "version": "[4.13.2.2, )",
@@ -275,6 +286,17 @@
               "target": "Package",
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
+<<<<<<< HEAD
+=======
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+>>>>>>> Kiet
             }
           },
           "imports": [
@@ -383,6 +405,17 @@
               "target": "Package",
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
+<<<<<<< HEAD
+=======
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+>>>>>>> Kiet
             }
           },
           "imports": [
@@ -490,6 +523,17 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+<<<<<<< HEAD
+=======
+            },
+            "UraniumUI": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+            },
+            "UraniumUI.Material": {
+              "target": "Package",
+              "version": "[2.5.6, )"
+>>>>>>> Kiet
             }
           },
           "imports": [
