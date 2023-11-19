@@ -313,6 +313,22 @@
           }
         }
       },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -2350,6 +2366,22 @@
         },
         "runtime": {
           "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
             "related": ".aar;.pdb;.xml"
           }
         }
@@ -4395,6 +4427,22 @@
           }
         }
       },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -6432,6 +6480,22 @@
         },
         "runtime": {
           "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
             "related": ".aar;.pdb;.xml"
           }
         }
@@ -8477,6 +8541,22 @@
           }
         }
       },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -10514,6 +10594,22 @@
         },
         "runtime": {
           "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
             "related": ".aar;.pdb;.xml"
           }
         }
@@ -12559,6 +12655,22 @@
           }
         }
       },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -14600,6 +14712,22 @@
           }
         }
       },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "Xamarin.Android.Glide/4.13.2.2": {
         "type": "package",
         "dependencies": {
@@ -16627,6 +16755,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-ios16.1/android-arm": {
@@ -16924,6 +17068,22 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -17227,6 +17387,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-ios16.1/android-x64": {
@@ -17524,6 +17700,22 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -17827,6 +18019,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-ios16.1/iossimulator-x64": {
@@ -18124,6 +18332,22 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -18427,6 +18651,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-ios16.1/win10-x64": {
@@ -18724,6 +18964,22 @@
         },
         "runtime": {
           "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -19027,6 +19283,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-arm": {
@@ -19324,6 +19596,22 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -19627,6 +19915,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/android-x64": {
@@ -19924,6 +20228,22 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -20227,6 +20547,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/iossimulator-x64": {
@@ -20524,6 +20860,22 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -20827,6 +21179,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-maccatalyst16.1/win10-x64": {
@@ -21124,6 +21492,22 @@
         },
         "runtime": {
           "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -21554,6 +21938,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-windows10.0.19041/android-arm": {
@@ -21950,6 +22350,22 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -22352,6 +22768,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-windows10.0.19041/android-x64": {
@@ -22748,6 +23180,22 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -23150,6 +23598,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-windows10.0.19041/iossimulator-x64": {
@@ -23549,6 +24013,22 @@
             "related": ".pdb"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     },
     "net7.0-windows10.0.19041/maccatalyst-x64": {
@@ -23945,6 +24425,22 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -24350,6 +24846,22 @@
         },
         "runtime": {
           "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
             "related": ".pdb"
           }
         }
@@ -25799,6 +26311,41 @@
         "logo_128.png",
         "uraniumui.2.5.6.nupkg.sha512",
         "uraniumui.nuspec"
+      ]
+    },
+    "UraniumUI.Material/2.5.6": {
+      "sha512": "u/NtTSJnYagjbyDYKuaZ6LQ/1BzgpS0hnB2fhx9HXXCSdh+bsIQYF1kOty/LWcytV1TIXoJ0xVzbkMbL0nT6pw==",
+      "type": "package",
+      "path": "uraniumui.material/2.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-android31.0/UraniumUI.Material.dll",
+        "lib/net6.0-android31.0/UraniumUI.Material.pdb",
+        "lib/net6.0-android31.0/UraniumUI.Material.xml",
+        "lib/net6.0-ios16.1/UraniumUI.Material.dll",
+        "lib/net6.0-ios16.1/UraniumUI.Material.pdb",
+        "lib/net6.0-maccatalyst16.1/UraniumUI.Material.dll",
+        "lib/net6.0-maccatalyst16.1/UraniumUI.Material.pdb",
+        "lib/net6.0-windows10.0.19041/UraniumUI.Material.dll",
+        "lib/net6.0-windows10.0.19041/UraniumUI.Material.pdb",
+        "lib/net6.0/UraniumUI.Material.dll",
+        "lib/net6.0/UraniumUI.Material.pdb",
+        "lib/net7.0-android33.0/UraniumUI.Material.aar",
+        "lib/net7.0-android33.0/UraniumUI.Material.dll",
+        "lib/net7.0-android33.0/UraniumUI.Material.pdb",
+        "lib/net7.0-android33.0/UraniumUI.Material.xml",
+        "lib/net7.0-ios16.1/UraniumUI.Material.dll",
+        "lib/net7.0-ios16.1/UraniumUI.Material.pdb",
+        "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll",
+        "lib/net7.0-maccatalyst16.1/UraniumUI.Material.pdb",
+        "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll",
+        "lib/net7.0-windows10.0.19041/UraniumUI.Material.pdb",
+        "lib/net7.0/UraniumUI.Material.dll",
+        "lib/net7.0/UraniumUI.Material.pdb",
+        "logo_128.png",
+        "uraniumui.material.2.5.6.nupkg.sha512",
+        "uraniumui.material.nuspec"
       ]
     },
     "Xamarin.Android.Glide/4.13.2.2": {
@@ -27810,6 +28357,7 @@
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
       "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6",
       "Xamarin.Android.Glide >= 4.13.2.2",
       "Xamarin.AndroidX.Browser >= 1.4.0.3",
       "Xamarin.AndroidX.Legacy.Support.V4 >= 1.0.0.15",
@@ -27831,7 +28379,8 @@
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
-      "UraniumUI >= 2.5.6"
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6"
     ],
     "net7.0-maccatalyst16.1": [
       "Microsoft.AspNetCore.Components >= 7.0.13",
@@ -27842,7 +28391,8 @@
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
-      "UraniumUI >= 2.5.6"
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6"
     ],
     "net7.0-windows10.0.19041": [
       "Microsoft.AspNetCore.Components >= 7.0.13",
@@ -27853,7 +28403,8 @@
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.101",
       "Microsoft.WindowsAppSDK >= 1.2.221209.1",
-      "UraniumUI >= 2.5.6"
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6"
     ]
   },
   "packageFolders": {
@@ -27958,6 +28509,10 @@
             "autoReferenced": true
           },
           "UraniumUI": {
+            "target": "Package",
+            "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.5.6, )"
           },
@@ -28139,6 +28694,10 @@
           "UraniumUI": {
             "target": "Package",
             "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.5.6, )"
           }
         },
         "imports": [
@@ -28251,6 +28810,10 @@
           "UraniumUI": {
             "target": "Package",
             "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.5.6, )"
           }
         },
         "imports": [
@@ -28360,6 +28923,10 @@
             "autoReferenced": true
           },
           "UraniumUI": {
+            "target": "Package",
+            "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
             "target": "Package",
             "version": "[2.5.6, )"
           }

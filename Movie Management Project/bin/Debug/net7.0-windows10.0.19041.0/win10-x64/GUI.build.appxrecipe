@@ -703,6 +703,9 @@
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\uraniumui\2.5.6\lib\net7.0-windows10.0.19041\UraniumUI.dll">
       <PackagePath>UraniumUI.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\uraniumui.material\2.5.6\lib\net7.0-windows10.0.19041\UraniumUI.Material.dll">
+      <PackagePath>UraniumUI.Material.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
     </AppxPackagedFile>

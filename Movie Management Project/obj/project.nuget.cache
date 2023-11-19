@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3EwMTkteVtP9nNVscdg/2clAM6O5q098frdf8SruQIkidgQTh1Cu9KeB4HTIAT+qSc2+BUxfsL226J49bViKMA==",
+  "dgSpecHash": "ilLE6SQwmq+TCg+3//gIrwyyFgJxji66jVzHM08cgPIWNQIc27UWkETCi8ZTWo8zEQInKQuLo1yREecN5n6Rkg==",
   "success": true,
   "projectFilePath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\plainer.maui\\1.6.4\\plainer.maui.1.6.4.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\uraniumui\\2.5.6\\uraniumui.2.5.6.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\uraniumui.material\\2.5.6\\uraniumui.material.2.5.6.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",

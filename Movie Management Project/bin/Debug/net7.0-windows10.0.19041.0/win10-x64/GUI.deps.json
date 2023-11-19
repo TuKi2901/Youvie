@@ -18,6 +18,7 @@
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.101",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
           "UraniumUI": "2.5.6",
+          "UraniumUI.Material": "2.5.6",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.14",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.101",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.101",
@@ -1057,6 +1058,17 @@
             "fileVersion": "2.5.6.0"
           }
         }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "assemblyVersion": "2.5.6.0",
+            "fileVersion": "2.5.6.0"
+          }
+        }
       }
     }
   },
@@ -1237,6 +1249,13 @@
       "sha512": "sha512-cr+el0cdmbUw9NJ+1PDrjCZ0ZUUOt8ffDkAxvH8XwNkxry/STBzmYUk4Ju9WHzL1QkwlCHzfFIJr8iV+1Pm99w==",
       "path": "uraniumui/2.5.6",
       "hashPath": "uraniumui.2.5.6.nupkg.sha512"
+    },
+    "UraniumUI.Material/2.5.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u/NtTSJnYagjbyDYKuaZ6LQ/1BzgpS0hnB2fhx9HXXCSdh+bsIQYF1kOty/LWcytV1TIXoJ0xVzbkMbL0nT6pw==",
+      "path": "uraniumui.material/2.5.6",
+      "hashPath": "uraniumui.material.2.5.6.nupkg.sha512"
     }
   },
   "runtimes": {
