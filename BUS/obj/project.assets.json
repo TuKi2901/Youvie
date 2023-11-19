@@ -822,23 +822,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\": {},
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj",
+      "projectUniqueName": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj",
       "projectName": "BUS",
-      "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj",
-      "packagesPath": "C:\\Users\\TuanDepTrai\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\obj\\",
+      "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\TuanDepTrai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -854,11 +854,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DAL\\DAL.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DAL\\DAL.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DAL\\DAL.csproj"
             },
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj"
             }
           }
         }

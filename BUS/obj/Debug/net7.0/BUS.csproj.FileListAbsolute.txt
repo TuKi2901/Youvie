@@ -16,3 +16,21 @@ E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\BUS\obj\Debug\net7.0\BUS.dll
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\BUS\obj\Debug\net7.0\refint\BUS.dll
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\BUS\obj\Debug\net7.0\BUS.pdb
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\BUS\obj\Debug\net7.0\ref\BUS.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\BUS.deps.json
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\BUS.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\BUS.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\DAL.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\DTO.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\DAL.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\DTO.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.csproj.AssemblyReference.cache
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.AssemblyInfoInputs.cache
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.AssemblyInfo.cs
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.csproj.CoreCompileInputs.cache
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.sourcelink.json
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.csproj.CopyComplete
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\refint\BUS.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\BUS.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\obj\Debug\net7.0\ref\BUS.dll

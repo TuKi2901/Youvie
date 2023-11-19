@@ -14,3 +14,19 @@ E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DAL\obj\Debug\net7.0\DAL.dll
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DAL\obj\Debug\net7.0\refint\DAL.dll
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DAL\obj\Debug\net7.0\DAL.pdb
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DAL\obj\Debug\net7.0\ref\DAL.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DAL.deps.json
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DAL.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DAL.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DTO.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DTO.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.sourcelink.json
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.csproj.CopyComplete
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\refint\DAL.dll
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.pdb
+D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\ref\DAL.dll
