@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "y+/fPpWpZB1ZX4zn9LycmYVvgulET0+FM1nOWrhS5zsgZOdXDLJfwG3SqxtLSN808rMi9nBAyiEqlUvUIh8deA==",
+  "dgSpecHash": "Ow8mLptfdQzmakva1S5txWlJoIFz69PoE1WQGJEGhF5nO5MiiLOfNQ1E8GWURw05hGam9BQelCmM+/P6+RqMkg==",
   "success": true,
   "projectFilePath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",

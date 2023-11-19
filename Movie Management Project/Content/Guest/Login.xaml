@@ -52,6 +52,7 @@
                 Margin="0,20,0,40"
                 BackgroundColor="#512BD4"
                 HorizontalOptions="Center"
+                Clicked="btnLogin_Clicked"
                 />
 
             <Button

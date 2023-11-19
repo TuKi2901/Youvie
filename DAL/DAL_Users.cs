@@ -22,5 +22,19 @@ namespace DAL
                 return false;
             }
         }
+
+        public async Task<DTO_Users> GetUserByEmail(string email)
+        {
+            var collection = db.GetCollection<DTO_Users>(collectionName);
+
+            DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+
+            if (user == null)
+            {
+                throw new Exception();
+            }
+
+            return user;
+        }
     }
 }
