@@ -14,7 +14,6 @@
                 Source="dotnet_bot.png"
                 HeightRequest="150"/>
             <Label
-    
             Text="Sign up"
             SemanticProperties.HeadingLevel="Level1"
             FontSize="32"
@@ -33,64 +32,82 @@
                     <RowDefinition Height="40" />
                     <RowDefinition Height="40" />
                     <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
                 </Grid.RowDefinitions>
            
 
                 <!--#region Column 0-->
                 <Label 
-
-                Text="Email" 
+                Text="User Name" 
                 WidthRequest="500"
                 Grid.Column="0" 
                 Grid.Row="0"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
-
                 <Entry 
                 Placeholder=""
-                x:Name="txtEmail"
+                x:Name="txtUserName"
                 WidthRequest="500"
                 Grid.Column="0"
                 Grid.Row="1"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
+                
                 <Label 
-                Text="Password" 
+                Text="Email" 
                 WidthRequest="500"
-                Grid.Column="0"
+                Grid.Column="0" 
                 Grid.Row="2"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
-
                 <Entry 
                 Placeholder=""
-                IsPassword="False"
-                x:Name="txtPassword"
+                x:Name="txtEmail"
                 WidthRequest="500"
                 Grid.Column="0"
                 Grid.Row="3"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
+                
                 <Label 
-                Text="Confirm Password"
+                Text="Password" 
                 WidthRequest="500"
                 Grid.Column="0"
                 Grid.Row="4"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
-
+                <Entry 
+                Placeholder=""
+                IsPassword="False"
+                x:Name="txtPassword"
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="5"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                
+                <Label 
+                Text="Confirm Password"
+                WidthRequest="500"
+                Grid.Column="0"
+                Grid.Row="6"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
                 <Entry 
                 Placeholder=""
                 IsPassword="False"
                 x:Name="txtConfirmPassword"
                 WidthRequest="500"
                 Grid.Column="0"
-                Grid.Row="5"
+                Grid.Row="7"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
@@ -98,77 +115,94 @@
 
                 <!--#region  Column 1-->
                 <Label 
-
-                Text="User Name" 
+                Text="Phone number" 
                 WidthRequest="500"
-                Grid.Column="1" 
+                Grid.Column="1"
                 Grid.Row="0"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
-
                 <Entry 
                 Placeholder=""
-                x:Name="txtUserName"
+                x:Name="txtPhoneNumber"
                 WidthRequest="500"
                 Grid.Column="1"
                 Grid.Row="1"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
+                
                 <Label 
-                Text="Phone number" 
+                Text="Gender" 
                 WidthRequest="500"
                 Grid.Column="1"
                 Grid.Row="2"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
+                <Grid Grid.Row="3" Grid.Column="1" HorizontalOptions="Start" Padding="70,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <RadioButton
+                    GroupName="Gender"
+                    Value="Male"
+                    IsChecked="True"
+                    x:Name="rbMale"
+                    Grid.Column="0">
+                    </RadioButton>
+                    <Label Text="Male" Grid.Column="0" Margin="30,0,0,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                    <RadioButton 
+                    GroupName="Gender"
+                    Value="Female"
+                    IsChecked="False"
+                    x:Name="rbFemale"
+                    Grid.Column="1">
+                    </RadioButton>
+                    <Label Text="Female" Grid.Column="1" Margin="30,0,0,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                </Grid>
 
-                <Entry 
-                Placeholder=""
-                x:Name="txtPhoneNumber"
-                WidthRequest="500"
-                Grid.Column="1"
-                Grid.Row="3"
-                Margin="0,0,0,0"
-                FontSize="Small"
-                VerticalTextAlignment="Center"/>
                 <Label 
-                Text="Gender" 
+                Text="Country" 
                 WidthRequest="500"
                 Grid.Column="1"
                 Grid.Row="4"
                 Margin="0,0,0,0"
                 FontSize="Small"
                 VerticalTextAlignment="Center"/>
+                <Picker x:Name="pkCountry" Grid.Column="1" Grid.Row="5" Margin="0,0,0,0" WidthRequest="500" FontSize="Small" HeightRequest="40">
+                    <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Vietnamese</x:String>
+                        <x:String>America</x:String>
+                        <x:String>England</x:String>
+                        <x:String>China</x:String>
+                        <x:String>Korea</x:String>
+                        <x:String>Japan</x:String>
+                        <x:String>ThaiLand</x:String>
+                    </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
 
-                <Grid Grid.Row="5" Grid.Column="1" HorizontalOptions="Start" Padding="70,0,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="100"/>
-                        <ColumnDefinition Width="100"/>
-                    </Grid.ColumnDefinitions>
-                    <RadioButton
-                GroupName="Gender"
-                Value="Male"
-                IsChecked="True"
-                Grid.Column="0">
-                    </RadioButton>
-                    <Label Text="Male" Grid.Column="0" Margin="30,0,0,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-                    <RadioButton 
-                 GroupName="Gender"
-                Value="Female"
-                Grid.Column="1">
-                    </RadioButton>
-                    <Label Text="Female" Grid.Column="1" Margin="30,0,0,0" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
-                </Grid>
-
-
-
-
+                <Label 
+                Text="Birthday" 
+                WidthRequest="500"
+                Grid.Column="1"
+                Grid.Row="6"
+                Margin="0,0,0,0"
+                FontSize="Small"
+                VerticalTextAlignment="Center"/>
+                <DatePicker 
+                WidthRequest="500"
+                Grid.Column="1"
+                Grid.Row="7"
+                Margin="0,0,0,0"
+                MinimumDate="1923-01-01"
+                MaximumDate="2123-01-01"
+                Date="2023-01-01" 
+                x:Name="dpkBirthday"/>
                 <!--#endregion-->
-
-
             </Grid>
 
             <!--#endregion Grid-->
