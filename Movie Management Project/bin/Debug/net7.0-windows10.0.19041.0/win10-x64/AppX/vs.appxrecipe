@@ -29,29 +29,29 @@
     <AppXManifest Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-17T08:08:48.641</Modified>
+      <Modified>2023-11-19T08:12:37.568</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-17T08:08:48.332</Modified>
+      <Modified>2023-11-19T08:12:37.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.runtimeconfig.json">
       <PackagePath>GUI.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-17T08:03:29.009</Modified>
+      <Modified>2023-11-18T04:38:21.431</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.dll">
       <PackagePath>GUI.dll</PackagePath>
-      <Modified>2023-11-17T08:08:47.096</Modified>
+      <Modified>2023-11-19T08:12:36.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GUI.exe</PackagePath>
-      <Modified>2023-11-17T08:08:47.100</Modified>
+      <Modified>2023-11-19T08:12:36.326</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.deps.json">
       <PackagePath>GUI.deps.json</PackagePath>
-      <Modified>2023-11-17T08:03:28.849</Modified>
+      <Modified>2023-11-18T04:38:21.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -809,6 +809,18 @@
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-10-16T19:41:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\awssdk.core\3.7.100.14\lib\netcoreapp3.1\AWSSDK.Core.dll">
+      <PackagePath>AWSSDK.Core.dll</PackagePath>
+      <Modified>2022-11-09T16:47:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\awssdk.securitytoken\3.7.100.14\lib\netcoreapp3.1\AWSSDK.SecurityToken.dll">
+      <PackagePath>AWSSDK.SecurityToken.dll</PackagePath>
+      <Modified>2022-11-09T16:47:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\dnsclient\1.6.1\lib\net5.0\DnsClient.dll">
+      <PackagePath>DnsClient.dll</PackagePath>
+      <Modified>2022-06-10T20:37:22.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\microsoft.aspnetcore.authorization\7.0.13\lib\net7.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
       <Modified>2023-10-20T17:29:20.000</Modified>
@@ -925,6 +937,34 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\mongodb.bson\2.22.0\lib\netstandard2.1\MongoDB.Bson.dll">
+      <PackagePath>MongoDB.Bson.dll</PackagePath>
+      <Modified>2023-10-09T21:56:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\mongodb.driver\2.22.0\lib\netstandard2.1\MongoDB.Driver.dll">
+      <PackagePath>MongoDB.Driver.dll</PackagePath>
+      <Modified>2023-10-09T21:56:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\mongodb.driver.core\2.22.0\lib\netstandard2.1\MongoDB.Driver.Core.dll">
+      <PackagePath>MongoDB.Driver.Core.dll</PackagePath>
+      <Modified>2023-10-09T21:56:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\mongodb.libmongocrypt\1.8.0\lib\netstandard2.1\MongoDB.Libmongocrypt.dll">
+      <PackagePath>MongoDB.Libmongocrypt.dll</PackagePath>
+      <Modified>2023-06-01T17:28:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\sharpcompress\0.30.1\lib\net5.0\SharpCompress.dll">
+      <PackagePath>SharpCompress.dll</PackagePath>
+      <Modified>2021-11-22T09:21:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\snappier\1.0.0\lib\net5.0\Snappier.dll">
+      <PackagePath>Snappier.dll</PackagePath>
+      <Modified>2021-01-23T17:43:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\zstdsharp.port\0.6.2\lib\net6.0\ZstdSharp.dll">
+      <PackagePath>ZstdSharp.dll</PackagePath>
+      <Modified>2022-08-02T19:04:30.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2023-05-31T20:12:36.000</Modified>
@@ -932,6 +972,22 @@
     <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\mongodb.libmongocrypt\1.8.0\runtimes\win\native\mongocrypt.dll">
+      <PackagePath>mongocrypt.dll</PackagePath>
+      <Modified>2023-05-09T13:04:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\BUS\bin\Debug\net7.0\BUS.dll">
+      <PackagePath>BUS.dll</PackagePath>
+      <Modified>2023-11-18T08:39:03.960</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DAL\bin\Debug\net7.0\DAL.dll">
+      <PackagePath>DAL.dll</PackagePath>
+      <Modified>2023-11-18T04:59:13.172</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\bin\Debug\net7.0\DTO.dll">
+      <PackagePath>DTO.dll</PackagePath>
+      <Modified>2023-11-18T04:59:12.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\TuanDepTrai\.nuget\packages\microsoft.maui.controls.ref.win\7.0.101\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
