@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "n/qm5Bb1lmMFpMzMog84KqVMVvH79OZyieFGcqPtw/UT0WJErcRSeyrTAKIiPRVXquC9B/DR3+Y8tS6lY9gQxA==",
+  "dgSpecHash": "fUhoJSoK19zfW3rwSwvPpxY41AdNeQ/bhTevTNTf0i9dSY0G+i3yvdypSH6WQqRy4SrNzRCgrZy/TIiURhkiFw==",
   "success": true,
   "projectFilePath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\inputkit.maui\\4.3.5\\inputkit.maui.4.3.5.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
@@ -24,9 +27,22 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.graphics.win2d.winui.desktop\\7.0.101\\microsoft.maui.graphics.win2d.winui.desktop.7.0.101.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.net.illink.analyzers\\7.0.100-1.23211.1\\microsoft.net.illink.analyzers.7.0.100-1.23211.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.net.illink.tasks\\7.0.100-1.23211.1\\microsoft.net.illink.tasks.7.0.100-1.23211.1.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.windowsappsdk\\1.2.221209.1\\microsoft.windowsappsdk.1.2.221209.1.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.bson\\2.22.0\\mongodb.bson.2.22.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.driver\\2.22.0\\mongodb.driver.2.22.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.driver.core\\2.22.0\\mongodb.driver.core.2.22.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\plainer.maui\\1.6.4\\plainer.maui.1.6.4.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\uraniumui\\2.5.6\\uraniumui.2.5.6.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\uraniumui.material\\2.5.6\\uraniumui.material.2.5.6.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
@@ -110,6 +126,7 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\zstdsharp.port\\0.6.2\\zstdsharp.port.0.6.2.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.essentials.ref.android\\7.0.101\\microsoft.maui.essentials.ref.android.7.0.101.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.android.runtime.33.android-x86\\33.0.95\\microsoft.android.runtime.33.android-x86.33.0.95.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.controls.ref.android\\7.0.101\\microsoft.maui.controls.ref.android.7.0.101.nupkg.sha512",
@@ -148,12 +165,5 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.14\\microsoft.netcore.app.runtime.win-x64.7.0.14.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.controls.runtime.win\\7.0.101\\microsoft.maui.controls.runtime.win.7.0.101.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

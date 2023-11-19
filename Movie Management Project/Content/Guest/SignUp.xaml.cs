@@ -25,13 +25,6 @@ namespace Movie_Management_Project.Content.Guest
             await Navigation.PushAsync(new Login());
         }
 
-<<<<<<< HEAD
-        private async void btnSignUp_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
-=======
         private bool IsValidEmail(string email)
         {
             try
@@ -113,7 +106,6 @@ namespace Movie_Management_Project.Content.Guest
             }
 
         }
->>>>>>> Tuan
 
         /*private void OnCounterClicked(object sender, EventArgs e)
         {
