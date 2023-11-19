@@ -1,0 +1,13 @@
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\bin\Debug\net7.0\DTO.deps.json
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\bin\Debug\net7.0\DTO.dll
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\bin\Debug\net7.0\DTO.pdb
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.csproj.AssemblyReference.cache
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.AssemblyInfoInputs.cache
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.AssemblyInfo.cs
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.csproj.CoreCompileInputs.cache
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.sourcelink.json
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.dll
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\refint\DTO.dll
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\DTO.pdb
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\obj\Debug\net7.0\ref\DTO.dll

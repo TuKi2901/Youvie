@@ -102,6 +102,15 @@
 	  <MauiXaml Update="Content\Admin\UserManager.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <Folder Include="Content\Admin\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BUS\BUS.csproj" />
+	  <ProjectReference Include="..\DTO\DTO.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Content\Guest\ForgotPassword.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
