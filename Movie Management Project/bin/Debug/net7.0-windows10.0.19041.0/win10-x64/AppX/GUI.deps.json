@@ -19,6 +19,8 @@
           "Microsoft.Maui.Graphics": "7.0.101",
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": "7.0.101",
           "Microsoft.WindowsAppSDK": "1.2.221209.1",
+          "UraniumUI": "2.5.6",
+          "UraniumUI.Material": "2.5.6",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "7.0.14",
           "runtimepack.Microsoft.Maui.Core.Runtime.win": "7.0.101",
           "runtimepack.Microsoft.Maui.Controls.Runtime.win": "7.0.101",
@@ -823,6 +825,14 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "assemblyVersion": "4.3.5.0",
+            "fileVersion": "4.3.5.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "7.0.13",
@@ -1126,6 +1136,14 @@
           }
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "runtime": {
           "lib/net5.0/SharpCompress.dll": {
@@ -1152,6 +1170,29 @@
         }
       },
       "System.Security.Principal.Windows/5.0.0": {},
+      "UraniumUI/2.5.6": {
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "assemblyVersion": "2.5.6.0",
+            "fileVersion": "2.5.6.0"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "assemblyVersion": "2.5.6.0",
+            "fileVersion": "2.5.6.0"
+          }
+        }
+      },
       "ZstdSharp.Port/0.6.2": {
         "runtime": {
           "lib/net6.0/ZstdSharp.dll": {
@@ -1239,6 +1280,13 @@
       "sha512": "sha512-4H/f2uYJOZ+YObZjpY9ABrKZI+JNw3uizp6oMzTXwDw6F+2qIPhpRl/1t68O/6e98+vqNiYGu+lswmwdYUy3gg==",
       "path": "dnsclient/1.6.1",
       "hashPath": "dnsclient.1.6.1.nupkg.sha512"
+    },
+    "InputKit.Maui/4.3.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NWkw1m8HHjh6QrABkBVIdjC3/O5pUyhr2KLnrRe1KZ60kRT9vdVCSPpH0jKuTr359pTtWZCw0H9jAO5omUwZRA==",
+      "path": "inputkit.maui/4.3.5",
+      "hashPath": "inputkit.maui.4.3.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/7.0.13": {
       "type": "package",
@@ -1408,6 +1456,13 @@
       "path": "mongodb.libmongocrypt/1.8.0",
       "hashPath": "mongodb.libmongocrypt.1.8.0.nupkg.sha512"
     },
+    "Plainer.Maui/1.6.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KnhR6iMFGqD1aI3o4LXpXQ1B0YnjR+sMf2Ce2bASdXIlV7PbSpOI43enEVvTE4MyFB7v+r0dQvfhqd/cyF5Ucw==",
+      "path": "plainer.maui/1.6.4",
+      "hashPath": "plainer.maui.1.6.4.nupkg.sha512"
+    },
     "SharpCompress/0.30.1": {
       "type": "package",
       "serviceable": true,
@@ -1456,6 +1511,20 @@
       "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
+    },
+    "UraniumUI/2.5.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cr+el0cdmbUw9NJ+1PDrjCZ0ZUUOt8ffDkAxvH8XwNkxry/STBzmYUk4Ju9WHzL1QkwlCHzfFIJr8iV+1Pm99w==",
+      "path": "uraniumui/2.5.6",
+      "hashPath": "uraniumui.2.5.6.nupkg.sha512"
+    },
+    "UraniumUI.Material/2.5.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u/NtTSJnYagjbyDYKuaZ6LQ/1BzgpS0hnB2fhx9HXXCSdh+bsIQYF1kOty/LWcytV1TIXoJ0xVzbkMbL0nT6pw==",
+      "path": "uraniumui.material/2.5.6",
+      "hashPath": "uraniumui.material.2.5.6.nupkg.sha512"
     },
     "ZstdSharp.Port/0.6.2": {
       "type": "package",

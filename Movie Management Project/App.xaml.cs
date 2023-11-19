@@ -1,5 +1,6 @@
 ﻿using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.Content.User;
+using Movie_Management_Project.Content.Admin;
 
 namespace Movie_Management_Project
 {
@@ -10,5 +11,6 @@ namespace Movie_Management_Project
             InitializeComponent();
             MainPage = new AppShell();
         }
+        
     }
 }

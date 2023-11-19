@@ -16,6 +16,15 @@
     <MauiXaml Update="AppShell.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Content\Admin\AdminManager.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Content\Admin\MediaManager.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Content\Admin\UserManager.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Content\Guest\ForgotPassword.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

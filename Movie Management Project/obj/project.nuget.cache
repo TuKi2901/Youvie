@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "edkXDWO600HMMsxDGZRZCkbDBRxoXGQqWMKL8VKEsqmMc1W2QI+QZR9RUQb+ozIdHzQOX1B7j8eycnparUO6NQ==",
+  "dgSpecHash": "fUhoJSoK19zfW3rwSwvPpxY41AdNeQ/bhTevTNTf0i9dSY0G+i3yvdypSH6WQqRy4SrNzRCgrZy/TIiURhkiFw==",
   "success": true,
   "projectFilePath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\inputkit.maui\\4.3.5\\inputkit.maui.4.3.5.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.13\\microsoft.aspnetcore.components.7.0.13.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.13\\microsoft.aspnetcore.components.analyzers.7.0.13.nupkg.sha512",
@@ -34,6 +35,7 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.driver\\2.22.0\\mongodb.driver.2.22.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.driver.core\\2.22.0\\mongodb.driver.core.2.22.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\plainer.maui\\1.6.4\\plainer.maui.1.6.4.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
@@ -41,6 +43,8 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\uraniumui\\2.5.6\\uraniumui.2.5.6.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\uraniumui.material\\2.5.6\\uraniumui.material.2.5.6.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.android.glide\\4.13.2.2\\xamarin.android.glide.4.13.2.2.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.android.glide.annotations\\4.13.2.2\\xamarin.android.glide.annotations.4.13.2.2.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\xamarin.android.glide.disklrucache\\4.13.2.2\\xamarin.android.glide.disklrucache.4.13.2.2.nupkg.sha512",

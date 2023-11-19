@@ -60,6 +60,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -434,6 +454,19 @@
           }
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -534,6 +567,39 @@
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -2375,6 +2441,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -2732,6 +2818,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -2816,6 +2915,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -4657,6 +4789,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -5014,6 +5166,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -5098,6 +5263,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -6939,6 +7137,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -7296,6 +7514,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -7380,6 +7611,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -9221,6 +9485,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -9578,6 +9862,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -9662,6 +9959,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -11503,6 +11833,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -11857,6 +12207,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -11941,6 +12304,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -13782,6 +14178,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -14136,6 +14552,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -14220,6 +14649,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -16061,6 +16523,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/InputKit.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -16418,6 +16900,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/Plainer.Maui.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -16502,6 +16997,39 @@
         "runtime": {
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-android33.0/UraniumUI.Material.dll": {
+            "related": ".aar;.pdb;.xml"
           }
         }
       },
@@ -18330,6 +18858,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -18703,6 +19251,19 @@
           }
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -18799,6 +19360,39 @@
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -18899,6 +19493,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -19255,6 +19869,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -19335,6 +19962,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -19435,6 +20095,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -19791,6 +20471,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -19871,6 +20564,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -19971,6 +20697,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -20327,6 +21073,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -20407,6 +21166,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -20507,6 +21299,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -20863,6 +21675,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -20943,6 +21768,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -21043,6 +21901,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -21396,6 +22274,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -21476,6 +22367,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -21576,6 +22500,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -21929,6 +22873,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -22009,6 +22966,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -22106,6 +23096,26 @@
         "runtime": {
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -22465,6 +23475,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -22545,6 +23568,39 @@
         "runtime": {
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-ios16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -22642,6 +23698,26 @@
         "runtime": {
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -23018,6 +24094,19 @@
           }
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -23114,6 +24203,39 @@
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -23214,6 +24336,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -23570,6 +24712,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -23650,6 +24805,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -23750,6 +24938,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -24106,6 +25314,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -24186,6 +25407,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -24286,6 +25540,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -24642,6 +25916,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -24722,6 +26009,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -24822,6 +26142,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -25178,6 +26518,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -25258,6 +26611,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -25358,6 +26744,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -25711,6 +27117,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -25791,6 +27210,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -25891,6 +27343,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -26244,6 +27716,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -26324,6 +27809,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -26421,6 +27939,26 @@
         "runtime": {
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -26780,6 +28318,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -26860,6 +28411,39 @@
         "runtime": {
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -26957,6 +28541,26 @@
         "runtime": {
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -27460,6 +29064,19 @@
           }
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -27556,6 +29173,39 @@
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "assetType": "runtime",
             "rid": "win"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -27656,6 +29306,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -28111,6 +29781,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -28191,6 +29874,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -28291,6 +30007,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -28746,6 +30482,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -28826,6 +30575,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -28926,6 +30708,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -29381,6 +31183,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -29461,6 +31276,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -29561,6 +31409,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -30016,6 +31884,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -30096,6 +31977,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -30196,6 +32110,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -30648,6 +32582,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -30728,6 +32675,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -30828,6 +32808,26 @@
           }
         }
       },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/7.0.13": {
         "type": "package",
         "dependencies": {
@@ -31280,6 +33280,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -31360,6 +33373,39 @@
         "runtime": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -31457,6 +33503,26 @@
         "runtime": {
           "lib/net5.0/DnsClient.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "InputKit.Maui/4.3.5": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/InputKit.Maui.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -31921,6 +33987,19 @@
           "build/_._": {}
         }
       },
+      "Plainer.Maui/1.6.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/Plainer.Maui.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "SharpCompress/0.30.1": {
         "type": "package",
         "compile": {
@@ -32001,6 +34080,39 @@
         "runtime": {
           "runtimes/win/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "UraniumUI/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "InputKit.Maui": "4.3.5",
+          "Plainer.Maui": "1.6.4"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
+      "UraniumUI.Material/2.5.6": {
+        "type": "package",
+        "dependencies": {
+          "UraniumUI": "2.5.6"
+        },
+        "compile": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll": {
+            "related": ".pdb"
           }
         }
       },
@@ -32149,6 +34261,40 @@
         "lib/net6.0-android31.0/GoogleGson.aar",
         "lib/net6.0-android31.0/GoogleGson.dll",
         "lib/net6.0-android31.0/GoogleGson.xml"
+      ]
+    },
+    "InputKit.Maui/4.3.5": {
+      "sha512": "NWkw1m8HHjh6QrABkBVIdjC3/O5pUyhr2KLnrRe1KZ60kRT9vdVCSPpH0jKuTr359pTtWZCw0H9jAO5omUwZRA==",
+      "type": "package",
+      "path": "inputkit.maui/4.3.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/icon512.png",
+        "contentFiles/any/net7.0-android33.0/icon512.png",
+        "contentFiles/any/net7.0-ios16.1/icon512.png",
+        "contentFiles/any/net7.0-maccatalyst16.1/icon512.png",
+        "contentFiles/any/net7.0-windows10.0.19041/icon512.png",
+        "contentFiles/any/net7.0/icon512.png",
+        "icon512.png",
+        "inputkit.maui.4.3.5.nupkg.sha512",
+        "inputkit.maui.nuspec",
+        "lib/net7.0-android33.0/InputKit.Maui.aar",
+        "lib/net7.0-android33.0/InputKit.Maui.dll",
+        "lib/net7.0-android33.0/InputKit.Maui.pdb",
+        "lib/net7.0-android33.0/InputKit.Maui.xml",
+        "lib/net7.0-ios16.1/InputKit.Maui.dll",
+        "lib/net7.0-ios16.1/InputKit.Maui.pdb",
+        "lib/net7.0-ios16.1/InputKit.Maui.xml",
+        "lib/net7.0-maccatalyst16.1/InputKit.Maui.dll",
+        "lib/net7.0-maccatalyst16.1/InputKit.Maui.pdb",
+        "lib/net7.0-maccatalyst16.1/InputKit.Maui.xml",
+        "lib/net7.0-windows10.0.19041/InputKit.Maui.dll",
+        "lib/net7.0-windows10.0.19041/InputKit.Maui.pdb",
+        "lib/net7.0-windows10.0.19041/InputKit.Maui.xml",
+        "lib/net7.0/InputKit.Maui.dll",
+        "lib/net7.0/InputKit.Maui.pdb",
+        "lib/net7.0/InputKit.Maui.xml"
       ]
     },
     "Microsoft.AspNetCore.Authorization/7.0.13": {
@@ -33635,6 +35781,30 @@
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
+    "Plainer.Maui/1.6.4": {
+      "sha512": "KnhR6iMFGqD1aI3o4LXpXQ1B0YnjR+sMf2Ce2bASdXIlV7PbSpOI43enEVvTE4MyFB7v+r0dQvfhqd/cyF5Ucw==",
+      "type": "package",
+      "path": "plainer.maui/1.6.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net7.0-android33.0/Plainer.Maui.aar",
+        "lib/net7.0-android33.0/Plainer.Maui.dll",
+        "lib/net7.0-android33.0/Plainer.Maui.pdb",
+        "lib/net7.0-android33.0/Plainer.Maui.xml",
+        "lib/net7.0-ios16.1/Plainer.Maui.dll",
+        "lib/net7.0-ios16.1/Plainer.Maui.pdb",
+        "lib/net7.0-maccatalyst16.1/Plainer.Maui.dll",
+        "lib/net7.0-maccatalyst16.1/Plainer.Maui.pdb",
+        "lib/net7.0-windows10.0.19041/Plainer.Maui.dll",
+        "lib/net7.0-windows10.0.19041/Plainer.Maui.pdb",
+        "lib/net7.0/Plainer.Maui.dll",
+        "lib/net7.0/Plainer.Maui.pdb",
+        "plainer.maui.1.6.4.nupkg.sha512",
+        "plainer.maui.nuspec"
+      ]
+    },
     "SharpCompress/0.30.1": {
       "sha512": "XqD4TpfyYGa7QTPzaGlMVbcecKnXy4YmYLDWrU+JIj7IuRNl7DH2END+Ll7ekWIY8o3dAMWLFDE1xdhfIWD1nw==",
       "type": "package",
@@ -33857,6 +36027,76 @@
         "system.security.principal.windows.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "UraniumUI/2.5.6": {
+      "sha512": "cr+el0cdmbUw9NJ+1PDrjCZ0ZUUOt8ffDkAxvH8XwNkxry/STBzmYUk4Ju9WHzL1QkwlCHzfFIJr8iV+1Pm99w==",
+      "type": "package",
+      "path": "uraniumui/2.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-android31.0/UraniumUI.dll",
+        "lib/net6.0-android31.0/UraniumUI.pdb",
+        "lib/net6.0-android31.0/UraniumUI.xml",
+        "lib/net6.0-ios16.1/UraniumUI.dll",
+        "lib/net6.0-ios16.1/UraniumUI.pdb",
+        "lib/net6.0-maccatalyst16.1/UraniumUI.dll",
+        "lib/net6.0-maccatalyst16.1/UraniumUI.pdb",
+        "lib/net6.0-windows10.0.19041/UraniumUI.dll",
+        "lib/net6.0-windows10.0.19041/UraniumUI.pdb",
+        "lib/net6.0/UraniumUI.dll",
+        "lib/net6.0/UraniumUI.pdb",
+        "lib/net7.0-android33.0/UraniumUI.aar",
+        "lib/net7.0-android33.0/UraniumUI.dll",
+        "lib/net7.0-android33.0/UraniumUI.pdb",
+        "lib/net7.0-android33.0/UraniumUI.xml",
+        "lib/net7.0-ios16.1/UraniumUI.dll",
+        "lib/net7.0-ios16.1/UraniumUI.pdb",
+        "lib/net7.0-maccatalyst16.1/UraniumUI.dll",
+        "lib/net7.0-maccatalyst16.1/UraniumUI.pdb",
+        "lib/net7.0-windows10.0.19041/UraniumUI.dll",
+        "lib/net7.0-windows10.0.19041/UraniumUI.pdb",
+        "lib/net7.0/UraniumUI.dll",
+        "lib/net7.0/UraniumUI.pdb",
+        "logo_128.png",
+        "uraniumui.2.5.6.nupkg.sha512",
+        "uraniumui.nuspec"
+      ]
+    },
+    "UraniumUI.Material/2.5.6": {
+      "sha512": "u/NtTSJnYagjbyDYKuaZ6LQ/1BzgpS0hnB2fhx9HXXCSdh+bsIQYF1kOty/LWcytV1TIXoJ0xVzbkMbL0nT6pw==",
+      "type": "package",
+      "path": "uraniumui.material/2.5.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-android31.0/UraniumUI.Material.dll",
+        "lib/net6.0-android31.0/UraniumUI.Material.pdb",
+        "lib/net6.0-android31.0/UraniumUI.Material.xml",
+        "lib/net6.0-ios16.1/UraniumUI.Material.dll",
+        "lib/net6.0-ios16.1/UraniumUI.Material.pdb",
+        "lib/net6.0-maccatalyst16.1/UraniumUI.Material.dll",
+        "lib/net6.0-maccatalyst16.1/UraniumUI.Material.pdb",
+        "lib/net6.0-windows10.0.19041/UraniumUI.Material.dll",
+        "lib/net6.0-windows10.0.19041/UraniumUI.Material.pdb",
+        "lib/net6.0/UraniumUI.Material.dll",
+        "lib/net6.0/UraniumUI.Material.pdb",
+        "lib/net7.0-android33.0/UraniumUI.Material.aar",
+        "lib/net7.0-android33.0/UraniumUI.Material.dll",
+        "lib/net7.0-android33.0/UraniumUI.Material.pdb",
+        "lib/net7.0-android33.0/UraniumUI.Material.xml",
+        "lib/net7.0-ios16.1/UraniumUI.Material.dll",
+        "lib/net7.0-ios16.1/UraniumUI.Material.pdb",
+        "lib/net7.0-maccatalyst16.1/UraniumUI.Material.dll",
+        "lib/net7.0-maccatalyst16.1/UraniumUI.Material.pdb",
+        "lib/net7.0-windows10.0.19041/UraniumUI.Material.dll",
+        "lib/net7.0-windows10.0.19041/UraniumUI.Material.pdb",
+        "lib/net7.0/UraniumUI.Material.dll",
+        "lib/net7.0/UraniumUI.Material.pdb",
+        "logo_128.png",
+        "uraniumui.material.2.5.6.nupkg.sha512",
+        "uraniumui.material.nuspec"
       ]
     },
     "Xamarin.Android.Glide/4.13.2.2": {
@@ -35901,6 +38141,8 @@
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
       "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6",
       "Xamarin.Android.Glide >= 4.13.2.2",
       "Xamarin.AndroidX.Browser >= 1.4.0.3",
       "Xamarin.AndroidX.Legacy.Support.V4 >= 1.0.0.15",
@@ -35923,7 +38165,9 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
-      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
+      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6"
     ],
     "net7.0-maccatalyst16.1": [
       "BUS >= 1.0.0",
@@ -35935,7 +38179,9 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.NET.ILLink.Analyzers >= 7.0.100-1.23211.1",
-      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1"
+      "Microsoft.NET.ILLink.Tasks >= 7.0.100-1.23211.1",
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6"
     ],
     "net7.0-windows10.0.19041": [
       "BUS >= 1.0.0",
@@ -35947,7 +38193,9 @@
       "Microsoft.Extensions.Logging.Debug >= 7.0.0",
       "Microsoft.Maui.Graphics >= 7.0.101",
       "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.101",
-      "Microsoft.WindowsAppSDK >= 1.2.221209.1"
+      "Microsoft.WindowsAppSDK >= 1.2.221209.1",
+      "UraniumUI >= 2.5.6",
+      "UraniumUI.Material >= 2.5.6"
     ]
   },
   "packageFolders": {
@@ -36078,6 +38326,14 @@
             "target": "Package",
             "version": "[7.0.100-1.23211.1, )",
             "autoReferenced": true
+          },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.5.6, )"
           },
           "Xamarin.Android.Glide": {
             "target": "Package",
@@ -36253,6 +38509,14 @@
             "target": "Package",
             "version": "[7.0.100-1.23211.1, )",
             "autoReferenced": true
+          },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.5.6, )"
           }
         },
         "imports": [
@@ -36361,6 +38625,14 @@
             "target": "Package",
             "version": "[7.0.100-1.23211.1, )",
             "autoReferenced": true
+          },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.5.6, )"
           }
         },
         "imports": [
@@ -36468,6 +38740,14 @@
             "target": "Package",
             "version": "[1.2.221209.1, )",
             "autoReferenced": true
+          },
+          "UraniumUI": {
+            "target": "Package",
+            "version": "[2.5.6, )"
+          },
+          "UraniumUI.Material": {
+            "target": "Package",
+            "version": "[2.5.6, )"
           }
         },
         "imports": [

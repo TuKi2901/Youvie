@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material ="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
+             xmlns:local1="clr-namespace:Movie_Management_Project"
+             x:Class="Movie_Management_Project.Content.Admin.MediaManager"
+             Title="MediaManager">
+
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,300,0"/>
+            <Label Text="Media" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,-50,0,0"/>
+
+
+            <SearchBar x:Name="searchBarMedia" 
+                       Grid.Column="2"
+                       WidthRequest="300" 
+                       HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id Media" Margin="0,0,25,60"
+           />
+            <Grid x:Name="gridMedia"
+                  ColumnDefinitions="Auto"
+                  RowDefinitions="Auto, *">
+
+                <Grid x:Name="gridHeaderMedia"
+                      Grid.Row="0" Grid.Column="0"
+                      ColumnDefinitions="Auto,Auto,*" HorizontalOptions="Center" Margin="0,0,200,0">
+
+                </Grid>
+                <Grid x:Name="gridMenuMedia"
+                        Margin="70,0,0,80">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="660"/>
+                        <ColumnDefinition Width="660"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+
+
+                    <!--#region Control Left-->
+
+                    <Grid x:Name="gridNameAndDate"
+                          Grid.Column="0" Grid.Row="0" 
+                          ColumnDefinitions="550" RowDefinitions="Auto, Auto" Margin="0,0,0,20">
+
+                        <Grid x:Name="gridName"  
+                              Grid.Row="0" Grid.Column="0" 
+                              ColumnDefinitions="150,*" Margin="0,0,0,20">
+
+                            <Label Text="Film Name" Grid.Column="0" VerticalOptions="Center" />
+                            <Entry Grid.Column="1"  VerticalOptions="Center" />
+                        </Grid>
+
+                        <Grid x:Name="gridReleaseDate"
+                              Grid.Row="1" Grid.Column="0"
+                              ColumnDefinitions="150,Auto" Margin="0,0,0,20">
+
+                            <Label Text="Release Date" Grid.Column="0"  VerticalOptions="Center" />
+                            <DatePicker Grid.Column="1"  VerticalOptions="Center" />
+                        </Grid>
+                    </Grid>
+
+
+                    <Grid x:Name="gridCategory" 
+                  Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, 150, 35, 150,35" RowDefinitions="125" Margin="0,0,0,20">
+
+                        <Label x:Name="lbCategory"
+                    Text="Category" Grid.Column="0" VerticalOptions="Center" />
+
+                        <Image x:Name="imgArrow"
+                    Source="dotnet_bot.png"
+                    Grid.Column="2"/>
+
+                        <Image x:Name="imgConfirmCategory"
+                    Source="dotnet_bot.png"
+                    Grid.Column="4"/>
+
+                        <ListView x:Name="listViewCategoryLeft"
+                    ItemsSource="{Binding Items}" Grid.Column="1" Grid.Row="0">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid Padding="5">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0"
+                                           Text="{Binding Name}" 
+                                           VerticalOptions="Center"
+                                           HorizontalTextAlignment="Center"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                        <ListView x:Name="listViewCategoryRight"
+                    ItemsSource="{Binding Items}" Grid.Column="3" Grid.Row="0">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid Padding="5">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0"
+                                           Text="{Binding Name}" 
+                                           VerticalOptions="Center"
+                                           HorizontalTextAlignment="Center"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+
+                    </Grid>
+
+
+                    <Grid x:Name="gridCRUD"
+                Grid.Column="0" Grid.Row="2" 
+                  ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="0,0,0,20">
+
+                        <Button x:Name="btnAdd"
+                    Text="Add" Grid.Column="0" Margin="0,0,5,0"/>
+
+                        <Button x:Name="btnDelete"
+                     Text="Delete" Grid.Column="1" Margin="0,0,5,0"/>
+
+                        <Button x:Name="btnUpdate"
+                     Text="Update" Grid.Column="2" Margin="0,0,5,0"/>
+
+                        <Button x:Name="btnFind"
+                     Text="Find" Grid.Column="3" Margin="0,0,5,0"/>
+
+                        <Button x:Name="btnRefresh"
+                     Text="Refresh" Grid.Column="4"/>
+                    </Grid>
+
+                    <!--#endregion-->
+
+                    <!--#region Control Right-->
+
+                    <Grid x:Name="gridListEpisode" 
+                  Grid.Column="1" Grid.Row="0" ColumnDefinitions="150,400" RowDefinitions="125" Margin="0,0,0,0">
+                        <Label Text="List Episode" Grid.Column="0"/>
+                        <ListView x:Name="listViewEpisode" VerticalOptions="Center" HorizontalOptions="Center"
+                    ItemsSource="{Binding Items}" Grid.Column="1">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid Padding="5">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label Grid.Column="0"
+                                           Text="{Binding Name}" 
+                                           VerticalOptions="Center"
+                                           HorizontalTextAlignment="Center"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+
+                    <Grid x:Name="gridDescription"
+                Grid.Column="1" Grid.Row="1"
+                  ColumnDefinitions="150,400"
+                  Margin="0,0,20,20">
+                        <Label
+                    Text="Description"
+                    Grid.Column="0"/>
+                        <Editor x:Name="editDescription"
+                        Grid.Column="1"/>
+                    </Grid>
+
+                    <Grid x:Name="gridCountry"
+                  Grid.Column="1" Grid.Row="2"
+                  ColumnDefinitions="150,400"
+                  Margin="0,0,0,0">
+
+                        <Label 
+                    Text="Country"
+                    Grid.Column="0"
+                    Margin="0,-5,0,0"/>
+
+                        <Picker x:Name="pkCountry"
+                                Grid.Column="1">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>Vietnamese</x:String>
+                                    <x:String>America</x:String>
+                                    <x:String>England</x:String>
+                                    <x:String>China</x:String>
+                                    <x:String>Korea</x:String>
+                                    <x:String>Japan</x:String>
+                                    <x:String>ThaiLand</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                            <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                        </Picker>
+
+                    </Grid>
+
+                    <!--#endregion-->
+
+
+                </Grid>
+
+                <Grid  x:Name="gridDataGrid"
+                       Grid.Row="1" Grid.Column="0"
+                       ColumnDefinitions="*"
+                       RowDefinitions="Auto, *">
+                    <ScrollView Grid.Row="1">
+                        <material:DataGrid ItemsSource="{Binding Items}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
+                            <material:DataGrid.Columns>
+                                <material:DataGridSelectionColumn />
+                                <material:DataGridColumn Binding="{Binding Id}" Title="Identity" />
+                                <material:DataGridColumn Binding="{Binding Name}" Title="Name" />
+                                <material:DataGridColumn Binding="{Binding Age}" Title="Age" />
+                            </material:DataGrid.Columns>
+                        </material:DataGrid>
+                    </ScrollView>
+                </Grid>
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
