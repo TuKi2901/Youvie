@@ -16,7 +16,7 @@ namespace Movie_Management_Project
 
         private async void Button_Clicked_1(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Content.User.Home());
+            await Navigation.PushAsync(new Content.Admin.MediaManager());
         }
     }
 }
