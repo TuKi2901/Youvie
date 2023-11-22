@@ -1,237 +1,121 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.User.Home"
              Title="Home">
+    <ContentPage.BindingContext>
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
     <ScrollView>
-        <VerticalStackLayout>
+        <VerticalStackLayout Padding="0,0,0,100">
 
             <Image 
                 x:Name="imgInformationUser"
                 Source="dotnet_bot.png"
                 HeightRequest="150"/>
 
-            <!--Grid Definition Loại phim-->
-            <Grid Margin="50,100,0,0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
 
-                <!--#region Hàng Nominated-->
-                <!--Grid Definition các hàng trong từng bộ phim-->
-                <Grid Grid.Row="0" x:Name="gridNominated" Margin="0,0,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
+            <Label Text="Nominated Films" Margin="50" FontSize="Medium"/>
+            <CollectionView x:Name="cvNominated"
+                ItemsSource="{Binding Items}" 
+                Margin="50,0,50,50"
+                SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <!--Xếp từng thuộc tính phim thành hàng dọc -> đưa tất cả thuộc tính thành hàng ngang -->
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="50,0,50,0" ColumnSpacing="100">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image 
+                                   Grid.Row="0" Grid.Column="0"
+                                   Source="dotnet_bot.png"
+                                   HeightRequest="220"
+                                   WidthRequest="220"
+                                   />
+                            <Label Grid.Row="1" Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"
+                                   Padding="20"
+                                   Margin="0,0,0,0"/>
+                            <!--bắt sự kiện chọn phim thành màu xanh-->
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal"></VisualState>
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="LightSkyBlue"></Setter>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="0"
-                        Text="Nominated Film"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        Margin="0,0,0,10"
-                        />
+            <!--Tiêu đề của thể loại-->
+            <Label Text="Popular Films" Margin="50" FontSize="Medium"/>
 
-                    <!--Phim 1-->
-                    <ImageButton
-                        Grid.Column="0"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        Clicked="ImageButton_Clicked"
-                        />
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-                    <!--Phim 2-->
-                    <Image
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="1"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-                    <!--Phim 3-->
-                    <Image
-                        Grid.Column="2"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="2"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-                    <!--Phim 4-->
-                    <Image
-                        Grid.Column="3"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="3"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
+            <!--List phim-->
+            <CollectionView x:Name="cvPopular"
+                ItemsSource="{Binding Items}" 
+                Margin="50,0,50,50"
+                SelectionMode="Single">
+                <CollectionView.ItemsLayout>
+                    <!--Xếp từng thuộc tính phim thành hàng dọc -> đưa tất cả thuộc tính thành hàng ngang -->
+                    <LinearItemsLayout Orientation="Horizontal"/>
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Margin="50,0,50,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Image 
+                                   Grid.Row="0" Grid.Column="0"
+                                   Source="dotnet_bot.png"
+                                   HeightRequest="220"
+                                   WidthRequest="220"
+                                   />
+                            <Label 
+                                   Grid.Row="1" Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"
+                                   Padding="20"
+                                   Margin="0,0,0,0"/>
+                            <!--bắt sự kiện chọn phim thành màu xanh-->
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup Name="CommonStates">
+                                    <VisualState Name="Normal"></VisualState>
+                                    <VisualState Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Property="BackgroundColor" Value="LightSkyBlue"></Setter>
+                                        </VisualState.Setters>
+                                    </VisualState>
 
-                </Grid>
-                <!--#endregion-->
-                <!--#region Hàng Popular-->
-                <!--Grid Definition các hàng trong từng bộ phim-->
-                <Grid Grid.Row="1" x:Name="gridPopular" Margin="0,70,0,0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="0"
-                        Text="Popular Film"
-                        HorizontalOptions="Start"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        Margin="0,0,0,10"
-                        />
-                    <!--Phim 1-->
-                    <Image
-                        Grid.Column="0"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="0"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-
-                    <!--Phim 2-->
-                    <Image
-                        Grid.Column="1"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="1"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-                    <!--Phim 3-->
-                    <Image
-                        Grid.Column="2"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="2"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-                    <!--Phim 4-->
-                    <Image
-                        Grid.Column="3"
-                        Grid.Row="1"
-                        Source="dotnet_bot.png"
-                        WidthRequest="220"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,10"
-                        />
-                    <Label
-                        Grid.Column="3"
-                        Grid.Row="2"
-                        Text="Loki"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        FontSize="Medium"
-                        />
-
-                </Grid>
-                <!--#endregion -->
-                <!--Thêm các loại phim mới (nominated, popular, new) vào đây-->
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
 
 
-
-
-
-            </Grid>
-            
-            
-            
 
         </VerticalStackLayout>
     </ScrollView>
