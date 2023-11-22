@@ -58,9 +58,22 @@ namespace BUS
 
         public async Task<List<DTO_Users>> BusGetUser()
         {
-            List<DTO_Users> users = await dal_users.GetAllUser();
+            try
+            {
+                List<DTO_Users> users = await dal_users.GetAllUser();
 
-            return users;
+                if (users == null)
+                {
+                    throw new Exception();
+                }
+
+                return users;
+            }
+            catch
+            {
+                throw new Exception("Error BUSGetUser");
+            }
+
         }
     }
 }

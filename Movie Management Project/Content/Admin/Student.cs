@@ -25,6 +25,7 @@ namespace Movie_Management_Project.Content.Admin
         public MainPageViewModel()
         {
             haha();
+            huhu();
         }
 
         public async void haha()
@@ -36,6 +37,24 @@ namespace Movie_Management_Project.Content.Admin
             {
                 Items1.Add(u);
             }
+        }
+
+        private void huhu()
+        {
+            //st = new Student(11,"tuandeptrai",23);
+            Items.Add(new Student()
+            {
+                Id = 234,
+                Name = "Tuan",
+                Age = 34
+            });
+
+            Items.Add(new Student()
+            {
+                Id = 234,
+                Name = "hadhf",
+                Age = 34
+            });
         }
 
         public class Student
