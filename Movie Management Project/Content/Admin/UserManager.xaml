@@ -3,10 +3,48 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Movie_Management_Project.Content.Admin.UserManager"
              Title="UserManager">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,300,0"/>
+            <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,-50,0,0"/>
+
+            <SearchBar x:Name="searchBarUser" 
+            Grid.Column="2"
+            WidthRequest="300" 
+            HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id User" Margin="0,0,25,60"/>
+
+            <Grid x:Name="gridUser"
+                  ColumnDefinitions="Auto"
+                  RowDefinitions="Auto, *">
+
+                <Grid x:Name="gridHeaderUser"
+                      Grid.Row="0" Grid.Column="0"
+                      ColumnDefinitions="Auto,Auto,*" HorizontalOptions="Center" Margin="0,0,200,0">
+                </Grid>
+
+                <Grid x:Name="gridMenuUser"
+                        Margin="70,0,0,80">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="660"/>
+                        <ColumnDefinition Width="660"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    
+
+                    <!--#region Control Left-->
+                    
+                    
+                </Grid>
+            </Grid>
+        </VerticalStackLayout>
+        
+    </ScrollView>
+
+
 </ContentPage>

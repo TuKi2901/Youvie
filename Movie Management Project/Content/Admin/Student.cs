@@ -1,7 +1,11 @@
-﻿using System;
+﻿using BUS;
+using DAL;
+using DTO;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,17 +14,27 @@ namespace Movie_Management_Project.Content.Admin
 {
     public class MainPageViewModel : BindableObject
     {
+        BUS_Project1 bus_project1 = new BUS_Project1();
+
         static Random random = new();
         public ObservableCollection<Student> Items { get; } = new();
-        public ObservableCollection<Student> Items1 { get; } = new();
+        public ObservableCollection<DTO_Users> Items1 { get; } = new();
         public IEnumerable<Student> Items2 { get; }
         public Student st;
 
         public MainPageViewModel()
         {
-            for (int i = 0; i < 10; i++)
+            haha();
+        }
+
+        public async void haha()
+        {
+            List<DTO_Users> users = await bus_project1.BusGetUser();
+
+            //DTO_Users dTO_Users = users.Rows;
+            foreach (DTO_Users u in users)
             {
-                Items.Add(new Student { Id = i, Name = "Person " + i, Age = random.Next(14, 85), });
+                Items1.Add(u);
             }
         }
 
@@ -31,7 +45,5 @@ namespace Movie_Management_Project.Content.Admin
             public string Name { get; set; }
             public int Age { get; set; }
         }
-
-
     }
 }

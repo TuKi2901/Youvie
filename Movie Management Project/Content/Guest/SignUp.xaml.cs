@@ -116,9 +116,6 @@ namespace Movie_Management_Project.Content.Guest
             {
                 await DisplayAlert("Error", ex.Message, "OK");
             }
-
         }
-        
-
     }
 }

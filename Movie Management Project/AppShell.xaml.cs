@@ -18,5 +18,10 @@ namespace Movie_Management_Project
         {
             await Navigation.PushAsync(new MediaManager());
         }
+
+        private async void Button_Clicked_2(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new UserManager());
+        }
     }
 }

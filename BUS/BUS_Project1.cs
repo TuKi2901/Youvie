@@ -1,5 +1,6 @@
 ﻿using DAL;
 using DTO;
+using System.Data;
 
 namespace BUS
 {
@@ -53,6 +54,13 @@ namespace BUS
                 return true;
             }
             catch { return false; }
+        }
+
+        public async Task<List<DTO_Users>> BusGetUser()
+        {
+            List<DTO_Users> users = await dal_users.GetAllUser();
+
+            return users;
         }
     }
 }
