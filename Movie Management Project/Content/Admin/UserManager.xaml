@@ -54,7 +54,7 @@
                     </Grid>
 
                     <!--#region Control Right-->
-                    <Grid x:Name="gridUser2" ColumnDefinitions="650" RowDefinitions="Auto, Auto, Auto, Auto" Grid.Column="1" Grid.Row="0" Margin="80,0,0,0">
+                    <Grid x:Name="gridUser2" ColumnDefinitions="*" RowDefinitions="Auto, Auto, Auto, Auto" Grid.Column="1" Grid.Row="0" Margin="80,0,0,0">
                         <Grid x:Name="gridCountryUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="0" >
                             <Label Text="Country: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <Grid Grid.Column="1" Grid.Row="0">
