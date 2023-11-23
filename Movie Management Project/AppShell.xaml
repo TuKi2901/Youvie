@@ -12,19 +12,33 @@
     <Shell.TitleView>
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
-                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
             <Button
-                Grid.Column="0"
-                Text="ABC"
-                Clicked="Button_Clicked"/>
-            
+            Grid.Column="0"
+            Text="Home"
+            Clicked="Button_Clicked_1"/>
             <Button
             Grid.Column="1"
-            Text="Media"
-            Clicked="Button_Clicked_1"/>
+            Text="Play"
+            Clicked="Button_Clicked_2"/>
+            <Button
+            Grid.Column="2"
+            Text="AdminManager"
+            Clicked="Button_Clicked_3"/>
+            <Button
+            Grid.Column="3"
+            Text="MediaManager"
+            Clicked="Button_Clicked_4"/>
+            <Button
+            Grid.Column="4"
+            Text="UserManager"
+            Clicked="Button_Clicked_5"/>
             
         </Grid>
 

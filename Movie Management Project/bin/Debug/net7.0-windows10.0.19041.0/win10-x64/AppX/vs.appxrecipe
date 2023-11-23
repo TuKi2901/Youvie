@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-22T01:42:57.578</Modified>
+      <Modified>2023-11-23T09:01:12.949</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-22T01:33:48.335</Modified>
+      <Modified>2023-11-23T08:46:17.231</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.runtimeconfig.json">
       <PackagePath>GUI.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.dll">
       <PackagePath>GUI.dll</PackagePath>
-      <Modified>2023-11-22T01:42:55.359</Modified>
+      <Modified>2023-11-23T09:01:09.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GUI.exe</PackagePath>
-      <Modified>2023-11-22T01:42:55.468</Modified>
+      <Modified>2023-11-23T09:01:10.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.deps.json">
       <PackagePath>GUI.deps.json</PackagePath>
