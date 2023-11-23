@@ -53,10 +53,17 @@ namespace Movie_Management_Project.Content.Guest
                     throw new Exception("UserName is invalid !!!");
                 }
 
-                if (txtEmail.Text == null || !IsValidEmail(txtEmail.Text))
+                if (txtEmail.Text == null)
                 {
-                    txtEmail.Focus();
                     throw new Exception("Email is invalid !!!");
+                } 
+                else
+                {
+                    if (!IsValidEmail(txtEmail.Text))
+                    {
+                        txtEmail.Focus();
+                        throw new Exception("Email is invalid !!!");
+                    }
                 }
 
                 if (txtPassword.Text == null || txtPassword.Text.Length < 8)
@@ -75,6 +82,11 @@ namespace Movie_Management_Project.Content.Guest
                 if (txtPhoneNumber.Text == null || txtPhoneNumber.Text.Length < 1)
                 {
                     throw new Exception("PhoneNumber is invalid !!!");
+                }
+
+                if (pkCountry.SelectedItem == null)
+                {
+                    throw new Exception("Bro, You need must choose your country !!!");
                 }
 
                 DTO_Users dTO_Users = new DTO_Users();
@@ -104,9 +116,6 @@ namespace Movie_Management_Project.Content.Guest
             {
                 await DisplayAlert("Error", ex.Message, "OK");
             }
-
         }
-        
-
     }
 }

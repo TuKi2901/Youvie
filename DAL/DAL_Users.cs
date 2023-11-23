@@ -1,5 +1,7 @@
 ﻿using DTO;
 using MongoDB.Driver;
+using System.Collections.Generic;
+using System.Data;
 
 namespace DAL
 {
@@ -20,6 +22,48 @@ namespace DAL
             catch
             {
                 return false;
+            }
+        }
+
+        public async Task<DTO_Users> GetUserByEmail(string email)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+
+                if (user == null)
+                {
+                    throw new Exception();
+                }
+
+                return user;
+            }
+            catch
+            {
+                throw new Exception("Error in GetUserByEmail");
+            }
+        }
+
+        public async Task<List<DTO_Users>> GetAllUser()
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                var users = await collection.Find(_ => true).ToListAsync();
+
+                if (users == null)
+                {
+                    throw new Exception();
+                }
+
+                return users;
+            }
+            catch
+            {
+                throw new Exception("Lỗi ở DAL_User");
             }
         }
     }
