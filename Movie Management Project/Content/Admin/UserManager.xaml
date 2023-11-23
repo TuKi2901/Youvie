@@ -38,7 +38,7 @@
                     </Grid.RowDefinitions>
 
                     <!--#region Control Left-->
-                    <Grid x:Name="gridUser1" ColumnDefinitions="650" RowDefinitions="Auto, Auto, Auto, 0" Grid.Column="0" Grid.Row="0" Margin="80,30,0,50">
+                    <Grid x:Name="gridUser1" ColumnDefinitions="*" RowDefinitions="Auto, Auto, Auto, 0" Grid.Column="0" Grid.Row="0" Margin="80,30,0,50">
                         <Grid x:Name="gridFullNameUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="0" >
                             <Label Text="Full Name: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/>
