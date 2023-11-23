@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "369zVFbI/jSklYfQmHolDtezEkamlQXhnU/BFFvJeYjd2mhAdPKm6XBVHKmpnOGN/9p2O4F1HA2hQ/86yJIa2A==",
+  "dgSpecHash": "uK44z7MZYrN8gGwyE2e5IpWQv5eSy0tpJoX8j1DY9wJ8a5NpI3N5uFeOy/5FJCNDntvMP82v4WEBHRxwO4teWg==",
   "success": true,
   "projectFilePath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
-    "C:\\Users\\PC\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\inputkit.maui\\4.3.5\\inputkit.maui.4.3.5.nupkg.sha512",

@@ -31,19 +31,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -2357,7 +2344,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -2426,19 +2412,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -4719,7 +4692,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -4788,19 +4760,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -7081,7 +7040,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -7150,19 +7108,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -9443,7 +9388,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -9512,19 +9456,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -11805,7 +11736,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -11874,19 +11804,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -14164,7 +14081,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -14233,19 +14149,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -16523,7 +16426,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -16592,19 +16494,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -18885,7 +18774,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -18954,19 +18842,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -19534,7 +19409,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -19603,19 +19477,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -20150,7 +20011,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -20219,19 +20079,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -20766,7 +20613,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -20835,19 +20681,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -21382,7 +21215,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -21451,19 +21283,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -21998,7 +21817,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -22067,19 +21885,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -22611,7 +22416,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -22680,19 +22484,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -23224,7 +23015,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -23290,19 +23080,6 @@
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
             "related": ".pdb;.xml"
-          }
-        }
-      },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
           }
         }
       },
@@ -23840,7 +23617,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -23906,19 +23682,6 @@
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
             "related": ".pdb;.xml"
-          }
-        }
-      },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
           }
         }
       },
@@ -24489,7 +24252,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -24558,19 +24320,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -25105,7 +24854,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -25174,19 +24922,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -25721,7 +25456,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -25790,19 +25524,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -26337,7 +26058,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -26406,19 +26126,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -26953,7 +26660,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -27022,19 +26728,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -27566,7 +27259,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -27635,19 +27327,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -28179,7 +27858,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -28245,19 +27923,6 @@
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
             "related": ".pdb;.xml"
-          }
-        }
-      },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
           }
         }
       },
@@ -28795,7 +28460,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -28861,19 +28525,6 @@
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
             "related": ".pdb;.xml"
-          }
-        }
-      },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
           }
         }
       },
@@ -29571,7 +29222,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -29640,19 +29290,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -30286,7 +29923,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -30355,19 +29991,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -31001,7 +30624,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -31070,19 +30692,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -31716,7 +31325,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -31785,19 +31393,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -32431,7 +32026,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -32500,19 +32094,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -33143,7 +32724,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -33212,19 +32792,6 @@
           }
         }
       },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "DnsClient/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -33855,7 +33422,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -33921,19 +33487,6 @@
         "runtime": {
           "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
             "related": ".pdb;.xml"
-          }
-        }
-      },
-      "BCrypt.Net-Core/1.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/BCrypt.Net-Core.dll": {
-            "related": ".pdb"
           }
         }
       },
@@ -34576,7 +34129,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
           "DTO": "1.0.0"
         },
@@ -34667,29 +34219,6 @@
         "lib/netstandard2.0/AWSSDK.SecurityToken.xml",
         "tools/install.ps1",
         "tools/uninstall.ps1"
-      ]
-    },
-    "BCrypt.Net-Core/1.6.0": {
-      "sha512": "hsKiHGjrnlDW05MzuzzlD9gNP8YOW2KbZ+FbvISrilsKJJ76tXKhWey6psZX5sd7DczNpSU2U6ldjPoblk8BLw==",
-      "type": "package",
-      "path": "bcrypt.net-core/1.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "bcrypt.net-core.1.6.0.nupkg.sha512",
-        "bcrypt.net-core.nuspec",
-        "lib/net40/BCrypt.Net-Core.dll",
-        "lib/net40/BCrypt.Net-Core.pdb",
-        "lib/net45/BCrypt.Net-Core.dll",
-        "lib/net45/BCrypt.Net-Core.pdb",
-        "lib/net451/BCrypt.Net-Core.dll",
-        "lib/net451/BCrypt.Net-Core.pdb",
-        "lib/net452/BCrypt.Net-Core.dll",
-        "lib/net452/BCrypt.Net-Core.pdb",
-        "lib/netstandard1.3/BCrypt.Net-Core.dll",
-        "lib/netstandard1.3/BCrypt.Net-Core.pdb",
-        "lib/netstandard2.0/BCrypt.Net-Core.dll",
-        "lib/netstandard2.0/BCrypt.Net-Core.pdb"
       ]
     },
     "DnsClient/1.6.1": {
@@ -38687,6 +38216,7 @@
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
+        "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\NuGet.Config",
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -38698,8 +38228,8 @@
         "net7.0-windows10.0.19041.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://aka.ms/maui-preview/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
