@@ -8,8 +8,11 @@
 
     <ScrollView>
         <VerticalStackLayout>
-            <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,300,0"/>
-            <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,-50,0,0"/>
+            
+            <Grid x:Name="titleUser" ColumnDefinitions="*,*" HorizontalOptions="Center">
+                <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
+            </Grid>
 
             <SearchBar x:Name="searchBarUser" 
             Grid.Column="2"
@@ -17,7 +20,7 @@
             HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id User" Margin="0,0,25,60"/>
 
             <Grid x:Name="gridUser"
-                  ColumnDefinitions="Auto"
+                  ColumnDefinitions="*"
                   RowDefinitions="Auto, *">
 
                 <Grid x:Name="gridHeaderUser"
@@ -26,11 +29,11 @@
                 </Grid>
 
                 <Grid x:Name="gridMenuUser"
-                        Margin="0,0,0,80">
+                        Margin="0,0,0,80" HorizontalOptions="Center">
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto"/>
@@ -38,7 +41,7 @@
                     </Grid.RowDefinitions>
 
                     <!--#region Control Left-->
-                    <Grid x:Name="gridUser1" ColumnDefinitions="*" RowDefinitions="Auto, Auto, Auto, 0" Grid.Column="0" Grid.Row="0" Margin="80,30,0,50">
+                    <Grid x:Name="gridUser1" ColumnDefinitions="600" RowDefinitions="Auto, Auto, Auto, auto" Grid.Column="0" Grid.Row="0" Margin="50,0,30,0">
                         <Grid x:Name="gridFullNameUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="0" >
                             <Label Text="Full Name: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center"/>
@@ -51,10 +54,24 @@
                             <Label Text="Password: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" />
                         </Grid>
+                        <Grid x:Name="gridCRUDUser"
+                                Grid.Column="0" Grid.Row="4" 
+                                ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="50,0,50,0">
+                            <Button x:Name="btnAddUser"
+                                    Text="Add" Grid.Column="0" Margin="0,0,15,0"/>
+                            <Button x:Name="btnDeleteUser"
+                                    Text="Delete" Grid.Column="1" Margin="0,0,15,0"/>
+                            <Button x:Name="btnUpdateUser"
+                                    Text="Update" Grid.Column="2" Margin="0,0,15,0"/>
+                            <Button x:Name="btnFindUser"
+                                    Text="Find" Grid.Column="3" Margin="0,0,15,0"/>
+                            <Button x:Name="btnRefreshUser"
+                                    Text="Refresh" Grid.Column="4" Margin="0,0,15,0"/>          
+                        </Grid>
                     </Grid>
 
                     <!--#region Control Right-->
-                    <Grid x:Name="gridUser2" ColumnDefinitions="*" RowDefinitions="Auto, Auto, Auto, Auto" Grid.Column="1" Grid.Row="0" Margin="80,0,0,0">
+                    <Grid x:Name="gridUser2" ColumnDefinitions="600" RowDefinitions="Auto, Auto, Auto, Auto" Grid.Column="1" Grid.Row="0" Margin="30,0,50,0">
                         <Grid x:Name="gridCountryUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="0" >
                             <Label Text="Country: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <Grid Grid.Column="1" Grid.Row="0">
@@ -77,9 +94,9 @@
                             <Label Text="Birthday: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <DatePicker WidthRequest="180" Grid.Column="1" Grid.Row="0" MinimumDate="1923-01-01" MaximumDate="2023-11-22" Date="2023-01-01" x:Name="dpkBirthdayUser" HorizontalOptions="Start" />
                         </Grid>
-                        <Grid x:Name="gridPhoneNumberUser" ColumnDefinitions="150,Auto" Margin="0,0,0,30" Grid.Row="2">
+                        <Grid x:Name="gridPhoneNumberUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="2">
                             <Label Text="Phone Number: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" WidthRequest="350"/>
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" />
                         </Grid>
                         <Grid x:Name="gridGenderUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="3">
                             <Label Text="Gender: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
@@ -92,31 +109,13 @@
                         </Grid>
                     </Grid>
 
-                    <Grid x:Name="gridCRUDUser"
-                            Grid.Column="0" Grid.Row="2" 
-                            ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="150,0,0,20">
-                        <Button x:Name="btnAddUser"
-                                Text="Add" Grid.Column="0" Margin="0,0,15,0"/>
-
-                        <Button x:Name="btnDeleteUser"
-                                Text="Delete" Grid.Column="1" Margin="0,0,15,0"/>
-
-                        <Button x:Name="btnUpdateUser"
-                                Text="Update" Grid.Column="2" Margin="0,0,15,0"/>
-
-                        <Button x:Name="btnFindUser"
-                                Text="Find" Grid.Column="3" Margin="0,0,15,0"/>
-
-                        <Button x:Name="btnRefreshUser"
-                                Text="Refresh" Grid.Column="4" Margin="0,0,15,0"/>
-                    </Grid>
+                    
                 </Grid>
                 <!--#endregion-->
 
                 <Grid x:Name="gridDataGrid" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                     <ScrollView>
                         <StackLayout>
-                        <Button Text="Delete Selected" Command="{Binding RemoveItemCommand}"/>
                             <material:DataGrid ItemsSource="{Binding Items1}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
                             <material:DataGrid.Columns>
                                 <material:DataGridSelectionColumn />
@@ -135,7 +134,6 @@
                                 <material:DataGridColumn Binding="{Binding Account.Email}" Title="Account" />
                                 <material:DataGridColumn Binding="{Binding Plan.PlaneName}" Title="Plan" />
                                 </material:DataGrid.Columns>
-                                
                             </material:DataGrid>
                         </StackLayout>
                     </ScrollView>
