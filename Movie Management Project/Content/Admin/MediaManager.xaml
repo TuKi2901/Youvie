@@ -7,9 +7,6 @@
              x:Class="Movie_Management_Project.Content.Admin.MediaManager"
              Title="MediaManager">
 
-    <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
-    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout>

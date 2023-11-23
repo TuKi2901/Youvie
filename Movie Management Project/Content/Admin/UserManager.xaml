@@ -6,10 +6,6 @@
              x:Class="Movie_Management_Project.Content.Admin.UserManager"
              Title="UserManager">
 
-    <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
-    </ContentPage.BindingContext>
-
     <ScrollView>
         <VerticalStackLayout>
             <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,300,0"/>
@@ -119,19 +115,40 @@
 
                 <Grid x:Name="gridDataGrid" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                     <ScrollView>
-                        <material:DataGrid ItemsSource="{Binding Items1}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
+                        <StackLayout>
+                        <Button Text="Delete Selected" Command="{Binding RemoveItemCommand}"/>
+                            <material:DataGrid ItemsSource="{Binding Items1}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
                             <material:DataGrid.Columns>
                                 <material:DataGridSelectionColumn />
-                                <material:DataGridColumn Binding="{Binding UserName}" Title="Name" />
+                                <material:DataGridColumn Binding="{Binding Id}" Title="ha" />
+                                <material:DataGridColumn Title="Name">
+                                    <material:DataGridColumn.CellItemTemplate>
+                                            <DataTemplate>
+                                                <Editor Text="{Binding UserName}" IsReadOnly="True" x:Name="txtUserName"/>
+                                            </DataTemplate>
+                                    </material:DataGridColumn.CellItemTemplate>
+                                </material:DataGridColumn>
                                 <material:DataGridColumn Binding="{Binding Gender}" Title="Gender" />
                                 <material:DataGridColumn Binding="{Binding PhoneNumber}" Title="PhoneNumber" />
                                 <material:DataGridColumn Binding="{Binding Birthday}" Title="Birthday" />
                                 <material:DataGridColumn Binding="{Binding Country}" Title="Country" />
                                 <material:DataGridColumn Binding="{Binding Account.Email}" Title="Account" />
                                 <material:DataGridColumn Binding="{Binding Plan.PlaneName}" Title="Plan" />
-                            </material:DataGrid.Columns>
-                        </material:DataGrid>
+                                </material:DataGrid.Columns>
+                                
+                            </material:DataGrid>
+                        </StackLayout>
                     </ScrollView>
+
+                    <!--<material:DataGrid ItemsSource="{Binding Items1}" UseAutoColumns="True" HorizontalOptions="Center">
+                        <material:DataGrid.CellItemTemplate>
+                            <DataTemplate>
+                                <StackLayout Padding="10">
+                                    <Editor Text="{Binding UserName}" />
+                                </StackLayout>
+                            </DataTemplate>
+                        </material:DataGrid.CellItemTemplate>
+                    </material:DataGrid>-->
                 </Grid>
             </Grid>
         </VerticalStackLayout>
