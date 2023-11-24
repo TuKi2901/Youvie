@@ -50,7 +50,11 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid>
-                            <Frame BorderColor="Black" BackgroundColor="Aqua"/>
+                            <Frame BorderColor="Black" BackgroundColor="Aqua">
+                                <Grid x:Name="gridNameFilm">
+                                    <Label x:Name="lbNameFilm" Text="Name"></Label>
+                                </Grid>
+                            </Frame>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
