@@ -13,9 +13,10 @@
     <ScrollView>
         <VerticalStackLayout>
 
-            <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,300,0"/>
-            <Label Text="Admin" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,-50,0,0"/>
-
+            <Grid x:Name="titleAdmin" ColumnDefinitions="*,*" HorizontalOptions="Center">
+                <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="Admin Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
+            </Grid>
 
             <SearchBar x:Name="searchBarAdmin" 
             Grid.Column="2"
@@ -24,64 +25,68 @@
             />
 
             <Grid x:Name="gridAdmin"
-                  ColumnDefinitions="Auto"
-                  RowDefinitions="Auto, Auto, Auto">
+                  ColumnDefinitions="*"
+                  RowDefinitions="Auto, Auto">
 
                 <Grid x:Name="gridMenuAdmin"
-                      Grid.Row="0" Grid.Column="0"
-                      ColumnDefinitions="150, 500, 150, 500" 
+                      ColumnDefinitions="*, *" 
                       RowDefinitions="Auto, Auto"
-                      HorizontalOptions="Center" Margin="25,0,200,0">
+                      Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center">
 
-                    <Label Text="Email" Grid.Column="0" Grid.Row="0"
-                           VerticalOptions="Center" 
-                           Margin="0,0,0,20"
-                           />
-                    <Entry x:Name="txtEmailAdmin" Grid.Column="1" Grid.Row="0" 
-                           VerticalOptions="Center"
-                           WidthRequest="500"
-                           Margin="0,0,100,20"/>
+                    <Grid x:Name="gridControlLeftAdmin" Grid.Column="0" Grid.Row="0" ColumnDefinitions="600" RowDefinitions="auto, auto, auto" Margin="50,0,30,0">
+                        <Grid x:Name="gridEmailAdmin" Grid.Column="0" Grid.Row="0" ColumnDefinitions="150, *" VerticalOptions="Center" Margin="0,0,0,30">
+                            <Label Text="Email" 
+                                    VerticalOptions="Center" />
+                            <Entry x:Name="txtEmailAdmin" Grid.Column="1" Grid.Row="0" 
+                                   VerticalOptions="Center"
+                                   WidthRequest="500"/>
+                        </Grid>
 
-                    <Label Text="Password" 
-                           Grid.Column="0" Grid.Row="1" 
-                           VerticalOptions="Center" 
-                           Margin="0,0,0,20"/>
-                    <Entry x:Name="txtPasswordAdmin" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" 
-                           Margin="0,0,100,20"
-                           WidthRequest="500" />
+                        <Grid x:Name="gridPasswordAdmin" Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, *" VerticalOptions="Center" Margin="0,0,0,30">
+                            <Label Text="Password" 
+                                   VerticalOptions="Center" />
+                            <Entry x:Name="txtPasswordAdmin" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" 
+                                   WidthRequest="500" />
+                        </Grid>
+                        
+                        <Grid x:Name="gridCRUDAdmin"
+                              Grid.Column="0" Grid.Row="2" 
+                              ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="50,0,50,0" VerticalOptions="Center">
 
-                    <Label Text="Full Name" Grid.Column="2" Grid.Row="0" VerticalOptions="Center" Margin="0,0,0,20" />
-                    <Entry x:Name="txtNameAdmin" Grid.Column="3" Grid.Row="0" VerticalOptions="Center" Margin="0,0,0,20"/>
+                            <Button x:Name="btnAddAdmin"
+                            Text="Add" Grid.Column="0" Margin="0,0,15,0"/>
 
-                    <Label Text="Gender" Grid.Column="2" Grid.Row="1" VerticalOptions="Center"/>
-                    <Grid Grid.Column="3" Grid.Row="1" ColumnDefinitions="Auto,100,Auto,100">
-                        <RadioButton x:Name="rbMaleAdmin" Grid.Column="0" Value="Male"  GroupName="GenderAdmin" VerticalOptions="Center"/>
-                        <Label Text="Male" Grid.Column="1" VerticalOptions="Center"/>
-                        <RadioButton x:Name="rbFemaleAdmin" Grid.Column="2" Value="Female" GroupName="GenderAdmin" VerticalOptions="Center"/>
-                        <Label Text="Female" Grid.Column="3" VerticalOptions="Center"/>
+                            <Button x:Name="btnDeleteAdmin"
+                            Text="Delete" Grid.Column="1" Margin="0,0,15,0"/>
+
+                            <Button x:Name="btnUpdateAdmin"
+                            Text="Update" Grid.Column="2" Margin="0,0,15,0"/>
+
+                            <Button x:Name="btnFindAdmin"
+                            Text="Find" Grid.Column="3" Margin="0,0,15,0"/>
+
+                            <Button x:Name="btnRefreshAdmin"
+                            Text="Refresh" Grid.Column="4"/>
+                        </Grid>
                     </Grid>
 
 
-                </Grid>
+                    <Grid x:Name="gridControlRightAdmin" Grid.Column="1" Grid.Row="0" ColumnDefinitions="600" RowDefinitions="auto, auto" Margin="30,0,50,0">
+                        <Grid x:Name="gridNameAdmin" Grid.Column="0" Grid.Row="0" ColumnDefinitions="150, *" VerticalOptions="Center" Margin="0,0,0,30">
+                            <Label Text="Full Name" VerticalOptions="Center" />
+                            <Entry x:Name="txtNameAdmin" Grid.Column="3" Grid.Row="0" VerticalOptions="Center"/>
+                        </Grid>
 
-                <Grid x:Name="gridCRUDAdmin"
-                      Grid.Column="0" Grid.Row="1" 
-                      ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="20,50,0,50">
-
-                    <Button x:Name="btnAddAdmin"
-                            Text="Add" Grid.Column="0" Margin="0,0,5,0"/>
-
-                    <Button x:Name="btnDeleteAdmin"
-                            Text="Delete" Grid.Column="1" Margin="0,0,5,0"/>
-
-                    <Button x:Name="btnUpdateAdmin"
-                            Text="Update" Grid.Column="2" Margin="0,0,5,0"/>
-
-                    <Button x:Name="btnFindAdmin"
-                            Text="Find" Grid.Column="3" Margin="0,0,5,0"/>
-
-                    <Button x:Name="btnRefreshAdmin"
-                            Text="Refresh" Grid.Column="4"/>
+                        <Grid x:Name="gridGenderAdmin" Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, *" VerticalOptions="Center" Margin="0,0,0,30">
+                            <Label Text="Gender" VerticalOptions="Center" Grid.Column="0" Grid.Row="0"/>
+                            <Grid Grid.Column="1" Grid.Row="0" ColumnDefinitions="auto, auto, auto, auto">
+                                <RadioButton GroupName="Gender" Value="Male" IsChecked="True" x:Name="rbMale" Grid.Column="0"></RadioButton>
+                                <Label Text="Male" Grid.Column="1" Margin="0,0,0,0" FontSize="Small" VerticalOptions="Center"/>
+                                <RadioButton GroupName="Gender" Value="Female" IsChecked="True" x:Name="rbFemale" Grid.Column="2" Margin="30,0,0,0"></RadioButton>
+                                <Label Text="Female" Grid.Column="3" Margin="0,0,0,0" FontSize="Small" VerticalOptions="Center"/>
+                            </Grid>
+                        </Grid>
+                    </Grid>
                 </Grid>
 
 
