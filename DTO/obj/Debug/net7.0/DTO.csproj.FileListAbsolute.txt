@@ -24,3 +24,15 @@ D:\FPT Polytechnic\DuAn1\Project\Youvie\DTO\obj\Debug\net7.0\DTO.dll
 D:\FPT Polytechnic\DuAn1\Project\Youvie\DTO\obj\Debug\net7.0\refint\DTO.dll
 D:\FPT Polytechnic\DuAn1\Project\Youvie\DTO\obj\Debug\net7.0\DTO.pdb
 D:\FPT Polytechnic\DuAn1\Project\Youvie\DTO\obj\Debug\net7.0\ref\DTO.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\bin\Debug\net7.0\DTO.deps.json
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\bin\Debug\net7.0\DTO.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\bin\Debug\net7.0\DTO.pdb
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\refint\DTO.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\DTO.pdb
+C:\Users\ADMIN\Documents\GitHub\Youvie\DTO\obj\Debug\net7.0\ref\DTO.dll

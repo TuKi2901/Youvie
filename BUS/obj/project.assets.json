@@ -859,24 +859,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\BUS\\BUS.csproj",
       "projectName": "BUS",
-      "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj",
-      "packagesPath": "C:\\Users\\TuanDepTrai\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\BUS\\BUS.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\BUS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\NuGet.Config",
-        "C:\\Users\\TuanDepTrai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -892,11 +892,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DAL\\DAL.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DAL\\DAL.csproj"
+            "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\DAL\\DAL.csproj"
             },
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj"
+            "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\DTO\\DTO.csproj"
             }
           }
         }
@@ -932,7 +932,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

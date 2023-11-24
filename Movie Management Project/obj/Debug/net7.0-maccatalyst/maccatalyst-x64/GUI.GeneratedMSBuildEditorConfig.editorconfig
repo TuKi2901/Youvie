@@ -1,8 +1,4 @@
 is_global = true
-build_property.EnableAotAnalyzer = 
-build_property.EnableSingleFileAnalyzer = 
-build_property.EnableTrimAnalyzer = false
-build_property.IncludeAllContentForSelfExtract = 
 build_property.TargetFramework = net7.0-maccatalyst
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -12,83 +8,81 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Movie_Management_Project
-build_property.ProjectDir = E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.ProjectDir = C:\Users\ADMIN\Documents\GitHub\Youvie\Movie Management Project\
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/App.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/AppShell.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Admin/AdminManager.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/Admin/AdminManager.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Admin.AdminManager.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\Admin\AdminManager.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\Admin\AdminManager.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Admin/MediaManager.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/Admin/MediaManager.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Admin.MediaManager.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\Admin\MediaManager.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\Admin\MediaManager.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Admin/UserManager.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/Admin/UserManager.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Admin.UserManager.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\Admin\UserManager.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\Admin\UserManager.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Guest/ForgotPassword.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/Guest/ForgotPassword.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Guest.ForgotPassword.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\Guest\ForgotPassword.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\Guest\ForgotPassword.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Guest/Login.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/Guest/Login.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Guest.Login.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\Guest\Login.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\Guest\Login.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/Guest/SignUp.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/Guest/SignUp.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.Guest.SignUp.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\Guest\SignUp.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\Guest\SignUp.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/User/Home.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/User/Home.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.User.Home.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\User\Home.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\User\Home.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/User/InformationUser.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/User/InformationUser.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.User.InformationUser.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\User\InformationUser.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\User\InformationUser.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Content/User/Play.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Content/User/Play.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.User.Play.xaml
 build_metadata.AdditionalFiles.TargetPath = Content\User\Play.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\User\Play.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Resources/Styles/Colors.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[E:/FPT Polytechnic/Ky 4/DuAn1/Code/DuAn1/Youvie/Movie Management Project/Resources/Styles/Styles.xaml]
+[C:/Users/ADMIN/Documents/GitHub/Youvie/Movie Management Project/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

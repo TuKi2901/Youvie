@@ -30,3 +30,18 @@ D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.dll
 D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\refint\DAL.dll
 D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\DAL.pdb
 D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\obj\Debug\net7.0\ref\DAL.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\bin\Debug\net7.0\DAL.deps.json
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\bin\Debug\net7.0\DAL.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\bin\Debug\net7.0\DAL.pdb
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\bin\Debug\net7.0\DTO.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\bin\Debug\net7.0\DTO.pdb
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.csproj.CopyComplete
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\refint\DAL.dll
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\DAL.pdb
+C:\Users\ADMIN\Documents\GitHub\Youvie\DAL\obj\Debug\net7.0\ref\DAL.dll
