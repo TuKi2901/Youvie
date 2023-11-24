@@ -12,86 +12,129 @@
 
             <!--<WebView x:Name="wvFilm" Source="https://www.youtube.com/embed/FxJ3zPUU6Y4" HeightRequest="656" WidthRequest="1200"/>-->
 
-            <!--<Grid x:Name="gridPlay"
-                  RowDefinitions="Auto, Auto, Auto">
-
-                
-                <Grid x:Name="gridEpisode"
-                      ColumnDefinitions="Auto, Auto, Auto, Auto, Auto">
-                </Grid>
-
-                <Frame BorderColor="Black">
-                    <Grid x:Name="gridInformationFilm">
-
-                        <Grid x:Name="gridNameAndCategory">
-                            
-                            <Grid x:Name="gridNameFilm">
-                                
-                            </Grid>
-
-                            <Grid x:Name="gridCategory">
-
-                            </Grid>
-
-                        </Grid>
-
-                        <Grid x:Name="gridAdditionalInfo"
-                              ColumnDefinitions="Auto, Auto, Auto">
-                            
-                        </Grid>
-
-
-                        <Grid x:Name="gridDescription">
-                            
-                        </Grid>
-                        
-                    </Grid>
-                </Frame>
-
-                <Grid x:Name="gridComment">
-                    <Label
-                        Text="Comment"/>
-
-                    <Grid x:Name="gridUserComment"
-                          ColumnDefinitions="100,*"
-                          RowDefinitions="50">
-
-                        <Image x:Name="imgUserComment" 
-                               Source="dotnet_bot.png"
-                               WidthRequest="50"
-                               HeightRequest="50"/>
-                        <Label x:Name="lbUserName"/>
-                    </Grid>
-                </Grid>
-
-            </Grid>-->
 
 
 
-            <CollectionView x:Name="gridEpisode"
+
+            <CollectionView x:Name="cvEpisode"
                             ItemsSource="{Binding Items}"
                             Margin="0,0,0,50">
                 <CollectionView.ItemsLayout>
+
                     <!--Xếp từng thuộc tính phim thành hàng dọc -> đưa tất cả thuộc tính thành hàng ngang -->
+
                     <LinearItemsLayout Orientation="Horizontal" />
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid ColumnDefinitions="Auto" RowDefinitions="Auto">
-                            <Button
-x:Name="btnEpisode"
-                                Text="{Binding Id}" 
-                                Grid.Column="0" Grid.Row="0" 
-                                Margin="0,0,20,0" Padding="20,0,20,0"
-                                HorizontalOptions="Center"/>
+                        <Grid x:Name="gridEpisode"
+                                  RowDefinitions="Auto"
+                                  ColumnDefinitions="Auto"
+                                  Grid.Row="0"
+                                  Grid.Column="0">
+                            <Button Text="{Binding Name}" Grid.Row="0" Padding="30,0,30,0 " Grid.Column="0"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+            <CollectionView 
+                x:Name="cvInfo"
+                ItemsSource="{Binding Items1}"
+                Margin="0,0,0,50">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Frame BorderColor="Black" BackgroundColor="Aqua"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
 
 
-            </CollectionView>
 
-            <Frame 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--<Frame BorderColor="Black" Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua">
+                <Grid x:Name="gridInformationFilm"
+                                      ColumnDefinitions="Auto,Auto"
+                                      RowDefinitions="Auto,Auto,Auto">
+
+                    <Grid x:Name="gridNameAndCategory" Grid.Row="0">
+
+                        <Grid x:Name="gridNameFilm">
+                            <Label Text="Name" Grid.Column="0" Grid.Row="0"/>
+                        </Grid>
+
+                        <Grid x:Name="gridCategory" HorizontalOptions="End" Grid.Column="1" Grid.Row="0">
+                            <Label Text="category"/>
+                        </Grid>
+
+                    </Grid>
+
+                    <Grid x:Name="gridAdditionalInfo" Grid.Row="1"
+                                          ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto">
+                        <Label Text="nhat ban" Grid.Column="0" Grid.Row="0" Margin="10"/>
+                        <Label Text="nhat ban1" Grid.Column="1" Grid.Row="0" Margin="10"/>
+                        <Label Text="nhat ban2" Grid.Column="2" Grid.Row="0" Margin="10"/>
+                    </Grid>
+
+                    <Frame Grid.Row="2" Grid.Column="0">
+                        <Grid x:Name="gridDescription" Grid.Row="2" ColumnDefinitions="Auto">
+                            <Label Text="des" Grid.Column="0"/>
+                        </Grid>
+                    </Frame>
+                </Grid>
+            </Frame>
+
+            <Grid x:Name="gridComment"
+                                  ColumnDefinitions="Auto, Auto"
+
+                                      Grid.Row="2">
+                <Label
+                                      Text="Comment" Grid.Column="0"/>
+
+                <Grid x:Name="gridUserComment"
+                                      ColumnDefinitions="100,*"
+                                      RowDefinitions="50">
+
+                    <Image x:Name="imgUserComment" 
+                                           Grid.Column="1"
+                                           Source="dotnet_bot.png"
+                                           WidthRequest="50"
+                                           HeightRequest="50"/>
+                    <Label x:Name="lbUserName"/>
+                </Grid>
+            </Grid>-->
+
+
+
+                <!--<Frame 
                 BorderColor="#99988a"
                 >
                 <CollectionView x:Name="cvInfomationFilm"
@@ -106,7 +149,26 @@ x:Name="btnEpisode"
                                       ColumnDefinitions="Auto"
                                       RowDefinitions="Auto"
                                       Margin="0,0,300,0">
-                                    <Label Text="Test" Grid.Column="0" Grid.Row="0"/>
+
+                                    -->
+                <!--Đưa tên phim từ media vào label, đổi thuộc tính text thành binding-->
+                <!--
+
+                                    <Label Text="Attack on titan" Grid.Column="0" Grid.Row="0"/>
+                                </Grid>
+                                <Grid x:Name="gridCategory"
+                                      HorizontalOptions="End"
+                                      ColumnDefinitions="Auto"
+                                      RowDefinitions="Auto"
+                                      Margin="0,0,300,0">
+
+                                    -->
+                <!--Đưa thể loại từ media vào label, đổi thuộc tính text thành binding-->
+                <!--
+
+                                    <Frame BorderColor="Brown">
+                                        <Label Text="{Binding Age}" Grid.Column="0" Grid.Row="0"/>
+                                    </Frame>
                                 </Grid>
 
 
@@ -116,8 +178,8 @@ x:Name="btnEpisode"
                     </CollectionView.ItemTemplate>
 
                 </CollectionView>
-            </Frame>
-
+            </Frame>-->
+            </CollectionView>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
