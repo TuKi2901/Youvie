@@ -85,6 +85,19 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
+
+                            <Image 
+                                   Grid.Row="0" Grid.Column="0"
+                                   Source="dotnet_bot.png"
+                                   HeightRequest="220"
+                                   WidthRequest="220"
+                                   />
+                            <Label Grid.Row="1" Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"
+                                   Padding="20"
+                                   Margin="0,0,0,0"/>
                             <!--bắt sự kiện chọn phim thành màu xanh-->
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup Name="CommonStates">

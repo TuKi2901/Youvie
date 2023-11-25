@@ -36,5 +36,9 @@ namespace Movie_Management_Project
         {
             await Navigation.PushAsync(new UserManager());
         }
+        private async void Button_Clicked_6(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Search());
+        }
     }
 }

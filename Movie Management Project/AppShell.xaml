@@ -39,6 +39,10 @@
             Grid.Column="4"
             Text="UserManager"
             Clicked="Button_Clicked_5"/>
+            <Button
+            Grid.Column="4"
+            Text="Search"
+            Clicked="Button_Clicked_6"/>
             
         </Grid>
 

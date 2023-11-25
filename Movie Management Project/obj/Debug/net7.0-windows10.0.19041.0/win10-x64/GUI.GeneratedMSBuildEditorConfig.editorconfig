@@ -78,6 +78,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.C
 build_metadata.AdditionalFiles.TargetPath = Content\User\Play.xaml
 build_metadata.AdditionalFiles.RelativePath = Content\User\Play.xaml
 
+[D:/FPT Polytechnic/DuAn1/Project/Youvie/Movie Management Project/Content/User/Search.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Content.User.Search.xaml
+build_metadata.AdditionalFiles.TargetPath = Content\User\Search.xaml
+build_metadata.AdditionalFiles.RelativePath = Content\User\Search.xaml
+
 [D:/FPT Polytechnic/DuAn1/Project/Youvie/Movie Management Project/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Movie_Management_Project.Resources.Styles.Colors.xaml
