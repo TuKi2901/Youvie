@@ -17,6 +17,9 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
 
             <Button
@@ -40,9 +43,17 @@
             Text="UserManager"
             Clicked="Button_Clicked_5"/>
             <Button
-            Grid.Column="4"
+            Grid.Column="5"
             Text="Search"
             Clicked="Button_Clicked_6"/>
+            <Button
+            Grid.Column="6"
+            Text="Payment"
+            Clicked="Button_Clicked_7"/>
+            <Button
+            Grid.Column="7"
+            Text="Signup"
+            Clicked="Button_Clicked_8"/>
             
         </Grid>
 

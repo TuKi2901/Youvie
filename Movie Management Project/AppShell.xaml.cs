@@ -40,5 +40,13 @@ namespace Movie_Management_Project
         {
             await Navigation.PushAsync(new Search());
         }
+        private async void Button_Clicked_7(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Payment());
+        }
+        private async void Button_Clicked_8(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SignUp());
+        }
     }
 }

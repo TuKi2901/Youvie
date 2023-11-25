@@ -40,6 +40,9 @@
     <MauiXaml Update="Content\User\InformationUser.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Content\User\Payment.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Content\User\Play.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
