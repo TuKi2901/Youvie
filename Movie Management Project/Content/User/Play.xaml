@@ -12,9 +12,6 @@
 
             <WebView x:Name="wvFilm" Source="https://www.youtube.com/embed/FxJ3zPUU6Y4" HeightRequest="656" WidthRequest="1200" Margin="0,20,0,0"/>
 
-
-
-
             <CollectionView x:Name="cvEpisode"
                             ItemsSource="{Binding Items}"
                             Margin="0,0,0,50"
@@ -36,9 +33,8 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
-
-
-            <Frame BackgroundColor="Transparent" Margin="50">
+            <Frame x:Name="frameContent"
+                    BackgroundColor="Transparent" Margin="50">
                 <Grid x:Name="gridContent"
                       ColumnDefinitions="600,600" RowDefinitions="Auto, Auto, Auto"
                       HorizontalOptions="Center" RowSpacing="20">
@@ -126,15 +122,15 @@
                         <Label x:Name="lbDescription"
                                Text="CollectionView can present a header and footer that scroll with the items in the list. The header and footer can be strings, views, or DataTemplate objects.
 
-CollectionView defines the following properties for specifying the header and footer:
+                                     CollectionView defines the following properties for specifying the header and footer:
 
-Header, of type object, specifies the string, binding, or view that will be displayed at the start of the list.
-HeaderTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Header.
-Footer, of type object, specifies the string, binding, or view that will be displayed at the end of the list.
-FooterTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Footer.
-These properties are backed by BindableProperty objects, which means that the properties can be targets of data bindings.
+                                     Header, of type object, specifies the string, binding, or view that will be displayed at the start of the list.
+                                     HeaderTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Header.
+                                     Footer, of type object, specifies the string, binding, or view that will be displayed at the end of the list.
+                                     FooterTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Footer.
+                                     These properties are backed by BindableProperty objects, which means that the properties can be targets of data bindings.
 
-When a header is added to a layout that grows horizontally, from left to right, the header is displayed to the left of the list. Similarly, when a footer is added to a layout that grows horizontally, from left to right, the footer is displayed to the right of the list."
+                                     When a header is added to a layout that grows horizontally, from left to right, the header is displayed to the left of the list. Similarly, when a footer is added to a layout that grows horizontally, from left to right, the footer is displayed to the right of the list."
                                LineBreakMode="WordWrap"
                                FontSize="Small"/>
                     </Grid>
@@ -142,9 +138,8 @@ When a header is added to a layout that grows horizontally, from left to right, 
                 </Grid>
             </Frame>
 
-
-
-            <Frame Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
+            <Frame x:Name="frameComment"
+                Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
 
 
                 <CollectionView x:Name="cvCommentUser"
