@@ -10,180 +10,189 @@
     <ScrollView>
         <VerticalStackLayout>
 
-            <!--<WebView x:Name="wvFilm" Source="https://www.youtube.com/embed/FxJ3zPUU6Y4" HeightRequest="656" WidthRequest="1200"/>-->
-
+            <WebView x:Name="wvFilm" Source="https://www.youtube.com/embed/FxJ3zPUU6Y4" HeightRequest="656" WidthRequest="1200" Margin="0,20,0,0"/>
 
 
 
 
             <CollectionView x:Name="cvEpisode"
                             ItemsSource="{Binding Items}"
-                            Margin="0,0,0,50">
+                            Margin="0,0,0,50"
+                            HorizontalOptions="Center">
                 <CollectionView.ItemsLayout>
-
-                    <!--Xếp từng thuộc tính phim thành hàng dọc -> đưa tất cả thuộc tính thành hàng ngang -->
-
-                    <LinearItemsLayout Orientation="Horizontal" />
+                    <GridItemsLayout Orientation="Vertical" Span="8" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Grid x:Name="gridEpisode"
-                                  RowDefinitions="Auto"
-                                  ColumnDefinitions="Auto"
-                                  Grid.Row="0"
-                                  Grid.Column="0">
-                            <Button Text="{Binding Name}" Grid.Row="0" Padding="30,0,30,0 " Grid.Column="0"/>
+                                RowDefinitions="Auto"
+                                ColumnDefinitions="Auto"
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalOptions="Center">
+                            <Button Text="{Binding Name}" Grid.Row="0" Grid.Column="0" Padding="30,0" HorizontalOptions="Center"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
 
-            <CollectionView 
-                x:Name="cvInfo"
-                ItemsSource="{Binding Items1}"
-                Margin="0,0,0,50">
 
-                <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Horizontal" />
-                </CollectionView.ItemsLayout>
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Frame BorderColor="Black" BackgroundColor="Aqua">
-                                <Grid x:Name="gridNameFilm">
-                                    <Label x:Name="lbNameFilm" Text="Name"></Label>
+            <Frame BackgroundColor="Transparent" Margin="50">
+                <Grid x:Name="gridContent"
+                      ColumnDefinitions="600,600" RowDefinitions="Auto, Auto, Auto"
+                      HorizontalOptions="Center" RowSpacing="20">
+
+                    <Grid x:Name="gridNameAndCategory"
+                          Grid.ColumnSpan="2"
+                          ColumnDefinitions="600,600"
+                          RowDefinitions="Auto"
+                          RowSpacing="10">
+                        <Label x:Name="lbNameFilm" 
+                               Grid.Column="0" Grid.Row="0"
+                               Text="Attack on Titan"
+                               FontSize="Medium"
+                               LineBreakMode="WordWrap"
+                               HorizontalOptions="Start"/>
+
+                        <CollectionView x:Name="cvCategory"
+                                        ItemsSource="{Binding Items4}"
+                                        Grid.Column="1"
+                                        Grid.Row="0"
+                                        HorizontalOptions="End">
+                            <CollectionView.ItemsLayout>
+                                <GridItemsLayout Orientation="Vertical" Span="5" HorizontalItemSpacing="10"/>
+                            </CollectionView.ItemsLayout>
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid x:Name="gridCategory"
+                                          ColumnDefinitions="Auto"
+                                          RowDefinitions="Auto">
+                                        <Label x:Name="lbCategory"
+                                               Text="Category" 
+                                               Grid.Row="0" Grid.Column="0"  
+                                               FontSize="Small"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+
+
+                    </Grid>
+
+                    <CollectionView x:Name="cvSideInfo"
+                                    ItemsSource="{Binding Items1}"
+                                    Grid.Column="0"
+                                    Grid.Row="1"
+                                    HorizontalOptions="Start">
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+
+                                <Grid x:Name="gridSideInfo"
+                                      RowDefinitions="Auto,Auto"
+                                      ColumnDefinitions="Auto,Auto,Auto"
+                                      ColumnSpacing="50">
+                                    <Label x:Name="lbReleaseDate"
+                                               Grid.Row="0" Grid.Column="0"
+                                               Text="10/11/2077"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>
+                                    <Label x:Name="lbCountry"
+                                               Grid.Row="0" Grid.Column="1"
+                                               Text="Nhat Ban"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>
+                                    <Label x:Name="lbEpisodeNumber"
+                                               Grid.Row="0" Grid.Column="2"
+                                               Text="0/100"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>
+
                                 </Grid>
-                            </Frame>
-                        </Grid>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
 
 
 
 
+                    </CollectionView>
 
+                    <Grid x:Name="gridDescription"
+                          HorizontalOptions="Center"
+                          Grid.ColumnSpan="2"
+                          Grid.Row="2">
 
+                        <Label x:Name="lbDescription"
+                               Text="CollectionView can present a header and footer that scroll with the items in the list. The header and footer can be strings, views, or DataTemplate objects.
 
+CollectionView defines the following properties for specifying the header and footer:
 
+Header, of type object, specifies the string, binding, or view that will be displayed at the start of the list.
+HeaderTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Header.
+Footer, of type object, specifies the string, binding, or view that will be displayed at the end of the list.
+FooterTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Footer.
+These properties are backed by BindableProperty objects, which means that the properties can be targets of data bindings.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!--<Frame BorderColor="Black" Grid.Row="1" Grid.Column="1" BackgroundColor="Aqua">
-                <Grid x:Name="gridInformationFilm"
-                                      ColumnDefinitions="Auto,Auto"
-                                      RowDefinitions="Auto,Auto,Auto">
-
-                    <Grid x:Name="gridNameAndCategory" Grid.Row="0">
-
-                        <Grid x:Name="gridNameFilm">
-                            <Label Text="Name" Grid.Column="0" Grid.Row="0"/>
-                        </Grid>
-
-                        <Grid x:Name="gridCategory" HorizontalOptions="End" Grid.Column="1" Grid.Row="0">
-                            <Label Text="category"/>
-                        </Grid>
-
+When a header is added to a layout that grows horizontally, from left to right, the header is displayed to the left of the list. Similarly, when a footer is added to a layout that grows horizontally, from left to right, the footer is displayed to the right of the list."
+                               LineBreakMode="WordWrap"
+                               FontSize="Small"/>
                     </Grid>
 
-                    <Grid x:Name="gridAdditionalInfo" Grid.Row="1"
-                                          ColumnDefinitions="Auto, Auto, Auto" RowDefinitions="Auto">
-                        <Label Text="nhat ban" Grid.Column="0" Grid.Row="0" Margin="10"/>
-                        <Label Text="nhat ban1" Grid.Column="1" Grid.Row="0" Margin="10"/>
-                        <Label Text="nhat ban2" Grid.Column="2" Grid.Row="0" Margin="10"/>
-                    </Grid>
-
-                    <Frame Grid.Row="2" Grid.Column="0">
-                        <Grid x:Name="gridDescription" Grid.Row="2" ColumnDefinitions="Auto">
-                            <Label Text="des" Grid.Column="0"/>
-                        </Grid>
-                    </Frame>
                 </Grid>
             </Frame>
 
-            <Grid x:Name="gridComment"
-                                  ColumnDefinitions="Auto, Auto"
-
-                                      Grid.Row="2">
-                <Label
-                                      Text="Comment" Grid.Column="0"/>
-
-                <Grid x:Name="gridUserComment"
-                                      ColumnDefinitions="100,*"
-                                      RowDefinitions="50">
-
-                    <Image x:Name="imgUserComment" 
-                                           Grid.Column="1"
-                                           Source="dotnet_bot.png"
-                                           WidthRequest="50"
-                                           HeightRequest="50"/>
-                    <Label x:Name="lbUserName"/>
-                </Grid>
-            </Grid>-->
 
 
+            <Frame Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
 
-                <!--<Frame 
-                BorderColor="#99988a"
-                >
-                <CollectionView x:Name="cvInfomationFilm"
-                            ItemsSource="{Binding Items}"
-                            Margin="0,0,0,50">
 
+                <CollectionView x:Name="cvCommentUser"
+                                    ItemsSource="{Binding Items}"
+                                    Margin="0,0,0,50"
+                                    HorizontalOptions="Start"
+                                    Grid.Column="0" Grid.Row="0">
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical"/>
+                    </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Grid x:Name="gridNameAndCategory"
-                                  ColumnDefinitions="Auto, Auto">
-                                <Grid x:Name="gridName"
-                                      ColumnDefinitions="Auto"
+                            <Grid x:Name="gridComment"
+                                      ColumnDefinitions="Auto, *"
                                       RowDefinitions="Auto"
-                                      Margin="0,0,300,0">
-
-                                    -->
-                <!--Đưa tên phim từ media vào label, đổi thuộc tính text thành binding-->
-                <!--
-
-                                    <Label Text="Attack on titan" Grid.Column="0" Grid.Row="0"/>
-                                </Grid>
-                                <Grid x:Name="gridCategory"
-                                      HorizontalOptions="End"
+                                      HorizontalOptions="Center"
+                                      ColumnSpacing="50">
+                                <Grid x:Name="gridUserComment"
                                       ColumnDefinitions="Auto"
-                                      RowDefinitions="Auto"
-                                      Margin="0,0,300,0">
-
-                                    -->
-                <!--Đưa thể loại từ media vào label, đổi thuộc tính text thành binding-->
-                <!--
-
-                                    <Frame BorderColor="Brown">
-                                        <Label Text="{Binding Age}" Grid.Column="0" Grid.Row="0"/>
-                                    </Frame>
+                                      RowDefinitions="Auto,Auto"
+                                      HorizontalOptions="Center">
+                                    <Image x:Name="imgUser"
+                                               Source="dotnet_bot.png" HeightRequest="50"
+                                               Grid.Column="0" Grid.Row="0"
+                                               HorizontalOptions="Center"/>
+                                    <Label x:Name="lbUser"
+                                               Text="{Binding Name}"
+                                               HorizontalOptions="Start"
+                                               Grid.Column="0"
+                                               Grid.Row="1"
+                                               FontSize="Small"/>
                                 </Grid>
 
-
-
+                                <Frame Grid.Row="0" Grid.Column="1" 
+                                       Margin="0,0,0,30">
+                                    <Label x:Name="lbComment"
+                                               Text="CommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommentssssssCommentssssssssss"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>
+                                </Frame>
                             </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
-
                 </CollectionView>
-            </Frame>-->
-            </CollectionView>
+
+
+            </Frame>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
