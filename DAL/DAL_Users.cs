@@ -80,7 +80,32 @@ namespace DAL
             }
             catch
             {
-                throw new Exception("Error in DAL_GetALlUser");
+                throw new Exception("Error in DAL_GetAllUser");
+            }
+        }
+
+        public async Task<bool> UpdateUser(List<DTO_Users> _user)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                foreach (DTO_Users u in _user)
+                {
+                    var filter = Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, u.Account.Email);
+                    var update = Builders<DTO_Users>.Update.Set(x => x.UserName, u.UserName)
+                                                           .Set(x => x.Gender, u.Gender)
+                                                           .Set(x => x.PhoneNumber, u.PhoneNumber)
+                                                           .Set(x => x.Birthday, u.Birthday)
+                                                           .Set(x => x.Country, u.Country);
+                    await collection.UpdateOneAsync(filter, update);
+                }
+
+                return true;
+            } 
+            catch
+            {
+                return false;
             }
         }
     }

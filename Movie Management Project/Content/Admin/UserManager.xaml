@@ -10,10 +10,10 @@
     <ContentPage.BindingContext>
         <viewmodel:UsersManagerViewModel></viewmodel:UsersManagerViewModel>
     </ContentPage.BindingContext>
-    
+
     <ScrollView>
         <VerticalStackLayout>
-            
+
             <Grid x:Name="titleUser" ColumnDefinitions="*,*" HorizontalOptions="Center">
                 <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
@@ -61,17 +61,15 @@
                         </Grid>
                         <Grid x:Name="gridCRUDUser"
                                 Grid.Column="0" Grid.Row="4" 
-                                ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="50,0,50,0">
+                                ColumnDefinitions="100, 100, 100, 100" RowDefinitions="Auto" Margin="0,0,0,0" HorizontalOptions="Center">
                             <Button x:Name="btnAddUser"
                                     Text="Add" Grid.Column="0" Margin="0,0,15,0" Command="{Binding AddUserCommand}"/>
                             <Button x:Name="btnDeleteUser"
                                     Text="Delete" Grid.Column="1" Margin="0,0,15,0" Command="{Binding DeleteUserCommand}"/>
                             <Button x:Name="btnUpdateUser"
-                                    Text="Update" Grid.Column="2" Margin="0,0,15,0"/>
-                            <Button x:Name="btnFindUser"
-                                    Text="Find" Grid.Column="3" Margin="0,0,15,0"/>
+                                    Text="Update" Grid.Column="2" Margin="0,0,15,0" Command="{Binding UpdateUserCommnad}"/>
                             <Button x:Name="btnRefreshUser"
-                                    Text="Refresh" Grid.Column="4" Margin="0,0,15,0"/>          
+                                    Text="Refresh" Grid.Column="4" Margin="0,0,15,0" Command="{Binding RefreshCommand}"/>
                         </Grid>
                     </Grid>
 
@@ -114,49 +112,63 @@
                         </Grid>
                     </Grid>
 
-                    
+
                 </Grid>
                 <!--#endregion-->
-
                 <Grid x:Name="gridDataGrid" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
-                    <ScrollView>
-                        <StackLayout>
-                            <material:DataGrid ItemsSource="{Binding dsUsers}" HorizontalOptions="Center" SelectedItems="{Binding SelectedUsers}">
+                    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
+                        <ScrollView>
+                            <StackLayout>
                                 <ActivityIndicator IsRunning="{Binding IsBusy}"></ActivityIndicator>
-                            <material:DataGrid.Columns>
-                                <material:DataGridSelectionColumn />
-                                <material:DataGridColumn Title="Name">
-                                    <material:DataGridColumn.CellItemTemplate>
-                                            <DataTemplate>
-                                                <Editor Text="{Binding UserName}" IsReadOnly="True" x:Name="txtUserName"/>
-                                            </DataTemplate>
-                                    </material:DataGridColumn.CellItemTemplate>
-                                </material:DataGridColumn>
-                                <material:DataGridColumn Binding="{Binding Gender}" Title="Gender" />
-                                <material:DataGridColumn Binding="{Binding PhoneNumber}" Title="PhoneNumber" />
-                                <material:DataGridColumn Binding="{Binding Birthday}" Title="Birthday" />
-                                <material:DataGridColumn Binding="{Binding Country}" Title="Country" />
-                                <material:DataGridColumn Binding="{Binding Account.Email}" Title="Account" />
-                                <material:DataGridColumn Binding="{Binding Plan.PlaneName}" Title="Plan" />
-                                </material:DataGrid.Columns>
-                            </material:DataGrid>
-                        </StackLayout>
-                    </ScrollView>
-
-                    <!--<material:DataGrid ItemsSource="{Binding Items1}" UseAutoColumns="True" HorizontalOptions="Center">
-                        <material:DataGrid.CellItemTemplate>
-                            <DataTemplate>
-                                <StackLayout Padding="10">
-                                    <Editor Text="{Binding UserName}" />
-                                </StackLayout>
-                            </DataTemplate>
-                        </material:DataGrid.CellItemTemplate>
-                    </material:DataGrid>-->
+                                <ContentView IsVisible="{Binding IsNotBusy}">
+                                    <material:DataGrid ItemsSource="{Binding dsUsers}" HorizontalOptions="Center" SelectedItems="{Binding SelectedUsers}">
+                                        <material:DataGrid.Columns>
+                                            <material:DataGridSelectionColumn />
+                                            <material:DataGridColumn Title="Name">
+                                                <material:DataGridColumn.CellItemTemplate>
+                                                    <DataTemplate>
+                                                        <Editor Text="{Binding UserName}" x:Name="txtUserName"/>
+                                                    </DataTemplate>
+                                                </material:DataGridColumn.CellItemTemplate>
+                                            </material:DataGridColumn>
+                                            <material:DataGridColumn Title="Gender" >
+                                                <material:DataGridColumn.CellItemTemplate>
+                                                    <DataTemplate>
+                                                        <Editor Text="{Binding Gender}" x:Name="txtGenderUser"/>
+                                                    </DataTemplate>
+                                                </material:DataGridColumn.CellItemTemplate>
+                                            </material:DataGridColumn>
+                                            <material:DataGridColumn Title="PhoneNumber" >
+                                                <material:DataGridColumn.CellItemTemplate>
+                                                    <DataTemplate>
+                                                        <Editor Text="{Binding PhoneNumber}" x:Name="txtPhoneNumber"/>
+                                                    </DataTemplate>
+                                                </material:DataGridColumn.CellItemTemplate>
+                                            </material:DataGridColumn>
+                                            <material:DataGridColumn Title="Birthday" >
+                                                <material:DataGridColumn.CellItemTemplate>
+                                                    <DataTemplate>
+                                                        <Editor Text="{Binding Birthday}" x:Name="txtBirthdayUser"/>
+                                                    </DataTemplate>
+                                                </material:DataGridColumn.CellItemTemplate>
+                                            </material:DataGridColumn>
+                                            <material:DataGridColumn Title="Country" >
+                                                <material:DataGridColumn.CellItemTemplate>
+                                                    <DataTemplate>
+                                                        <Editor Text="{Binding Country}" x:Name="txtCountryUser"/>
+                                                    </DataTemplate>
+                                                </material:DataGridColumn.CellItemTemplate>
+                                            </material:DataGridColumn>
+                                            <material:DataGridColumn Binding="{Binding Account.Email}" Title="Account" />
+                                            <material:DataGridColumn Binding="{Binding Plan.PlaneName}" Title="Plan"/>
+                                        </material:DataGrid.Columns>
+                                    </material:DataGrid>
+                                </ContentView>
+                            </StackLayout>
+                        </ScrollView>
+                    </RefreshView>
                 </Grid>
             </Grid>
         </VerticalStackLayout>
-
     </ScrollView>
-
-
 </ContentPage>

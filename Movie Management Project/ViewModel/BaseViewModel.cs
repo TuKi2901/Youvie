@@ -20,6 +20,7 @@ namespace Movie_Management_Project.ViewModel
 
                 isBusy = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(IsNotBusy));
             }
         }
 

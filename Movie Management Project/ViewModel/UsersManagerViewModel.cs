@@ -24,12 +24,16 @@ namespace Movie_Management_Project.ViewModel
         public ObservableCollection<DTO_Users> dsUsers { get; } = new();
         public ICommand AddUserCommand { get; }
         public ICommand DeleteUserCommand { get; }
+        public ICommand RefreshCommand { get; }
+        public ICommand UpdateUserCommnad {  get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
             AddUserCommand = new Command(AddUser);
             DeleteUserCommand = new Command(DeleteUser);
+            RefreshCommand = new Command(RefreshFormUser);
+            UpdateUserCommnad = new Command(UpdateUser);
         }
 
         #region SetProperty
@@ -147,16 +151,8 @@ namespace Movie_Management_Project.ViewModel
                     throw new Exception(check);
                 }
 
-                UserName = string.Empty;
-                PhoneNumber = string.Empty;
-                Birthday = DateTime.MinValue;
-                Email = string.Empty;
-                Password = string.Empty;
-                Country = string.Empty;
-                _gender = string.Empty;
-
                 await Shell.Current.DisplayAlert("Notification!", $"Add user success!!!", "Ok");
-                await Shell.Current.Navigation.PushAsync(new UserManager());
+                RefreshFormUser();
             }
             catch (Exception ex)
             {
@@ -174,7 +170,7 @@ namespace Movie_Management_Project.ViewModel
 
                 foreach (var user in SelectedUsers)
                 {
-                    emails.Add(user.Account.Password);
+                    emails.Add(user.Account.Email);
                 }
 
                 string check = await _bus.DeleteUsernAccount(emails);
@@ -185,13 +181,12 @@ namespace Movie_Management_Project.ViewModel
                 }
 
                 await Shell.Current.DisplayAlert("Notification!", $"Delete user success!!!", "Ok");
-                await Shell.Current.Navigation.PushAsync(new UserManager());
+                RefreshFormUser();
             }
             catch (Exception ex)
             {
                 await Shell.Current.DisplayAlert("Error!", $"There was some problem: {ex.Message}", "Ok");
             }
-
         }
 
         public async void UsersDataGrid()
@@ -219,6 +214,84 @@ namespace Movie_Management_Project.ViewModel
             finally
             {
                 IsBusy = false;
+            }
+        }
+
+        public async void RefreshFormUser()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            try
+            {
+                IsBusy = true;
+
+                dsUsers.Clear();
+
+                List<DTO_Users> users = await _bus.BusGetUser();
+
+                foreach (DTO_Users user in users)
+                {
+                    dsUsers.Add(user);
+                }
+
+                UserName = string.Empty;
+                PhoneNumber = string.Empty;
+                Birthday = DateTime.MinValue;
+                Email = string.Empty;
+                Password = string.Empty;
+                Country = string.Empty;
+                _gender = string.Empty;
+                IsMale = false;
+                IsFemale = false;
+
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        public async void UpdateUser()
+        {
+            try
+            {
+                //if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to update!!"); }
+
+                //if (UserName == string.Empty || UserName == null) throw new Exception("UserName doesn't must empty");
+
+                //if (Email == string.Empty || Email == null || !IsValidEmail(Email)) throw new Exception("Email is invalid, bro");
+
+                //if (Password == string.Empty || Password == null) throw new Exception("Password doesn't must empty");
+
+                //if (PhoneNumber == string.Empty || PhoneNumber == null || !long.TryParse(PhoneNumber, out _)) throw new Exception("PhoneNumber is invalid, bro");
+
+                //if (Country == string.Empty || Country == null) throw new Exception("Country doesn't must empty");
+
+                //if (_gender == string.Empty || _gender == null) throw new Exception("Choose your gender, bro !!!");
+
+                List<DTO_Users> users = new List<DTO_Users>();
+
+                foreach (DTO_Users u in SelectedUsers)
+                {
+                    users.Add(u);
+                }
+
+                bool check = await _bus.BusUpdateUser(users);
+
+                if (!check)
+                {
+                    throw new Exception("BusUpdateUser have a error!!!!");
+                }
+
+                await Shell.Current.DisplayAlert("Notification!", $"Update user success!!!", "Ok");
+                await Shell.Current.Navigation.PushAsync(new UserManager());
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
             }
         }
     }

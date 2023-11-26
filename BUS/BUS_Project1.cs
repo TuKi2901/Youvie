@@ -96,5 +96,19 @@ namespace BUS
                 return ex.Message;
             }
         }
+
+        public async Task<bool> BusUpdateUser(List<DTO_Users> _user)
+        {
+            try
+            {
+                await dal_users.UpdateUser(_user);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }
