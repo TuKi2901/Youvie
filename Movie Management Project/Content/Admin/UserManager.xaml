@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material ="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
-             xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              x:Class="Movie_Management_Project.Content.Admin.UserManager"
+             xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="UserManager">
 
     <ContentPage.BindingContext>
@@ -49,15 +49,15 @@
                     <Grid x:Name="gridUser1" ColumnDefinitions="600" RowDefinitions="Auto, Auto, Auto, auto" Grid.Column="0" Grid.Row="0" Margin="50,0,30,0">
                         <Grid x:Name="gridFullNameUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="0" >
                             <Label Text="Full Name: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding UserName}" Placeholder="hahahaa"/>
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding UserName}" Placeholder="hahahaa" x:Name="txtUserName"/>
                         </Grid>
                         <Grid x:Name="gridEmailUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="1">
                             <Label Text="Email: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Email}" />
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Email}" x:Name="txtEmailUser"/>
                         </Grid>
                         <Grid x:Name="gridPasswordUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="2">
                             <Label Text="Password: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" />
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser"/>
                         </Grid>
                         <Grid x:Name="gridCRUDUser"
                                 Grid.Column="0" Grid.Row="4" 
@@ -65,7 +65,7 @@
                             <Button x:Name="btnAddUser"
                                     Text="Add" Grid.Column="0" Margin="0,0,15,0" Command="{Binding AddUserCommand}"/>
                             <Button x:Name="btnDeleteUser"
-                                    Text="Delete" Grid.Column="1" Margin="0,0,15,0"/>
+                                    Text="Delete" Grid.Column="1" Margin="0,0,15,0" Command="{Binding DeleteUserCommand}"/>
                             <Button x:Name="btnUpdateUser"
                                     Text="Update" Grid.Column="2" Margin="0,0,15,0"/>
                             <Button x:Name="btnFindUser"
@@ -101,14 +101,14 @@
                         </Grid>
                         <Grid x:Name="gridPhoneNumberUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="2">
                             <Label Text="Phone Number: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding PhoneNumber}"/>
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" x:Name="txtPhoneNumberUser" Text="{Binding PhoneNumber}"/>
                         </Grid>
                         <Grid x:Name="gridGenderUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="3">
                             <Label Text="Gender: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
                             <Grid Grid.Column="1" Grid.Row="0" ColumnDefinitions="auto, auto, auto, auto">
-                                <RadioButton GroupName="Gender" Value="Male" x:Name="rbMale" Grid.Column="0" IsChecked="{Binding IsMale}"></RadioButton>
+                                <RadioButton GroupName="Gender" Value="Male" x:Name="rbMaleUser" Grid.Column="0" IsChecked="{Binding IsMale}"></RadioButton>
                                 <Label Text="Male" Grid.Column="1" Margin="0,0,0,0" FontSize="Small" VerticalOptions="Center"/>
-                                <RadioButton GroupName="Gender" Value="Female" x:Name="rbFemale" Grid.Column="2" IsChecked="{Binding IsFemale}" Margin="30,0,0,0"></RadioButton>
+                                <RadioButton GroupName="Gender" Value="Female" x:Name="rbFemaleUser" Grid.Column="2" IsChecked="{Binding IsFemale}" Margin="30,0,0,0"></RadioButton>
                                 <Label Text="Female" Grid.Column="3" Margin="0,0,0,0" FontSize="Small" VerticalOptions="Center"/>
                             </Grid>
                         </Grid>
@@ -121,7 +121,7 @@
                 <Grid x:Name="gridDataGrid" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                     <ScrollView>
                         <StackLayout>
-                            <material:DataGrid ItemsSource="{Binding dsUsers}" HorizontalOptions="Center">
+                            <material:DataGrid ItemsSource="{Binding dsUsers}" HorizontalOptions="Center" SelectedItems="{Binding SelectedUsers}">
                                 <ActivityIndicator IsRunning="{Binding IsBusy}"></ActivityIndicator>
                             <material:DataGrid.Columns>
                                 <material:DataGridSelectionColumn />

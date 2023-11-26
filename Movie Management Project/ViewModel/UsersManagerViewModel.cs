@@ -2,6 +2,7 @@
 using DTO;
 using Movie_Management_Project.Content.Admin;
 using System.Collections.ObjectModel;
+using System.Net.Mail;
 using System.Windows.Input;
 
 
@@ -19,13 +20,16 @@ namespace Movie_Management_Project.ViewModel
         private string _phoneNumber;
         private string _gender;
 
+        public ObservableCollection<DTO_Users> SelectedUsers { get; set; } = new ObservableCollection<DTO_Users>();
         public ObservableCollection<DTO_Users> dsUsers { get; } = new();
         public ICommand AddUserCommand { get; }
+        public ICommand DeleteUserCommand { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
             AddUserCommand = new Command(AddUser);
+            DeleteUserCommand = new Command(DeleteUser);
         }
 
         #region SetProperty
@@ -94,16 +98,37 @@ namespace Movie_Management_Project.ViewModel
                 }
             }
         }
-
-        public IReadOnlyList<Page> ModalStack => throw new NotImplementedException();
-
-        public IReadOnlyList<Page> NavigationStack => throw new NotImplementedException();
         #endregion
+
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
+        }
 
         public async void AddUser()
         {
             try
             {
+                if (UserName == string.Empty || UserName == null) throw new Exception("UserName doesn't must empty");
+
+                if (Email == string.Empty || Email == null || !IsValidEmail(Email)) throw new Exception("Email is invalid, bro");
+
+                if (Password == string.Empty || Password == null) throw new Exception("Password doesn't must empty");
+
+                if (PhoneNumber == string.Empty || PhoneNumber == null || !long.TryParse(PhoneNumber, out _)) throw new Exception("PhoneNumber is invalid, bro");
+
+                if (Country == string.Empty || Country == null) throw new Exception("Country doesn't must empty");
+
+                if (_gender == string.Empty || _gender == null) throw new Exception("Choose your gender, bro !!!");
+
                 DTO_Users dTO_Users = new DTO_Users();
                 dTO_Users.UserName = UserName;
                 dTO_Users.PhoneNumber = PhoneNumber;
@@ -115,12 +140,11 @@ namespace Movie_Management_Project.ViewModel
                 dTO_Accounts.Email = Email;
                 dTO_Accounts.Password = Password;
 
-                bool check = await _bus.BusCreateUser(dTO_Users, dTO_Accounts);
+                string check = await _bus.BusCreateUser(dTO_Users, dTO_Accounts);
 
-                if (!check)
+                if (check != string.Empty)
                 {
-                    throw new Exception();
-
+                    throw new Exception(check);
                 }
 
                 UserName = string.Empty;
@@ -138,6 +162,36 @@ namespace Movie_Management_Project.ViewModel
             {
                 await Shell.Current.DisplayAlert("Error!", $"Add User failed!: {ex.Message}", "Ok");
             }
+        }
+
+        public async void DeleteUser()
+        {
+            try
+            {
+                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }    
+
+                List<string> emails = new List<string>();
+
+                foreach (var user in SelectedUsers)
+                {
+                    emails.Add(user.Account.Password);
+                }
+
+                string check = await _bus.DeleteUsernAccount(emails);
+
+                if (check != string.Empty)
+                {
+                    throw new Exception(check);
+                }
+
+                await Shell.Current.DisplayAlert("Notification!", $"Delete user success!!!", "Ok");
+                await Shell.Current.Navigation.PushAsync(new UserManager());
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error!", $"There was some problem: {ex.Message}", "Ok");
+            }
+
         }
 
         public async void UsersDataGrid()

@@ -11,7 +11,7 @@ namespace BUS
         DAL_Plans dal_plans = new DAL_Plans();
 
         // User
-        public async Task<bool> BusCreateUser(DTO_Users dTO_Users, DTO_Accounts dTO_Accounts)
+        public async Task<string> BusCreateUser(DTO_Users dTO_Users, DTO_Accounts dTO_Accounts)
         {
             try
             {
@@ -22,14 +22,14 @@ namespace BUS
 
                 if (!check)
                 {
-                    throw new Exception();
+                    throw new Exception("CreateUser failed!");
                 }
 
-                return true;
+                return string.Empty;
             }
-            catch
+            catch (Exception ex)
             {
-                return false;
+                return ex.Message;
             }
         }
 
@@ -39,9 +39,9 @@ namespace BUS
             {
                 DTO_Users user = await dal_users.GetUserByEmail(email);
 
-                if (user == null)
+                if (user.Account == null)
                 {
-                    throw new Exception();
+                    throw new Exception("user.Account mustn't null");
                 }
 
                 bool checkPass = BCrypt.Net.BCrypt.Verify(password, user.Account.Password);
@@ -62,18 +62,39 @@ namespace BUS
             {
                 List<DTO_Users> users = await dal_users.GetAllUser();
 
-                if (users == null)
-                {
-                    throw new Exception();
-                }
-
                 return users;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("Error BUSGetUser");
+                throw new Exception(ex.Message);
             }
 
+        }
+
+        public async Task<string> DeleteUsernAccount(List<string> email)
+        {
+            try
+            {
+                bool checkDeleteAccount = await dal_accounts.DeleteAccount(email);
+
+                if (!checkDeleteAccount)
+                {
+                    throw new Exception($"Can't delete Accounts");
+                }
+
+                bool checkDeleteUser = await dal_users.DeleteUserDAL(email);
+
+                if (!checkDeleteUser)
+                {
+                    throw new Exception($"Can't delete User");
+                }
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
     }
 }
