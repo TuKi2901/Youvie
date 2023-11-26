@@ -17,6 +17,7 @@ namespace Movie_Management_Project.Content.Guest
 
         public SignUp()
         {
+            
             InitializeComponent();
         }
 

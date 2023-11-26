@@ -8,7 +8,18 @@ namespace Movie_Management_Project
     {
         public AppShell()
         {
+           
             InitializeComponent();
+        }
+
+        internal static void IsVisibleProperty(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal static void NavBarIsVisibleProperty(string v)
+        {
+            throw new NotImplementedException();
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

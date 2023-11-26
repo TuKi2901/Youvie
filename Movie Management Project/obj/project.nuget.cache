@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "yR3Tvz6WWrRTg8oCbNssQUXo+RJyRTR7ICR9i6Jvn5e4LaXh2cbVGppKCOLBabOzjj6fMDgUexT2+r8rj87t8Q==",
-  "success": false,
+  "dgSpecHash": "PCjPY6Rdq/VMQAuD8ULnIYxRfGn2f5gLQCZtMGhxqVx8n1022mPI+qRPs9bVGRlR+MZ2qnxeF+fUYx2AKY4S+w==",
+  "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Documents\\GitHub\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
@@ -10,10 +10,10 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\inputkit.maui\\4.3.5\\inputkit.maui.4.3.5.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.13\\microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.13\\microsoft.aspnetcore.components.7.0.13.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.13\\microsoft.aspnetcore.components.analyzers.7.0.13.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.13\\microsoft.aspnetcore.metadata.7.0.13.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.1\\microsoft.aspnetcore.authorization.7.0.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.1\\microsoft.aspnetcore.components.7.0.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.1\\microsoft.aspnetcore.components.analyzers.7.0.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.1\\microsoft.aspnetcore.metadata.7.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
@@ -21,7 +21,7 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.logging.debug\\7.0.0\\microsoft.extensions.logging.debug.7.0.0.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.graphics.win2d\\1.0.4\\microsoft.graphics.win2d.1.0.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.maui.graphics\\7.0.86\\microsoft.maui.graphics.7.0.86.nupkg.sha512",
@@ -131,46 +131,5 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.5\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.5.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\7.0.5\\microsoft.netcore.app.runtime.win-x64.7.0.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Logging.Abstractions from 7.0.1 to 7.0.0. Reference the package directly from the project to select a different version. \r\n GUI -> Microsoft.AspNetCore.Components 7.0.13 -> Microsoft.AspNetCore.Authorization 7.0.13 -> Microsoft.Extensions.Logging.Abstractions (>= 7.0.1) \r\n GUI -> Microsoft.Extensions.Logging.Abstractions (>= 7.0.0)",
-      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
-      "targetGraphs": [
-        "net7.0-android33.0",
-        "net7.0-android33.0/android-arm",
-        "net7.0-android33.0/android-arm64",
-        "net7.0-android33.0/android-x64",
-        "net7.0-android33.0/android-x86",
-        "net7.0-android33.0/iossimulator-x64",
-        "net7.0-android33.0/maccatalyst-x64",
-        "net7.0-android33.0/win10-x64",
-        "net7.0-ios16.1",
-        "net7.0-ios16.1/android-arm",
-        "net7.0-ios16.1/android-arm64",
-        "net7.0-ios16.1/android-x64",
-        "net7.0-ios16.1/android-x86",
-        "net7.0-ios16.1/iossimulator-x64",
-        "net7.0-ios16.1/maccatalyst-x64",
-        "net7.0-ios16.1/win10-x64",
-        "net7.0-maccatalyst16.1",
-        "net7.0-maccatalyst16.1/android-arm",
-        "net7.0-maccatalyst16.1/android-arm64",
-        "net7.0-maccatalyst16.1/android-x64",
-        "net7.0-maccatalyst16.1/android-x86",
-        "net7.0-maccatalyst16.1/iossimulator-x64",
-        "net7.0-maccatalyst16.1/maccatalyst-x64",
-        "net7.0-maccatalyst16.1/win10-x64",
-        "net7.0-windows10.0.19041",
-        "net7.0-windows10.0.19041/android-arm",
-        "net7.0-windows10.0.19041/android-arm64",
-        "net7.0-windows10.0.19041/android-x64",
-        "net7.0-windows10.0.19041/android-x86",
-        "net7.0-windows10.0.19041/iossimulator-x64",
-        "net7.0-windows10.0.19041/maccatalyst-x64",
-        "net7.0-windows10.0.19041/win10-x64"
-      ]
-    }
-  ]
+  "logs": []
 }

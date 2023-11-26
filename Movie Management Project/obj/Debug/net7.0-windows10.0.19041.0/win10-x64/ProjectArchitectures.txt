@@ -1,1 +1,1 @@
-E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\GUI.csproj;x64
+C:\Users\ADMIN\Documents\GitHub\Youvie\Movie Management Project\GUI.csproj;x64

@@ -54,7 +54,9 @@ public partial class Login : ContentPage
             }
 
             await DisplayAlert("Notification", "Login sucessfully !!!", "OK");
+            
             await Navigation.PushAsync(new Home());
+            
         }
         catch (Exception ex)
         {

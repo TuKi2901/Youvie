@@ -7,10 +7,12 @@
     xmlns:Guest="clr-namespace:Movie_Management_Project.Content.Guest"
     xmlns:Admin="clr-namespace:Movie_Management_Project.Content.Admin"
     xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-    Shell.FlyoutBehavior="Disabled">
-
-    <Shell.TitleView>
-        <Grid>
+    
+    >
+   
+    <Shell.TitleView >
+        
+        <Grid IsVisible="False">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
@@ -44,7 +46,7 @@
 
     </Shell.TitleView>
 
-        <ShellContent
+    <ShellContent 
         Title="Home"
         ContentTemplate="{DataTemplate Guest:SignUp}"
         />

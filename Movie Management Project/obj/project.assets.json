@@ -93,12 +93,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -111,11 +111,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -128,13 +128,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -280,7 +280,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -2347,7 +2347,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -2361,6 +2363,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -2374,6 +2378,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -2476,12 +2482,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -2494,11 +2500,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -2511,13 +2517,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -2663,7 +2669,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -4697,7 +4703,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -4711,6 +4719,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -4724,6 +4734,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -4826,12 +4838,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -4844,11 +4856,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -4861,13 +4873,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -5013,7 +5025,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -7047,7 +7059,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -7061,6 +7075,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -7074,6 +7090,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -7176,12 +7194,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -7194,11 +7212,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -7211,13 +7229,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -7363,7 +7381,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -9397,7 +9415,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -9411,6 +9431,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -9424,6 +9446,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -9526,12 +9550,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -9544,11 +9568,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -9561,13 +9585,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -9713,7 +9737,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -11747,7 +11771,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -11761,6 +11787,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -11774,6 +11802,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -11876,12 +11906,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -11894,11 +11924,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -11911,13 +11941,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -12063,7 +12093,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -14094,7 +14124,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -14108,6 +14140,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -14121,6 +14155,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -14223,12 +14259,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -14241,11 +14277,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -14258,13 +14294,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -14410,7 +14446,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -16441,7 +16477,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -16455,6 +16493,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -16468,6 +16508,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -16570,12 +16612,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -16588,11 +16630,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -16605,13 +16647,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -16757,7 +16799,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -18791,7 +18833,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -18805,6 +18849,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -18818,6 +18864,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -18907,12 +18955,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -18925,11 +18973,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -18942,13 +18990,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -19094,7 +19142,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -19428,7 +19476,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -19442,6 +19492,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -19455,6 +19507,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -19544,12 +19598,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -19562,11 +19616,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -19579,13 +19633,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -19731,7 +19785,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -20032,7 +20086,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -20046,6 +20102,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -20059,6 +20117,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -20148,12 +20208,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -20166,11 +20226,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -20183,13 +20243,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -20335,7 +20395,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -20636,7 +20696,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -20650,6 +20712,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -20663,6 +20727,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -20752,12 +20818,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -20770,11 +20836,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -20787,13 +20853,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -20939,7 +21005,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -21240,7 +21306,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -21254,6 +21322,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -21267,6 +21337,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -21356,12 +21428,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -21374,11 +21446,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -21391,13 +21463,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -21543,7 +21615,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -21844,7 +21916,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -21858,6 +21932,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -21871,6 +21947,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -21960,12 +22038,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -21978,11 +22056,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -21995,13 +22073,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -22147,7 +22225,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -22445,7 +22523,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -22459,6 +22539,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -22472,6 +22554,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -22561,12 +22645,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -22579,11 +22663,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -22596,13 +22680,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -22748,7 +22832,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -23046,7 +23130,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -23060,6 +23146,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -23073,6 +23161,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -23162,12 +23252,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -23180,11 +23270,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -23197,13 +23287,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -23349,7 +23439,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -23650,7 +23740,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -23664,6 +23756,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -23677,6 +23771,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -23766,12 +23862,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -23784,11 +23880,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -23801,13 +23897,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -23953,7 +24049,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -24287,7 +24383,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -24301,6 +24399,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -24314,6 +24414,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -24403,12 +24505,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -24421,11 +24523,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -24438,13 +24540,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -24590,7 +24692,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -24891,7 +24993,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -24905,6 +25009,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -24918,6 +25024,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -25007,12 +25115,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -25025,11 +25133,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -25042,13 +25150,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -25194,7 +25302,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -25495,7 +25603,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -25509,6 +25619,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -25522,6 +25634,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -25611,12 +25725,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -25629,11 +25743,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -25646,13 +25760,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -25798,7 +25912,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -26099,7 +26213,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -26113,6 +26229,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -26126,6 +26244,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -26215,12 +26335,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -26233,11 +26353,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -26250,13 +26370,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -26402,7 +26522,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -26703,7 +26823,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -26717,6 +26839,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -26730,6 +26854,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -26819,12 +26945,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -26837,11 +26963,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -26854,13 +26980,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -27006,7 +27132,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -27304,7 +27430,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -27318,6 +27446,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -27331,6 +27461,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -27420,12 +27552,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -27438,11 +27570,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -27455,13 +27587,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -27607,7 +27739,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -27905,7 +28037,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -27919,6 +28053,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -27932,6 +28068,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -28021,12 +28159,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -28039,11 +28177,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -28056,13 +28194,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -28208,7 +28346,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -28509,7 +28647,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -28523,6 +28663,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -28536,6 +28678,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -28625,12 +28769,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -28643,11 +28787,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -28660,13 +28804,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -28812,7 +28956,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -29284,7 +29428,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -29298,6 +29444,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -29311,6 +29459,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -29400,12 +29550,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -29418,11 +29568,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -29435,13 +29585,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -29587,7 +29737,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -29998,7 +30148,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -30012,6 +30164,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -30025,6 +30179,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -30114,12 +30270,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -30132,11 +30288,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -30149,13 +30305,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -30301,7 +30457,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -30712,7 +30868,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -30726,6 +30884,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -30739,6 +30899,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -30828,12 +30990,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -30846,11 +31008,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -30863,13 +31025,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -31015,7 +31177,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -31426,7 +31588,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -31440,6 +31604,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -31453,6 +31619,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -31542,12 +31710,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -31560,11 +31728,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -31577,13 +31745,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -31729,7 +31897,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -32140,7 +32308,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -32154,6 +32324,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -32167,6 +32339,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -32256,12 +32430,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -32274,11 +32448,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -32291,13 +32465,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -32443,7 +32617,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -32851,7 +33025,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -32865,6 +33041,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -32878,6 +33056,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -32967,12 +33147,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -32985,11 +33165,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -33002,13 +33182,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -33154,7 +33334,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -33562,7 +33742,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -33576,6 +33758,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -33589,6 +33773,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -33678,12 +33864,12 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/7.0.13": {
+      "Microsoft.AspNetCore.Authorization/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "7.0.13",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.1",
-          "Microsoft.Extensions.Options": "7.0.1"
+          "Microsoft.AspNetCore.Metadata": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
+          "Microsoft.Extensions.Options": "7.0.0"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Authorization.dll": {
@@ -33696,11 +33882,11 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components/7.0.13": {
+      "Microsoft.AspNetCore.Components/7.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "7.0.13",
-          "Microsoft.AspNetCore.Components.Analyzers": "7.0.13"
+          "Microsoft.AspNetCore.Authorization": "7.0.1",
+          "Microsoft.AspNetCore.Components.Analyzers": "7.0.1"
         },
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Components.dll": {
@@ -33713,13 +33899,13 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
+      "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Metadata/7.0.13": {
+      "Microsoft.AspNetCore.Metadata/7.0.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Microsoft.AspNetCore.Metadata.dll": {
@@ -33865,7 +34051,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/7.0.1": {
+      "Microsoft.Extensions.Options/7.0.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
@@ -34282,7 +34468,9 @@
         "dependencies": {
           "BCrypt.Net-Core": "1.6.0",
           "DAL": "1.0.0",
-          "DTO": "1.0.0"
+          "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0"
         },
         "compile": {
           "bin/placeholder/BUS.dll": {}
@@ -34296,6 +34484,8 @@
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "DTO": "1.0.0",
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -34309,6 +34499,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Components": "7.0.1",
+          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
           "MongoDB.Driver": "2.22.0"
         },
         "compile": {
@@ -34472,10 +34664,10 @@
         "lib/net7.0/InputKit.Maui.xml"
       ]
     },
-    "Microsoft.AspNetCore.Authorization/7.0.13": {
-      "sha512": "aLjbkxY+0xJcsupIOqgfntFEoYV1k9K11VUpSineBfefVnSccRyYke1CmWEiYRbFsb4Q5ULAYPIlTCXrOmCpQw==",
+    "Microsoft.AspNetCore.Authorization/7.0.1": {
+      "sha512": "yhkU+dAvkp1o1ZhihwKFsGy2RXxBaLCohev0HN8yaqfFsV1ThvQIRPh6GKcoPln/ARY23N0gIkOv5zx36HRXhg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.authorization/7.0.13",
+      "path": "microsoft.aspnetcore.authorization/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34487,14 +34679,14 @@
         "lib/net7.0/Microsoft.AspNetCore.Authorization.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
-        "microsoft.aspnetcore.authorization.7.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.7.0.1.nupkg.sha512",
         "microsoft.aspnetcore.authorization.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components/7.0.13": {
-      "sha512": "jAEY7107l/dVJ+a+hcQlrcJgwJL9msZWoG/3DaSWGfUHFWT4PGkJtQlxgvMCjrb3Z7PH8A0bVVNApw5qmnBJ/w==",
+    "Microsoft.AspNetCore.Components/7.0.1": {
+      "sha512": "1oRvYf1Mv51HeV8fj69PC24N1GJzukzpr2av1ZLdVXAAsYbSZkf4wJrx0ztjolw8MhDoxKzzdaNRFagFf4mM1Q==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components/7.0.13",
+      "path": "microsoft.aspnetcore.components/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34502,14 +34694,14 @@
         "THIRD-PARTY-NOTICES.txt",
         "lib/net7.0/Microsoft.AspNetCore.Components.dll",
         "lib/net7.0/Microsoft.AspNetCore.Components.xml",
-        "microsoft.aspnetcore.components.7.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.components.7.0.1.nupkg.sha512",
         "microsoft.aspnetcore.components.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Analyzers/7.0.13": {
-      "sha512": "i/gFyeRuLYG6mB5zEFsJuVaavy5HFghpiZkRcqeFyb+rKGsUTjEQH46d+/+Rj4oPWtrhu/r0PPaR8nTtf8A/kA==",
+    "Microsoft.AspNetCore.Components.Analyzers/7.0.1": {
+      "sha512": "ppVov06v5p2O2CYR/afInph+7HA9gPk2VjTAYLNk2Tj/OOJWku0c6moXn/pjmXnhcJ9aXEciNmjS+U6H+0Xctg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.analyzers/7.0.13",
+      "path": "microsoft.aspnetcore.components.analyzers/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34518,14 +34710,14 @@
         "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
         "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
-        "microsoft.aspnetcore.components.analyzers.7.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.7.0.1.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Metadata/7.0.13": {
-      "sha512": "wnQ+neovgezOP2MqAoPEeSxJFJ2a8YrW3G0zzhXzZQI2CxTo76GOB/L9i7+1KzkuBRchVnJnV0uXbzeA6qr3RA==",
+    "Microsoft.AspNetCore.Metadata/7.0.1": {
+      "sha512": "IY2hcEYR+q4PJ/rsfzakTTeS8UOU14rlYzfTWArJCmfL+jpNeu0pkr7SHiRQbL1MKNz7aT4n3qQG7jcGHQVOjQ==",
       "type": "package",
-      "path": "microsoft.aspnetcore.metadata/7.0.13",
+      "path": "microsoft.aspnetcore.metadata/7.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34537,7 +34729,7 @@
         "lib/net7.0/Microsoft.AspNetCore.Metadata.xml",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
         "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
-        "microsoft.aspnetcore.metadata.7.0.13.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.7.0.1.nupkg.sha512",
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
@@ -34779,10 +34971,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options/7.0.1": {
-      "sha512": "pZRDYdN1FpepOIfHU62QoBQ6zdAoTvnjxFfqAzEd9Jhb2dfhA5i6jeTdgGgcgTWFRC7oT0+3XrbQu4LjvgX1Nw==",
+    "Microsoft.Extensions.Options/7.0.0": {
+      "sha512": "lP1yBnTTU42cKpMozuafbvNtQ7QcBjr/CcK3bYOGEMH55Fjt+iecXjT6chR7vbgCMqy3PG3aNQSZgo/EuY/9qQ==",
       "type": "package",
-      "path": "microsoft.extensions.options/7.0.1",
+      "path": "microsoft.extensions.options/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -34803,7 +34995,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.7.0.1.nupkg.sha512",
+        "microsoft.extensions.options.7.0.0.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -38259,7 +38451,7 @@
     "net7.0-android33.0": [
       "BUS >= 1.0.0",
       "DTO >= 1.0.0",
-      "Microsoft.AspNetCore.Components >= 7.0.13",
+      "Microsoft.AspNetCore.Components >= 7.0.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -38283,7 +38475,7 @@
     "net7.0-ios16.1": [
       "BUS >= 1.0.0",
       "DTO >= 1.0.0",
-      "Microsoft.AspNetCore.Components >= 7.0.13",
+      "Microsoft.AspNetCore.Components >= 7.0.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -38296,7 +38488,7 @@
     "net7.0-maccatalyst16.1": [
       "BUS >= 1.0.0",
       "DTO >= 1.0.0",
-      "Microsoft.AspNetCore.Components >= 7.0.13",
+      "Microsoft.AspNetCore.Components >= 7.0.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -38309,7 +38501,7 @@
     "net7.0-windows10.0.19041": [
       "BUS >= 1.0.0",
       "DTO >= 1.0.0",
-      "Microsoft.AspNetCore.Components >= 7.0.13",
+      "Microsoft.AspNetCore.Components >= 7.0.1",
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.DependencyInjection >= 7.0.0",
       "Microsoft.Extensions.Logging >= 7.0.0",
@@ -38415,7 +38607,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components": {
             "target": "Package",
-            "version": "[7.0.13, )"
+            "version": "[7.0.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -38545,7 +38737,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components": {
             "target": "Package",
-            "version": "[7.0.13, )"
+            "version": "[7.0.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -38620,7 +38812,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components": {
             "target": "Package",
-            "version": "[7.0.13, )"
+            "version": "[7.0.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -38696,7 +38888,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components": {
             "target": "Package",
-            "version": "[7.0.13, )"
+            "version": "[7.0.1, )"
           },
           "Microsoft.Extensions.Configuration": {
             "target": "Package",
@@ -38824,47 +39016,5 @@
         "#import": []
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Microsoft.Extensions.Logging.Abstractions from 7.0.1 to 7.0.0. Reference the package directly from the project to select a different version. \r\n GUI -> Microsoft.AspNetCore.Components 7.0.13 -> Microsoft.AspNetCore.Authorization 7.0.13 -> Microsoft.Extensions.Logging.Abstractions (>= 7.0.1) \r\n GUI -> Microsoft.Extensions.Logging.Abstractions (>= 7.0.0)",
-      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
-      "targetGraphs": [
-        "net7.0-android33.0",
-        "net7.0-android33.0/android-arm",
-        "net7.0-android33.0/android-arm64",
-        "net7.0-android33.0/android-x64",
-        "net7.0-android33.0/android-x86",
-        "net7.0-android33.0/iossimulator-x64",
-        "net7.0-android33.0/maccatalyst-x64",
-        "net7.0-android33.0/win10-x64",
-        "net7.0-ios16.1",
-        "net7.0-ios16.1/android-arm",
-        "net7.0-ios16.1/android-arm64",
-        "net7.0-ios16.1/android-x64",
-        "net7.0-ios16.1/android-x86",
-        "net7.0-ios16.1/iossimulator-x64",
-        "net7.0-ios16.1/maccatalyst-x64",
-        "net7.0-ios16.1/win10-x64",
-        "net7.0-maccatalyst16.1",
-        "net7.0-maccatalyst16.1/android-arm",
-        "net7.0-maccatalyst16.1/android-arm64",
-        "net7.0-maccatalyst16.1/android-x64",
-        "net7.0-maccatalyst16.1/android-x86",
-        "net7.0-maccatalyst16.1/iossimulator-x64",
-        "net7.0-maccatalyst16.1/maccatalyst-x64",
-        "net7.0-maccatalyst16.1/win10-x64",
-        "net7.0-windows10.0.19041",
-        "net7.0-windows10.0.19041/android-arm",
-        "net7.0-windows10.0.19041/android-arm64",
-        "net7.0-windows10.0.19041/android-x64",
-        "net7.0-windows10.0.19041/android-x86",
-        "net7.0-windows10.0.19041/iossimulator-x64",
-        "net7.0-windows10.0.19041/maccatalyst-x64",
-        "net7.0-windows10.0.19041/win10-x64"
-      ]
-    }
-  ]
+  }
 }
