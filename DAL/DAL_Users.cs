@@ -84,28 +84,49 @@ namespace DAL
             }
         }
 
-        public async Task<bool> UpdateUser(List<DTO_Users> _user)
+        public async Task<bool> UpdateUser(DTO_Users _user)
         {
             try
             {
                 var collection = db.GetCollection<DTO_Users>(collectionName);
 
-                foreach (DTO_Users u in _user)
-                {
-                    var filter = Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, u.Account.Email);
-                    var update = Builders<DTO_Users>.Update.Set(x => x.UserName, u.UserName)
-                                                           .Set(x => x.Gender, u.Gender)
-                                                           .Set(x => x.PhoneNumber, u.PhoneNumber)
-                                                           .Set(x => x.Birthday, u.Birthday)
-                                                           .Set(x => x.Country, u.Country);
-                    await collection.UpdateOneAsync(filter, update);
-                }
+                var filter = Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, _user.Account.Email);
+                var update = Builders<DTO_Users>.Update.Set(x => x.UserName, _user.UserName)
+                                                        .Set(x => x.Gender, _user.Gender)
+                                                        .Set(x => x.PhoneNumber, _user.PhoneNumber)
+                                                        .Set(x => x.Birthday, _user.Birthday)
+                                                        .Set(x => x.Country, _user.Country);
+
+                await collection.UpdateOneAsync(filter, update);
 
                 return true;
             } 
             catch
             {
                 return false;
+            }
+        }
+
+        public async Task<List<DTO_Users>> FindUserWith(string infoUser)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                var filter = Builders<DTO_Users>.Filter.Or(
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.UserName, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.Gender, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.PhoneNumber, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.Country, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, infoUser)
+                                                            );
+                var users = await collection.Find(filter).ToListAsync();
+
+                return users;
+            }
+            catch
+            {
+                throw new Exception("Error in DAL_FindUserWith");
             }
         }
     }

@@ -1,5 +1,7 @@
 ﻿using DAL;
 using DTO;
+using MongoDB.Driver;
+using System.Collections;
 using System.Data;
 
 namespace BUS
@@ -97,7 +99,7 @@ namespace BUS
             }
         }
 
-        public async Task<bool> BusUpdateUser(List<DTO_Users> _user)
+        public async Task<bool> BusUpdateUser(DTO_Users _user)
         {
             try
             {
@@ -108,6 +110,20 @@ namespace BUS
             catch
             {
                 return false;
+            }
+        }
+
+        public async Task<List<DTO_Users>> BusFindUser(string infoUser)
+        {
+            try
+            {
+                List<DTO_Users> users = await dal_users.FindUserWith(infoUser);
+
+                return users;
+            }
+            catch
+            {
+                throw new Exception("Error in BUS_FindUserWith");
             }
         }
     }

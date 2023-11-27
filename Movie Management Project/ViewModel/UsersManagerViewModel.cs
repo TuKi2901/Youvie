@@ -19,13 +19,16 @@ namespace Movie_Management_Project.ViewModel
         private DateTime _birthday;
         private string _phoneNumber;
         private string _gender;
+        private string _search;
 
         public ObservableCollection<DTO_Users> SelectedUsers { get; set; } = new ObservableCollection<DTO_Users>();
         public ObservableCollection<DTO_Users> dsUsers { get; } = new();
         public ICommand AddUserCommand { get; }
         public ICommand DeleteUserCommand { get; }
         public ICommand RefreshCommand { get; }
-        public ICommand UpdateUserCommnad {  get; }
+        public ICommand UpdateUserCommand {  get; }
+        public ICommand SaveUpdateCommand { get; }
+        public ICommand FindUserCommand { get; }
 
         public UsersManagerViewModel()
         {
@@ -33,7 +36,9 @@ namespace Movie_Management_Project.ViewModel
             AddUserCommand = new Command(AddUser);
             DeleteUserCommand = new Command(DeleteUser);
             RefreshCommand = new Command(RefreshFormUser);
-            UpdateUserCommnad = new Command(UpdateUser);
+            UpdateUserCommand = new Command(UpdateUser);
+            SaveUpdateCommand = new Command(SaveUpdateUser);
+            FindUserCommand = new Command(FindUser);
         }
 
         #region SetProperty
@@ -101,6 +106,13 @@ namespace Movie_Management_Project.ViewModel
                     _gender = "Female";
                 }
             }
+        }
+
+        public string Search
+        {
+            get { return _search; }
+            set
+            { SetProperty(ref _search, value); }
         }
         #endregion
 
@@ -219,67 +231,45 @@ namespace Movie_Management_Project.ViewModel
 
         public async void RefreshFormUser()
         {
-            if (IsBusy)
-            {
-                return;
-            }
-
-            try
-            {
-                IsBusy = true;
-
-                dsUsers.Clear();
-
-                List<DTO_Users> users = await _bus.BusGetUser();
-
-                foreach (DTO_Users user in users)
-                {
-                    dsUsers.Add(user);
-                }
-
-                UserName = string.Empty;
-                PhoneNumber = string.Empty;
-                Birthday = DateTime.MinValue;
-                Email = string.Empty;
-                Password = string.Empty;
-                Country = string.Empty;
-                _gender = string.Empty;
-                IsMale = false;
-                IsFemale = false;
-
-            }
-            finally
-            {
-                IsBusy = false;
-            }
+            await Shell.Current.Navigation.PushAsync(new UserManager());
         }
 
         public async void UpdateUser()
         {
             try
             {
-                //if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to update!!"); }
+                if (SelectedUsers.Count == 0) { throw new Exception("Must choose User you want to update!!"); }
 
-                //if (UserName == string.Empty || UserName == null) throw new Exception("UserName doesn't must empty");
-
-                //if (Email == string.Empty || Email == null || !IsValidEmail(Email)) throw new Exception("Email is invalid, bro");
-
-                //if (Password == string.Empty || Password == null) throw new Exception("Password doesn't must empty");
-
-                //if (PhoneNumber == string.Empty || PhoneNumber == null || !long.TryParse(PhoneNumber, out _)) throw new Exception("PhoneNumber is invalid, bro");
-
-                //if (Country == string.Empty || Country == null) throw new Exception("Country doesn't must empty");
-
-                //if (_gender == string.Empty || _gender == null) throw new Exception("Choose your gender, bro !!!");
-
-                List<DTO_Users> users = new List<DTO_Users>();
-
-                foreach (DTO_Users u in SelectedUsers)
+                if (SelectedUsers.Count > 1)
                 {
-                    users.Add(u);
+                    throw new Exception("Choose only 1 user to Update !!!");
                 }
 
-                bool check = await _bus.BusUpdateUser(users);
+                UserName = SelectedUsers[0].UserName;
+                PhoneNumber = SelectedUsers[0].PhoneNumber;
+                _gender = SelectedUsers[0].Gender;
+                if (_gender == "Male") { IsMale = true; IsFemale = false; }  else if (_gender == "Female") { IsMale = false; IsFemale = true; }
+                Country = SelectedUsers[0].Country;
+                Birthday = SelectedUsers[0].Birthday;
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+            }
+        }
+
+        public async void SaveUpdateUser()
+        {
+            try
+            {
+                DTO_Users user = SelectedUsers[0];
+                user.UserName = UserName;
+                user.PhoneNumber = PhoneNumber;
+                user.Birthday = Birthday;
+                user.Country = Country;
+                user.Gender = _gender;
+
+                bool check = await _bus.BusUpdateUser(user);
 
                 if (!check)
                 {
@@ -292,6 +282,38 @@ namespace Movie_Management_Project.ViewModel
             catch (Exception ex)
             {
                 await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+            }
+        }
+
+        public async void FindUser()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            try
+            {
+                IsBusy = true;
+
+                var users = await _bus.BusFindUser(Search);
+
+                dsUsers.Clear();
+
+                foreach (var user in users)
+                {
+                    dsUsers.Add(user);
+                }
+
+                await Shell.Current.DisplayAlert("Notification!", $"Find user success!!!", "Ok");
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error!", $"Find User failed!: {ex.Message}", "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
     }
