@@ -201,7 +201,7 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void UsersDataGrid()
+        private async void UsersDataGrid()
         {
             if (IsBusy)
             {
