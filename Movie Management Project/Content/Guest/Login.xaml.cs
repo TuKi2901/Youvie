@@ -2,6 +2,7 @@
 using DTO;
 using Microsoft.Maui.ApplicationModel.Communication;
 using Microsoft.Maui.Controls.PlatformConfiguration;
+using Movie_Management_Project.Content.Admin;
 using Movie_Management_Project.Content.User;
 using System.Net.Mail;
 using System.Security.Principal;
