@@ -13,6 +13,7 @@
     BackgroundColor="White">
 
 
+
     <ShellItem Title="Guest" Route="guest" >
         <ShellContent ContentTemplate="{DataTemplate Guest:Login}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}"/>
@@ -37,34 +38,36 @@
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
-
                 </Grid.ColumnDefinitions>
+
+
                 <Button x:Name="btnHome"
                 Text="Home" Clicked="btnHome_Clicked" 
-                Grid.Column="0" 
+                Grid.Column="1" 
                 Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <Button x:Name="btnTVShows" 
                 Text="TV Shows" Clicked="btnTVShows_Clicked" 
-                Grid.Column="1" 
+                Grid.Column="2" 
                 Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <Button x:Name="btnMovies" 
                 Text="Movies" Clicked="btnMovies_Clicked" 
-                Grid.Column="2" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                Grid.Column="3" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <Button x:Name="btnLastest" 
                 Text="Latest" Clicked="btnLastest_Clicked" 
-                Grid.Column="3" 
+                Grid.Column="4" 
                 Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <SearchBar x:Name="searchBarSearch"
-                   Placeholder="Search" Grid.Column="4" VerticalOptions="Center"/>
+                   Placeholder="Search" Grid.Column="5" VerticalOptions="Center"/>
                 <Button x:Name="btnUser" 
                 Text="Unknown" Loaded="btnUser_Loaded" 
-                Grid.Column="5" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                Grid.Column="6" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
             </Grid>

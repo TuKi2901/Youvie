@@ -28,29 +28,29 @@ namespace Movie_Management_Project
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if WINDOWS
-    builder.ConfigureLifecycleEvents(events =>
-                        {
-                            events.AddWindows(wndLifeCycleBuilder =>
-                            {
-                                wndLifeCycleBuilder.OnWindowCreated(window =>
-                                {
-                                    window.ExtendsContentIntoTitleBar = false;
-                                    IntPtr nativeWindowHandle = WinRT.Interop.WindowNative.GetWindowHandle(window);
-                                    WindowId win32WindowsId = Win32Interop.GetWindowIdFromWindow(nativeWindowHandle);
-                                    AppWindow winuiAppWindow = AppWindow.GetFromWindowId(win32WindowsId);
-                                    if(winuiAppWindow.Presenter is OverlappedPresenter p)
-                                    {
-                                        //p.SetBorderAndTitleBar(false, false);
-                                    }
-                                    const int width = 1366;
-                                    const int height = 768;
-            /*I suggest you to use MoveAndResize instead of Resize because this way you make sure to center the window*/
-                                    winuiAppWindow.MoveAndResize(new RectInt32(0,0, width, height));
-                                });
-                            });
-                        });
-#endif
+//#if WINDOWS
+//    builder.ConfigureLifecycleEvents(events =>
+//                        {
+//                            events.AddWindows(wndLifeCycleBuilder =>
+//                            {
+//                                wndLifeCycleBuilder.OnWindowCreated(window =>
+//                                {
+//                                    window.ExtendsContentIntoTitleBar = false;
+//                                    IntPtr nativeWindowHandle = WinRT.Interop.WindowNative.GetWindowHandle(window);
+//                                    WindowId win32WindowsId = Win32Interop.GetWindowIdFromWindow(nativeWindowHandle);
+//                                    AppWindow winuiAppWindow = AppWindow.GetFromWindowId(win32WindowsId);
+//                                    if(winuiAppWindow.Presenter is OverlappedPresenter p)
+//                                    {
+//                                        //p.SetBorderAndTitleBar(false, false);
+//                                    }
+//                                    const int width = 1366;
+//                                    const int height = 768;
+//            /*I suggest you to use MoveAndResize instead of Resize because this way you make sure to center the window*/
+//                                    winuiAppWindow.MoveAndResize(new RectInt32(0,0, width, height));
+//                                });
+//                            });
+//                        });
+//#endif
 
             #region Test Fullscreen Windown
             //#if WINDOWS

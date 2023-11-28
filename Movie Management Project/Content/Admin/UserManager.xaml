@@ -5,7 +5,9 @@
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.Admin.UserManager"
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
-             Title="UserManager">
+             Title="UserManager"
+             Shell.NavBarIsVisible="False">
+
 
     <ContentPage.BindingContext>
         <viewmodel:UsersManagerViewModel></viewmodel:UsersManagerViewModel>
