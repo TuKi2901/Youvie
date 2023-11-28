@@ -13,7 +13,6 @@
 
     <ScrollView>
         <VerticalStackLayout>
-
             <Grid x:Name="titleUser" ColumnDefinitions="*,*" HorizontalOptions="Center">
                 <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
@@ -66,7 +65,7 @@
                                     Text="Add" Grid.Column="0" Margin="0,0,15,0" Command="{Binding AddUserCommand}"/>
                             <Button x:Name="btnDeleteUser"
                                     Text="Delete" Grid.Column="1" Margin="0,0,15,0" Command="{Binding DeleteUserCommand}"/>
-                            <Button x:Name="btnUpdateUser"
+                            <Button x:Name="btnUpdateUser"  
                                     Text="Update" Grid.Column="2" Margin="0,0,15,0" Command="{Binding UpdateUserCommand}"/>
                             <Button x:Name="btnSaveUser"
                                     Text="Save" Grid.Column="3" Margin="0,0,15,0" Command="{Binding SaveUpdateCommand}"/>

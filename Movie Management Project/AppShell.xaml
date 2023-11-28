@@ -7,45 +7,69 @@
     xmlns:Guest="clr-namespace:Movie_Management_Project.Content.Guest"
     xmlns:Admin="clr-namespace:Movie_Management_Project.Content.Admin"
     xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.TabBarIsVisible="False"
+    Shell.FlyoutItemIsVisible="False"
+    Shell.FlyoutBehavior="Disabled"
+    BackgroundColor="White">
+
+
+    <ShellItem Title="Guest" Route="guest" >
+        <ShellContent ContentTemplate="{DataTemplate Guest:Login}"/>
+        <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}"/>
+        <ShellContent ContentTemplate="{DataTemplate Guest:ForgotPassword}"/>
+    </ShellItem>
+
+
+
+    <ShellItem Title="User" Route="user">
+        <ShellContent ContentTemplate="{DataTemplate User:Home}"/>
+        <ShellContent ContentTemplate="{DataTemplate User:InformationUser}"/>
+        <ShellContent ContentTemplate="{DataTemplate User:Payment}" />
+        <ShellContent ContentTemplate="{DataTemplate User:Play}" />
+        <ShellContent ContentTemplate="{DataTemplate User:Search}" />
+    </ShellItem>
 
     <Shell.TitleView>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
+        <ContentView>
+            <Grid ColumnSpacing="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
 
-            <Button
-            Grid.Column="0"
-            Text="Home"
-            Clicked="Button_Clicked_1"/>
-            <Button
-            Grid.Column="1"
-            Text="Play"
-            Clicked="Button_Clicked_2"/>
-            <Button
-            Grid.Column="2"
-            Text="AdminManager"
-            Clicked="Button_Clicked_3"/>
-            <Button
-            Grid.Column="3"
-            Text="MediaManager"
-            Clicked="Button_Clicked_4"/>
-            <Button
-            Grid.Column="4"
-            Text="UserManager"
-            Clicked="Button_Clicked_5"/>
-            
-        </Grid>
-
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnHome"
+                Text="Home" Clicked="btnHome_Clicked" 
+                Grid.Column="0" 
+                Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                FontSize="Default" VerticalOptions="Center"/>
+                <Button x:Name="btnTVShows" 
+                Text="TV Shows" Clicked="btnTVShows_Clicked" 
+                Grid.Column="1" 
+                Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                FontSize="Default" VerticalOptions="Center"/>
+                <Button x:Name="btnMovies" 
+                Text="Movies" Clicked="btnMovies_Clicked" 
+                Grid.Column="2" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                FontSize="Default" VerticalOptions="Center"/>
+                <Button x:Name="btnLastest" 
+                Text="Latest" Clicked="btnLastest_Clicked" 
+                Grid.Column="3" 
+                Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                FontSize="Default" VerticalOptions="Center"/>
+                <SearchBar x:Name="searchBarSearch"
+                   Placeholder="Search" Grid.Column="4" VerticalOptions="Center"/>
+                <Button x:Name="btnUser" 
+                Text="Unknown" Loaded="btnUser_Loaded" 
+                Grid.Column="5" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                FontSize="Default" VerticalOptions="Center"/>
+                <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
+            </Grid>
+        </ContentView>
     </Shell.TitleView>
-
-        <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate Guest:SignUp}"
-        />
 </Shell>
+
+    
