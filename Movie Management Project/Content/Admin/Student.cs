@@ -15,7 +15,8 @@ namespace Movie_Management_Project.Content.Admin
         static Random random = new();
         public ObservableCollection<Student> Items { get; } = new();
         public ObservableCollection<Student> Items1 { get; } = new();
-        public IEnumerable<Student> Items2 { get; }
+        public ObservableCollection<Student> Items2 { get; } = new();
+        public ObservableCollection<Student> Items4 { get; } = new();
         
 
         public MainPageViewModel()
@@ -25,9 +26,13 @@ namespace Movie_Management_Project.Content.Admin
                 Items.Add(new Student { Id = i, Name = "Person " + i, Age = random.Next(14, 85), });
             }
             Items1.Add(new Student { Id=10, Name="Person", Age=232 });
-            Items1.Add(new Student { Name="Person2", Age=322 });
-            Items1.Add(new Student { Name="Person3", Age=33 });
-            Items1.Add(new Student { Name="Person4", });
+            Items2.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items2.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items4.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items4.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items4.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items4.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items4.Add(new Student { Id=10, Name="Person", Age=232 });
         }
 
         public class Student

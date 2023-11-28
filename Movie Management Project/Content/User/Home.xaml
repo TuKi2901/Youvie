@@ -3,7 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.User.Home"
-             Title="Home">
+             Title="Home"
+             x:Name="formHome">
+    
+    
     <ContentPage.BindingContext>
         <local:MainPageViewModel/>
     </ContentPage.BindingContext>
@@ -35,11 +38,12 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
-                            <Image 
+                            <ImageButton
                                    Grid.Row="0" Grid.Column="0"
                                    Source="dotnet_bot.png"
                                    HeightRequest="220"
                                    WidthRequest="220"
+                                   Clicked="ImageButton_Clicked"
                                    />
                             <Label Grid.Row="1" Grid.Column="0"
                                    Text="{Binding Name}"
@@ -85,6 +89,19 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
+
+                            <Image 
+                                   Grid.Row="0" Grid.Column="0"
+                                   Source="dotnet_bot.png"
+                                   HeightRequest="220"
+                                   WidthRequest="220"
+                                   />
+                            <Label Grid.Row="1" Grid.Column="0"
+                                   Text="{Binding Name}"
+                                   FontSize="Small"
+                                   HorizontalOptions="Center"
+                                   Padding="20"
+                                   Margin="0,0,0,0"/>
                             <!--bắt sự kiện chọn phim thành màu xanh-->
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup Name="CommonStates">
