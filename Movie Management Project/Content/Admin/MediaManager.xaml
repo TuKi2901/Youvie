@@ -8,7 +8,8 @@
              Title="MediaManager">
 
     <ContentPage.BindingContext>
-        <viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>
+        <local:MainPageViewModel></local:MainPageViewModel>
+        <!--<viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>-->
     </ContentPage.BindingContext>
 
     <ScrollView>
