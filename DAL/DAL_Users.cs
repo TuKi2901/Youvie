@@ -25,6 +25,28 @@ namespace DAL
             }
         }
 
+        public async Task<bool> DeleteUserDAL(List<string> email)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                var filter = Builders<DTO_Users>.Filter.In(x => x.Account.Email, email);
+                var result = await collection.DeleteManyAsync(filter);
+
+                if (result.DeletedCount == 0)
+                {
+                    throw new Exception();
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         public async Task<DTO_Users> GetUserByEmail(string email)
         {
             try
@@ -35,14 +57,14 @@ namespace DAL
 
                 if (user == null)
                 {
-                    throw new Exception();
+                    throw new Exception($"Don't found user with {email}");
                 }
 
                 return user;
             }
-            catch
+            catch (Exception ex)
             {
-                throw new Exception("Error in GetUserByEmail");
+                throw new Exception($"Error in GetUserByEmail: {ex.Message}");
             }
         }
 
@@ -54,16 +76,57 @@ namespace DAL
 
                 var users = await collection.Find(_ => true).ToListAsync();
 
-                if (users == null)
-                {
-                    throw new Exception();
-                }
+                return users;
+            }
+            catch
+            {
+                throw new Exception("Error in DAL_GetAllUser");
+            }
+        }
+
+        public async Task<bool> UpdateUser(DTO_Users _user)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                var filter = Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, _user.Account.Email);
+                var update = Builders<DTO_Users>.Update.Set(x => x.UserName, _user.UserName)
+                                                        .Set(x => x.Gender, _user.Gender)
+                                                        .Set(x => x.PhoneNumber, _user.PhoneNumber)
+                                                        .Set(x => x.Birthday, _user.Birthday)
+                                                        .Set(x => x.Country, _user.Country);
+
+                await collection.UpdateOneAsync(filter, update);
+
+                return true;
+            } 
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<DTO_Users>> FindUserWith(string infoUser)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                var filter = Builders<DTO_Users>.Filter.Or(
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.UserName, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.Gender, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.PhoneNumber, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.Country, infoUser),
+                                                            Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, infoUser)
+                                                            );
+                var users = await collection.Find(filter).ToListAsync();
 
                 return users;
             }
             catch
             {
-                throw new Exception("Lỗi ở DAL_User");
+                throw new Exception("Error in DAL_FindUserWith");
             }
         }
     }

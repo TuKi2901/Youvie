@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Movie_Management_Project.Content.Guest.Login"
              Title="Login"
-             x:Name="formSignUp">
+             x:Name="formSignUp"
+             Shell.NavBarIsVisible="False">
   
     <ScrollView>
         <VerticalStackLayout WidthRequest="700">

@@ -9,11 +9,18 @@ namespace DAL
 
         public async Task<DTO_Plans> GetPlan(int role)
         {
-            var collection = db.GetCollection<DTO_Plans>(collectionName);
+            try
+            {
+                var collection = db.GetCollection<DTO_Plans>(collectionName);
 
-            DTO_Plans plan = await collection.Find(x => x.Role == role).FirstOrDefaultAsync();
+                DTO_Plans plan = await collection.Find(x => x.Role == role).FirstOrDefaultAsync();
 
-            return plan;
+                return plan;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

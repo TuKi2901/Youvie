@@ -14,15 +14,19 @@
 
 
     <ShellItem Title="Guest" Route="guest" >
-        <ShellContent ContentTemplate="{DataTemplate Guest:Login}" Shell.NavBarIsVisible="False"/>
-        <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}" Shell.NavBarIsVisible="False"/>
-        <ShellContent ContentTemplate="{DataTemplate Guest:ForgotPassword}" Shell.NavBarIsVisible="False"/>
+        <ShellContent ContentTemplate="{DataTemplate Guest:Login}"/>
+        <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}"/>
+        <ShellContent ContentTemplate="{DataTemplate Guest:ForgotPassword}"/>
     </ShellItem>
 
 
 
     <ShellItem Title="User" Route="user">
-        <ShellContent ContentTemplate="{DataTemplate User:InformationUser}" Shell.NavBarIsVisible="True" />
+        <ShellContent ContentTemplate="{DataTemplate User:Home}"/>
+        <ShellContent ContentTemplate="{DataTemplate User:InformationUser}"/>
+        <ShellContent ContentTemplate="{DataTemplate User:Payment}" />
+        <ShellContent ContentTemplate="{DataTemplate User:Play}" />
+        <ShellContent ContentTemplate="{DataTemplate User:Search}" />
     </ShellItem>
 
     <Shell.TitleView>

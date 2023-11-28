@@ -43,8 +43,7 @@
                                    Source="dotnet_bot.png"
                                    HeightRequest="220"
                                    WidthRequest="220"
-                                   Clicked="ImageButton_Clicked"
-                                   />
+                                   Clicked="ImageButton_Clicked"/>
                             <Label Grid.Row="1" Grid.Column="0"
                                    Text="{Binding Name}"
                                    FontSize="Small"
