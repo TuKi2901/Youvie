@@ -4,10 +4,11 @@
              xmlns:material ="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.Admin.AdminManager"
+             xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="MediaManager">
 
     <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
+        <viewmodel:AdminManagerViewModel></viewmodel:AdminManagerViewModel>
     </ContentPage.BindingContext>
 
     <ScrollView>
@@ -96,12 +97,13 @@
             ColumnDefinitions="*"
             RowDefinitions="Auto, *">
                     <ScrollView Grid.Row="1">
-                        <material:DataGrid ItemsSource="{Binding Items}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
+                        <material:DataGrid ItemsSource="{Binding dsAdmins}" SelectedItems="{Binding SelectedItems}" HorizontalOptions="Center">
                             <material:DataGrid.Columns>
                                 <material:DataGridSelectionColumn />
                                 <material:DataGridColumn Binding="{Binding Id}" Title="Identity" />
-                                <material:DataGridColumn Binding="{Binding Name}" Title="Name" />
-                                <material:DataGridColumn Binding="{Binding Age}" Title="Age" />
+                                <material:DataGridColumn Binding="{Binding AdminName}" Title="Name" />
+                                <material:DataGridColumn Binding="{Binding Gender}" Title="Gender" />
+                                <material:DataGridColumn Binding="{Binding Role}" Title="Role" />
                             </material:DataGrid.Columns>
                         </material:DataGrid>
                     </ScrollView>

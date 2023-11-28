@@ -1,13 +1,7 @@
 ﻿using BUS;
 using DTO;
-using Microsoft.AspNetCore.Components;
-using Microsoft.Maui.ApplicationModel;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Controls.PlatformConfiguration;
-using Microsoft.Maui.Controls.PlatformConfiguration.GTKSpecific;
-using Microsoft.Maui.Platform;
+using Movie_Management_Project.ViewModel;
 using System.Net.Mail;
-using static System.Net.WebRequestMethods;
 
 namespace Movie_Management_Project.Content.Guest
 {
@@ -55,8 +49,9 @@ namespace Movie_Management_Project.Content.Guest
 
                 if (txtEmail.Text == null)
                 {
+                    txtEmail.Focus();
                     throw new Exception("Email is invalid !!!");
-                } 
+                }
                 else
                 {
                     if (!IsValidEmail(txtEmail.Text))
@@ -75,17 +70,20 @@ namespace Movie_Management_Project.Content.Guest
                 {
                     if (txtConfirmPassword.Text == null || !txtConfirmPassword.Text.Equals(txtPassword.Text))
                     {
+                        txtConfirmPassword.Focus();
                         throw new Exception("Password doesn't match !!!");
                     }
                 }
 
-                if (txtPhoneNumber.Text == null || txtPhoneNumber.Text.Length < 1)
+                if (txtPhoneNumber.Text == null || txtPhoneNumber.Text.Length < 1 || !long.TryParse(txtPhoneNumber.Text, out _))
                 {
+                    txtPhoneNumber.Focus();
                     throw new Exception("PhoneNumber is invalid !!!");
                 }
 
                 if (pkCountry.SelectedItem == null)
                 {
+                    pkCountry.Focus();
                     throw new Exception("Bro, You need must choose your country !!!");
                 }
 
@@ -102,9 +100,9 @@ namespace Movie_Management_Project.Content.Guest
                 dTO_Accounts.Email = txtEmail.Text;
                 dTO_Accounts.Password = txtPassword.Text;
 
-                bool check = await bus_project1.BusCreateUser(dTO_Users, dTO_Accounts);
+                string check = await bus_project1.BusCreateUser(dTO_Users, dTO_Accounts);
 
-                if (!check)
+                if (check != string.Empty)
                 {
                     throw new Exception("Create an account fail");
                 }
