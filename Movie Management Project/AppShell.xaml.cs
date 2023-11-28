@@ -8,7 +8,6 @@ namespace Movie_Management_Project
         public AppShell()
         {
             InitializeComponent();
-
         }
         
         //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện
@@ -44,17 +43,17 @@ namespace Movie_Management_Project
 
         private async void btnTVShows_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            await PushPage(new AdminManager());
         }
 
         private async void btnMovies_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            await PushPage(new MediaManager());
         }
 
         private async void btnLastest_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            await PushPage(new UserManager());
         }
 
         #region Shortcut Form Test
