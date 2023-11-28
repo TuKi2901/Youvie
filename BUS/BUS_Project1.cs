@@ -12,6 +12,7 @@ namespace BUS
         DAL_Accounts dal_accounts = new DAL_Accounts();
         DAL_Plans dal_plans = new DAL_Plans();
         DAL_Admins dal_admins = new DAL_Admins();
+        DAL_Medias dal_medias = new DAL_Medias();
 
         // User
         #region User
@@ -148,5 +149,23 @@ namespace BUS
 
 
         #endregion
+
+        // Media
+        #region Media
+        public async Task<List<DTO_Medias>> BusGetAllMedias()
+        {
+            try
+            {
+                List<DTO_Medias> medias = await dal_medias.GetAllMedia();
+
+                return medias;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        #endregion 
     }
 }
