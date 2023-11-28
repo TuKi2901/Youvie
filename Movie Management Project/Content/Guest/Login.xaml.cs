@@ -11,20 +11,14 @@ namespace Movie_Management_Project.Content.Guest;
 public partial class Login : ContentPage
 {
     BUS_Project1 bus_project1 = new BUS_Project1();
-
     public Login()
     {
-        Content = new StackLayout
-        {
-            Children = { btnSignUp }
-        };
-
         InitializeComponent();
     }
 
     private async void btnSignUp_Clicked(object sender, EventArgs e)
     {
-        await Navigation.PopAsync();
+        await Navigation.PushAsync(new SignUp());
     }
 
     private async void btnForgotPassword_Clicked(object sender, EventArgs e)
@@ -61,4 +55,5 @@ public partial class Login : ContentPage
             await DisplayAlert("Error", ex.Message, "OK");
         }
     }
+
 }

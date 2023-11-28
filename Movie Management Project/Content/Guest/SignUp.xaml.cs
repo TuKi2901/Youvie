@@ -6,6 +6,7 @@ using Microsoft.Maui.Controls;
 using Microsoft.Maui.Controls.PlatformConfiguration;
 using Microsoft.Maui.Controls.PlatformConfiguration.GTKSpecific;
 using Microsoft.Maui.Platform;
+using Movie_Management_Project.Content.User;
 using System.Net.Mail;
 using static System.Net.WebRequestMethods;
 
