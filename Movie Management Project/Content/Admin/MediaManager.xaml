@@ -7,6 +7,8 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="MediaManager"
              Shell.NavBarIsVisible="False">
+
+    
     <ContentPage.BindingContext>
         <viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>
     </ContentPage.BindingContext>

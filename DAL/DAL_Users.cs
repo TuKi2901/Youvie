@@ -25,7 +25,7 @@ namespace DAL
             }
         }
 
-        public async Task<bool> DeleteUserDAL(List<string> email)
+        public async Task<bool> DeleteUser(List<string> email)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace DAL
                 throw new Exception($"Error in GetUserByEmail: {ex.Message}");
             }
         }
-
+        
         public async Task<List<DTO_Users>> GetAllUser()
         {
             try
@@ -101,6 +101,25 @@ namespace DAL
 
                 return true;
             } 
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdatePasswordUser(string email, string password)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Users>(collectionName);
+
+                var filter = Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, email);
+                var update = Builders<DTO_Users>.Update.Set(x => x.Account.Password, password);
+
+                await collection.UpdateOneAsync(filter, update);
+
+                return true;
+            }
             catch
             {
                 return false;

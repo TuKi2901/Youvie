@@ -6,7 +6,8 @@
              x:Class="Movie_Management_Project.Content.Admin.UserManager"
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="UserManager"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             >
 
 
     <ContentPage.BindingContext>
@@ -116,7 +117,7 @@
                     </Grid>
                 </Grid>
                 <!--#endregion-->
-                <Grid x:Name="gridDataGrid" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
+                <Grid x:Name="gridDataGridUser" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center">
                     <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
                         <ScrollView>
                             <StackLayout>
