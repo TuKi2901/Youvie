@@ -3,12 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.User.Home"
+             xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel" 
              Title="Home"
              x:Name="formHome">
     
     
     <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
+        <!--<local:MainPageViewModel/>-->
+        <!--<viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>-->
+        <viewmodel:HomeMainViewModel></viewmodel:HomeMainViewModel>
     </ContentPage.BindingContext>
     <ScrollView>
         <VerticalStackLayout Padding="0,0,0,100">
@@ -19,11 +22,11 @@
                 HeightRequest="150"/>
 
 
-            <Label Text="Nominated Films" Margin="50" FontSize="Medium"/>
+            <Label Text="Nominated Films" Margin="20" FontSize="Medium"/>
             <CollectionView x:Name="cvNominated"
-                ItemsSource="{Binding Items}" 
+                ItemsSource="{Binding MediainNominated}" 
                 Margin="50,0,50,50"
-                SelectionMode="Single">
+                SelectionMode="Single" SelectedItem="{Binding SelectedMedia}">
                 <CollectionView.ItemsLayout>
                     <!--Xếp từng thuộc tính phim thành hàng dọc -> đưa tất cả thuộc tính thành hàng ngang -->
                     <LinearItemsLayout Orientation="Horizontal" />
@@ -40,16 +43,18 @@
                             </Grid.ColumnDefinitions>
                             <ImageButton
                                    Grid.Row="0" Grid.Column="0"
-                                   Source="dotnet_bot.png"
-                                   HeightRequest="220"
-                                   WidthRequest="220"
-                                   Clicked="ImageButton_Clicked"/>
+                                   Source="{Binding Image}"
+                                   HeightRequest="500"
+                                   WidthRequest="300"
+                                   Command="{Binding BindingContext.SelectedMediaCommand, Source={x:Reference Name=cvNominated}}"
+                                   CommandParameter="{Binding .}"/>
                             <Label Grid.Row="1" Grid.Column="0"
-                                   Text="{Binding Name}"
+                                   Text="{Binding MediaName}"
                                    FontSize="Small"
+                                   VerticalOptions="Center"
                                    HorizontalOptions="Center"
-                                   Padding="20"
-                                   Margin="0,0,0,0"/>
+                                   Padding="0"
+                                   Margin="0,0,0,20"/>
                             <!--bắt sự kiện chọn phim thành màu xanh-->
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup Name="CommonStates">

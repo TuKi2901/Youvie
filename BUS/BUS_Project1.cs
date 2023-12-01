@@ -61,7 +61,7 @@ namespace BUS
             catch { return false; }
         }
 
-        public async Task<List<DTO_Users>> BusGetAllUser()
+        public async Task<List<DTO_Users>> BusGetUser()
         {
             try
             {
@@ -76,18 +76,18 @@ namespace BUS
 
         }
 
-        public async Task<string> BusDeleteUser(List<string> email)
+        public async Task<string> DeleteUsernAccount(List<string> userId, List<string> accountId)
         {
             try
             {
-                bool checkDeleteAccount = await dal_accounts.DeleteAccount(email);
+                bool checkDeleteAccount = await dal_accounts.DeleteAccount(accountId);
 
                 if (!checkDeleteAccount)
                 {
                     throw new Exception($"Can't delete Accounts");
                 }
 
-                bool checkDeleteUser = await dal_users.DeleteUser(email);
+                bool checkDeleteUser = await dal_users.DeleteUserDAL(userId);
 
                 if (!checkDeleteUser)
                 {
@@ -129,25 +129,6 @@ namespace BUS
                 throw new Exception("Error in BUS_FindUserWith");
             }
         }
-
-        public async Task<string> BusForgotPassword(string email, string password)
-        {
-            try
-            {
-                if (await dal_users.GetUserByEmail(email) == null)
-                    throw new Exception("Email is not exists");
-                DTO_Accounts accounts = new DTO_Accounts();
-                accounts.Email = email;
-                accounts.Password = BCrypt.Net.BCrypt.HashPassword(password);
-                await dal_accounts.UpdateAccount(accounts);
-                await dal_users.UpdatePasswordUser(email, accounts.Password);
-                return string.Empty;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"BusForgotPassword is error\n{ex.Message}");
-            }
-        }
         #endregion
 
         // Admin
@@ -166,79 +147,7 @@ namespace BUS
             }
         }
 
-        public async Task<string> BusCreateAdmin(DTO_Admins dTO_Admins, DTO_Accounts dTO_Accounts)
-        {
-            try
-            {
-                dTO_Accounts.Password = BCrypt.Net.BCrypt.HashPassword(dTO_Accounts.Password); // Crypt Password
-                dTO_Admins.Account = await dal_accounts.CreateAccount(dTO_Accounts);
-                bool check = await dal_admins.CreateAdmin(dTO_Admins);
-                if (!check)
-                {
-                    throw new Exception("CreateAdmin failed!");
-                }
 
-                return string.Empty;
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
-        }
-
-        public async Task<string> BusDeleteAdmin(List<string> email)
-        {
-            try
-            {
-                bool checkDeleteAccount = await dal_accounts.DeleteAccount(email);
-
-                if (!checkDeleteAccount)
-                {
-                    throw new Exception($"Can't delete Accounts");
-                }
-
-                bool checkDeleteUser = await dal_admins.DeleteAdmin(email);
-
-                if (!checkDeleteUser)
-                {
-                    throw new Exception($"Can't delete Admin");
-                }
-
-                return string.Empty;
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
-        }
-
-        public async Task<bool> BusUpdateAdmin(DTO_Admins admin)
-        {
-            try
-            {
-                await dal_admins.UpdateAdmin(admin);
-
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-
-        public async Task<List<DTO_Admins>> BusFindAdmin(string infoAdmins)
-        {
-            try
-            {
-                List<DTO_Admins> admins = await dal_admins.FindAdminWith(infoAdmins);
-
-                return admins;
-            }
-            catch
-            {
-                throw new Exception("Error in BUS_FindUserWith");
-            }
-        }
         #endregion
 
         // Media
@@ -257,6 +166,71 @@ namespace BUS
             }
         }
 
+        public async Task<bool> BusAddMedia(DTO_Medias dTO_Medias)
+        {
+            try
+            {
+                bool check = await dal_medias.AddMedia(dTO_Medias);
+
+                if (!check)
+                {
+                    throw new Exception("Add Media Failed!");
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> BusDeleteMedia(List<string> mediaID)
+        {
+            try
+            {
+                bool check = await dal_medias.DeleteMedia(mediaID);
+
+                if (!check)
+                {
+                    throw new Exception("Can't delete Media!");
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> BusUpdateMedia(DTO_Medias media)
+        {
+            try
+            {
+                await dal_medias.UpdateMedia(media);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<DTO_Medias>> BusFindMedia(string infoMedia)
+        {
+            try
+            {
+                List<DTO_Medias> medias = await dal_medias.FindMedia(infoMedia);
+
+                return medias;
+            }
+            catch
+            {
+                throw new Exception("Error in BUS_FindMedia");
+            }
+        }
         #endregion 
     }
 }

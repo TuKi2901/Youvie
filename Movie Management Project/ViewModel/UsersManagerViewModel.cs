@@ -1,18 +1,14 @@
 ﻿using BUS;
-using DAL;
 using DTO;
 using Movie_Management_Project.Content.Admin;
-using Movie_Management_Project.Content.Guest;
 using System.Collections.ObjectModel;
-using System.Net;
 using System.Net.Mail;
-using System.Security.Cryptography;
 using System.Windows.Input;
 
 
 namespace Movie_Management_Project.ViewModel
 {
-    public partial class UsersManagerViewModel : BaseViewModel
+    public partial class UsersManagerViewModel : BasicViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
 
@@ -30,28 +26,19 @@ namespace Movie_Management_Project.ViewModel
         public ICommand AddUserCommand { get; }
         public ICommand DeleteUserCommand { get; }
         public ICommand RefreshCommand { get; }
-        public ICommand UpdateUserCommand { get; }
+        public ICommand UpdateUserCommand {  get; }
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
-        public ICommand ForgotPasswordCommand { get; }
-        public ICommand Login { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
-            #region Guest
-            //Login = new Command(Login);
-            ForgotPasswordCommand = new Command(ForgotPassword);
-            #endregion
-
-            #region User Manager
             AddUserCommand = new Command(AddUser);
             DeleteUserCommand = new Command(DeleteUser);
+            RefreshCommand = new Command(RefreshFormUser);
             UpdateUserCommand = new Command(UpdateUser);
             SaveUpdateCommand = new Command(SaveUpdateUser);
             FindUserCommand = new Command(FindUser);
-            RefreshCommand = new Command(RefreshFormUser);
-            #endregion
         }
 
         #region SetProperty
@@ -129,114 +116,6 @@ namespace Movie_Management_Project.ViewModel
         }
         #endregion
 
-        #region Forgot Password
-        public string RandomPassword()
-        {
-            //giới hạn độ dài password
-            byte[] bytes = new byte[8];
-            //dùng thư viện để random
-            RandomNumberGenerator.Create().GetBytes(bytes);
-            //chuyển đổi byte thành string
-            string result = Convert.ToBase64String(bytes);
-            return result;
-        }
-        //gửi mail khi quên mật khẩu
-        public string SendMail(string recipientEmail, string randomPassword)
-        {
-            try
-            {
-                //tạo biến format nội dung(body) trong email
-                string bodyHtml = $@"
-                <p style=""font-size: 18px;"">
-                    Bạn đã sử dụng chức năng Quên Mật Khẩu
-                    <br>
-                    Đây là mật khẩu mới của bạn
-                    <br>
-                </p>
-    
-                <p style=""border: 2px ;background-color: rgb(0, 101, 209);font-size: 40px; color: white; letter-spacing: 5px; text-align: center; width: auto;"">
-                        {randomPassword}
-                </p>";
-
-                //tạo biến "mail" để tùy chỉnh các thuộc tính trong thư (email)
-                MailMessage mail = new MailMessage();
-
-                //tạo biến smtp: giao thức truyền tải email, kết nối với "gmail"
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-
-                //mail người gửi
-                mail.From = new MailAddress("kiet43012@gmail.com");
-
-                //mail người nhận (truyền tham số)
-                mail.To.Add(recipientEmail);
-
-                //tiêu đề mail
-                mail.Subject = "Forgot Password";
-
-                //xác định mail được viết bằng html
-                mail.IsBodyHtml = true;
-
-                //gọi lại biến được khai báo ở trên
-                mail.Body = bodyHtml;
-
-                //chọn cổng của google
-                smtp.Port = 587;
-
-                //không dùng thông tin đăng nhập mặc định
-                smtp.UseDefaultCredentials = false;
-
-                //đăng nhập tài khoản cần gửi mail, mã đăng nhập vào mail
-                smtp.Credentials = new NetworkCredential("kiet43012@gmail.com", "cywt jdam bmuw fqwq");
-
-                //sử dụng giao thức ssl để kết nối máy chủ
-                smtp.EnableSsl = true;
-
-                //gửi mail
-                smtp.Send(mail);
-
-                //thông báo khi gửi mail thành công
-                return string.Empty;
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
-        }
-
-        public async void UpdatePassword(string randomPassword)
-        {
-            try
-            {
-                if (await _bus.BusForgotPassword(Email, randomPassword) != string.Empty)
-                    throw new Exception("Error BusForgotPassword");
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-        public async void ForgotPassword()
-        {
-            try
-            {
-                string randomPassword = RandomPassword();
-                if (IsValidEmail(Email) == false)
-                    throw new Exception("Email is invalid");
-                if (await _bus.BusForgotPassword(Email, randomPassword) != string.Empty)
-                    throw new Exception("Mail is not exists");
-                if (SendMail(Email, randomPassword) != string.Empty)
-                    throw new Exception("Send Mail is error");
-                await Shell.Current.DisplayAlert("Notification!", $"New password sent your mail, Plese check your mail!!!", "Ok");
-
-            }
-            catch (Exception ex)
-            {
-                await Shell.Current.DisplayAlert("Notification!", $"Forgot password feature is error!!!\n{ex.Message}", "Ok");
-            }
-        }
-        #endregion
-
         private bool IsValidEmail(string email)
         {
             try
@@ -250,31 +129,19 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        //public async void Login(string email, string password) 
-        //{
-        //    try
-        //    {
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //    }
-        //}
-
-        public async void AddUser()
+        private async void AddUser()
         {
             try
             {
-                if (UserName == string.Empty || UserName == null) throw new Exception("UserName doesn't must empty");
+                if (UserName == string.Empty || UserName == null) throw new Exception("UserName mustn't empty");
 
                 if (Email == string.Empty || Email == null || !IsValidEmail(Email)) throw new Exception("Email is invalid, bro");
 
-                if (Password == string.Empty || Password == null) throw new Exception("Password doesn't must empty");
+                if (Password == string.Empty || Password == null) throw new Exception("Password mustn't empty");
 
                 if (PhoneNumber == string.Empty || PhoneNumber == null || !long.TryParse(PhoneNumber, out _)) throw new Exception("PhoneNumber is invalid, bro");
 
-                if (Country == string.Empty || Country == null) throw new Exception("Country doesn't must empty");
+                if (Country == string.Empty || Country == null) throw new Exception("Country mustn't empty");
 
                 if (_gender == string.Empty || _gender == null) throw new Exception("Choose your gender, bro !!!");
 
@@ -284,7 +151,7 @@ namespace Movie_Management_Project.ViewModel
                 dTO_Users.Birthday = Birthday;
                 dTO_Users.Country = Country;
                 dTO_Users.Gender = _gender;
-
+                
                 DTO_Accounts dTO_Accounts = new DTO_Accounts();
                 dTO_Accounts.Email = Email;
                 dTO_Accounts.Password = Password;
@@ -305,20 +172,22 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void DeleteUser()
+        private async void DeleteUser()
         {
             try
             {
-                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }
+                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }    
 
-                List<string> emails = new List<string>();
+                List<string> userIds = new List<string>();
+                List<string> accountIds = new List<string>();
 
                 foreach (var user in SelectedUsers)
                 {
-                    emails.Add(user.Account.Email);
+                    userIds.Add(user.Id);
+                    accountIds.Add(user.Account.Id);
                 }
 
-                string check = await _bus.BusDeleteUser(emails);
+                string check = await _bus.DeleteUsernAccount(userIds, accountIds);
 
                 if (check != string.Empty)
                 {
@@ -345,7 +214,7 @@ namespace Movie_Management_Project.ViewModel
             {
                 IsBusy = true;
 
-                List<DTO_Users> users = await _bus.BusGetAllUser();
+                List<DTO_Users> users = await _bus.BusGetUser();
 
                 foreach (DTO_Users user in users)
                 {
@@ -362,12 +231,12 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void RefreshFormUser()
+        private async void RefreshFormUser()
         {
             await Shell.Current.Navigation.PushAsync(new UserManager());
         }
 
-        public async void UpdateUser()
+        private async void UpdateUser()
         {
             try
             {
@@ -381,17 +250,17 @@ namespace Movie_Management_Project.ViewModel
                 UserName = SelectedUsers[0].UserName;
                 PhoneNumber = SelectedUsers[0].PhoneNumber;
                 _gender = SelectedUsers[0].Gender;
-                if (_gender == "Male") { IsMale = true; IsFemale = false; } else if (_gender == "Female") { IsMale = false; IsFemale = true; }
+                if (_gender == "Male") { IsMale = true; IsFemale = false; }  else if (_gender == "Female") { IsMale = false; IsFemale = true; }
                 Country = SelectedUsers[0].Country;
                 Birthday = SelectedUsers[0].Birthday;
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+                await Shell.Current.DisplayAlert("Error!", $"There was a problem!: {ex.Message}", "Ok");
             }
         }
 
-        public async void SaveUpdateUser()
+        private async void SaveUpdateUser()
         {
             try
             {
@@ -406,19 +275,19 @@ namespace Movie_Management_Project.ViewModel
 
                 if (!check)
                 {
-                    throw new Exception("BusUpdateUser have a error!!!!");
+                    throw new Exception("Update user failed!!");
                 }
 
                 await Shell.Current.DisplayAlert("Notification!", $"Update user success!!!", "Ok");
-                await Shell.Current.Navigation.PushAsync(new UserManager());
+                RefreshFormUser();
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+                await Shell.Current.DisplayAlert("Error!", $"{ex.Message}", "Ok");
             }
         }
 
-        public async void FindUser()
+        private async void FindUser()
         {
             if (IsBusy)
             {
@@ -449,8 +318,5 @@ namespace Movie_Management_Project.ViewModel
                 IsBusy = false;
             }
         }
-
-
-
     }
 }
