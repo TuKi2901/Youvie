@@ -8,7 +8,7 @@ using System.Windows.Input;
 
 namespace Movie_Management_Project.ViewModel
 {
-    public partial class UsersManagerViewModel : BasicViewModel
+    public partial class UsersManagerViewModel : BaseViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
 
