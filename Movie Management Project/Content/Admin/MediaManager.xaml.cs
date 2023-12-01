@@ -12,4 +12,8 @@ public partial class MediaManager : ContentPage
         InitializeComponent();
     }
 
+    private void listViewCategoryLeftMedia_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+    {
+
+    }
 }

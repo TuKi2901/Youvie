@@ -2,14 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:material ="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
-             xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.Admin.MediaManager"
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="MediaManager">
 
     <ContentPage.BindingContext>
-        <local:MainPageViewModel></local:MainPageViewModel>
-        <!--<viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>-->
+        <viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>
     </ContentPage.BindingContext>
 
     <ScrollView>
@@ -24,7 +22,7 @@
             <SearchBar x:Name="searchBarMedia" 
                        Grid.Column="2"
                        WidthRequest="300" 
-                       HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id Media" Margin="0,0,25,60"
+                       HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id Media" Margin="0,0,25,60" Text="{Binding Search}" SearchCommand="{Binding FindMediaCommand}"
            />
             <Grid x:Name="gridMedia"
                   ColumnDefinitions="*"
@@ -47,7 +45,7 @@
 
 
                     <!--#region Control Left-->
-                    <Grid x:Name="gridControlLeftMedia" ColumnDefinitions="600" RowDefinitions="auto, auto, auto" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="50,0,30,0">
+                    <Grid x:Name="gridControlLeftMedia" ColumnDefinitions="600" RowDefinitions="auto, auto, auto, auto" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="50,0,30,0">
                         <Grid x:Name="gridNameAndDate"
                               Grid.Column="0" Grid.Row="0" 
                               ColumnDefinitions="600" RowDefinitions="Auto, Auto" Margin="0,0,0,30">
@@ -57,74 +55,46 @@
                                   ColumnDefinitions="150,*" Margin="0,0,0,30">
 
                                 <Label Text="Film Name" Grid.Column="0" VerticalOptions="Center" />
-                                <Entry x:Name="txtNameMedia" Grid.Column="1"  VerticalOptions="Center" />
+                                <Entry x:Name="txtNameMedia" Grid.Column="1"  VerticalOptions="Center" Text="{Binding MediaName}"/>
                             </Grid>
 
                             <Grid x:Name="gridReleaseDateMedia"
                                   Grid.Row="1" Grid.Column="0"
-                                  ColumnDefinitions="150,Auto" Margin="0,0,0,0">
+                                  ColumnDefinitions="150,*" Margin="0,0,0,0">
 
                                 <Label Text="Release Date" Grid.Column="0"  VerticalOptions="Center" />
-                                <DatePicker x:Name="dpReleaseDateMedia" Grid.Column="1"  VerticalOptions="Center" />
+                                <DatePicker x:Name="dpReleaseDateMedia" Grid.Column="1"  VerticalOptions="Center" WidthRequest="200" HorizontalOptions="Start" Date="{Binding ReleaseDate}"/>
                             </Grid>
                         </Grid>
 
-
                         <Grid x:Name="gridCategoryMedia" 
-                      Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, 150, 35, 150,35" RowDefinitions="125" Margin="0,0,0,30">
+                      Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, 150, *, 150" RowDefinitions="125" Margin="0,0,0,30">
 
                             <Label x:Name="lbCategoryMedia"
                         Text="Category" Grid.Column="0" VerticalOptions="Center" />
 
-                            <Image x:Name="imgArrowMedia"
-                        Source="dotnet_bot.png"
-                        Grid.Column="2"/>
-
-                            <Image x:Name="imgConfirmCategoryMedia"
-                        Source="dotnet_bot.png"
-                        Grid.Column="4"/>
+                            <Grid Grid.Column="2" RowDefinitions="auto, auto" HorizontalOptions="Center" VerticalOptions="Center">
+                                <Button x:Name="btChooseCategory" Text=">" Command="{Binding ChooseCategoryCommand}" Grid.Row="0"/>
+                                <Button x:Name="btBackCategory" Text="&lt;" Command="{Binding BackCategoryCommand}" Grid.Row="1"/>
+                            </Grid>
 
                             <ListView x:Name="listViewCategoryLeftMedia"
-                        ItemsSource="{Binding Items}" Grid.Column="1" Grid.Row="0">
+                        ItemsSource="{Binding dsCategorys}" Grid.Column="1" Grid.Row="0" SelectedItem="{Binding ChooseCategory}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <ViewCell>
-                                            <Grid Padding="5">
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="Auto" />
-                                                </Grid.RowDefinitions>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto" />
-                                                </Grid.ColumnDefinitions>
-
-                                                <Label Grid.Column="0"
-                                               Text="{Binding Name}" 
-                                               VerticalOptions="Center"
-                                               HorizontalTextAlignment="Center"/>
-                                            </Grid>
+                                            <Label Text="{Binding}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HeightRequest="30"/>
                                         </ViewCell>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
 
                             <ListView x:Name="listViewCategoryRightMedia"
-                        ItemsSource="{Binding Items}" Grid.Column="3" Grid.Row="0">
+                        ItemsSource="{Binding dsCategorys2}" Grid.Column="3" Grid.Row="0" SelectedItem="{Binding BackCategory}">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <ViewCell>
-                                            <Grid Padding="5">
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="Auto" />
-                                                </Grid.RowDefinitions>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto" />
-                                                </Grid.ColumnDefinitions>
-
-                                                <Label Grid.Column="0"
-                                               Text="{Binding Name}" 
-                                               VerticalOptions="Center"
-                                               HorizontalTextAlignment="Center"/>
-                                            </Grid>
+                                            <Label Text="{Binding}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HeightRequest="30"/>
                                         </ViewCell>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
@@ -132,56 +102,49 @@
 
                         </Grid>
 
-
+                        <Grid x:Name="gridImageMedia" Grid.Column="0" Grid.Row="2" ColumnDefinitions="150,300,*" Margin="0,0,0,30">
+                            <Label Text="Image" VerticalOptions="Center" Grid.Column="0"/>
+                            <Entry Grid.Column="1" x:Name="txtImageMedia" IsReadOnly="True" Text="{Binding Image}"/>
+                            <Button Grid.Column="2" Text="Open" WidthRequest="70" Command="{Binding OpenFileCommand}"/>
+                        </Grid>
+                        
                         <Grid x:Name="gridCRUDMedia"
-                    Grid.Column="0" Grid.Row="2" 
+                    Grid.Column="0" Grid.Row="3" 
                       ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="40,0,40,20">
 
                             <Button x:Name="btnAddMedia"
-                        Text="Add" Grid.Column="0" Margin="0,0,15,0"/>
+                        Text="Add" Grid.Column="0" Margin="0,0,15,0" Command="{Binding AddMediaCommand}"/>
 
                             <Button x:Name="btnDeleteMedia"
-                         Text="Delete" Grid.Column="1" Margin="0,0,15,0"/>
+                         Text="Delete" Grid.Column="1" Margin="0,0,15,0" Command="{Binding DeleteMediaCommand}"/>
 
                             <Button x:Name="btnUpdateMedia"
-                         Text="Update" Grid.Column="2" Margin="0,0,15,0"/>
+                         Text="Update" Grid.Column="2" Margin="0,0,15,0" Command="{Binding UpdateButtonCommand}"/>
 
-                            <Button x:Name="btnFindMedia"
-                         Text="Find" Grid.Column="3" Margin="0,0,15,0"/>
+                            <Button x:Name="btnSaveMedia"
+                         Text="Save" Grid.Column="3" Margin="0,0,15,0" Command="{Binding SaveUpdateCommand}"/>
 
                             <Button x:Name="btnRefreshMedia"
-                         Text="Refresh" Grid.Column="4"/>
+                         Text="Refresh" Grid.Column="4" Command="{Binding RefreshMediaCommand}"/>
                         </Grid>
                     </Grid>
                     <!--#endregion-->
 
                     <!--#region Control Right-->
-                    <Grid x:Name="gridControlRightMedia" ColumnDefinitions="600" RowDefinitions="auto, auto, auto" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Margin="50,0,30,0">
-                        <Grid x:Name="gridListEpisodeMedia" 
-                  Grid.Column="1" Grid.Row="0" ColumnDefinitions="150,400" RowDefinitions="125" Margin="0,0,0,30">
+                    <Grid x:Name="gridControlRightMedia" ColumnDefinitions="600" RowDefinitions="auto, auto, auto, auto" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1" Margin="50,0,30,0">
+                        <Grid x:Name="gridListEpisodeMedia" Grid.Column="1" Grid.Row="0" ColumnDefinitions="150,*" RowDefinitions="100, *" Margin="0,0,0,30">
                             <Label Text="List Episode" Grid.Column="0" VerticalOptions="Center" />
-                            <ListView x:Name="listViewEpisodeMedia" VerticalOptions="Center" HorizontalOptions="Center"
-                    ItemsSource="{Binding Items}" Grid.Column="1">
+                            <ListView x:Name="listViewEpisodeMedia" VerticalOptions="Center" HorizontalOptions="Center" ItemsSource="{Binding dsEpisodes}" Grid.Column="1">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>
                                         <ViewCell>
-                                            <Grid Padding="5">
-                                                <Grid.RowDefinitions>
-                                                    <RowDefinition Height="Auto" />
-                                                </Grid.RowDefinitions>
-                                                <Grid.ColumnDefinitions>
-                                                    <ColumnDefinition Width="Auto" />
-                                                </Grid.ColumnDefinitions>
-
-                                                <Label Grid.Column="0"
-                                           Text="{Binding Name}" 
-                                           VerticalOptions="Center"
-                                           HorizontalTextAlignment="Center"/>
-                                            </Grid>
+                                            <Label Text="{Binding}" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HeightRequest="30"/>
                                         </ViewCell>
                                     </DataTemplate>
                                 </ListView.ItemTemplate>
                             </ListView>
+                            <Button Grid.Row="1" Grid.Column="0" Text="Add Episode" WidthRequest="120" VerticalOptions="Center" HorizontalOptions="Start" Command="{Binding AddUrlEpisodeCommand}"/>
+                            <Entry x:Name="txtEpisodeUrl" Grid.Row="1" Grid.Column="1" Placeholder="Add Episode" Text="{Binding UrlEpisode}"/>
                         </Grid>
 
                         <Grid x:Name="gridDescription"
@@ -191,8 +154,8 @@
                             <Label
                     Text="Description"
                     Grid.Column="0" VerticalOptions="Center"/>
-                            <Editor x:Name="editDescription"
-                        Grid.Column="1"/>
+                            <Editor x:Name="txtDescription"
+                        Grid.Column="1" HeightRequest="80" VerticalTextAlignment="Start" Text="{Binding Description}"/>
                         </Grid>
 
                         <Grid x:Name="gridCountry"
@@ -206,7 +169,7 @@
                     Margin="0,-5,0,0" VerticalOptions="Center" />
 
                             <Picker x:Name="pkCountryMedia"
-                                Grid.Column="1" WidthRequest="200" HorizontalOptions="Start">
+                                Grid.Column="1" WidthRequest="200" HorizontalOptions="Start" SelectedItem="{Binding Country}">
                                 <Picker.ItemsSource>
                                     <x:Array Type="{x:Type x:String}">
                                         <x:String>Vietnamese</x:String>
@@ -216,6 +179,18 @@
                                         <x:String>Korea</x:String>
                                         <x:String>Japan</x:String>
                                         <x:String>ThaiLand</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </Grid>
+
+                        <Grid x:Name="gridRole" Grid.Column="1" Grid.Row="3" ColumnDefinitions="150,*" Margin="0,0,0,30">
+                            <Label Text="Role" Grid.Column="0"></Label>
+                            <Picker x:Name="pkRoleMedia" Grid.Column="1" WidthRequest="100" HorizontalOptions="Start" SelectedItem="{Binding Role}">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Int16}">
+                                        <x:Int16>1</x:Int16>
+                                        <x:Int16>2</x:Int16>
                                     </x:Array>
                                 </Picker.ItemsSource>
                             </Picker>
@@ -232,12 +207,47 @@
                        ColumnDefinitions="*"
                        RowDefinitions="Auto, *">
                     <ScrollView Grid.Row="1">
-                        <material:DataGrid ItemsSource="{Binding dsMedias}"  HorizontalOptions="Center" >
+                        <material:DataGrid ItemsSource="{Binding dsMedias}"  HorizontalOptions="Center" SelectedItems="{Binding SelectedMedias}">
                             <material:DataGrid.Columns>
                                 <material:DataGridSelectionColumn/>
-                                <material:DataGridColumn Binding="{Binding Id}" Title="Identity" />
+                                <material:DataGridColumn Binding="{Binding MediaName}" Title="Identity" />
                                 <material:DataGridColumn Binding="{Binding Country}" Title="Name" />
-                                <material:DataGridColumn Binding="{Binding Decription}" Title="Age" />
+                                <material:DataGridColumn Binding="{Binding ReleaseDate}" Title="Age" />
+                                <material:DataGridColumn Title="Category">
+                                    <material:DataGridColumn.CellItemTemplate>
+                                        <DataTemplate>
+                                            <CollectionView ItemsSource="{Binding ListCategory}" HorizontalOptions="Center">
+                                                <CollectionView.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Label Text="{Binding}" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                                                    </DataTemplate>
+                                                </CollectionView.ItemTemplate>
+                                            </CollectionView>
+                                        </DataTemplate>
+                                    </material:DataGridColumn.CellItemTemplate>
+                                </material:DataGridColumn>
+                                <material:DataGridColumn Title="Count Episode">
+                                    <material:DataGridColumn.CellItemTemplate>
+                                        <DataTemplate>
+                                            <Label Text="{Binding ListEpisode.Count}" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+                                        </DataTemplate>
+                                    </material:DataGridColumn.CellItemTemplate>
+                                </material:DataGridColumn>
+                                <material:DataGridColumn Binding="{Binding RoleMedia}" Title="Role" />
+                                <material:DataGridColumn Title="Decription" >
+                                    <material:DataGridColumn.CellItemTemplate>
+                                        <DataTemplate>
+                                            <Editor Text="{Binding Decription}" WidthRequest="500" IsReadOnly="True"></Editor>
+                                        </DataTemplate>
+                                    </material:DataGridColumn.CellItemTemplate>
+                                </material:DataGridColumn>
+                                <material:DataGridColumn Title="Image" >
+                                    <material:DataGridColumn.CellItemTemplate>
+                                        <DataTemplate>
+                                            <Image Source="{Binding Image}" WidthRequest="50" HeightRequest="50"></Image>
+                                        </DataTemplate>
+                                    </material:DataGridColumn.CellItemTemplate>
+                                </material:DataGridColumn>
                             </material:DataGrid.Columns>
                         </material:DataGrid>
                     </ScrollView>

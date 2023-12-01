@@ -129,19 +129,19 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void AddUser()
+        private async void AddUser()
         {
             try
             {
-                if (UserName == string.Empty || UserName == null) throw new Exception("UserName doesn't must empty");
+                if (UserName == string.Empty || UserName == null) throw new Exception("UserName mustn't empty");
 
                 if (Email == string.Empty || Email == null || !IsValidEmail(Email)) throw new Exception("Email is invalid, bro");
 
-                if (Password == string.Empty || Password == null) throw new Exception("Password doesn't must empty");
+                if (Password == string.Empty || Password == null) throw new Exception("Password mustn't empty");
 
                 if (PhoneNumber == string.Empty || PhoneNumber == null || !long.TryParse(PhoneNumber, out _)) throw new Exception("PhoneNumber is invalid, bro");
 
-                if (Country == string.Empty || Country == null) throw new Exception("Country doesn't must empty");
+                if (Country == string.Empty || Country == null) throw new Exception("Country mustn't empty");
 
                 if (_gender == string.Empty || _gender == null) throw new Exception("Choose your gender, bro !!!");
 
@@ -151,7 +151,7 @@ namespace Movie_Management_Project.ViewModel
                 dTO_Users.Birthday = Birthday;
                 dTO_Users.Country = Country;
                 dTO_Users.Gender = _gender;
-
+                
                 DTO_Accounts dTO_Accounts = new DTO_Accounts();
                 dTO_Accounts.Email = Email;
                 dTO_Accounts.Password = Password;
@@ -172,20 +172,22 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void DeleteUser()
+        private async void DeleteUser()
         {
             try
             {
                 if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }    
 
-                List<string> emails = new List<string>();
+                List<string> userIds = new List<string>();
+                List<string> accountIds = new List<string>();
 
                 foreach (var user in SelectedUsers)
                 {
-                    emails.Add(user.Account.Email);
+                    userIds.Add(user.Id);
+                    accountIds.Add(user.Account.Id);
                 }
 
-                string check = await _bus.DeleteUsernAccount(emails);
+                string check = await _bus.DeleteUsernAccount(userIds, accountIds);
 
                 if (check != string.Empty)
                 {
@@ -229,12 +231,12 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void RefreshFormUser()
+        private async void RefreshFormUser()
         {
             await Shell.Current.Navigation.PushAsync(new UserManager());
         }
 
-        public async void UpdateUser()
+        private async void UpdateUser()
         {
             try
             {
@@ -254,11 +256,11 @@ namespace Movie_Management_Project.ViewModel
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+                await Shell.Current.DisplayAlert("Error!", $"There was a problem!: {ex.Message}", "Ok");
             }
         }
 
-        public async void SaveUpdateUser()
+        private async void SaveUpdateUser()
         {
             try
             {
@@ -273,19 +275,19 @@ namespace Movie_Management_Project.ViewModel
 
                 if (!check)
                 {
-                    throw new Exception("BusUpdateUser have a error!!!!");
+                    throw new Exception("Update user failed!!");
                 }
 
                 await Shell.Current.DisplayAlert("Notification!", $"Update user success!!!", "Ok");
-                await Shell.Current.Navigation.PushAsync(new UserManager());
+                RefreshFormUser();
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+                await Shell.Current.DisplayAlert("Error!", $"{ex.Message}", "Ok");
             }
         }
 
-        public async void FindUser()
+        private async void FindUser()
         {
             if (IsBusy)
             {
