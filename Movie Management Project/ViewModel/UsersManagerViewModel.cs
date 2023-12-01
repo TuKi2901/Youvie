@@ -3,6 +3,14 @@ using DTO;
 using Movie_Management_Project.Content.Admin;
 using System.Collections.ObjectModel;
 using System.Net.Mail;
+using DAL;
+using DTO;
+using Movie_Management_Project.Content.Admin;
+using Movie_Management_Project.Content.Guest;
+using System.Collections.ObjectModel;
+using System.Net;
+using System.Net.Mail;
+using System.Security.Cryptography;
 using System.Windows.Input;
 
 
@@ -26,19 +34,28 @@ namespace Movie_Management_Project.ViewModel
         public ICommand AddUserCommand { get; }
         public ICommand DeleteUserCommand { get; }
         public ICommand RefreshCommand { get; }
-        public ICommand UpdateUserCommand {  get; }
+        public ICommand UpdateUserCommand { get; }
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
+        public ICommand ForgotPasswordCommand { get; }
+        public ICommand Login { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
+            #region Guest
+            //Login = new Command(Login);
+            ForgotPasswordCommand = new Command(ForgotPassword);
+            #endregion
+
+            #region User Manager
             AddUserCommand = new Command(AddUser);
             DeleteUserCommand = new Command(DeleteUser);
-            RefreshCommand = new Command(RefreshFormUser);
             UpdateUserCommand = new Command(UpdateUser);
             SaveUpdateCommand = new Command(SaveUpdateUser);
             FindUserCommand = new Command(FindUser);
+            RefreshCommand = new Command(RefreshFormUser);
+            #endregion
         }
 
         #region SetProperty
@@ -116,6 +133,114 @@ namespace Movie_Management_Project.ViewModel
         }
         #endregion
 
+        #region Forgot Password
+        public string RandomPassword()
+        {
+            //giới hạn độ dài password
+            byte[] bytes = new byte[8];
+            //dùng thư viện để random
+            RandomNumberGenerator.Create().GetBytes(bytes);
+            //chuyển đổi byte thành string
+            string result = Convert.ToBase64String(bytes);
+            return result;
+        }
+        //gửi mail khi quên mật khẩu
+        public string SendMail(string recipientEmail, string randomPassword)
+        {
+            try
+            {
+                //tạo biến format nội dung(body) trong email
+                string bodyHtml = $@"
+                <p style=""font-size: 18px;"">
+                    Bạn đã sử dụng chức năng Quên Mật Khẩu
+                    <br>
+                    Đây là mật khẩu mới của bạn
+                    <br>
+                </p>
+    
+                <p style=""border: 2px ;background-color: rgb(0, 101, 209);font-size: 40px; color: white; letter-spacing: 5px; text-align: center; width: auto;"">
+                        {randomPassword}
+                </p>";
+
+                //tạo biến "mail" để tùy chỉnh các thuộc tính trong thư (email)
+                MailMessage mail = new MailMessage();
+
+                //tạo biến smtp: giao thức truyền tải email, kết nối với "gmail"
+                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+
+                //mail người gửi
+                mail.From = new MailAddress("kiet43012@gmail.com");
+
+                //mail người nhận (truyền tham số)
+                mail.To.Add(recipientEmail);
+
+                //tiêu đề mail
+                mail.Subject = "Forgot Password";
+
+                //xác định mail được viết bằng html
+                mail.IsBodyHtml = true;
+
+                //gọi lại biến được khai báo ở trên
+                mail.Body = bodyHtml;
+
+                //chọn cổng của google
+                smtp.Port = 587;
+
+                //không dùng thông tin đăng nhập mặc định
+                smtp.UseDefaultCredentials = false;
+
+                //đăng nhập tài khoản cần gửi mail, mã đăng nhập vào mail
+                smtp.Credentials = new NetworkCredential("kiet43012@gmail.com", "cywt jdam bmuw fqwq");
+
+                //sử dụng giao thức ssl để kết nối máy chủ
+                smtp.EnableSsl = true;
+
+                //gửi mail
+                smtp.Send(mail);
+
+                //thông báo khi gửi mail thành công
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public async void UpdatePassword(string randomPassword)
+        {
+            try
+            {
+                if (await _bus.BusForgotPassword(Email, randomPassword) != string.Empty)
+                    throw new Exception("Error BusForgotPassword");
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        public async void ForgotPassword()
+        {
+            try
+            {
+                string randomPassword = RandomPassword();
+                if (IsValidEmail(Email) == false)
+                    throw new Exception("Email is invalid");
+                if (await _bus.BusForgotPassword(Email, randomPassword) != string.Empty)
+                    throw new Exception("Mail is not exists");
+                if (SendMail(Email, randomPassword) != string.Empty)
+                    throw new Exception("Send Mail is error");
+                await Shell.Current.DisplayAlert("Notification!", $"New password sent your mail, Plese check your mail!!!", "Ok");
+
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Notification!", $"Forgot password feature is error!!!\n{ex.Message}", "Ok");
+            }
+        }
+        #endregion
+
         private bool IsValidEmail(string email)
         {
             try
@@ -129,19 +254,31 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        private async void AddUser()
+        //public async void Login(string email, string password) 
+        //{
+        //    try
+        //    {
+
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //    }
+        //}
+
+        public async void AddUser()
         {
             try
             {
-                if (UserName == string.Empty || UserName == null) throw new Exception("UserName mustn't empty");
+                if (UserName == string.Empty || UserName == null) throw new Exception("UserName doesn't must empty");
 
                 if (Email == string.Empty || Email == null || !IsValidEmail(Email)) throw new Exception("Email is invalid, bro");
 
-                if (Password == string.Empty || Password == null) throw new Exception("Password mustn't empty");
+                if (Password == string.Empty || Password == null) throw new Exception("Password doesn't must empty");
 
                 if (PhoneNumber == string.Empty || PhoneNumber == null || !long.TryParse(PhoneNumber, out _)) throw new Exception("PhoneNumber is invalid, bro");
 
-                if (Country == string.Empty || Country == null) throw new Exception("Country mustn't empty");
+                if (Country == string.Empty || Country == null) throw new Exception("Country doesn't must empty");
 
                 if (_gender == string.Empty || _gender == null) throw new Exception("Choose your gender, bro !!!");
 
@@ -214,7 +351,7 @@ namespace Movie_Management_Project.ViewModel
             {
                 IsBusy = true;
 
-                List<DTO_Users> users = await _bus.BusGetUser();
+                List<DTO_Users> users = await _bus.BusGetAllUser();
 
                 foreach (DTO_Users user in users)
                 {
