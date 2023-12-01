@@ -30,26 +30,6 @@ namespace Movie_Management_Project
                 }
             }
         }
-        
-        //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện
-        private async Task PushPage<T>(T page) where T : Page
-        {
-            if (busyIndicator != null)
-            {
-                busyIndicator.IsRunning = true;
-                busyIndicator.IsVisible = true;
-
-                try
-                {
-                    await Navigation.PushAsync(page);
-                }
-                finally
-                {
-                    busyIndicator.IsRunning = false;
-                    busyIndicator.IsVisible = false;
-                }
-            }
-        }
 
 
         private void btnUser_Loaded(object sender, EventArgs e)
