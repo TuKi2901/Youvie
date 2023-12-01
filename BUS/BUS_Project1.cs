@@ -61,7 +61,7 @@ namespace BUS
             catch { return false; }
         }
 
-        public async Task<List<DTO_Users>> BusGetUser()
+        public async Task<List<DTO_Users>> BusGetAllUser()
         {
             try
             {
@@ -76,7 +76,7 @@ namespace BUS
 
         }
 
-        public async Task<string> DeleteUsernAccount(List<string> email)
+        public async Task<string> BusDeleteUser(List<string> email)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace BUS
                     throw new Exception($"Can't delete Accounts");
                 }
 
-                bool checkDeleteUser = await dal_users.DeleteUserDAL(email);
+                bool checkDeleteUser = await dal_users.DeleteUser(email);
 
                 if (!checkDeleteUser)
                 {
@@ -129,6 +129,25 @@ namespace BUS
                 throw new Exception("Error in BUS_FindUserWith");
             }
         }
+
+        public async Task<string> BusForgotPassword(string email, string password)
+        {
+            try
+            {
+                if (await dal_users.GetUserByEmail(email) == null)
+                    throw new Exception("Email is not exists");
+                DTO_Accounts accounts = new DTO_Accounts();
+                accounts.Email = email;
+                accounts.Password = BCrypt.Net.BCrypt.HashPassword(password);
+                await dal_accounts.UpdateAccount(accounts);
+                await dal_users.UpdatePasswordUser(email, accounts.Password);
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"BusForgotPassword is error\n{ex.Message}");
+            }
+        }
         #endregion
 
         // Admin
@@ -147,7 +166,79 @@ namespace BUS
             }
         }
 
+        public async Task<string> BusCreateAdmin(DTO_Admins dTO_Admins, DTO_Accounts dTO_Accounts)
+        {
+            try
+            {
+                dTO_Accounts.Password = BCrypt.Net.BCrypt.HashPassword(dTO_Accounts.Password); // Crypt Password
+                dTO_Admins.Account = await dal_accounts.CreateAccount(dTO_Accounts);
+                bool check = await dal_admins.CreateAdmin(dTO_Admins);
+                if (!check)
+                {
+                    throw new Exception("CreateAdmin failed!");
+                }
 
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public async Task<string> BusDeleteAdmin(List<string> email)
+        {
+            try
+            {
+                bool checkDeleteAccount = await dal_accounts.DeleteAccount(email);
+
+                if (!checkDeleteAccount)
+                {
+                    throw new Exception($"Can't delete Accounts");
+                }
+
+                bool checkDeleteUser = await dal_admins.DeleteAdmin(email);
+
+                if (!checkDeleteUser)
+                {
+                    throw new Exception($"Can't delete Admin");
+                }
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public async Task<bool> BusUpdateAdmin(DTO_Admins admin)
+        {
+            try
+            {
+                await dal_admins.UpdateAdmin(admin);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<DTO_Admins>> BusFindAdmin(string infoAdmins)
+        {
+            try
+            {
+                List<DTO_Admins> admins = await dal_admins.FindAdminWith(infoAdmins);
+
+                return admins;
+            }
+            catch
+            {
+                throw new Exception("Error in BUS_FindUserWith");
+            }
+        }
         #endregion
 
         // Media

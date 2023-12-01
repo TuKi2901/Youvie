@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace Movie_Management_Project.ViewModel
 {
-    public partial class BasicViewModel : INotifyPropertyChanged
+    public partial class BaseViewModel : INotifyPropertyChanged
     {
         private bool isBusy;
 

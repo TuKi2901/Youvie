@@ -88,5 +88,9 @@ namespace Movie_Management_Project
         //}
         #endregion
 
+        private async void imgBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
     }
 }

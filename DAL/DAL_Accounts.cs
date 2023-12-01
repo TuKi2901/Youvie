@@ -3,7 +3,7 @@ using MongoDB.Driver;
 
 namespace DAL
 {
-    public class DAL_Accounts: ConnectMongoDb
+    public class DAL_Accounts : ConnectMongoDb
     {
         string collectionName = "accounts";
 
@@ -45,6 +45,25 @@ namespace DAL
             return dTO_Accounts;
         }
 
+        public async Task<bool> UpdateAccount(DTO_Accounts dTO_Accounts)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Accounts>(collectionName);
+
+                var filter = Builders<DTO_Accounts>.Filter.Eq(x => x.Email, dTO_Accounts.Email);
+                var update = Builders<DTO_Accounts>.Update.Set(x => x.Password, dTO_Accounts.Password);
+
+                await collection.UpdateOneAsync(filter, update);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
         public async Task<bool> DeleteAccount(List<string> email)
         {
             try
@@ -67,5 +86,26 @@ namespace DAL
                 return false;
             }
         }
+
+        //public async Task<string> Login(string email)
+        //{
+        //    try
+        //    {
+        //        var collection = db.GetCollection<DTO_Users>(collectionName);
+
+        //        DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+
+        //        if (user == null)
+        //        {
+        //            throw new Exception($"Don't found user with {email}");
+        //        }
+
+        //        return user;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
+        //    }
+        //}
     }
 }

@@ -16,6 +16,6 @@ namespace DTO
         public string? AdminName { get; set; }
         public string? Gender { get; set; }
         public int Role {  get; set; }
-        //public DTO_Accounts? Account { get; set; }
+        public DTO_Accounts? Account { get; set; }
     }
 }

@@ -5,8 +5,10 @@
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.Admin.MediaManager"
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
-             Title="MediaManager">
+             Title="MediaManager"
+             Shell.NavBarIsVisible="False">
 
+    
     <ContentPage.BindingContext>
         <viewmodel:MediaManagerViewModel></viewmodel:MediaManagerViewModel>
     </ContentPage.BindingContext>
@@ -15,7 +17,7 @@
         <VerticalStackLayout>
 
             <Grid x:Name="titleMedia" ColumnDefinitions="*,*" HorizontalOptions="Center">
-                <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image Source="back.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="Media Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
             </Grid>
 
@@ -83,7 +85,7 @@
                         Source="dotnet_bot.png"
                         Grid.Column="4"/>
 
-                            <ListView x:Name="listViewCategoryLeftMedia"
+                            <ListView x:Name="listViewCategoryLeftMedia" 
                         ItemsSource="{Binding Items}" Grid.Column="1" Grid.Row="0">
                                 <ListView.ItemTemplate>
                                     <DataTemplate>

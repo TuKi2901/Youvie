@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 
 namespace Movie_Management_Project.ViewModel
 {
-    public partial class MediaManagerViewModel: BasicViewModel
+    public partial class MediaManagerViewModel: BaseViewModel
     {
         BUS_Project1 _bus = new BUS_Project1();
 
