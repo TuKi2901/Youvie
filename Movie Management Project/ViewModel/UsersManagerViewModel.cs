@@ -3,13 +3,7 @@ using DTO;
 using Movie_Management_Project.Content.Admin;
 using System.Collections.ObjectModel;
 using System.Net.Mail;
-using DAL;
-using DTO;
-using Movie_Management_Project.Content.Admin;
-using Movie_Management_Project.Content.Guest;
-using System.Collections.ObjectModel;
 using System.Net;
-using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Windows.Input;
 
