@@ -8,6 +8,7 @@ namespace Movie_Management_Project
         public AppShell()
         {
             InitializeComponent();
+
         }
         
         //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện

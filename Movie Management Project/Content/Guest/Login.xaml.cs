@@ -38,7 +38,7 @@ public partial class Login : ContentPage
 
             if (txtPassword.Text == string.Empty)
             {
-                throw new Exception("Bro, you fogot input password !!!");
+                throw new Exception("Bro, you forgot input password !!!");
             }
 
             bool check = await bus_project1.BusGetLoginUser(txtEmail.Text, txtPassword.Text);
@@ -49,12 +49,14 @@ public partial class Login : ContentPage
             }
 
             await DisplayAlert("Notification", "Login sucessfully !!!", "OK");
+            
             await Navigation.PushAsync(new Home());
         }
         catch (Exception ex)
         {
             await DisplayAlert("Error", ex.Message, "OK");
         }
+
     }
 
 }
