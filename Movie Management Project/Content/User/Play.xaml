@@ -6,8 +6,8 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="Play">
     <ContentPage.BindingContext>
-        <!--<local:MainPageViewModel/>-->
-        <viewmodel:PlayMediaViewModel></viewmodel:PlayMediaViewModel>
+        <local:MainPageViewModel/>
+        <!--<viewmodel:PlayMediaViewModel></viewmodel:PlayMediaViewModel>-->
     </ContentPage.BindingContext>
 
     <ScrollView>
@@ -131,56 +131,136 @@
                 </Grid>
             </Frame>
 
-            <Frame x:Name="frameComment"
+
+
+
+
+
+
+
+
+
+
+            <Grid ColumnDefinitions="Auto" RowDefinitions="Auto, Auto" HorizontalOptions="Center">
+                <Frame x:Name="frameWriteComment"
+                   Grid.Column="0" Grid.Row="0"
+    Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
+
+
+
+                    <Grid x:Name="gridWriteComment"
+                          ColumnDefinitions="Auto, 1000, Auto"
+                          RowDefinitions="Auto"
+                          HorizontalOptions="Start"
+                          ColumnSpacing="40">
+                        <Grid x:Name="gridWriteUserComment"
+                                          Grid.Column="0"
+                                          Grid.Row="0"
+                          ColumnDefinitions="Auto"
+                          RowDefinitions="Auto,Auto"
+                          HorizontalOptions="Center">
+                            <Image x:Name="imgWriteUser"
+                                   Source="dotnet_bot.png" HeightRequest="50"
+                                   Grid.Column="0" Grid.Row="0"
+                                   HorizontalOptions="Center"/>
+                            <Label x:Name="lbWriteUser"
+                                   Text="Kiet --"
+                                   HorizontalOptions="Start"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   FontSize="Small"/>
+                        </Grid>
+
+                        <Editor Grid.Row="0" Grid.Column="1"
+                               WidthRequest="1000"
+                                            x:Name="edWriteComment"
+                                        HorizontalOptions="Start"
+                                               HorizontalTextAlignment="Start"
+                                               VerticalOptions="CenterAndExpand"
+                                               VerticalTextAlignment="Center"
+                                   FontSize="Small"/>
+
+                        <Button x:Name="btnAddComment"
+                                        Grid.Column="2"
+                                        Grid.Row="0"
+                                        Text="Post"
+                                        FontSize="Small"
+                                        HorizontalOptions="Start"
+                                VerticalOptions="Center"
+                                    />
+
+                    </Grid>
+
+
+                </Frame>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <Frame x:Name="frameComment" Grid.Column="0" Grid.Row="1"
                 Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
 
 
-                <CollectionView x:Name="cvCommentUser"
+                    <CollectionView x:Name="cvCommentUser"
                                     ItemsSource="{Binding Items}"
                                     Margin="0,0,0,50"
                                     HorizontalOptions="Start"
                                     Grid.Column="0" Grid.Row="0">
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout Orientation="Vertical"/>
-                    </CollectionView.ItemsLayout>
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid x:Name="gridComment"
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout Orientation="Vertical"/>
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <Grid x:Name="gridComment"
                                       ColumnDefinitions="Auto, *"
                                       RowDefinitions="Auto"
                                       HorizontalOptions="Center"
                                       ColumnSpacing="50">
-                                <Grid x:Name="gridUserComment"
+                                    <Grid x:Name="gridUserComment"
                                       ColumnDefinitions="Auto"
                                       RowDefinitions="Auto,Auto"
                                       HorizontalOptions="Center">
-                                    <Image x:Name="imgUser"
+                                        <Image x:Name="imgUser"
                                                Source="dotnet_bot.png" HeightRequest="50"
                                                Grid.Column="0" Grid.Row="0"
                                                HorizontalOptions="Center"/>
-                                    <Label x:Name="lbUser"
+                                        <Label x:Name="lbUser"
                                                Text="{Binding Name}"
                                                HorizontalOptions="Start"
                                                Grid.Column="0"
                                                Grid.Row="1"
                                                FontSize="Small"/>
-                                </Grid>
+                                    </Grid>
 
-                                <Frame Grid.Row="0" Grid.Column="1" 
+                                    <Frame Grid.Row="0" Grid.Column="1" 
                                        Margin="0,0,0,30">
-                                    <Label x:Name="lbComment"
+                                        <Label x:Name="lbComment"
                                                Text="CommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommentssssssCommentssssssssss"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
-                                </Frame>
-                            </Grid>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                                    </Frame>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
 
 
-            </Frame>
-
+                </Frame>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

@@ -33,6 +33,7 @@ namespace Movie_Management_Project.Content.Admin
             Items4.Add(new Student { Id=10, Name="Person", Age=232 });
             Items4.Add(new Student { Id=10, Name="Person", Age=232 });
             Items4.Add(new Student { Id=10, Name="Person", Age=232 });
+            Items.Add(new Student { Id = 1, Name = "person", Age = 30 });
         }
 
         public class Student
