@@ -14,6 +14,8 @@ namespace DTO
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
         public string? CommentText { get; set; }
-        public DateOnly CommentDate { get; set; }
+        public DateTime CommentDate { get; set; }
+        public string? NameUser { get; set; }
+        public string? IdMedia { get; set; }
     }
 }

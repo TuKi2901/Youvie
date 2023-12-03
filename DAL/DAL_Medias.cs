@@ -118,19 +118,29 @@ namespace DAL
             return media;
         }
 
-        public async Task<DTO_Comments> AddComment(DTO_Comments comment)
+        public async Task<bool> AddCommentInMedia(DTO_Comments comment, string mediaId)
         {
             try
             {
-                var collection = db.GetCollection<DTO_Comments>("comments");
+                var collection = db.GetCollection<DTO_Medias>(collectionName);
 
-                await collection.InsertOneAsync(comment);
+                DTO_Medias media = await GetMediaById(mediaId);
 
-                return comment;
+                if (media.Comments == null)
+                {
+                    throw new Exception("media.Comments Null ???");
+                }
+
+                media.Comments.Add(comment);
+
+                var update = Builders<DTO_Medias>.Update.Set(x => x.Comments, media.Comments);
+                await collection.UpdateOneAsync(x => x.Id == mediaId, update);
+
+                return true;
             }
             catch
             {
-                throw new Exception("Add comment failed!!");
+                return false;
             }
         }
     }

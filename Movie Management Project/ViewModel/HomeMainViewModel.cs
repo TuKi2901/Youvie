@@ -32,6 +32,8 @@ namespace Movie_Management_Project.ViewModel
         public HomeMainViewModel(string userId)
         {
             _idUser = userId;
+            NominatedCollection();
+            SelectedMediaCommand = new Command(SelectedMediaFuntion);
         }
 
         public async void NominatedCollection()
@@ -73,7 +75,7 @@ namespace Movie_Management_Project.ViewModel
 
                 await Shell.Current.DisplayAlert("Error!", SelectedMedia.MediaName, "Ok");
 
-                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(SelectedMedia.Id);
+                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(SelectedMedia.Id, _idUser);
                 await Shell.Current.Navigation.PushAsync(new Play(playMediaViewModel));
             }
             catch (Exception ex)
