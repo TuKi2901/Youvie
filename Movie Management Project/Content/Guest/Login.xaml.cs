@@ -4,6 +4,7 @@ using Microsoft.Maui.ApplicationModel.Communication;
 using Microsoft.Maui.Controls.PlatformConfiguration;
 using Movie_Management_Project.Content.Admin;
 using Movie_Management_Project.Content.User;
+using Movie_Management_Project.ViewModel;
 using System.Net.Mail;
 using System.Security.Principal;
 
@@ -40,23 +41,26 @@ public partial class Login : ContentPage
             {
                 throw new Exception("Bro, you forgot input password !!!");
             }
-
-            bool check = await bus_project1.BusGetLoginUser(txtEmail.Text, txtPassword.Text);
-
-            if (!check)
-            {
-                throw new Exception("Email or password isn't right !!!");
-            }
+            dynamic check = await bus_project1.CheckUserOrAdmin(txtEmail.Text, txtPassword.Text);
 
             await DisplayAlert("Notification", "Login sucessfully !!!", "OK");
-            
-            await Navigation.PushAsync(new Home());
+
+            if (check is DTO_Users)
+            {
+                DTO_Users user = check;
+
+                HomeMainViewModel homeMainViewModel = new HomeMainViewModel(user.Id);
+                await Navigation.PushAsync(new Home(homeMainViewModel));
+            }
+
+            if (check is DTO_Admins)
+            {
+                await Navigation.PushAsync(new AdminManager());
+            }
         }
         catch (Exception ex)
         {
             await DisplayAlert("Error", ex.Message, "OK");
         }
-
     }
-
 }

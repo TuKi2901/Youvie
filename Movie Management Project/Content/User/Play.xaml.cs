@@ -1,11 +1,14 @@
 
+using Movie_Management_Project.ViewModel;
+
 namespace Movie_Management_Project.Content.User;
 
 public partial class Play : ContentPage
 {
-	public Play()
+	public Play(PlayMediaViewModel playMediaViewModel)
 	{
 		InitializeComponent();
+		BindingContext = playMediaViewModel;
     }
 
 }

@@ -31,7 +31,6 @@ namespace Movie_Management_Project
             }
         }
 
-
         private void btnUser_Loaded(object sender, EventArgs e)
         {
 

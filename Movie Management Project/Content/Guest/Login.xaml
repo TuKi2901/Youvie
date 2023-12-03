@@ -60,6 +60,7 @@
                 BackgroundColor="#512BD4"
                 HorizontalOptions="Center"
                 Command="{Binding Login}"
+                Clicked="btnLogin_Clicked"
                 />
 
             <Button

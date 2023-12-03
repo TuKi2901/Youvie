@@ -1,16 +1,5 @@
 ﻿using DTO;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {
@@ -117,6 +106,31 @@ namespace DAL
             catch
             {
                 throw new Exception("Error in DAL_FindUserWith");
+            }
+        }
+
+        public async Task<DTO_Medias> GetMediaById(string idMedia)
+        {
+            var collection = db.GetCollection<DTO_Medias>(collectionName);
+
+            DTO_Medias media = await collection.Find(x => x.Id == idMedia).FirstOrDefaultAsync();
+
+            return media;
+        }
+
+        public async Task<DTO_Comments> AddComment(DTO_Comments comment)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Comments>("comments");
+
+                await collection.InsertOneAsync(comment);
+
+                return comment;
+            }
+            catch
+            {
+                throw new Exception("Add comment failed!!");
             }
         }
     }
