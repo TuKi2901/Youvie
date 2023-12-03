@@ -29,13 +29,21 @@
     <AppXManifest Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< Updated upstream
       <Modified>2023-12-01T11:04:39.526</Modified>
+=======
+      <Modified>2023-12-02T11:37:13.381</Modified>
+>>>>>>> Stashed changes
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
+<<<<<<< Updated upstream
       <Modified>2023-12-01T11:04:39.002</Modified>
+=======
+      <Modified>2023-12-02T11:35:59.053</Modified>
+>>>>>>> Stashed changes
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.runtimeconfig.json">
       <PackagePath>GUI.runtimeconfig.json</PackagePath>
@@ -43,11 +51,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.dll">
       <PackagePath>GUI.dll</PackagePath>
+<<<<<<< Updated upstream
       <Modified>2023-12-01T11:04:36.629</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GUI.exe</PackagePath>
       <Modified>2023-12-01T11:04:36.720</Modified>
+=======
+      <Modified>2023-12-02T11:37:09.527</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
+      <PackagePath>GUI.exe</PackagePath>
+      <Modified>2023-12-02T11:37:09.662</Modified>
+>>>>>>> Stashed changes
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.deps.json">
       <PackagePath>GUI.deps.json</PackagePath>
@@ -999,11 +1015,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\BUS.dll">
       <PackagePath>BUS.dll</PackagePath>
+<<<<<<< Updated upstream
       <Modified>2023-12-01T10:45:43.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DAL.dll">
       <PackagePath>DAL.dll</PackagePath>
       <Modified>2023-12-01T11:04:26.708</Modified>
+=======
+      <Modified>2023-12-02T11:35:37.723</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DAL.dll">
+      <PackagePath>DAL.dll</PackagePath>
+      <Modified>2023-12-02T11:35:35.800</Modified>
+>>>>>>> Stashed changes
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\DTO\bin\Debug\net7.0\DTO.dll">
       <PackagePath>DTO.dll</PackagePath>

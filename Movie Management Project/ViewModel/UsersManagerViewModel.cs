@@ -1,13 +1,20 @@
 ﻿using BUS;
+<<<<<<< Updated upstream
 using DAL;
 using DTO;
 using Movie_Management_Project.Content.Admin;
 using Movie_Management_Project.Content.Guest;
 using System.Collections.ObjectModel;
-using System.Net;
+=======
+using DTO;
+using Movie_Management_Project.Content.Admin;
+using System.Collections.ObjectModel;
 using System.Net.Mail;
+>>>>>>> Stashed changes
+using System.Net;
 using System.Security.Cryptography;
 using System.Windows.Input;
+using Movie_Management_Project.Content.User;
 
 
 namespace Movie_Management_Project.ViewModel
@@ -34,13 +41,13 @@ namespace Movie_Management_Project.ViewModel
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
         public ICommand ForgotPasswordCommand { get; }
-        public ICommand Login { get; }
+        public ICommand LoginCommand { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
             #region Guest
-            //Login = new Command(Login);
+            LoginCommand = new Command(Login);
             ForgotPasswordCommand = new Command(ForgotPassword);
             #endregion
 
@@ -250,17 +257,40 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        //public async void Login(string email, string password) 
-        //{
-        //    try
-        //    {
+        public async void Login()
+        {
 
-        //    }
-        //    catch (Exception ex)
-        //    {
+            try
+            {
+                if (Email == string.Empty)
+                {
+                    throw new Exception("Email mustn't be left blank, bro !!!");
+                }
 
-        //    }
-        //}
+                if (Password == string.Empty)
+                {
+                    throw new Exception("Bro, you forgot input password !!!");
+                }
+
+                string role = await _bus.BusGetLogin(Email, Password);
+                if (role == "Admin")
+                {
+                    await Shell.Current.DisplayAlert("Notification!", $"Add user success!!!", "Ok");
+                    await Application.Current.MainPage.Navigation.PushAsync(new AdminManager());
+                }
+                else if (role == "User")
+                {
+                    await Shell.Current.DisplayAlert("Notification!", $"Add user success!!!", "Ok");
+                    await Application.Current.MainPage.Navigation.PushAsync(new Home());
+                }
+                else
+                    throw new Exception("Error Login ViewModel");
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Notification!", $"Email or password isn't right !!!!!!\nError {ex.Message}", "Ok");
+            }
+        }
 
         public async void AddUser()
         {

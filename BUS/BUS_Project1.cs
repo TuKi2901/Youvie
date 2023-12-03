@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using BCrypt.Net;
+using DAL;
 using DTO;
 using MongoDB.Driver;
 using System.Collections;
@@ -38,27 +39,24 @@ namespace BUS
             }
         }
 
-        public async Task<bool> BusGetLoginUser(string email, string password)
+        public async Task<string> BusGetLogin(string email, string password)
         {
+
             try
             {
-                DTO_Users user = await dal_users.GetUserByEmail(email);
-
-                if (user.Account == null)
-                {
-                    throw new Exception("user.Account mustn't null");
-                }
-
-                bool checkPass = BCrypt.Net.BCrypt.Verify(password, user.Account.Password);
-
-                if (!checkPass)
-                {
-                    throw new Exception();
-                }
-
-                return true;
+                password = BCrypt.Net.BCrypt.HashPassword(password);
+                var person = await dal_accounts.Login(email, password);
+                if (person.GetType().ToString() == "DTO_Admins")
+                    return "Admin";
+                else if (person.GetType().ToString() == "DTO_Users")
+                    return "User";
+                throw new Exception ();
             }
-            catch { return false; }
+            catch (Exception ex)
+            {
+                throw new Exception("Error BusGetLogin" + ex.Message);
+            }
+
         }
 
         public async Task<List<DTO_Users>> BusGetAllUser()

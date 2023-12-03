@@ -87,25 +87,49 @@ namespace DAL
             }
         }
 
-        //public async Task<string> Login(string email)
-        //{
-        //    try
-        //    {
-        //        var collection = db.GetCollection<DTO_Users>(collectionName);
+        public async Task<DTO_Accounts> IsExistAccount(string email, string password)
+        {
+            try
+            {
+                var collection = db.GetCollection<DTO_Accounts>(collectionName);
+                DTO_Accounts account = await collection.Find(x => x.Email == email && x.Password == password).FirstOrDefaultAsync();
 
-        //        DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+                if (account == null)
+                {
+                    throw new Exception($"Don't found user with {email}");
+                }
 
-        //        if (user == null)
-        //        {
-        //            throw new Exception($"Don't found user with {email}");
-        //        }
+                return account;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error in IsExistAccount: {ex.Message}");
+            }
+        }
 
-        //        return user;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
-        //    }
-        //}
+        public async Task<dynamic> Login(string email, string password)
+        {
+            try
+            {
+                //kiểm tra email và password trong account. Nếu đúng trả về đối tượng "account"
+                var account = await IsExistAccount(email, password);
+
+                var collectionAdmin = db.GetCollection<DTO_Admins>(collectionName);
+                var admin = await collectionAdmin.Find(x => x.Account.Id == account.Id).FirstOrDefaultAsync();
+                if (admin != null)
+                    return admin;
+
+                var collectionUser = db.GetCollection<DTO_Users>(collectionName);
+                var user = await collectionUser.Find(x => x.Account.Id == account.Id).FirstOrDefaultAsync();
+                if (user != null)
+                    return user;
+                else
+                    throw new Exception();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error in Login_Account: {ex.Message}");
+            }
+        }
     }
 }

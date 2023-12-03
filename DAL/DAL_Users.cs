@@ -67,6 +67,14 @@ namespace DAL
                 throw new Exception($"Error in GetUserByEmail: {ex.Message}");
             }
         }
+
+
+
+        
+
+
+
+
         
         public async Task<List<DTO_Users>> GetAllUser()
         {
