@@ -1,16 +1,5 @@
 ﻿using DTO;
 using MongoDB.Driver;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL
 {

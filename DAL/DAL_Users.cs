@@ -46,6 +46,7 @@ namespace DAL
                 return false;
             }
         }
+
         public async Task<DTO_Users> GetUserByEmail(string email)
         {
             var collection = db.GetCollection<DTO_Users>(collectionName);

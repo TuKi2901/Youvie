@@ -87,10 +87,6 @@ namespace DAL
             }
         }
 
-<<<<<<< HEAD
-
-
-        //Tuấn
         //public async Task<string> Login(string email)
         //{
         //    try
@@ -111,60 +107,5 @@ namespace DAL
         //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
         //    }
         //}
-
-
-        #region Kiệt
-        //Login
-        //public async Task<DTO_Accounts> IsExistAccount(string email)
-=======
-        //public async Task<string> Login(string email)
->>>>>>> parent of f1d1392 (a)
-        //{
-        //    try
-        //    {
-        //        var collection = db.GetCollection<DTO_Users>(collectionName);
-
-        //        DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
-
-        //        if (user == null)
-        //        {
-        //            throw new Exception($"Don't found user with {email}");
-        //        }
-<<<<<<< HEAD
-        //        throw new Exception($"Don't found account with {email}");
-
-        //public async Task<dynamic> Login(DTO_Accounts account)
-        //{
-        //    try
-        //    {
-        //        string collectionNameAdmin = "admins";
-        //        var collectionAdmin = db.GetCollection<DTO_Admins>(collectionNameAdmin);
-        //        DTO_Admins admin = await collectionAdmin.Find(x => x.Account.Id == account.Id).FirstOrDefaultAsync();
-        //        if (admin != null)
-        //            return admin;
-
-        //        var collectionNameUser = "users";
-        //        var collectionUser = db.GetCollection<DTO_Users>(collectionNameUser);
-        //        DTO_Users user = await collectionUser.Find(x => x.Account.Id == account.Id).FirstOrDefaultAsync();
-        //        if (user != null)
-        //            return user;
-        //        throw new Exception($"Error Login_DAL_Account");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception("Error Login_DAL_Account!!!!");
-        //    }
-        //}
-#endregion
-=======
-
-        //        return user;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
-        //    }
-        //}
->>>>>>> parent of f1d1392 (a)
     }
 }

@@ -12,11 +12,6 @@ namespace Movie_Management_Project.ViewModel
 {
     public partial class UsersManagerViewModel : BaseViewModel
     {
-<<<<<<< HEAD
-        //Login_Kiệt
-        //static dynamic logged;
-=======
->>>>>>> parent of f1d1392 (a)
         private BUS_Project1 _bus = new BUS_Project1();
 
         private string _userName;
@@ -37,23 +32,12 @@ namespace Movie_Management_Project.ViewModel
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
         public ICommand ForgotPasswordCommand { get; }
-<<<<<<< HEAD
-
-        //Kiệt
-        //public ICommand LoginCommand { get; }
-=======
->>>>>>> parent of f1d1392 (a)
         public ICommand Login { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
             #region Guest
-<<<<<<< HEAD
-            //Kiệt
-            //LoginCommand = new Command(Login);
-=======
->>>>>>> parent of f1d1392 (a)
             //Login = new Command(Login);
             ForgotPasswordCommand = new Command(ForgotPassword);
             #endregion
@@ -264,12 +248,7 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-<<<<<<< HEAD
-        //Login_Kiệt
-        //public async void Login()
-=======
         //public async void Login(string email, string password) 
->>>>>>> parent of f1d1392 (a)
         //{
         //    try
         //    {
