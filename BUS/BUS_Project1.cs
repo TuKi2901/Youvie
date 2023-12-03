@@ -100,20 +100,6 @@ namespace BUS
             }
         }
 
-        public async Task<bool> BusUpdateUser(DTO_Users _user)
-        {
-            try
-            {
-                await dal_users.UpdateUser(_user);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
-        }
-
         public async Task<List<DTO_Users>> BusFindUser(string infoUser)
         {
             try
@@ -149,19 +135,6 @@ namespace BUS
             }
         }
 
-        public async Task<List<DTO_Users>> BusFindUser(string infoUser)
-        {
-            try
-            {
-                List<DTO_Users> users = await dal_users.FindUserWith(infoUser);
-
-                return users;
-            }
-            catch
-            {
-                throw new Exception("Error in BUS_FindUserWith");
-            }
-        }
 
         public async Task<string> BusForgotPassword(string email, string password)
         {
