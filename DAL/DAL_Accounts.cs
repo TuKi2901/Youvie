@@ -87,25 +87,48 @@ namespace DAL
             }
         }
 
-        //public async Task<string> Login(string email)
+        //Login
+        //public async Task<DTO_Accounts> IsExistAccount(string email)
         //{
         //    try
         //    {
-        //        var collection = db.GetCollection<DTO_Users>(collectionName);
+        //        var collection = db.GetCollection<DTO_Accounts>(collectionName);
+        //        DTO_Accounts account = await collection.Find(x => x.Email == email).FirstOrDefaultAsync();
 
-        //        DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
-
-        //        if (user == null)
+        //        if (account != null)
         //        {
-        //            throw new Exception($"Don't found user with {email}");
+        //            return account;
         //        }
-
-        //        return user;
+        //        throw new Exception($"Don't found account with {email}");
         //    }
         //    catch (Exception ex)
         //    {
         //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
         //    }
         //}
+
+        //public async Task<dynamic> Login(DTO_Accounts account)
+        //{
+        //    try
+        //    {
+        //        string collectionNameAdmin = "admins";
+        //        var collectionAdmin = db.GetCollection<DTO_Admins>(collectionNameAdmin);
+        //        DTO_Admins admin = await collectionAdmin.Find(x => x.Account.Id == account.Id).FirstOrDefaultAsync();
+        //        if (admin != null)
+        //            return admin;
+
+        //        var collectionNameUser = "users";
+        //        var collectionUser = db.GetCollection<DTO_Users>(collectionNameUser);
+        //        DTO_Users user = await collectionUser.Find(x => x.Account.Id == account.Id).FirstOrDefaultAsync();
+        //        if (user != null)
+        //            return user;
+        //        throw new Exception($"Error Login_DAL_Account");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Error Login_DAL_Account!!!!");
+        //    }
+        //}
+
     }
 }

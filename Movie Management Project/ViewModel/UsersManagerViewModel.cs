@@ -1,6 +1,8 @@
 ﻿using BUS;
 using DTO;
 using Movie_Management_Project.Content.Admin;
+using Movie_Management_Project.Content.User;
+using Movie_Management_Project.Content.Guest;
 using System.Collections.ObjectModel;
 using System.Net.Mail;
 using System.Net;
@@ -12,6 +14,7 @@ namespace Movie_Management_Project.ViewModel
 {
     public partial class UsersManagerViewModel : BaseViewModel
     {
+        static dynamic logged;
         private BUS_Project1 _bus = new BUS_Project1();
 
         private string _userName;
@@ -32,13 +35,13 @@ namespace Movie_Management_Project.ViewModel
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
         public ICommand ForgotPasswordCommand { get; }
-        public ICommand Login { get; }
+        //public ICommand LoginCommand { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
             #region Guest
-            //Login = new Command(Login);
+            //LoginCommand = new Command(Login);
             ForgotPasswordCommand = new Command(ForgotPassword);
             #endregion
 
@@ -248,15 +251,30 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        //public async void Login(string email, string password) 
+        //Login
+        //public async void Login()
         //{
         //    try
         //    {
-
+        //        logged = await _bus.BusLogin(Email, Password);
+        //        if (logged is DTO_Admins)
+        //        {
+        //            await Shell.Current.DisplayAlert("Notification!", "Login Admin success!!!", "Ok");
+        //            await Application.Current.MainPage.Navigation.PushAsync(new AdminManager());
+        //        }
+        //        else if(logged is DTO_Users)
+        //        {
+        //            await Shell.Current.DisplayAlert("Notification!", "Login User success!!!", "Ok");
+        //            await Application.Current.MainPage.Navigation.PushAsync(new Home());
+        //        }
+        //        else
+        //        {
+        //            await Shell.Current.DisplayAlert("Notification!", "Account is not exist", "Ok");
+        //        }
         //    }
         //    catch (Exception ex)
         //    {
-
+        //        throw new Exception($"Login Failed\n{ex.Message}");
         //    }
         //}
 

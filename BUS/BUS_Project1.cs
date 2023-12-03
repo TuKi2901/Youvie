@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using BCrypt.Net;
+using DAL;
 using DTO;
 using MongoDB.Driver;
 using System.Collections;
@@ -148,6 +149,38 @@ namespace BUS
                 throw new Exception($"BusForgotPassword is error\n{ex.Message}");
             }
         }
+
+        //BUSLogin
+        //public async Task<dynamic> BusLogin(string email, string password)
+        //{
+        //    try
+        //    {
+        //        string Admin = "Admin";
+        //        string User = "User";
+        //        var account = await dal_accounts.IsExistAccount(email);
+        //        bool checkPass = BCrypt.Net.BCrypt.Verify(password, account.Password);
+        //        if (!checkPass)
+        //        {
+        //            throw new Exception();
+        //        }
+        //        //Sử dụng hàm Login() ở DAL_Accounts.cs
+        //        var logged = await dal_accounts.Login(account);
+        //        return logged;
+        //        //if (logged.GetType().ToString() == "DAL.DAL_Admins")
+        //        //    return Admin.ToString();
+        //        //if (logged.GetType().ToString() == "DTO.DTO_Users")
+        //        //    return User.ToString();
+        //        //else
+        //        //    throw new Exception($"Error Login_BUS {logged.GetType().ToString()}");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception($"Login unsuccess !!!\nError {ex.Message}");
+        //    }
+        //}
+
+
+
         #endregion
 
         // Admin

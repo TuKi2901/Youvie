@@ -59,7 +59,6 @@
                 Margin="0,20,0,40"
                 BackgroundColor="#512BD4"
                 HorizontalOptions="Center"
-                Command="{Binding Login}"
                 />
 
             <Button
@@ -71,7 +70,7 @@
                 BorderColor="Transparent"
                 Background="Transparent"
                 HorizontalOptions="Center"/>
-            
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
