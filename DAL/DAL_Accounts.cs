@@ -64,13 +64,13 @@ namespace DAL
             }
         }
 
-        public async Task<bool> DeleteAccount(List<string> email)
+        public async Task<bool> DeleteAccount(List<string> accountId)
         {
             try
             {
                 var collection = db.GetCollection<DTO_Accounts>(collectionName);
 
-                var filter = Builders<DTO_Accounts>.Filter.In(x => x.Email, email);
+                var filter = Builders<DTO_Accounts>.Filter.In(x => x.Id, accountId);
 
                 var result = await collection.DeleteManyAsync(filter);
 
@@ -87,6 +87,32 @@ namespace DAL
             }
         }
 
+
+
+        //Tuấn
+        //public async Task<string> Login(string email)
+        //{
+        //    try
+        //    {
+        //        var collection = db.GetCollection<DTO_Users>(collectionName);
+
+        //        DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+
+        //        if (user == null)
+        //        {
+        //            throw new Exception($"Don't found user with {email}");
+        //        }
+
+        //        return user;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
+        //    }
+        //}
+
+
+        #region Kiệt
         //Login
         //public async Task<DTO_Accounts> IsExistAccount(string email)
         //{
@@ -100,12 +126,6 @@ namespace DAL
         //            return account;
         //        }
         //        throw new Exception($"Don't found account with {email}");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
-        //    }
-        //}
 
         //public async Task<dynamic> Login(DTO_Accounts account)
         //{
@@ -129,6 +149,6 @@ namespace DAL
         //        throw new Exception("Error Login_DAL_Account!!!!");
         //    }
         //}
-
+#endregion
     }
 }

@@ -1,12 +1,7 @@
 ﻿using BUS;
 using DTO;
 using Movie_Management_Project.Content.User;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Movie_Management_Project.ViewModel
@@ -15,8 +10,8 @@ namespace Movie_Management_Project.ViewModel
     {
         BUS_Project1 _bus = new BUS_Project1();
 
+        private string _idUser;
         private DTO_Medias _selectedMedia;
-        private string selectedMediaId;
 
         public ObservableCollection<DTO_Medias> MediainNominated { get; } = new();
 
@@ -32,6 +27,11 @@ namespace Movie_Management_Project.ViewModel
         {
             NominatedCollection();
             SelectedMediaCommand = new Command(SelectedMediaFuntion);
+        }
+
+        public HomeMainViewModel(string userId)
+        {
+            _idUser = userId;
         }
 
         public async void NominatedCollection()
@@ -64,9 +64,22 @@ namespace Movie_Management_Project.ViewModel
 
         public async void SelectedMediaFuntion()
         {
-            await Shell.Current.DisplayAlert("Error!", SelectedMedia.Id, "Ok");
-            selectedMediaId = SelectedMedia.Id;
-            await Shell.Current.Navigation.PushAsync(new Play());
+            try
+            {
+                if (SelectedMedia == null)
+                {
+                    throw new Exception("You must choose the media you want!");
+                }
+
+                await Shell.Current.DisplayAlert("Error!", SelectedMedia.MediaName, "Ok");
+
+                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(SelectedMedia.Id);
+                await Shell.Current.Navigation.PushAsync(new Play(playMediaViewModel));
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error!", $"There was a problem {ex.Message}", "Ok");
+            }
         }
     }
 }

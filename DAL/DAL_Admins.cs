@@ -107,5 +107,14 @@ namespace DAL
                 throw new Exception("Error in DAL_FindAdminWith");
             }
         }
+
+        public async Task<DTO_Admins> GetAdminByEmail(string email)
+        {
+            var collection = db.GetCollection<DTO_Admins>(collectionName);
+
+            DTO_Admins admins = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+
+            return admins;
+        }
     }
 }

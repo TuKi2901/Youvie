@@ -54,7 +54,7 @@ namespace BUS
 
                 if (!checkPass)
                 {
-                    throw new Exception();
+                    throw new Exception("Password is not correct!");
                 }
 
                 return true;
@@ -149,38 +149,6 @@ namespace BUS
                 throw new Exception($"BusForgotPassword is error\n{ex.Message}");
             }
         }
-
-        //BUSLogin
-        //public async Task<dynamic> BusLogin(string email, string password)
-        //{
-        //    try
-        //    {
-        //        string Admin = "Admin";
-        //        string User = "User";
-        //        var account = await dal_accounts.IsExistAccount(email);
-        //        bool checkPass = BCrypt.Net.BCrypt.Verify(password, account.Password);
-        //        if (!checkPass)
-        //        {
-        //            throw new Exception();
-        //        }
-        //        //Sử dụng hàm Login() ở DAL_Accounts.cs
-        //        var logged = await dal_accounts.Login(account);
-        //        return logged;
-        //        //if (logged.GetType().ToString() == "DAL.DAL_Admins")
-        //        //    return Admin.ToString();
-        //        //if (logged.GetType().ToString() == "DTO.DTO_Users")
-        //        //    return User.ToString();
-        //        //else
-        //        //    throw new Exception($"Error Login_BUS {logged.GetType().ToString()}");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        throw new Exception($"Login unsuccess !!!\nError {ex.Message}");
-        //    }
-        //}
-
-
-
         #endregion
 
         // Admin
@@ -355,6 +323,91 @@ namespace BUS
                 throw new Exception("Error in BUS_FindMedia");
             }
         }
-        #endregion 
+
+        public async Task<DTO_Medias> BusGetMediaById(string mediaId)
+        {
+            try
+            {
+                DTO_Medias media = await dal_medias.GetMediaById(mediaId);
+
+                return media;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        //BUSLogin
+        //public async Task<dynamic> BusLogin(string email, string password)
+        //{
+        //    try
+        //    {
+        //        string Admin = "Admin";
+        //        string User = "User";
+        //        var account = await dal_accounts.IsExistAccount(email);
+        //        bool checkPass = BCrypt.Net.BCrypt.Verify(password, account.Password);
+        //        if (!checkPass)
+        //        {
+        //            throw new Exception();
+        //        }
+        //        //Sử dụng hàm Login() ở DAL_Accounts.cs
+        //        var logged = await dal_accounts.Login(account);
+        //        return logged;
+        //        //if (logged.GetType().ToString() == "DAL.DAL_Admins")
+        //        //    return Admin.ToString();
+        //        //if (logged.GetType().ToString() == "DTO.DTO_Users")
+        //        //    return User.ToString();
+        //        //else
+        //        //    throw new Exception($"Error Login_BUS {logged.GetType().ToString()}");
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception($"Login unsuccess !!!\nError {ex.Message}");
+        //    }
+        //}
+
+
+
+        #endregion
+        public async Task<dynamic> CheckUserOrAdmin(string email, string pass)
+        {
+            try
+            {
+                DTO_Users user = await dal_users.GetUserByEmail(email);
+
+                if (user != null)
+                {
+                    bool checkPass = BCrypt.Net.BCrypt.Verify(pass, user.Account.Password);
+
+                    if (!checkPass)
+                    {
+                        throw new Exception("Password is not correct!");
+                    }
+
+                    return user;
+                }
+
+                DTO_Admins admin = await dal_admins.GetAdminByEmail(email);
+
+                if (admin != null)
+                {
+                    bool checkPass = BCrypt.Net.BCrypt.Verify(pass, admin.Account.Password);
+
+                    if (!checkPass)
+                    {
+                        throw new Exception("Password is not correct!");
+                    }
+
+                    return admin;
+                }
+
+                throw new Exception("Email is not correct!");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
