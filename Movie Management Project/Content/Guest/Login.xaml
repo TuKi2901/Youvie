@@ -60,7 +60,10 @@
                 BackgroundColor="#512BD4"
                 HorizontalOptions="Center"
                 Command="{Binding Login}"
+<<<<<<< HEAD
                 Clicked="btnLogin_Clicked"
+=======
+>>>>>>> parent of f1d1392 (a)
                 />
 
             <Button

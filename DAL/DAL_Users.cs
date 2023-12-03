@@ -46,29 +46,6 @@ namespace DAL
                 return false;
             }
         }
-
-        public async Task<DTO_Users> GetUserByEmail(string email)
-        {
-            try
-            {
-                var collection = db.GetCollection<DTO_Users>(collectionName);
-
-                var filter = Builders<DTO_Users>.Filter.In(x => x.Id, userId);
-                var result = await collection.DeleteManyAsync(filter);
-
-                if (result.DeletedCount == 0)
-                {
-                    throw new Exception($"Don't found user with {email}");
-                }
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
-        }
-
         public async Task<DTO_Users> GetUserByEmail(string email)
         {
             var collection = db.GetCollection<DTO_Users>(collectionName);

@@ -87,6 +87,7 @@ namespace DAL
             }
         }
 
+<<<<<<< HEAD
 
 
         //Tuấn
@@ -115,16 +116,21 @@ namespace DAL
         #region Kiệt
         //Login
         //public async Task<DTO_Accounts> IsExistAccount(string email)
+=======
+        //public async Task<string> Login(string email)
+>>>>>>> parent of f1d1392 (a)
         //{
         //    try
         //    {
-        //        var collection = db.GetCollection<DTO_Accounts>(collectionName);
-        //        DTO_Accounts account = await collection.Find(x => x.Email == email).FirstOrDefaultAsync();
+        //        var collection = db.GetCollection<DTO_Users>(collectionName);
 
-        //        if (account != null)
+        //        DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+
+        //        if (user == null)
         //        {
-        //            return account;
+        //            throw new Exception($"Don't found user with {email}");
         //        }
+<<<<<<< HEAD
         //        throw new Exception($"Don't found account with {email}");
 
         //public async Task<dynamic> Login(DTO_Accounts account)
@@ -150,5 +156,15 @@ namespace DAL
         //    }
         //}
 #endregion
+=======
+
+        //        return user;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception($"Error in GetUserByEmail: {ex.Message}");
+        //    }
+        //}
+>>>>>>> parent of f1d1392 (a)
     }
 }

@@ -1,5 +1,4 @@
-﻿using BCrypt.Net;
-using DAL;
+﻿using DAL;
 using DTO;
 using MongoDB.Driver;
 using System.Collections;
