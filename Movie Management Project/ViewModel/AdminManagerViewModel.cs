@@ -233,6 +233,7 @@ namespace Movie_Management_Project.ViewModel
                 admin.AdminName = AdminName;
                 admin.Gender = _gender;
 
+
                 bool check = await _bus.BusUpdateAdmin(admin);
 
                 if (!check)

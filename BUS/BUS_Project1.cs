@@ -1,5 +1,4 @@
-﻿using BCrypt.Net;
-using DAL;
+﻿using DAL;
 using DTO;
 using MongoDB.Driver;
 using System.Collections;
@@ -39,24 +38,27 @@ namespace BUS
             }
         }
 
-        public async Task<string> BusGetLogin(string email, string password)
+        public async Task<bool> BusGetLoginUser(string email, string password)
         {
-
             try
             {
-                password = BCrypt.Net.BCrypt.HashPassword(password);
-                var person = await dal_accounts.Login(email, password);
-                if (person.GetType().ToString() == "DTO_Admins")
-                    return "Admin";
-                else if (person.GetType().ToString() == "DTO_Users")
-                    return "User";
-                throw new Exception ();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Error BusGetLogin" + ex.Message);
-            }
+                DTO_Users user = await dal_users.GetUserByEmail(email);
 
+                if (user.Account == null)
+                {
+                    throw new Exception("user.Account mustn't null");
+                }
+
+                bool checkPass = BCrypt.Net.BCrypt.Verify(password, user.Account.Password);
+
+                if (!checkPass)
+                {
+                    throw new Exception();
+                }
+
+                return true;
+            }
+            catch { return false; }
         }
 
         public async Task<List<DTO_Users>> BusGetAllUser()
@@ -74,37 +76,16 @@ namespace BUS
 
         }
 
-        public async Task<string> BusDeleteUser(List<string> email)
+        public async Task<string> DeleteUsernAccount(List<string> userId, List<string> accountId)
         {
             try
             {
-                bool checkDeleteAccount = await dal_accounts.DeleteAccount(email);
+                bool checkDeleteAccount = await dal_accounts.DeleteAccount(accountId);
 
                 if (!checkDeleteAccount)
                 {
                     throw new Exception($"Can't delete Accounts");
                 }
-
-                bool checkDeleteUser = await dal_users.DeleteUser(email);
-
-                if (!checkDeleteUser)
-                {
-                    throw new Exception($"Can't delete User");
-                }
-
-                return string.Empty;
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
-        }
-
-        public async Task<List<DTO_Users>> BusFindUser(string infoUser)
-        {
-            try
-            {
-                List<DTO_Users> users = await dal_users.FindUserWith(infoUser);
 
                 bool checkDeleteUser = await dal_users.DeleteUserDAL(userId);
 
@@ -135,6 +116,19 @@ namespace BUS
             }
         }
 
+        public async Task<List<DTO_Users>> BusFindUser(string infoUser)
+        {
+            try
+            {
+                List<DTO_Users> users = await dal_users.FindUserWith(infoUser);
+
+                return users;
+            }
+            catch
+            {
+                throw new Exception("Error in BUS_FindUserWith");
+            }
+        }
 
         public async Task<string> BusForgotPassword(string email, string password)
         {

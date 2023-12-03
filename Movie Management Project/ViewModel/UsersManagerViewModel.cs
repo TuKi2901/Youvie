@@ -1,20 +1,11 @@
 ﻿using BUS;
-<<<<<<< Updated upstream
-using DAL;
-using DTO;
-using Movie_Management_Project.Content.Admin;
-using Movie_Management_Project.Content.Guest;
-using System.Collections.ObjectModel;
-=======
 using DTO;
 using Movie_Management_Project.Content.Admin;
 using System.Collections.ObjectModel;
 using System.Net.Mail;
->>>>>>> Stashed changes
 using System.Net;
 using System.Security.Cryptography;
 using System.Windows.Input;
-using Movie_Management_Project.Content.User;
 
 
 namespace Movie_Management_Project.ViewModel
@@ -41,13 +32,13 @@ namespace Movie_Management_Project.ViewModel
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
         public ICommand ForgotPasswordCommand { get; }
-        public ICommand LoginCommand { get; }
+        public ICommand Login { get; }
 
         public UsersManagerViewModel()
         {
             UsersDataGrid();
             #region Guest
-            LoginCommand = new Command(Login);
+            //Login = new Command(Login);
             ForgotPasswordCommand = new Command(ForgotPassword);
             #endregion
 
@@ -257,40 +248,17 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void Login()
-        {
+        //public async void Login(string email, string password) 
+        //{
+        //    try
+        //    {
 
-            try
-            {
-                if (Email == string.Empty)
-                {
-                    throw new Exception("Email mustn't be left blank, bro !!!");
-                }
+        //    }
+        //    catch (Exception ex)
+        //    {
 
-                if (Password == string.Empty)
-                {
-                    throw new Exception("Bro, you forgot input password !!!");
-                }
-
-                string role = await _bus.BusGetLogin(Email, Password);
-                if (role == "Admin")
-                {
-                    await Shell.Current.DisplayAlert("Notification!", $"Add user success!!!", "Ok");
-                    await Application.Current.MainPage.Navigation.PushAsync(new AdminManager());
-                }
-                else if (role == "User")
-                {
-                    await Shell.Current.DisplayAlert("Notification!", $"Add user success!!!", "Ok");
-                    await Application.Current.MainPage.Navigation.PushAsync(new Home());
-                }
-                else
-                    throw new Exception("Error Login ViewModel");
-            }
-            catch (Exception ex)
-            {
-                await Shell.Current.DisplayAlert("Notification!", $"Email or password isn't right !!!!!!\nError {ex.Message}", "Ok");
-            }
-        }
+        //    }
+        //}
 
         public async void AddUser()
         {
@@ -314,7 +282,7 @@ namespace Movie_Management_Project.ViewModel
                 dTO_Users.Birthday = Birthday;
                 dTO_Users.Country = Country;
                 dTO_Users.Gender = _gender;
-
+                
                 DTO_Accounts dTO_Accounts = new DTO_Accounts();
                 dTO_Accounts.Email = Email;
                 dTO_Accounts.Password = Password;
@@ -335,20 +303,22 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void DeleteUser()
+        private async void DeleteUser()
         {
             try
             {
-                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }
+                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }    
 
-                List<string> emails = new List<string>();
+                List<string> userIds = new List<string>();
+                List<string> accountIds = new List<string>();
 
                 foreach (var user in SelectedUsers)
                 {
-                    emails.Add(user.Account.Email);
+                    userIds.Add(user.Id);
+                    accountIds.Add(user.Account.Id);
                 }
 
-                string check = await _bus.BusDeleteUser(emails);
+                string check = await _bus.DeleteUsernAccount(userIds, accountIds);
 
                 if (check != string.Empty)
                 {
@@ -392,12 +362,12 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        public async void RefreshFormUser()
+        private async void RefreshFormUser()
         {
             await Shell.Current.Navigation.PushAsync(new UserManager());
         }
 
-        public async void UpdateUser()
+        private async void UpdateUser()
         {
             try
             {
@@ -411,17 +381,17 @@ namespace Movie_Management_Project.ViewModel
                 UserName = SelectedUsers[0].UserName;
                 PhoneNumber = SelectedUsers[0].PhoneNumber;
                 _gender = SelectedUsers[0].Gender;
-                if (_gender == "Male") { IsMale = true; IsFemale = false; } else if (_gender == "Female") { IsMale = false; IsFemale = true; }
+                if (_gender == "Male") { IsMale = true; IsFemale = false; }  else if (_gender == "Female") { IsMale = false; IsFemale = true; }
                 Country = SelectedUsers[0].Country;
                 Birthday = SelectedUsers[0].Birthday;
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+                await Shell.Current.DisplayAlert("Error!", $"There was a problem!: {ex.Message}", "Ok");
             }
         }
 
-        public async void SaveUpdateUser()
+        private async void SaveUpdateUser()
         {
             try
             {
@@ -436,19 +406,19 @@ namespace Movie_Management_Project.ViewModel
 
                 if (!check)
                 {
-                    throw new Exception("BusUpdateUser have a error!!!!");
+                    throw new Exception("Update user failed!!");
                 }
 
                 await Shell.Current.DisplayAlert("Notification!", $"Update user success!!!", "Ok");
-                await Shell.Current.Navigation.PushAsync(new UserManager());
+                RefreshFormUser();
             }
             catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error!", $"Update User failed!: {ex.Message}", "Ok");
+                await Shell.Current.DisplayAlert("Error!", $"{ex.Message}", "Ok");
             }
         }
 
-        public async void FindUser()
+        private async void FindUser()
         {
             if (IsBusy)
             {
@@ -479,8 +449,5 @@ namespace Movie_Management_Project.ViewModel
                 IsBusy = false;
             }
         }
-
-
-
     }
 }
