@@ -43,17 +43,17 @@ namespace Movie_Management_Project
 
         private async void btnTVShows_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            await PushPage(new AdminManager());
         }
 
         private async void btnMovies_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            await PushPage(new MediaManager());
         }
 
         private async void btnLastest_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            await PushPage(new UserManager());
         }
 
         #region Shortcut Form Test
@@ -87,9 +87,5 @@ namespace Movie_Management_Project
         //}
         #endregion
 
-        private async void imgBack_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PopAsync();
-        }
     }
 }

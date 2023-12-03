@@ -101,8 +101,6 @@ namespace Movie_Management_Project.Content.Guest
                 dTO_Users.Birthday = dpkBirthday.Date;
                 dTO_Users.Country = pkCountry.SelectedItem.ToString();
 
-                await DisplayAlert("Error", dTO_Users.Birthday.ToString() + " " + dTO_Users.Country, "OK");
-
                 DTO_Accounts dTO_Accounts = new DTO_Accounts();
                 dTO_Accounts.Email = txtEmail.Text;
                 dTO_Accounts.Password = txtPassword.Text;

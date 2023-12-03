@@ -25,13 +25,13 @@ namespace DAL
             }
         }
 
-        public async Task<bool> DeleteUser(List<string> email)
+        public async Task<bool> DeleteUserDAL(List<string> userId)
         {
             try
             {
                 var collection = db.GetCollection<DTO_Users>(collectionName);
 
-                var filter = Builders<DTO_Users>.Filter.In(x => x.Account.Email, email);
+                var filter = Builders<DTO_Users>.Filter.In(x => x.Id, userId);
                 var result = await collection.DeleteManyAsync(filter);
 
                 if (result.DeletedCount == 0)
@@ -67,14 +67,6 @@ namespace DAL
                 throw new Exception($"Error in GetUserByEmail: {ex.Message}");
             }
         }
-
-
-
-        
-
-
-
-
         
         public async Task<List<DTO_Users>> GetAllUser()
         {
@@ -98,7 +90,7 @@ namespace DAL
             {
                 var collection = db.GetCollection<DTO_Users>(collectionName);
 
-                var filter = Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, _user.Account.Email);
+                var filter = Builders<DTO_Users>.Filter.Eq(x => x.Id, _user.Id);
                 var update = Builders<DTO_Users>.Update.Set(x => x.UserName, _user.UserName)
                                                         .Set(x => x.Gender, _user.Gender)
                                                         .Set(x => x.PhoneNumber, _user.PhoneNumber)
@@ -146,6 +138,7 @@ namespace DAL
                                                             Builders<DTO_Users>.Filter.Eq(x => x.PhoneNumber, infoUser),
                                                             Builders<DTO_Users>.Filter.Eq(x => x.Country, infoUser),
                                                             Builders<DTO_Users>.Filter.Eq(x => x.Account.Email, infoUser)
+                                                            //Builders<DTO_Users>.Filter.Eq(x => x.Id, infoUser)
                                                             );
                 var users = await collection.Find(filter).ToListAsync();
 

@@ -108,6 +108,41 @@ namespace BUS
 
                 return true;
             }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public async Task<List<DTO_Users>> BusFindUser(string infoUser)
+        {
+            try
+            {
+                List<DTO_Users> users = await dal_users.FindUserWith(infoUser);
+
+                bool checkDeleteUser = await dal_users.DeleteUserDAL(userId);
+
+                if (!checkDeleteUser)
+                {
+                    throw new Exception($"Can't delete User");
+                }
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
+
+        public async Task<bool> BusUpdateUser(DTO_Users _user)
+        {
+            try
+            {
+                await dal_users.UpdateUser(_user);
+
+                return true;
+            }
             catch
             {
                 return false;
@@ -255,6 +290,71 @@ namespace BUS
             }
         }
 
+        public async Task<bool> BusAddMedia(DTO_Medias dTO_Medias)
+        {
+            try
+            {
+                bool check = await dal_medias.AddMedia(dTO_Medias);
+
+                if (!check)
+                {
+                    throw new Exception("Add Media Failed!");
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> BusDeleteMedia(List<string> mediaID)
+        {
+            try
+            {
+                bool check = await dal_medias.DeleteMedia(mediaID);
+
+                if (!check)
+                {
+                    throw new Exception("Can't delete Media!");
+                }
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> BusUpdateMedia(DTO_Medias media)
+        {
+            try
+            {
+                await dal_medias.UpdateMedia(media);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<DTO_Medias>> BusFindMedia(string infoMedia)
+        {
+            try
+            {
+                List<DTO_Medias> medias = await dal_medias.FindMedia(infoMedia);
+
+                return medias;
+            }
+            catch
+            {
+                throw new Exception("Error in BUS_FindMedia");
+            }
+        }
         #endregion 
     }
 }
