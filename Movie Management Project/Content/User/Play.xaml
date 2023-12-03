@@ -3,21 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Movie_Management_Project.Content.User.Play"
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
+             xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="Play">
     <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
+        <!--<local:MainPageViewModel/>-->
+        <viewmodel:PlayMediaViewModel></viewmodel:PlayMediaViewModel>
     </ContentPage.BindingContext>
+
     <ScrollView>
         <VerticalStackLayout>
 
-            <WebView x:Name="wvFilm" Source="https://www.youtube.com/embed/FxJ3zPUU6Y4" HeightRequest="656" WidthRequest="1200" Margin="0,20,0,0"/>
+            <WebView x:Name="wvFilm" Source="{Binding Url}" HeightRequest="656" WidthRequest="1200" Margin="0,20,0,0"/>
 
             <CollectionView x:Name="cvEpisode"
-                            ItemsSource="{Binding Items}"
+                            ItemsSource="{Binding dsEpisode}"
                             Margin="0,0,0,50"
-                            HorizontalOptions="Center">
+                            HorizontalOptions="Center"
+                            SelectionMode="Single"
+                            SelectedItem="{Binding SelectedEpisode}">
                 <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical" Span="8" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
+                    <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
@@ -27,7 +32,7 @@
                                 Grid.Row="0"
                                 Grid.Column="0"
                                 HorizontalOptions="Center">
-                            <Button Text="{Binding Name}" Grid.Row="0" Grid.Column="0" Padding="30,0" HorizontalOptions="Center"/>
+                            <Button Text="{Binding}" Grid.Row="0" Grid.Column="0" Padding="30,0" HorizontalOptions="Center" Command="{Binding BindingContext.EpisodeCommand, Source={x:Reference Name=cvEpisode}}" CommandParameter="{Binding .}"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -52,12 +57,12 @@
                                HorizontalOptions="Start"/>
 
                         <CollectionView x:Name="cvCategory"
-                                        ItemsSource="{Binding Items4}"
+                                        ItemsSource="{Binding dsCategory}"
                                         Grid.Column="1"
                                         Grid.Row="0"
                                         HorizontalOptions="End">
                             <CollectionView.ItemsLayout>
-                                <GridItemsLayout Orientation="Vertical" Span="5" HorizontalItemSpacing="10"/>
+                                <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="10"/>
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
@@ -65,23 +70,21 @@
                                           ColumnDefinitions="Auto"
                                           RowDefinitions="Auto">
                                         <Label x:Name="lbCategory"
-                                               Text="Category" 
+                                               Text="tuandeptrai" 
                                                Grid.Row="0" Grid.Column="0"  
                                                FontSize="Small"/>
                                     </Grid>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
-
-
                     </Grid>
 
                     <CollectionView x:Name="cvSideInfo"
-                                    ItemsSource="{Binding Items1}"
+                                    ItemsSource="{Binding dsMedias}"
                                     Grid.Column="0"
                                     Grid.Row="1"
-                                    HorizontalOptions="Start">
-
+                                    HorizontalOptions="Start"
+                                    VerticalOptions="Start">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
 
@@ -91,17 +94,17 @@
                                       ColumnSpacing="50">
                                     <Label x:Name="lbReleaseDate"
                                                Grid.Row="0" Grid.Column="0"
-                                               Text="10/11/2077"
+                                               Text="{Binding ReleaseDate.Year}"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
                                     <Label x:Name="lbCountry"
                                                Grid.Row="0" Grid.Column="1"
-                                               Text="Nhat Ban"
+                                               Text="{Binding Country}"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
                                     <Label x:Name="lbEpisodeNumber"
                                                Grid.Row="0" Grid.Column="2"
-                                               Text="0/100"
+                                               Text="{Binding ListEpisode.Count}"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
 
@@ -120,17 +123,7 @@
                           Grid.Row="2">
 
                         <Label x:Name="lbDescription"
-                               Text="CollectionView can present a header and footer that scroll with the items in the list. The header and footer can be strings, views, or DataTemplate objects.
-
-                                     CollectionView defines the following properties for specifying the header and footer:
-
-                                     Header, of type object, specifies the string, binding, or view that will be displayed at the start of the list.
-                                     HeaderTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Header.
-                                     Footer, of type object, specifies the string, binding, or view that will be displayed at the end of the list.
-                                     FooterTemplate, of type DataTemplate, specifies the DataTemplate to use to format the Footer.
-                                     These properties are backed by BindableProperty objects, which means that the properties can be targets of data bindings.
-
-                                     When a header is added to a layout that grows horizontally, from left to right, the header is displayed to the left of the list. Similarly, when a footer is added to a layout that grows horizontally, from left to right, the footer is displayed to the right of the list."
+                               Text="{Binding Decription}"
                                LineBreakMode="WordWrap"
                                FontSize="Small"/>
                     </Grid>

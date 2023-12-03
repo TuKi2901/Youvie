@@ -64,13 +64,13 @@ namespace DAL
             }
         }
 
-        public async Task<bool> DeleteAccount(List<string> email)
+        public async Task<bool> DeleteAccount(List<string> accountId)
         {
             try
             {
                 var collection = db.GetCollection<DTO_Accounts>(collectionName);
 
-                var filter = Builders<DTO_Accounts>.Filter.In(x => x.Email, email);
+                var filter = Builders<DTO_Accounts>.Filter.In(x => x.Id, accountId);
 
                 var result = await collection.DeleteManyAsync(filter);
 

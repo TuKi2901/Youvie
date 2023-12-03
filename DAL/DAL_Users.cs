@@ -49,23 +49,11 @@ namespace DAL
 
         public async Task<DTO_Users> GetUserByEmail(string email)
         {
-            try
-            {
-                var collection = db.GetCollection<DTO_Users>(collectionName);
+            var collection = db.GetCollection<DTO_Users>(collectionName);
 
-                DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
+            DTO_Users user = await collection.Find(x => x.Account.Email == email).FirstOrDefaultAsync();
 
-                if (user == null)
-                {
-                    throw new Exception($"Don't found user with {email}");
-                }
-
-                return user;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Error in GetUserByEmail: {ex.Message}");
-            }
+            return user;
         }
         
         public async Task<List<DTO_Users>> GetAllUser()

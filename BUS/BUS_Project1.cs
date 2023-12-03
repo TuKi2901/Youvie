@@ -1,8 +1,5 @@
 ﻿using DAL;
 using DTO;
-using MongoDB.Driver;
-using System.Collections;
-using System.Data;
 
 namespace BUS
 {
@@ -44,16 +41,16 @@ namespace BUS
             {
                 DTO_Users user = await dal_users.GetUserByEmail(email);
 
-                if (user.Account == null)
+                if (user == null)
                 {
-                    throw new Exception("user.Account mustn't null");
+                    return false;
                 }
 
                 bool checkPass = BCrypt.Net.BCrypt.Verify(password, user.Account.Password);
 
                 if (!checkPass)
                 {
-                    throw new Exception();
+                    throw new Exception("Password is not correct!");
                 }
 
                 return true;
@@ -322,6 +319,62 @@ namespace BUS
                 throw new Exception("Error in BUS_FindMedia");
             }
         }
+
+        public async Task<DTO_Medias> BusGetMediaById(string mediaId)
+        {
+            try
+            {
+                DTO_Medias media = await dal_medias.GetMediaById(mediaId);
+
+                return media;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
         #endregion 
+
+
+        public async Task<dynamic> CheckUserOrAdmin(string email, string pass)
+        {
+            try
+            {
+                DTO_Users user = await dal_users.GetUserByEmail(email);
+
+                if (user != null)
+                {
+                    bool checkPass = BCrypt.Net.BCrypt.Verify(pass, user.Account.Password);
+
+                    if (!checkPass)
+                    {
+                        throw new Exception("Password is not correct!");
+                    }
+
+                    return user;
+                }
+
+                DTO_Admins admin = await dal_admins.GetAdminByEmail(email);
+
+                if (admin != null)
+                {
+                    bool checkPass = BCrypt.Net.BCrypt.Verify(pass, admin.Account.Password);
+
+                    if (!checkPass)
+                    {
+                        throw new Exception("Password is not correct!");
+                    }
+
+                    return admin;
+                }
+
+                throw new Exception("Email is not correct!");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }
