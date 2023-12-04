@@ -40,9 +40,7 @@ namespace Movie_Management_Project
 
         private async void btnHome_Clicked(object sender, EventArgs e)
         {
-            _idUser = Login.User;
-            HomeMainViewModel homeMainViewModel = new HomeMainViewModel(_idUser);
-            await PushPage(new Home(homeMainViewModel));
+            await PushPage(new Home());
         }
 
         private async void btnTVShows_Clicked(object sender, EventArgs e)
