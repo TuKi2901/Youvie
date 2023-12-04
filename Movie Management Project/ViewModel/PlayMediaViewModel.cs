@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.Content.User;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
@@ -10,7 +11,6 @@ namespace Movie_Management_Project.ViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
 
-        private string _idUser;
         private string _idMedia;
         private string _url;
         private string _selectedEpisode;
@@ -56,10 +56,10 @@ namespace Movie_Management_Project.ViewModel
         {
             //GetTheMovie(Url);
         }
-        public PlayMediaViewModel(string idMedia, string idUser)
+        public PlayMediaViewModel(string idMedia)
         {
             GetTheMovie(idMedia);
-            GetTheUser(idUser);
+            GetTheUser(Login.User);
             EpisodeCommand = new Command(ChooseEpisode);
             CommentCommand = new Command(AddComment);
         }
@@ -116,13 +116,11 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        private async void GetTheUser(string idUser)
+        private async void GetTheUser(DTO_Users user)
         {
             try
             {
-                _idUser = idUser;
-
-                DTO_Users user = await _bus.BusGetUserById(idUser);
+                //DTO_Users user = await _bus.BusGetUserById(idUser);
 
                 NameUser = user.UserName;
             }
@@ -150,7 +148,7 @@ namespace Movie_Management_Project.ViewModel
                 }
 
                 await Shell.Current.DisplayAlert("Notification!", $"Comment success!!!", "Ok");
-                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(_idMedia, _idUser);
+                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(_idMedia);
                 await Shell.Current.Navigation.PushAsync(new Play(playMediaViewModel));
             }
             catch (Exception ex)

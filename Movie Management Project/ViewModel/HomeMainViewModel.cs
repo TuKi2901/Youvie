@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.Content.User;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
@@ -10,7 +11,7 @@ namespace Movie_Management_Project.ViewModel
     {
         BUS_Project1 _bus = new BUS_Project1();
 
-        private string _idUser;
+        private DTO_Users _idUser;
         private DTO_Medias _selectedMedia;
 
         public ObservableCollection<DTO_Medias> MediainNominated { get; } = new();
@@ -25,16 +26,16 @@ namespace Movie_Management_Project.ViewModel
 
         public HomeMainViewModel()
         {
+            _idUser = Login.User;
             NominatedCollection();
             SelectedMediaCommand = new Command(SelectedMediaFuntion);
         }
 
-        public HomeMainViewModel(string userId)
-        {
-            _idUser = userId;
-            NominatedCollection();
-            SelectedMediaCommand = new Command(SelectedMediaFuntion);
-        }
+        //public HomeMainViewModel(string userId)
+        //{
+        //    NominatedCollection();
+        //    SelectedMediaCommand = new Command(SelectedMediaFuntion);
+        //}
 
         public async void NominatedCollection()
         {
@@ -75,7 +76,7 @@ namespace Movie_Management_Project.ViewModel
 
                 await Shell.Current.DisplayAlert("Error!", SelectedMedia.MediaName, "Ok");
 
-                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(SelectedMedia.Id, _idUser);
+                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(SelectedMedia.Id);
                 await Shell.Current.Navigation.PushAsync(new Play(playMediaViewModel));
             }
             catch (Exception ex)
