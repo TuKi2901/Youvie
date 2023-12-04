@@ -9,11 +9,11 @@ public partial class Home : ContentPage
         InitializeComponent();
     }
 
-    public Home(HomeMainViewModel homeMainViewModel)
-	{
-		InitializeComponent();
-		BindingContext = homeMainViewModel;
-	}
+ //   public Home(HomeMainViewModel homeMainViewModel)
+	//{
+	//	InitializeComponent();
+	//	BindingContext = homeMainViewModel;
+	//}
 
   //  private async void ImageButton_Clicked(object sender, EventArgs e)
   //  {

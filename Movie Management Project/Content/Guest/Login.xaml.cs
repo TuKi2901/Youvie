@@ -12,7 +12,7 @@ namespace Movie_Management_Project.Content.Guest;
 
 public partial class Login : ContentPage
 {
-    public static string User;
+    public static DTO_Users User;
 
     BUS_Project1 bus_project1 = new BUS_Project1();
     public Login()
@@ -51,9 +51,9 @@ public partial class Login : ContentPage
             {
                 DTO_Users user = check;
 
-                User = user.Id;
-                HomeMainViewModel homeMainViewModel = new HomeMainViewModel(user.Id);
-                await Navigation.PushAsync(new Home(homeMainViewModel));
+                User = user;
+                //HomeMainViewModel homeMainViewModel = new HomeMainViewModel(user.Id);
+                await Navigation.PushAsync(new Home());
             }
 
             if (check is DTO_Admins)
