@@ -10,6 +10,7 @@ namespace BUS
         DAL_Plans dal_plans = new DAL_Plans();
         DAL_Admins dal_admins = new DAL_Admins();
         DAL_Medias dal_medias = new DAL_Medias();
+        DAL_Comments DAL_Comments = new DAL_Comments();
 
         // User
         #region User
@@ -35,28 +36,28 @@ namespace BUS
             }
         }
 
-        public async Task<bool> BusGetLoginUser(string email, string password)
-        {
-            try
-            {
-                DTO_Users user = await dal_users.GetUserByEmail(email);
+        //public async Task<bool> BusGetLoginUser(string email, string password)
+        //{
+        //    try
+        //    {
+        //        DTO_Users user = await dal_users.GetUserByEmail(email);
 
-                if (user == null)
-                {
-                    return false;
-                }
+        //        if (user == null)
+        //        {
+        //            return false;
+        //        }
 
-                bool checkPass = BCrypt.Net.BCrypt.Verify(password, user.Account.Password);
+        //        bool checkPass = BCrypt.Net.BCrypt.Verify(password, user.Account.Password);
 
-                if (!checkPass)
-                {
-                    throw new Exception("Password is not correct!");
-                }
+        //        if (!checkPass)
+        //        {
+        //            throw new Exception("Password is not correct!");
+        //        }
 
-                return true;
-            }
-            catch { return false; }
-        }
+        //        return true;
+        //    }
+        //    catch { return false; }
+        //}
 
         public async Task<List<DTO_Users>> BusGetAllUser()
         {
@@ -144,6 +145,13 @@ namespace BUS
             {
                 throw new Exception($"BusForgotPassword is error\n{ex.Message}");
             }
+        }
+
+        public async Task<DTO_Users> BusGetUserById(string idUser)
+        {
+            DTO_Users user = await dal_users.GetUserById(idUser);
+
+            return user;
         }
         #endregion
 
@@ -333,6 +341,27 @@ namespace BUS
                 throw new Exception(ex.Message);
             }
 
+        }
+        
+        public async Task<bool> BusAddComment(string mediaId, DTO_Comments dTO_Comments)
+        {
+            try
+            {
+                DTO_Comments comment = await DAL_Comments.AddComment(dTO_Comments);
+
+                bool check = await dal_medias.AddCommentInMedia(dTO_Comments, mediaId);
+
+                if (!check)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+            catch 
+            {
+                return false;
+            }
         }
         #endregion 
 

@@ -218,7 +218,7 @@
                                 <material:DataGridColumn Title="Category">
                                     <material:DataGridColumn.CellItemTemplate>
                                         <DataTemplate>
-                                            <CollectionView ItemsSource="{Binding ListCategory}" HorizontalOptions="Center">
+                                            <CollectionView ItemsSource="{Binding ListCategory}" HorizontalOptions="Center" VerticalOptions="Center">
                                                 <CollectionView.ItemTemplate>
                                                     <DataTemplate>
                                                         <Label Text="{Binding}" HorizontalOptions="Center" VerticalOptions="Center"></Label>
@@ -254,11 +254,7 @@
                         </material:DataGrid>
                     </ScrollView>
                 </Grid>
-
-
             </Grid>
-
-
         </VerticalStackLayout>
     </ScrollView>
 

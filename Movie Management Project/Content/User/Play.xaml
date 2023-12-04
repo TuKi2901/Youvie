@@ -6,8 +6,8 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="Play">
     <ContentPage.BindingContext>
-        <local:MainPageViewModel/>
-        <!--<viewmodel:PlayMediaViewModel></viewmodel:PlayMediaViewModel>-->
+        <!--<local:MainPageViewModel/>-->
+        <viewmodel:PlayMediaViewModel></viewmodel:PlayMediaViewModel>
     </ContentPage.BindingContext>
 
     <ScrollView>
@@ -70,7 +70,7 @@
                                           ColumnDefinitions="Auto"
                                           RowDefinitions="Auto">
                                         <Label x:Name="lbCategory"
-                                               Text="tuandeptrai" 
+                                               Text="{Binding}" 
                                                Grid.Row="0" Grid.Column="0"  
                                                FontSize="Small"/>
                                     </Grid>
@@ -87,7 +87,6 @@
                                     VerticalOptions="Start">
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-
                                 <Grid x:Name="gridSideInfo"
                                       RowDefinitions="Auto,Auto"
                                       ColumnDefinitions="Auto,Auto,Auto"
@@ -107,7 +106,6 @@
                                                Text="{Binding ListEpisode.Count}"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
-
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
@@ -164,7 +162,7 @@
                                    Grid.Column="0" Grid.Row="0"
                                    HorizontalOptions="Center"/>
                             <Label x:Name="lbWriteUser"
-                                   Text="Kiet --"
+                                   Text="{Binding NameUser}"
                                    HorizontalOptions="Start"
                                    Grid.Column="0"
                                    Grid.Row="1"
@@ -178,7 +176,8 @@
                                                HorizontalTextAlignment="Start"
                                                VerticalOptions="CenterAndExpand"
                                                VerticalTextAlignment="Center"
-                                   FontSize="Small"/>
+                                   FontSize="Small"
+                                Text="{Binding Comment}"/>
 
                         <Button x:Name="btnAddComment"
                                         Grid.Column="2"
@@ -187,7 +186,7 @@
                                         FontSize="Small"
                                         HorizontalOptions="Start"
                                 VerticalOptions="Center"
-                                    />
+                                    Command="{Binding CommentCommand}"/>
 
                     </Grid>
 
@@ -216,7 +215,7 @@
 
 
                     <CollectionView x:Name="cvCommentUser"
-                                    ItemsSource="{Binding Items}"
+                                    ItemsSource="{Binding dsComment}"
                                     Margin="0,0,0,50"
                                     HorizontalOptions="Start"
                                     Grid.Column="0" Grid.Row="0">
@@ -239,7 +238,7 @@
                                                Grid.Column="0" Grid.Row="0"
                                                HorizontalOptions="Center"/>
                                         <Label x:Name="lbUser"
-                                               Text="{Binding Name}"
+                                               Text="{Binding NameUser}"
                                                HorizontalOptions="Start"
                                                Grid.Column="0"
                                                Grid.Row="1"
@@ -249,7 +248,7 @@
                                     <Frame Grid.Row="0" Grid.Column="1" 
                                        Margin="0,0,0,30">
                                         <Label x:Name="lbComment"
-                                               Text="CommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommentssssssCommentssssssssss"
+                                               Text="{Binding CommentText}"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
                                     </Frame>
