@@ -21,7 +21,6 @@
                 Source="dotnet_bot.png"
                 HeightRequest="150"/>
 
-
             <Label Text="Nominated Films" Margin="20" FontSize="Medium"/>
             <CollectionView x:Name="cvNominated"
                 ItemsSource="{Binding MediainNominated}" 

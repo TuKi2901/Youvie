@@ -15,7 +15,6 @@
 
     <ShellItem Title="Guest" Route="guest" >
         <ShellContent ContentTemplate="{DataTemplate Guest:Login}"/>
-        <ShellContent ContentTemplate="{DataTemplate User:Home}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:ForgotPassword}"/>
     </ShellItem>
@@ -64,7 +63,7 @@
                 <SearchBar x:Name="searchBarSearch"
                    Placeholder="Search" Grid.Column="4" VerticalOptions="Center"/>
                 <Button x:Name="btnUser" 
-                Text="Unknown" Loaded="btnUser_Loaded" 
+                Text="Unknown" Loaded="btnUser_Loaded" Clicked="btnUser_Clicked"
                 Grid.Column="5" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>

@@ -1,5 +1,6 @@
 ﻿using BUS;
 using DTO;
+using Movie_Management_Project.Content.User;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 
@@ -9,6 +10,7 @@ namespace Movie_Management_Project.ViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
 
+        private string _idUser;
         private string _idMedia;
         private string _url;
         private string _selectedEpisode;
@@ -19,6 +21,7 @@ namespace Movie_Management_Project.ViewModel
         public ObservableCollection<DTO_Medias> dsMedias { get; } = new();
         public ObservableCollection<string> dsEpisode { get; } = new();
         public ObservableCollection<string> dsCategory { get; } = new();
+        public ObservableCollection<DTO_Comments> dsComment { get; } = new();
 
         public ICommand EpisodeCommand { get; }
         public ICommand CommentCommand { get; }
@@ -80,6 +83,11 @@ namespace Movie_Management_Project.ViewModel
                     dsCategory.Add(category);
                 }
 
+                foreach (DTO_Comments comment in media.Comments)
+                {
+                    dsComment.Add(comment);
+                }
+
                 Url = media.ListEpisode[0];
             }
             catch (Exception ex)
@@ -112,6 +120,8 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
+                _idUser = idUser;
+
                 DTO_Users user = await _bus.BusGetUserById(idUser);
 
                 NameUser = user.UserName;
@@ -140,6 +150,8 @@ namespace Movie_Management_Project.ViewModel
                 }
 
                 await Shell.Current.DisplayAlert("Notification!", $"Comment success!!!", "Ok");
+                PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(_idMedia, _idUser);
+                await Shell.Current.Navigation.PushAsync(new Play(playMediaViewModel));
             }
             catch (Exception ex)
             {
