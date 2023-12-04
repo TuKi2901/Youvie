@@ -1,14 +1,16 @@
 ﻿using Movie_Management_Project.Content.Admin;
 using Movie_Management_Project.Content.User;
 using Movie_Management_Project.Content.Guest;
+using Movie_Management_Project.ViewModel;
 namespace Movie_Management_Project
 {
     public partial class AppShell : Shell
     {
+        private string _idUser;
+
         public AppShell()
         {
             InitializeComponent();
-
         }
         
         //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện
@@ -38,7 +40,9 @@ namespace Movie_Management_Project
 
         private async void btnHome_Clicked(object sender, EventArgs e)
         {
-            await PushPage(new Home());
+            _idUser = Login.User;
+            HomeMainViewModel homeMainViewModel = new HomeMainViewModel(_idUser);
+            await PushPage(new Home(homeMainViewModel));
         }
 
         private async void btnTVShows_Clicked(object sender, EventArgs e)
@@ -87,5 +91,9 @@ namespace Movie_Management_Project
         //}
         #endregion
 
+        private async void btnUser_Clicked(object sender, EventArgs e)
+        {
+            await PushPage(new InformationUser());
+        }
     }
 }

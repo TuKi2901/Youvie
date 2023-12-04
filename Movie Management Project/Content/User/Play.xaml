@@ -215,7 +215,7 @@
 
 
                     <CollectionView x:Name="cvCommentUser"
-                                    ItemsSource="{Binding Items}"
+                                    ItemsSource="{Binding dsComment}"
                                     Margin="0,0,0,50"
                                     HorizontalOptions="Start"
                                     Grid.Column="0" Grid.Row="0">
@@ -238,7 +238,7 @@
                                                Grid.Column="0" Grid.Row="0"
                                                HorizontalOptions="Center"/>
                                         <Label x:Name="lbUser"
-                                               Text="{Binding Name}"
+                                               Text="{Binding NameUser}"
                                                HorizontalOptions="Start"
                                                Grid.Column="0"
                                                Grid.Row="1"
@@ -248,7 +248,7 @@
                                     <Frame Grid.Row="0" Grid.Column="1" 
                                        Margin="0,0,0,30">
                                         <Label x:Name="lbComment"
-                                               Text="CommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommenCommentsssssCommentssssss Commentssssss Commentssssss Commentssssss v Commentssssss CommentsssCommentssssss Commentssssss Commentssssss CommentssssssCommentssssss CommentssssssCommentssssssssss"
+                                               Text="{Binding CommentText}"
                                                FontSize="Small"
                                                LineBreakMode="WordWrap"/>
                                     </Frame>
