@@ -10,5 +10,9 @@ public partial class Play : ContentPage
 		InitializeComponent();
 		BindingContext = playMediaViewModel;
     }
+	public Play()
+	{
+		InitializeComponent();
+    }
 
 }

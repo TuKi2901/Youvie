@@ -285,6 +285,7 @@ namespace Movie_Management_Project.ViewModel
                 media.RoleMedia = Role;
                 media.Decription = Description;
                 media.Image = Imagee;
+                media.Comments = new List<DTO_Comments>();
 
                 bool check = await _bus.BusAddMedia(media);
 

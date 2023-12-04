@@ -137,5 +137,14 @@ namespace DAL
                 throw new Exception("Error in DAL_FindUserWith");
             }
         }
+
+        public async Task<DTO_Users> GetUserById(string idUser)
+        {
+            var collection = db.GetCollection<DTO_Users>(collectionName);
+
+            DTO_Users user = await collection.Find(x => x.Id == idUser).FirstOrDefaultAsync();
+
+            return user;
+        }
     }
 }
