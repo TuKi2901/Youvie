@@ -158,7 +158,7 @@
                           RowDefinitions="Auto,Auto"
                           HorizontalOptions="Center">
                             <Image x:Name="imgWriteUser"
-                                   Source="dotnet_bot.png" HeightRequest="50"
+                                   Source="profile.png" HeightRequest="50"
                                    Grid.Column="0" Grid.Row="0"
                                    HorizontalOptions="Center"/>
                             <Label x:Name="lbWriteUser"
@@ -234,7 +234,7 @@
                                       RowDefinitions="Auto,Auto"
                                       HorizontalOptions="Center">
                                         <Image x:Name="imgUser"
-                                               Source="dotnet_bot.png" HeightRequest="50"
+                                               Source="profile.png" HeightRequest="50"
                                                Grid.Column="0" Grid.Row="0"
                                                HorizontalOptions="Center"/>
                                         <Label x:Name="lbUser"

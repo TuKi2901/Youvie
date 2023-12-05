@@ -12,7 +12,7 @@
         <VerticalStackLayout WidthRequest="700">
             <Image 
                 x:Name="imgInformationUser"
-                Source="dotnet_bot.png"
+                Source="profile.png"
                 HeightRequest="150"/>
             <Label 
                 x:Name="lbName"
@@ -39,7 +39,7 @@
                     x:Name="imgPhoneNumber"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Source="dotnet_bot.png" 
+                    Source="telephone.png" 
                     WidthRequest="50"
                     HeightRequest="50"
                     HorizontalOptions="Center"
@@ -58,7 +58,7 @@
                     x:Name="imgEmail"
                     Grid.Column="0"
                     Grid.Row="1"
-                    Source="dotnet_bot.png" 
+                    Source="mail.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
                     <Label
@@ -82,7 +82,7 @@
                             x:Name="imgPassword"
                             Grid.Column="0"
                             Grid.Row="0"
-                            Source="dotnet_bot.png" 
+                            Source="password.png" 
                             WidthRequest="50" 
                             HeightRequest="50"/>
 
@@ -167,7 +167,7 @@
                     x:Name="imgGender"
                     Grid.Column="0"
                     Grid.Row="0"
-                    Source="dotnet_bot.png" 
+                    Source="equality.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
 
@@ -185,7 +185,7 @@
                     x:Name="imgCountry"
                     Grid.Column="0"
                     Grid.Row="1"
-                    Source="dotnet_bot.png" 
+                    Source="country.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
 
@@ -205,7 +205,7 @@
                     x:Name="imgBirthDay"
                     Grid.Column="0"
                     Grid.Row="2"
-                    Source="dotnet_bot.png" 
+                    Source="birthday_cake.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
 
@@ -226,7 +226,7 @@
                     x:Name="imgPlan"
                     Grid.Column="0"
                     Grid.Row="3"
-                    Source="dotnet_bot.png" 
+                    Source="alternative.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
 

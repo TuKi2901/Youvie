@@ -38,7 +38,7 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Include="Resources\Images\Icon\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
@@ -54,26 +54,39 @@
 	  <AndroidResource Remove="Platforms\iOS\**" />
 	  <AndroidResource Remove="Platforms\MacCatalyst\**" />
 	  <AndroidResource Remove="Platforms\Tizen\**" />
+	  <AndroidResource Remove="Resources\Images\SVG\**" />
 	  <Compile Remove="Platforms\Android\**" />
 	  <Compile Remove="Platforms\iOS\**" />
 	  <Compile Remove="Platforms\MacCatalyst\**" />
 	  <Compile Remove="Platforms\Tizen\**" />
+	  <Compile Remove="Resources\Images\SVG\**" />
 	  <EmbeddedResource Remove="Platforms\Android\**" />
 	  <EmbeddedResource Remove="Platforms\iOS\**" />
 	  <EmbeddedResource Remove="Platforms\MacCatalyst\**" />
 	  <EmbeddedResource Remove="Platforms\Tizen\**" />
+	  <EmbeddedResource Remove="Resources\Images\SVG\**" />
 	  <MauiCss Remove="Platforms\Android\**" />
 	  <MauiCss Remove="Platforms\iOS\**" />
 	  <MauiCss Remove="Platforms\MacCatalyst\**" />
 	  <MauiCss Remove="Platforms\Tizen\**" />
+	  <MauiCss Remove="Resources\Images\SVG\**" />
+	  <MauiImage Remove="Resources\Images\SVG\**" />
 	  <MauiXaml Remove="Platforms\Android\**" />
 	  <MauiXaml Remove="Platforms\iOS\**" />
 	  <MauiXaml Remove="Platforms\MacCatalyst\**" />
 	  <MauiXaml Remove="Platforms\Tizen\**" />
+	  <MauiXaml Remove="Resources\Images\SVG\**" />
 	  <None Remove="Platforms\Android\**" />
 	  <None Remove="Platforms\iOS\**" />
 	  <None Remove="Platforms\MacCatalyst\**" />
 	  <None Remove="Platforms\Tizen\**" />
+	  <None Remove="Resources\Images\SVG\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\login.svg" />
+	  <None Remove="Resources\Images\SignUp.png" />
+	  <None Remove="Resources\Images\user_manager.png" />
 	</ItemGroup>
 
 	<ItemGroup>
