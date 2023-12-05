@@ -5,7 +5,31 @@
              x:Class="Movie_Management_Project.Content.Admin.MediaManager"
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="MediaManager"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="True">
+
+    <Shell.TitleView>
+        <Grid>
+            <ContentView>
+                <Grid ColumnSpacing="30">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btnAdmin" 
+                        Text="Admin" Clicked="btnAdmin_Clicked" 
+                        Grid.Column="0" 
+                        Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                        FontSize="Default" VerticalOptions="Center"/>
+                    <Button x:Name="btnUser" 
+                        Text="User" Clicked="btnUser_Clicked" 
+                        Grid.Column="1" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                        FontSize="Default" VerticalOptions="Center"/>
+                    <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
+                </Grid>
+            </ContentView>
+        </Grid>
+    </Shell.TitleView>
 
     
     <ContentPage.BindingContext>
@@ -16,7 +40,7 @@
         <VerticalStackLayout>
 
             <Grid x:Name="titleMedia" ColumnDefinitions="*,*" HorizontalOptions="Center">
-                <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image Source="media_manager.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="Media Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
             </Grid>
 
@@ -106,7 +130,7 @@
 
                         <Grid x:Name="gridImageMedia" Grid.Column="0" Grid.Row="2" ColumnDefinitions="150,300,*" Margin="0,0,0,30">
                             <Label Text="Image" VerticalOptions="Center" Grid.Column="0"/>
-                            <Entry Grid.Column="1" x:Name="txtImageMedia" IsReadOnly="True" Text="{Binding Imagee}"/>
+                            <Entry Grid.Column="1" x:Name="txtImageMedia" IsReadOnly="True" Text="{Binding Image}"/>
                             <Button Grid.Column="2" Text="Open" WidthRequest="70" Command="{Binding OpenFileCommand}"/>
                         </Grid>
                         

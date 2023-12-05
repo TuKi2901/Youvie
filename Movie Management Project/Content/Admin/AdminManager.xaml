@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:Movie_Management_Project.Content.Admin"
              x:Class="Movie_Management_Project.Content.Admin.AdminManager"
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
-             Title="MediaManager"
+             Title="AdminManager"
              Shell.NavBarIsVisible="True">
 
     <Shell.TitleView>
@@ -40,7 +40,7 @@
         <VerticalStackLayout>
 
             <Grid x:Name="titleAdmin" ColumnDefinitions="*,*" HorizontalOptions="Center">
-                <Image Source="dotnet_bot.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image Source="admin_manager.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Label Text="Admin Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
             </Grid>
 

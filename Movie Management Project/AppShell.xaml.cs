@@ -2,17 +2,19 @@
 using Movie_Management_Project.Content.User;
 using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.ViewModel;
+using DTO;
 namespace Movie_Management_Project
 {
     public partial class AppShell : Shell
     {
-        private string _idUser;
+        public string UserName { get; set; }
 
         public AppShell()
         {
             InitializeComponent();
+            Navigating += OnNavigating; 
         }
-        
+
         //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện
         private async Task PushPage<T>(T page) where T : Page
         {
@@ -33,9 +35,17 @@ namespace Movie_Management_Project
             }
         }
 
+        private void OnNavigating(object sender, ShellNavigatingEventArgs e)
+        {
+            if (Shell.Current.CurrentPage is Login)
+            {
+                UserName = Login.User.UserName;
+            }
+        }
+
         private void btnUser_Loaded(object sender, EventArgs e)
         {
-
+            btnUser.Text = Login.User.UserName;
         }
 
         private async void btnHome_Clicked(object sender, EventArgs e)
