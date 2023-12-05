@@ -7,10 +7,10 @@ public partial class Play : ContentPage
 {
 	public Play(PlayMediaViewModel playMediaViewModel)
 	{
-		InitializeComponent();
-		BindingContext = playMediaViewModel;
+        InitializeComponent();
+        BindingContext = playMediaViewModel;
     }
-	public Play()
+    public Play()
 	{
 		InitializeComponent();
     }

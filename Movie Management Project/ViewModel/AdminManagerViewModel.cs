@@ -19,7 +19,7 @@ namespace Movie_Management_Project.ViewModel
         private string _gender;
         private string _search;
         public ObservableCollection<DTO_Admins> SelectedAdmins { get; set; } = new ObservableCollection<DTO_Admins>();
-        public ObservableCollection<DTO_Admins> dsAdmins { get; } = new();
+        private ObservableCollection<DTO_Admins> dsAdmins = new();
         public ICommand AddAdminCommand { get; }
         public ICommand DeleteAdminCommand { get; }
         public ICommand SaveUpdateAdminCommand { get; }
@@ -38,6 +38,11 @@ namespace Movie_Management_Project.ViewModel
         }
 
         #region SetProperties
+        public ObservableCollection<DTO_Admins> DsAdmins
+        {
+            get { return dsAdmins; }
+            set { SetProperty(ref dsAdmins, value, "DsAdmins"); }
+        }
         public string AdminName
         {
             get { return _adminname; }
@@ -109,7 +114,7 @@ namespace Movie_Management_Project.ViewModel
 
                 foreach (DTO_Admins admin in admins)
                 {
-                    dsAdmins.Add(admin);
+                    DsAdmins.Add(admin);
                 }
             }
             catch (Exception ex)
@@ -124,7 +129,59 @@ namespace Movie_Management_Project.ViewModel
 
         public async void RefreshFormAdmin()
         {
-            await Shell.Current.Navigation.PushAsync(new AdminManager());
+            if (IsBusy)
+            {
+                return;
+            }
+
+            //await Shell.Current.Navigation.PushAsync(new AdminManager());
+            try
+            {
+
+                IsBusy = true;
+                Email = string.Empty;
+                AdminName = string.Empty;
+                Password = string.Empty;
+                IsMale = false;
+                IsFemale = false;
+                Search = string.Empty;
+                _gender = string.Empty;
+
+                SelectedAdmins.Clear();
+
+
+                DsAdmins.Clear();
+
+                //var admins = await _bus.BusGetAllAdmins();
+
+                ////foreach (var admin in admins)
+                ////{
+                ////    DsAdmins.Add(admin);
+                ////    //await Shell.Current.DisplayAlert("Error!", $"{DsAdmins.AdminName}", "Ok");k
+                ////}
+
+                ////ObservableCollection<DTO_Admins> admins1 = new();
+
+                //for (int i = 0; i < admins.Count; i++)
+                //{
+                //    //admins1.Add(admins[i]);
+                //    DsAdmins.Add(admins[i]);
+                //    await Shell.Current.DisplayAlert("Error!", $"{DsAdmins[i].AdminName}", "Ok");
+                //}
+
+                ////DsAdmins.Clear();
+
+                ////DsAdmins = admins1;
+                ///
+
+                //await Shell.Current.Navigation.PopToRootAsync(true);
+                await Shell.Current.Navigation.PushAsync(new AdminManager());
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally { IsBusy = false; }
         }
 
         private bool IsValidEmail(string email)
@@ -263,11 +320,11 @@ namespace Movie_Management_Project.ViewModel
 
                 var admins = await _bus.BusFindAdmin(Search);
 
-                dsAdmins.Clear();
+                DsAdmins.Clear();
 
                 foreach (var admin in admins)
                 {
-                    dsAdmins.Add(admin);
+                    DsAdmins.Add(admin);
                 }
 
                 //await Shell.Current.DisplayAlert("Notification!", $"Find admin success!!!", "Ok");
