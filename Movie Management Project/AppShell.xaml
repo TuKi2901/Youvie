@@ -14,6 +14,7 @@
 
 
     <ShellItem Title="Guest" Route="guest" >
+
         <ShellContent ContentTemplate="{DataTemplate Guest:Login}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:ForgotPassword}"/>
