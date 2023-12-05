@@ -11,6 +11,7 @@ namespace Movie_Management_Project.ViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
 
+        private string _episodeText;
         private string _nameMedia;
         private string _idMedia;
         private string _url;
@@ -29,6 +30,11 @@ namespace Movie_Management_Project.ViewModel
         public ICommand CommentCommand { get; }
 
         #region Properties
+        public string EpisodeText
+        {
+            get { return _episodeText; }
+            set { SetProperty(ref _episodeText, value); }
+        }
         public string NameMedia
         {
             get { return _nameMedia; }
@@ -68,7 +74,7 @@ namespace Movie_Management_Project.ViewModel
         public PlayMediaViewModel(string idMedia)
         {
             GetTheMovie(idMedia);
-            EpisodeCommand = new Command(ChooseEpisode);
+            EpisodeCommand = new Command<string>(ChooseEpisode);
             CommentCommand = new Command(AddComment);
         }
 
@@ -137,26 +143,25 @@ namespace Movie_Management_Project.ViewModel
             }
         }
 
-        private async void ChooseEpisode()
+        private async void ChooseEpisode(string episode)
         {
             try
             {
                 for (int i = 0; i < dsEpisodeCount.Count; i++)
                 {
-                    if (SelectedEpisode == dsEpisodeCount[i])
+                    if (episode == dsEpisodeCount[i])
                     {
                         Url = dsEpisode[i];
                     }
                 }
-
+                //await Shell.Current.DisplayAlert("Error!", $"{episode}", "Ok");
                 //Url = SelectedEpisode;
 
-                if (SelectedEpisode == null)
-                {
-                    throw new Exception("SelectedEpisode Empty!");
-                }
+                //if (SelectedEpisode == null)
+                //{
+                //    throw new Exception("SelectedEpisode Empty!");
+                //}
 
-                
                 //await Shell.Current.Navigation.PushAsync(new Play(new PlayMediaViewModel()));
             }
             catch (Exception ex)
