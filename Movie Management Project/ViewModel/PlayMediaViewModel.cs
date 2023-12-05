@@ -11,6 +11,7 @@ namespace Movie_Management_Project.ViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
 
+        private string _nameMedia;
         private string _idMedia;
         private string _url;
         private string _selectedEpisode;
@@ -27,6 +28,12 @@ namespace Movie_Management_Project.ViewModel
         public ICommand EpisodeCommand { get; }
         public ICommand CommentCommand { get; }
 
+        #region Properties
+        public string NameMedia
+        {
+            get { return _nameMedia; }
+            set { SetProperty(ref _nameMedia, value);}
+        }
         public string Comment
         {
             get { return _comment; }
@@ -52,6 +59,7 @@ namespace Movie_Management_Project.ViewModel
             get { return _decription; }
             set { SetProperty(ref _decription, value); }
         }
+        #endregion
 
         public PlayMediaViewModel()
         {
@@ -77,6 +85,9 @@ namespace Movie_Management_Project.ViewModel
 
                 _idMedia = idMedia;
                 DTO_Medias media = await _bus.BusGetMediaById(idMedia);
+
+                NameMedia = media.MediaName;
+
                 foreach (string category in media.ListCategory)
                 {
                     dsCategory.Add(category);

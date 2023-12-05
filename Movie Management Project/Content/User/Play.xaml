@@ -51,8 +51,8 @@
                           RowSpacing="10">
                         <Label x:Name="lbNameFilm" 
                                Grid.Column="0" Grid.Row="0"
-                               Text="Attack on Titan"
-                               FontSize="Medium"
+                               Text="{Binding NameMedia}"
+                               FontSize="Large"
                                LineBreakMode="WordWrap"
                                HorizontalOptions="Start"/>
                         <CollectionView x:Name="cvSideInfo"
@@ -136,7 +136,7 @@
 
 
 
-            <Grid ColumnDefinitions="Auto" RowDefinitions="Auto, Auto" HorizontalOptions="Center">
+            <Grid ColumnDefinitions="Auto" RowDefinitions="Auto, Auto" HorizontalOptions="Center" IsVisible="{Binding IsNotBusy}">
                 <Frame x:Name="frameWriteComment"
                    Grid.Column="0" Grid.Row="0"
     Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">

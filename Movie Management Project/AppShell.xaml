@@ -64,7 +64,7 @@
                 <SearchBar x:Name="searchBarSearch"
                    Placeholder="Search" Grid.Column="4" VerticalOptions="Center"/>
                 <Button x:Name="btnUser" 
-                Text="Unknown" Loaded="btnUser_Loaded" Clicked="btnUser_Clicked"
+                Text="{Binding UserName}" Loaded="btnUser_Loaded" Clicked="btnUser_Clicked"
                 Grid.Column="5" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
