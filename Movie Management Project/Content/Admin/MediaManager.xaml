@@ -106,7 +106,7 @@
 
                         <Grid x:Name="gridImageMedia" Grid.Column="0" Grid.Row="2" ColumnDefinitions="150,300,*" Margin="0,0,0,30">
                             <Label Text="Image" VerticalOptions="Center" Grid.Column="0"/>
-                            <Entry Grid.Column="1" x:Name="txtImageMedia" IsReadOnly="True" Text="{Binding Image}"/>
+                            <Entry Grid.Column="1" x:Name="txtImageMedia" IsReadOnly="True" Text="{Binding Imagee}"/>
                             <Button Grid.Column="2" Text="Open" WidthRequest="70" Command="{Binding OpenFileCommand}"/>
                         </Grid>
                         
