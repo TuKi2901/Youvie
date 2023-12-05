@@ -10,5 +10,15 @@ public partial class UserManager : ContentPage
 	{
 		InitializeComponent();
     }
-    
+
+    private void btnAdmin_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PopToRootAsync();
+    }
+
+    private void btnMedia_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PopToRootAsync(false);
+        Navigation.PushAsync(new MediaManager());
+    }
 }

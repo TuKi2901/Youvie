@@ -14,12 +14,7 @@
         <viewmodel:HomeMainViewModel></viewmodel:HomeMainViewModel>
     </ContentPage.BindingContext>
     <ScrollView>
-        <VerticalStackLayout Padding="0,0,0,100">
-
-            <Image 
-                x:Name="imgInformationUser"
-                Source="dotnet_bot.png"
-                HeightRequest="150"/>
+        <VerticalStackLayout Padding="0,0,0,100" Margin="30">
 
             <Label Text="Nominated Films" Margin="20" FontSize="Medium"/>
             <CollectionView x:Name="cvNominated"

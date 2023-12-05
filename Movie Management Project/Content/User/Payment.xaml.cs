@@ -7,8 +7,8 @@ public partial class Payment : ContentPage
 		InitializeComponent();
 	}
 
-    private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
-    {
-        await Navigation.PushAsync(new Home());
-    }
+    //private async void TapGestureRecognizer_Tapped(object sender, TappedEventArgs e)
+    //{
+    //    await Navigation.PushAsync(new Home());
+    //}
 }
