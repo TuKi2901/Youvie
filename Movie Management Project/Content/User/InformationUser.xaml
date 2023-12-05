@@ -9,7 +9,7 @@
     </ContentPage.BindingContext>
     
     <ScrollView>
-        <VerticalStackLayout WidthRequest="700">
+        <VerticalStackLayout Padding="0,50" WidthRequest="800" HorizontalOptions="Center">
             <Image 
                 x:Name="imgInformationUser"
                 Source="profile.png"
@@ -23,7 +23,7 @@
                 Margin="0,50,0,50"/>
             <Grid x:Name="gridInfo">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -34,7 +34,8 @@
                       ColumnSpacing="15"
                       Grid.Column="0" Grid.Row="0"
                       ColumnDefinitions="Auto,530"
-                          RowDefinitions="75,75">
+                          RowDefinitions="75,75"
+                      HorizontalOptions="Start">
                     <Image 
                     x:Name="imgPhoneNumber"
                     Grid.Column="0"
@@ -75,7 +76,8 @@
                       ColumnSpacing="15"
                       Grid.Column="0" Grid.Row="1"
                       RowDefinitions="75,Auto"
-                      ColumnDefinitions="Auto,530,Auto">
+                      ColumnDefinitions="Auto,450,Auto"
+                      HorizontalOptions="Center">
 
                     <!--#region Row 0: txtPassword and Button Change Password-->
                     <Image 
@@ -104,7 +106,6 @@
                             VerticalOptions="Center" 
                             HorizontalOptions="End"
                             FontSize="Small"
-                            Margin="-180,0,0,0"
                             />
                     <!--#endregion-->
 
@@ -122,7 +123,7 @@
                                WidthRequest="530"
                                Grid.Row="0"
                                Grid.Column="1"
-                               HorizontalOptions="Center"
+                               HorizontalOptions="End"
                                Placeholder="Your Password"
                                FontSize="Small"/>
 
@@ -131,7 +132,7 @@
                                WidthRequest="530"
                                Grid.Row="1"
                                Grid.Column="1"
-                               HorizontalOptions="Center"
+                               HorizontalOptions="End"
                                Placeholder="New Password"
                                FontSize="Small"/>
 
@@ -140,7 +141,7 @@
                                WidthRequest="530"
                                Grid.Row="2"
                                Grid.Column="1"
-                               HorizontalOptions="Center"
+                               HorizontalOptions="End"
                                Placeholder="Confirm Password"
                                FontSize="Small"/>
 
@@ -162,7 +163,7 @@
                       ColumnSpacing="15"
                       Grid.Column="0" Grid.Row="2"
                       RowDefinitions="75,75,75,75"
-                      ColumnDefinitions="Auto, Auto">
+                      ColumnDefinitions="Auto, *">
                     <Image 
                     x:Name="imgGender"
                     Grid.Column="0"
@@ -232,26 +233,33 @@
 
 
                     <Label
-                    Text=""
+                    Text="Premium"
                     x:Name="lbPlan"
                     Grid.Column="1"
                     Grid.Row="3"
                     VerticalOptions="Center" 
                     HorizontalOptions="Start"
                     FontSize="Small"
-                    
                     />
+
+                    <Button x:Name="btnUpgradePlan"
+                            Grid.Column="1"
+                            Grid.Row="3"
+                            HorizontalOptions="End"
+                            VerticalOptions="Center"
+                            Text="Upgrage Your Account"
+                            FontSize="Small"
+                            Clicked="btnUpgradePlan_Clicked"/>
+
                 </Grid>
-
             </Grid>
-
-            <Button x:Name="btnUpgradePlan"
-                        HorizontalOptions="Center"
-                        VerticalOptions="Center"
-                        Margin="0,0,0,50"
-                        Text="Upgrage Your Account"
-                        FontSize="Small"
-                        Clicked="btnUpgradePlan_Clicked"/>
+            <Button x:Name="btnLogout"
+                    Text="Logout"
+                    Margin="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    FontSize="Medium"
+                    Clicked="btnLogout_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>

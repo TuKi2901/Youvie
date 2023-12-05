@@ -19,7 +19,6 @@ public partial class InformationUser : ContentPage
 
     private void LoadDataUser()
     {
-
         lbName.Text = user.UserName.ToString();
         lbPhoneNumber.Text = user.PhoneNumber.ToString();
         lbEmail.Text = user.Account.Email.ToString();
@@ -49,5 +48,10 @@ public partial class InformationUser : ContentPage
             btnChangePasswordVisible.Text = "Cancel";
             gridChangePassword.IsVisible = true;
         }
+    }
+
+    private void btnLogout_Clicked(object sender, EventArgs e)
+    {
+
     }
 }
