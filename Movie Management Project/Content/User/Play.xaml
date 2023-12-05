@@ -12,15 +12,15 @@
 
     <ScrollView>
         <VerticalStackLayout>
-
-            <WebView x:Name="wvFilm" Source="{Binding Url}" HeightRequest="656" WidthRequest="1200" Margin="0,20,0,0"/>
+            <ActivityIndicator IsRunning="{Binding IsBusy}"></ActivityIndicator>
+            <WebView x:Name="wvFilm" Source="{Binding Url}" HeightRequest="656" WidthRequest="1200" Margin="0,20,0,0" IsVisible="{Binding IsNotBusy}"/>
 
             <CollectionView x:Name="cvEpisode"
-                            ItemsSource="{Binding dsEpisode}"
+                            ItemsSource="{Binding dsEpisodeCount}"
                             Margin="0,0,0,50"
                             HorizontalOptions="Center"
                             SelectionMode="Single"
-                            SelectedItem="{Binding SelectedEpisode}">
+                            SelectedItem="{Binding SelectedEpisode}" IsVisible="{Binding IsNotBusy}">
                 <CollectionView.ItemsLayout>
                     <GridItemsLayout Orientation="Vertical" Span="2" VerticalItemSpacing="10" HorizontalItemSpacing="10"/>
                 </CollectionView.ItemsLayout>
@@ -39,15 +39,15 @@
             </CollectionView>
 
             <Frame x:Name="frameContent"
-                    BackgroundColor="Transparent" Margin="50">
+                    BackgroundColor="Transparent" Margin="50" IsVisible="{Binding IsNotBusy}">
                 <Grid x:Name="gridContent"
-                      ColumnDefinitions="600,600" RowDefinitions="Auto, Auto, Auto"
-                      HorizontalOptions="Center" RowSpacing="20">
+                      ColumnDefinitions="1200" RowDefinitions="Auto, Auto"
+                      HorizontalOptions="Center" RowSpacing="20" IsClippedToBounds="False">
 
                     <Grid x:Name="gridNameAndCategory"
-                          Grid.ColumnSpan="2"
+                          Grid.Column="0"
                           ColumnDefinitions="600,600"
-                          RowDefinitions="Auto"
+                          RowDefinitions="Auto, Auto"
                           RowSpacing="10">
                         <Label x:Name="lbNameFilm" 
                                Grid.Column="0" Grid.Row="0"
@@ -55,14 +55,44 @@
                                FontSize="Medium"
                                LineBreakMode="WordWrap"
                                HorizontalOptions="Start"/>
-
+                        <CollectionView x:Name="cvSideInfo"
+                                        ItemsSource="{Binding dsMedias}"
+                                        Grid.Column="0"
+                                        Grid.Row="1"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Start">                    
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid x:Name="gridSideInfo"
+                                          RowDefinitions="Auto,Auto"
+                                          ColumnDefinitions="Auto,Auto,Auto"
+                                          ColumnSpacing="50">
+                                        <Label x:Name="lbReleaseDate"
+                                               Grid.Row="0" Grid.Column="0"
+                                               Text="{Binding ReleaseDate.Year}"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>
+                                        <Label x:Name="lbCountry"
+                                               Grid.Row="0" Grid.Column="1"
+                                               Text="{Binding Country}"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>
+                                        <Label x:Name="lbEpisodeNumber"
+                                               Grid.Row="0" Grid.Column="2"
+                                               Text="{Binding ListEpisode.Count}"
+                                               FontSize="Small"
+                                               LineBreakMode="WordWrap"/>       
+                                    </Grid>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
                         <CollectionView x:Name="cvCategory"
                                         ItemsSource="{Binding dsCategory}"
                                         Grid.Column="1"
-                                        Grid.Row="0"
+                                        Grid.Row="1"
                                         HorizontalOptions="End">
                             <CollectionView.ItemsLayout>
-                                <GridItemsLayout Orientation="Vertical" Span="3" HorizontalItemSpacing="10"/>
+                                <GridItemsLayout Orientation="Vertical" Span="1" HorizontalItemSpacing="15"/>
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
@@ -72,53 +102,20 @@
                                         <Label x:Name="lbCategory"
                                                Text="{Binding}" 
                                                Grid.Row="0" Grid.Column="0"  
-                                               FontSize="Small"/>
+                                               FontSize="Small"
+                                               Margin="0,0,5,0"/>
                                     </Grid>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
                     </Grid>
 
-                    <CollectionView x:Name="cvSideInfo"
-                                    ItemsSource="{Binding dsMedias}"
-                                    Grid.Column="0"
-                                    Grid.Row="1"
-                                    HorizontalOptions="Start"
-                                    VerticalOptions="Start">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Grid x:Name="gridSideInfo"
-                                      RowDefinitions="Auto,Auto"
-                                      ColumnDefinitions="Auto,Auto,Auto"
-                                      ColumnSpacing="50">
-                                    <Label x:Name="lbReleaseDate"
-                                               Grid.Row="0" Grid.Column="0"
-                                               Text="{Binding ReleaseDate.Year}"
-                                               FontSize="Small"
-                                               LineBreakMode="WordWrap"/>
-                                    <Label x:Name="lbCountry"
-                                               Grid.Row="0" Grid.Column="1"
-                                               Text="{Binding Country}"
-                                               FontSize="Small"
-                                               LineBreakMode="WordWrap"/>
-                                    <Label x:Name="lbEpisodeNumber"
-                                               Grid.Row="0" Grid.Column="2"
-                                               Text="{Binding ListEpisode.Count}"
-                                               FontSize="Small"
-                                               LineBreakMode="WordWrap"/>
-                                </Grid>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-
-
-
-
-                    </CollectionView>
+                    
 
                     <Grid x:Name="gridDescription"
                           HorizontalOptions="Center"
                           Grid.ColumnSpan="2"
-                          Grid.Row="2">
+                          Grid.Row="1" IsVisible="{Binding IsNotBusy}">
 
                         <Label x:Name="lbDescription"
                                Text="{Binding Decription}"
@@ -148,7 +145,7 @@
 
                     <Grid x:Name="gridWriteComment"
                           ColumnDefinitions="Auto, 1000, Auto"
-                          RowDefinitions="Auto"
+                          RowDefinitions="120"
                           HorizontalOptions="Start"
                           ColumnSpacing="40">
                         <Grid x:Name="gridWriteUserComment"
@@ -158,9 +155,10 @@
                           RowDefinitions="Auto,Auto"
                           HorizontalOptions="Center">
                             <Image x:Name="imgWriteUser"
-                                   Source="profile.png" HeightRequest="50"
+                                   Source="dotnet_bot.png" HeightRequest="50"
                                    Grid.Column="0" Grid.Row="0"
-                                   HorizontalOptions="Center"/>
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
                             <Label x:Name="lbWriteUser"
                                    Text="{Binding NameUser}"
                                    HorizontalOptions="Start"
@@ -170,14 +168,14 @@
                         </Grid>
 
                         <Editor Grid.Row="0" Grid.Column="1"
-                               WidthRequest="1000"
+                               WidthRequest="1000" HeightRequest="70"
                                             x:Name="edWriteComment"
-                                        HorizontalOptions="Start"
-                                               HorizontalTextAlignment="Start"
-                                               VerticalOptions="CenterAndExpand"
-                                               VerticalTextAlignment="Center"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                               VerticalTextAlignment="Start"
                                    FontSize="Small"
-                                Text="{Binding Comment}"/>
+                                Text="{Binding Comment}"
+                                 />
 
                         <Button x:Name="btnAddComment"
                                         Grid.Column="2"
@@ -211,30 +209,32 @@
 
 
                 <Frame x:Name="frameComment" Grid.Column="0" Grid.Row="1"
-                Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
+                Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center" IsVisible="{Binding IsNotBusy}">
 
 
                     <CollectionView x:Name="cvCommentUser"
                                     ItemsSource="{Binding dsComment}"
                                     Margin="0,0,0,50"
                                     HorizontalOptions="Start"
-                                    Grid.Column="0" Grid.Row="0">
+                                    Grid.Column="0" Grid.Row="0" IsVisible="{Binding IsNotBusy}">
                         <CollectionView.ItemsLayout>
                             <LinearItemsLayout Orientation="Vertical"/>
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
                                 <Grid x:Name="gridComment"
-                                      ColumnDefinitions="Auto, *"
+                                      ColumnDefinitions="150, 1000"
                                       RowDefinitions="Auto"
-                                      HorizontalOptions="Center"
-                                      ColumnSpacing="50">
+                                      MinimumHeightRequest="100"
+                                      VerticalOptions="Center"
+                                      HorizontalOptions="Start"
+                                      ColumnSpacing="40">
                                     <Grid x:Name="gridUserComment"
                                       ColumnDefinitions="Auto"
                                       RowDefinitions="Auto,Auto"
                                       HorizontalOptions="Center">
                                         <Image x:Name="imgUser"
-                                               Source="profile.png" HeightRequest="50"
+                                               Source="dotnet_bot.png" HeightRequest="50"
                                                Grid.Column="0" Grid.Row="0"
                                                HorizontalOptions="Center"/>
                                         <Label x:Name="lbUser"
@@ -245,13 +245,14 @@
                                                FontSize="Small"/>
                                     </Grid>
 
-                                    <Frame Grid.Row="0" Grid.Column="1" 
-                                       Margin="0,0,0,30">
-                                        <Label x:Name="lbComment"
+                                    <!--<Frame Grid.Row="0" Grid.Column="1" 
+                                       Margin="0,0,0,30">-->
+                                    <Editor x:Name="lbComment" Grid.Row="0" Grid.Column="1" 
                                                Text="{Binding CommentText}"
                                                FontSize="Small"
-                                               LineBreakMode="WordWrap"/>
-                                    </Frame>
+                                               IsTextPredictionEnabled="True"
+                                               IsReadOnly="True"/>
+                                    <!--</Frame>-->
                                 </Grid>
                             </DataTemplate>
                         </CollectionView.ItemTemplate>

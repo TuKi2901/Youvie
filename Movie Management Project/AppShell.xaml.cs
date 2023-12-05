@@ -6,6 +6,8 @@ namespace Movie_Management_Project
 {
     public partial class AppShell : Shell
     {
+        private string _idUser;
+
         public AppShell()
         {
             InitializeComponent();

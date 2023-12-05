@@ -50,9 +50,10 @@
             HorizontalOptions="End" VerticalOptions="Center" Placeholder="Find Id Admin" Margin="0,0,25,60" Text="{Binding Search}" SearchCommand="{Binding FindAdminCommand}"
             />
 
+            <ActivityIndicator IsRunning="{Binding IsBusy}"></ActivityIndicator>
             <Grid x:Name="gridAdmin"
                   ColumnDefinitions="*"
-                  RowDefinitions="Auto, Auto">
+                  RowDefinitions="Auto, Auto" IsVisible="{Binding IsNotBusy}">
 
                 <Grid x:Name="gridMenuAdmin"
                       ColumnDefinitions="*, *" 
@@ -123,23 +124,20 @@
                        Grid.Row="2" Grid.Column="0"
                        ColumnDefinitions="*"
                        RowDefinitions="Auto, *">
-                    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshCommand}">
-                        <ScrollView>
-                            <StackLayout>
-                                <ActivityIndicator IsRunning="{Binding IsBusy}"></ActivityIndicator>
-                                <ContentView IsVisible="{Binding IsNotBusy}">
-                                    <material:DataGrid ItemsSource="{Binding dsAdmins}" SelectedItems="{Binding SelectedAdmins}" HorizontalOptions="Center">
-                                        <material:DataGrid.Columns>
-                                            <material:DataGridSelectionColumn />
-                                            <material:DataGridColumn Binding="{Binding Account.Email}" Title="Email" />
-                                            <material:DataGridColumn Binding="{Binding AdminName}" Title="Name" />
-                                            <material:DataGridColumn Binding="{Binding Gender}" Title="Gender" />
-                                        </material:DataGrid.Columns>
-                                    </material:DataGrid>
-                                </ContentView>
-                            </StackLayout>
-                        </ScrollView>
-                    </RefreshView>
+                    <ScrollView>
+                        <StackLayout>
+                            <ContentView IsVisible="{Binding IsNotBusy}" x:Name="DataGridAdmins">
+                                <material:DataGrid ItemsSource="{Binding DsAdmins}" SelectedItems="{Binding SelectedAdmins}" HorizontalOptions="Center">
+                                    <material:DataGrid.Columns>
+                                        <material:DataGridSelectionColumn />
+                                        <material:DataGridColumn Binding="{Binding Account.Email}" Title="Email" />
+                                        <material:DataGridColumn Binding="{Binding AdminName}" Title="Name" />
+                                        <material:DataGridColumn Binding="{Binding Gender}" Title="Gender" />
+                                    </material:DataGrid.Columns>
+                                </material:DataGrid>
+                            </ContentView>
+                        </StackLayout>
+                    </ScrollView>
                 </Grid>
 
             </Grid>

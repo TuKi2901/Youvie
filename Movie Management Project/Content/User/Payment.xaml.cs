@@ -1,4 +1,4 @@
-namespace Movie_Management_Project.Content.User;
+ênamespace Movie_Management_Project.Content.User;
 
 public partial class Payment : ContentPage
 {

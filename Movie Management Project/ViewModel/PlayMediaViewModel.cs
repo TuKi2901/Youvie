@@ -19,6 +19,7 @@ namespace Movie_Management_Project.ViewModel
         private string _comment;
 
         public ObservableCollection<DTO_Medias> dsMedias { get; } = new();
+        public ObservableCollection<string> dsEpisodeCount { get; } = new();
         public ObservableCollection<string> dsEpisode { get; } = new();
         public ObservableCollection<string> dsCategory { get; } = new();
         public ObservableCollection<DTO_Comments> dsComment { get; } = new();
@@ -59,29 +60,50 @@ namespace Movie_Management_Project.ViewModel
         public PlayMediaViewModel(string idMedia)
         {
             GetTheMovie(idMedia);
-            GetTheUser(Login.User);
             EpisodeCommand = new Command(ChooseEpisode);
             CommentCommand = new Command(AddComment);
         }
 
         private async void GetTheMovie(string idMedia)
         {
+            if (IsBusy)
+            {
+                return;
+            }
+
             try
             {
+                IsBusy = true;
+
                 _idMedia = idMedia;
                 DTO_Medias media = await _bus.BusGetMediaById(idMedia);
-                dsMedias.Add(media);
+                foreach (string category in media.ListCategory)
+                {
+                    dsCategory.Add(category);
+                }
+
                 Decription = media.Decription;
+
+                dsMedias.Add(media);
 
                 foreach (string episode in media.ListEpisode)
                 {
                     dsEpisode.Add(episode);
                 }
+                //EpisodeCount();
 
-                foreach (string category in media.ListCategory)
+                //List<string> dsCount = new List<string>();
+
+                for (int i = 0; i < dsEpisode.Count; i++)
                 {
-                    dsCategory.Add(category);
+                    dsEpisodeCount.Add($"Episode {i+1}");
                 }
+
+                //foreach (string d in dsCount)
+                //{
+                //    dsEpisodeCount.Add(d);
+                //}
+
 
                 foreach (DTO_Comments comment in media.Comments)
                 {
@@ -89,10 +111,18 @@ namespace Movie_Management_Project.ViewModel
                 }
 
                 Url = media.ListEpisode[0];
+
+                GetTheUser(Login.User);
+
+                await Task.Delay(1000);
             }
             catch (Exception ex)
             {
                 await Shell.Current.DisplayAlert("Error!", $"There was a problem: {ex.Message}", "Ok");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
 
@@ -100,7 +130,15 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
-                Url = SelectedEpisode;
+                for (int i = 0; i < dsEpisodeCount.Count; i++)
+                {
+                    if (SelectedEpisode == dsEpisodeCount[i])
+                    {
+                        Url = dsEpisode[i];
+                    }
+                }
+
+                //Url = SelectedEpisode;
 
                 if (SelectedEpisode == null)
                 {
