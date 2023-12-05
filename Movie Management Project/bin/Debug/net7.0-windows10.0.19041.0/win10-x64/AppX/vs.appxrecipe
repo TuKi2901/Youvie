@@ -29,29 +29,29 @@
     <AppXManifest Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-05T16:11:21.256</Modified>
+      <Modified>2023-12-05T16:36:00.273</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-05T16:11:20.493</Modified>
+      <Modified>2023-12-05T16:35:59.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.runtimeconfig.json">
       <PackagePath>GUI.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-05T16:11:19.826</Modified>
+      <Modified>2023-12-05T16:35:58.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.dll">
       <PackagePath>GUI.dll</PackagePath>
-      <Modified>2023-12-05T16:11:13.684</Modified>
+      <Modified>2023-12-05T16:35:51.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GUI.exe</PackagePath>
-      <Modified>2023-12-05T16:11:13.735</Modified>
+      <Modified>2023-12-05T16:35:51.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.deps.json">
       <PackagePath>GUI.deps.json</PackagePath>
-      <Modified>2023-12-05T16:11:19.593</Modified>
+      <Modified>2023-12-05T16:35:57.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.14\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -965,14 +965,6 @@
       <PackagePath>Plainer.Maui.dll</PackagePath>
       <Modified>2023-07-13T16:12:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\prism.core\8.1.97\lib\net5.0\Prism.dll">
-      <PackagePath>Prism.dll</PackagePath>
-      <Modified>2021-05-23T20:44:52.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\serilog\3.1.1\lib\net7.0\Serilog.dll">
-      <PackagePath>Serilog.dll</PackagePath>
-      <Modified>2023-11-10T12:41:54.000</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\sharpcompress\0.30.1\lib\net5.0\SharpCompress.dll">
       <PackagePath>SharpCompress.dll</PackagePath>
       <Modified>2021-11-22T09:21:32.000</Modified>
@@ -1007,15 +999,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\BUS\bin\Debug\net7.0\BUS.dll">
       <PackagePath>BUS.dll</PackagePath>
-      <Modified>2023-12-05T16:11:01.052</Modified>
+      <Modified>2023-12-05T16:33:22.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\DAL\bin\Debug\net7.0\DAL.dll">
       <PackagePath>DAL.dll</PackagePath>
-      <Modified>2023-12-05T16:11:00.143</Modified>
+      <Modified>2023-12-05T16:33:22.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\DTO\bin\Debug\net7.0\DTO.dll">
       <PackagePath>DTO.dll</PackagePath>
-      <Modified>2023-12-05T16:10:22.559</Modified>
+      <Modified>2023-12-05T16:14:30.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\PC\.nuget\packages\microsoft.maui.controls.ref.win\7.0.101\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -1061,189 +1053,273 @@
       <PackagePath>OpenSans-Semibold.ttf</PackagePath>
       <Modified>2023-11-12T10:46:36.353</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-100.png">
+      <PackagePath>admin_manager.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-125.png">
+      <PackagePath>admin_manager.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-150.png">
+      <PackagePath>admin_manager.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.767</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-200.png">
+      <PackagePath>admin_manager.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.769</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-400.png">
+      <PackagePath>admin_manager.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-100.png">
+      <PackagePath>advisor.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.774</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-125.png">
+      <PackagePath>advisor.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.775</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-150.png">
+      <PackagePath>advisor.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-200.png">
+      <PackagePath>advisor.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.778</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-400.png">
+      <PackagePath>advisor.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.781</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\alternative.scale-100.png">
+      <PackagePath>alternative.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.783</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2023-12-05T16:10:45.873</Modified>
+      <Modified>2023-12-05T16:14:34.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.639</Modified>
+      <Modified>2023-12-05T16:14:35.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.658</Modified>
+      <Modified>2023-12-05T16:14:35.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.676</Modified>
+      <Modified>2023-12-05T16:14:35.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.711</Modified>
+      <Modified>2023-12-05T16:14:35.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.823</Modified>
+      <Modified>2023-12-05T16:14:35.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.960</Modified>
+      <Modified>2023-12-05T16:14:34.971</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.022</Modified>
+      <Modified>2023-12-05T16:14:34.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.063</Modified>
+      <Modified>2023-12-05T16:14:35.027</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.027</Modified>
+      <Modified>2023-12-05T16:14:34.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.034</Modified>
+      <Modified>2023-12-05T16:14:35.007</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.030</Modified>
+      <Modified>2023-12-05T16:14:34.917</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.053</Modified>
+      <Modified>2023-12-05T16:14:34.923</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.951</Modified>
+      <Modified>2023-12-05T16:14:34.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.112</Modified>
+      <Modified>2023-12-05T16:14:34.929</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.118</Modified>
+      <Modified>2023-12-05T16:14:34.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.895</Modified>
+      <Modified>2023-12-05T16:14:34.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.903</Modified>
+      <Modified>2023-12-05T16:14:34.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.911</Modified>
+      <Modified>2023-12-05T16:14:34.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.922</Modified>
+      <Modified>2023-12-05T16:14:34.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.934</Modified>
+      <Modified>2023-12-05T16:14:34.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.940</Modified>
+      <Modified>2023-12-05T16:14:34.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.945</Modified>
+      <Modified>2023-12-05T16:14:34.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-12-05T16:10:46.001</Modified>
+      <Modified>2023-12-05T16:14:34.903</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.953</Modified>
+      <Modified>2023-12-05T16:14:34.842</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-12-05T16:10:45.959</Modified>
+      <Modified>2023-12-05T16:14:34.849</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.911</Modified>
+      <Modified>2023-12-05T16:14:35.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.923</Modified>
+      <Modified>2023-12-05T16:14:35.200</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.938</Modified>
+      <Modified>2023-12-05T16:14:35.219</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.957</Modified>
+      <Modified>2023-12-05T16:14:35.244</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.988</Modified>
+      <Modified>2023-12-05T16:14:35.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.117</Modified>
+      <Modified>2023-12-05T16:14:35.127</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.125</Modified>
+      <Modified>2023-12-05T16:14:35.139</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.708</Modified>
+      <Modified>2023-12-05T16:14:35.146</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.876</Modified>
+      <Modified>2023-12-05T16:14:35.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.901</Modified>
+      <Modified>2023-12-05T16:14:35.177</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.070</Modified>
+      <Modified>2023-12-05T16:14:35.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.075</Modified>
+      <Modified>2023-12-05T16:14:35.041</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.086</Modified>
+      <Modified>2023-12-05T16:14:35.096</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.095</Modified>
+      <Modified>2023-12-05T16:14:35.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-12-05T16:10:47.110</Modified>
+      <Modified>2023-12-05T16:14:35.120</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.528</Modified>
+      <Modified>2023-12-05T16:14:35.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.539</Modified>
+      <Modified>2023-12-05T16:14:35.391</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.552</Modified>
+      <Modified>2023-12-05T16:14:35.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.573</Modified>
+      <Modified>2023-12-05T16:14:35.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2023-12-05T16:10:48.625</Modified>
+      <Modified>2023-12-05T16:14:35.609</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\back.scale-100.png">
+      <PackagePath>back.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.783</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\birthday_cake.scale-100.png">
+      <PackagePath>birthday_cake.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.802</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-100.png">
+      <PackagePath>branding.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-125.png">
+      <PackagePath>branding.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-150.png">
+      <PackagePath>branding.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.806</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-200.png">
+      <PackagePath>branding.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.807</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-400.png">
+      <PackagePath>branding.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.809</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\coronavirus.scale-100.png">
+      <PackagePath>coronavirus.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.811</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\country.scale-100.png">
+      <PackagePath>country.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.876</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\crown.scale-100.png">
+      <PackagePath>crown.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.877</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
@@ -1264,6 +1340,170 @@
     <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
       <Modified>2023-12-05T16:10:46.108</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\equality.scale-100.png">
+      <PackagePath>equality.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.879</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-100.png">
+      <PackagePath>forgotpass.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.898</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-125.png">
+      <PackagePath>forgotpass.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.900</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-150.png">
+      <PackagePath>forgotpass.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.901</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-200.png">
+      <PackagePath>forgotpass.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-400.png">
+      <PackagePath>forgotpass.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.906</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-100.png">
+      <PackagePath>login.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.907</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-125.png">
+      <PackagePath>login.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-150.png">
+      <PackagePath>login.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.909</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-200.png">
+      <PackagePath>login.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.911</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-400.png">
+      <PackagePath>login.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-100.png">
+      <PackagePath>mail.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.916</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-100.png">
+      <PackagePath>media_manager.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.917</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-125.png">
+      <PackagePath>media_manager.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-150.png">
+      <PackagePath>media_manager.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-200.png">
+      <PackagePath>media_manager.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-400.png">
+      <PackagePath>media_manager.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.938</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-100.png">
+      <PackagePath>momo.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-125.png">
+      <PackagePath>momo.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.940</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-150.png">
+      <PackagePath>momo.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.984</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-200.png">
+      <PackagePath>momo.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.986</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-400.png">
+      <PackagePath>momo.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\money.scale-100.png">
+      <PackagePath>money.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.990</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-100.png">
+      <PackagePath>password.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.991</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-125.png">
+      <PackagePath>password.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.992</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-150.png">
+      <PackagePath>password.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.993</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-200.png">
+      <PackagePath>password.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.995</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-400.png">
+      <PackagePath>password.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.998</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\prize.scale-100.png">
+      <PackagePath>prize.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:33.999</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\profile.scale-100.png">
+      <PackagePath>profile.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-100.png">
+      <PackagePath>signup.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.001</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-125.png">
+      <PackagePath>signup.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.002</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-150.png">
+      <PackagePath>signup.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.003</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-200.png">
+      <PackagePath>signup.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.004</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-400.png">
+      <PackagePath>signup.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.005</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\telephone.scale-100.png">
+      <PackagePath>telephone.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.006</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-100.png">
+      <PackagePath>user_manager.scale-100.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.007</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-125.png">
+      <PackagePath>user_manager.scale-125.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-150.png">
+      <PackagePath>user_manager.scale-150.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.010</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-200.png">
+      <PackagePath>user_manager.scale-200.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.026</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\FPT Polytechnic\DuAn1\Project\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-400.png">
+      <PackagePath>user_manager.scale-400.png</PackagePath>
+      <Modified>2023-12-05T16:14:34.029</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

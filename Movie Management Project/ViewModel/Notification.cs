@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Serilog;
+//using Serilog;
 using System.Threading.Tasks;
 
 namespace Movie_Management_Project.ViewModel
@@ -26,7 +26,7 @@ namespace Movie_Management_Project.ViewModel
             Console.WriteLine($"Error: {errorMessage}");
 
             // Ví dụ sử dụng Serilog
-            Log.Error(errorMessage);
+            //Log.Error(errorMessage);
         }
 
         public void HandleError(Exception ex)
