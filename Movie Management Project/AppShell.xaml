@@ -10,7 +10,8 @@
     Shell.TabBarIsVisible="False"
     Shell.FlyoutItemIsVisible="False"
     Shell.FlyoutBehavior="Disabled"
-    BackgroundColor="White">
+    BackgroundColor="White"
+    >
 
 
     <ShellItem Title="Guest" Route="guest" >

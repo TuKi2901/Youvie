@@ -7,6 +7,7 @@
     <ContentPage.BindingContext>
         <viewmodel:HomeMainViewModel/>
     </ContentPage.BindingContext>
+    
     <ScrollView>
         <VerticalStackLayout WidthRequest="700">
             <Image 
@@ -14,27 +15,27 @@
                 Source="dotnet_bot.png"
                 HeightRequest="150"/>
             <Label 
-                Text="Tên Người Dùng"
+                x:Name="lbName"
+                Text=""
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" 
                 FontSize="32"
                 Margin="0,50,0,50"/>
-            <Grid>
+            <Grid x:Name="gridInfo">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="530"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="75"/>
-                    <RowDefinition Height="75"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-
-                <Image 
+                <Grid x:Name="gridHeadChangePassword"
+                      ColumnSpacing="15"
+                      Grid.Column="0" Grid.Row="0"
+                      ColumnDefinitions="Auto,530"
+                          RowDefinitions="75,75">
+                    <Image 
                     x:Name="imgPhoneNumber"
                     Grid.Column="0"
                     Grid.Row="0"
@@ -44,99 +45,176 @@
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
                     />
-                <Label 
+                    <Label 
+                    Text=""
                     x:Name="lbPhoneNumber"
                     Grid.Column="1"
                     Grid.Row="0"
-                    Text="0123456789" 
                     FontSize="Small"
                     HorizontalOptions="Start"
                     VerticalOptions="Center"/>
 
-                <Image 
+                    <Image 
                     x:Name="imgEmail"
                     Grid.Column="0"
                     Grid.Row="1"
                     Source="dotnet_bot.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
-                <Label
+                    <Label
+                    Text=""
                     x:Name="lbEmail"
                     Grid.Column="1"
                     Grid.Row="1"
-                    Text="This Is Email @ Gmail . Com"
                     VerticalOptions="Center" 
                     HorizontalOptions="Start"
                     FontSize="Small"/>
+                </Grid>
 
-                <Image 
-                    x:Name="imgPassword"
+                <Grid x:Name="gridPassword"
+                      ColumnSpacing="15"
+                      Grid.Column="0" Grid.Row="1"
+                      RowDefinitions="75,Auto"
+                      ColumnDefinitions="Auto,530,Auto">
+
+                    <!--#region Row 0: txtPassword and Button Change Password-->
+                    <Image 
+                            x:Name="imgPassword"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Source="dotnet_bot.png" 
+                            WidthRequest="50" 
+                            HeightRequest="50"/>
+
+                    <Label
+                            Text=""
+                            x:Name="lbPassword"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" 
+                            FontSize="Small"/>
+
+                    <Button
+                            x:Name="btnChangePasswordVisible"
+                            Clicked="btnChangePassword_Clicked"
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            Text="Change Password" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="End"
+                            FontSize="Small"
+                            Margin="-180,0,0,0"
+                            />
+                    <!--#endregion-->
+
+                    <Grid x:Name="gridChangePassword"
+                          Grid.Column="1"
+                          Grid.Row="1"
+                          ColumnDefinitions="Auto,Auto"
+                          RowDefinitions="Auto, Auto, Auto,Auto"
+                          RowSpacing="20"
+                          HorizontalOptions="Center"
+                          IsVisible="false">
+
+                        <Entry x:Name="txtOldPassword"
+                               IsPassword="True"
+                               WidthRequest="530"
+                               Grid.Row="0"
+                               Grid.Column="1"
+                               HorizontalOptions="Center"
+                               Placeholder="Your Password"
+                               FontSize="Small"/>
+
+                        <Entry x:Name="txtNewPassword"
+                               IsPassword="True"
+                               WidthRequest="530"
+                               Grid.Row="1"
+                               Grid.Column="1"
+                               HorizontalOptions="Center"
+                               Placeholder="New Password"
+                               FontSize="Small"/>
+
+                        <Entry x:Name="txtConfirmPassword"
+                               IsPassword="True"
+                               WidthRequest="530"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               HorizontalOptions="Center"
+                               Placeholder="Confirm Password"
+                               FontSize="Small"/>
+
+                        <Button x:Name="btnChangePassword"
+                                Text="Save"
+                                Grid.Row="3"
+                                Grid.Column="1"
+                                HorizontalOptions="Center"
+                                FontSize="Small"
+                                Command="{Binding }"/>
+                                
+
+                    </Grid>
+
+                </Grid>
+
+
+                <Grid x:Name="gridBottomChangePassword"
+                      ColumnSpacing="15"
+                      Grid.Column="0" Grid.Row="2"
+                      RowDefinitions="75,75,75,75"
+                      ColumnDefinitions="Auto, Auto">
+                    <Image 
+                    x:Name="imgGender"
                     Grid.Column="0"
-                    Grid.Row="2"
+                    Grid.Row="0"
                     Source="dotnet_bot.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
 
-                <Label 
-                    x:Name="lbPassword"
+                    <Label 
+                    Text=""
+                    x:Name="lbGender"
                     Grid.Column="1"
-                    Grid.Row="2"
-                    Text="************"
+                    Grid.Row="0"
                     VerticalOptions="Center" 
-                    HorizontalOptions="Start" 
+                    HorizontalOptions="Start"
                     FontSize="Small"/>
 
-                <Button
-                    x:Name="btnChangePassword"
-                    Grid.Column="2"
-                    Grid.Row="2"
-                    Text="Change Password" 
+
+                    <Image 
+                    x:Name="imgCountry"
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    Source="dotnet_bot.png" 
+                    WidthRequest="50" 
+                    HeightRequest="50"/>
+
+
+                    <Label
+                    Text=""
+                    x:Name="lbCountry"
+                    Grid.Column="1"
+                    Grid.Row="1"
                     VerticalOptions="Center" 
                     HorizontalOptions="Start"
                     FontSize="Small"
-                    Margin="-180,0,0,0"
+                    
                     />
 
-                <Image 
-                    x:Name="imgGender"
+                    <Image 
+                    x:Name="imgBirthDay"
                     Grid.Column="0"
-                    Grid.Row="3"
+                    Grid.Row="2"
                     Source="dotnet_bot.png" 
                     WidthRequest="50" 
                     HeightRequest="50"/>
 
-                <Label 
-                    x:Name="lbGender"
+
+                    <Label
+                    Text=""
+                    x:Name="lbBirthDay"
                     Grid.Column="1"
-                    Grid.Row="3"
-                    Text="Male"
-                    VerticalOptions="Center" 
-                    HorizontalOptions="Start"
-                    FontSize="Small"/>
-
-
-                <Image 
-                    x:Name="imgCountry"
-                    Grid.Column="0"
-                    Grid.Row="4"
-                    Source="dotnet_bot.png" 
-                    WidthRequest="50" 
-                    HeightRequest="50"/>
-
-                <!--<Picker x:Name="picker"
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Viet Nam</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>-->
-
-                
-                <Label
-                    x:Name="lbCountry"
-                    Grid.Column="1"
-                    Grid.Row="4"
-                    Text="Việt Nam"
+                    Grid.Row="2"
                     VerticalOptions="Center" 
                     HorizontalOptions="Start"
                     FontSize="Small"
@@ -144,9 +222,36 @@
                     />
 
 
+                    <Image 
+                    x:Name="imgPlan"
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    Source="dotnet_bot.png" 
+                    WidthRequest="50" 
+                    HeightRequest="50"/>
+
+
+                    <Label
+                    Text=""
+                    x:Name="lbPlan"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Start"
+                    FontSize="Small"
+                    
+                    />
+                </Grid>
+
             </Grid>
 
-
+            <Button x:Name="btnUpgradePlan"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Margin="0,0,0,50"
+                        Text="Upgrage Your Account"
+                        FontSize="Small"
+                        Clicked="btnUpgradePlan_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>
