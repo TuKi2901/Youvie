@@ -82,7 +82,7 @@
                         </Grid>
                         <Grid x:Name="gridPasswordUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="2">
                             <Label Text="Password: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser"/>
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser" IsPassword="True"/>
                         </Grid>
                         <Grid x:Name="gridCRUDUser"
                                 Grid.Column="0" Grid.Row="4" 

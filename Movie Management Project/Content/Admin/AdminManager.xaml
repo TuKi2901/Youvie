@@ -73,7 +73,7 @@
                         <Grid x:Name="gridPasswordAdmin" Grid.Column="0" Grid.Row="1" ColumnDefinitions="150, *" VerticalOptions="Center" Margin="0,0,0,30">
                             <Label Text="Password" 
                                    VerticalOptions="Center" />
-                            <Entry x:Name="txtPasswordAdmin" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" 
+                            <Entry x:Name="txtPasswordAdmin" Grid.Column="1" Grid.Row="1" VerticalOptions="Center" IsPassword="True"
                                    WidthRequest="500" 
                                    Text="{Binding Password}"/>
                         </Grid>

@@ -45,13 +45,13 @@ namespace DAL
             }
         }
 
-        public async Task<bool> DeleteAdmin(List<string> email)
+        public async Task<bool> DeleteAdmin(List<string> id)
         {
             try
             {
                 var collection = db.GetCollection<DTO_Users>(collectionName);
 
-                var filter = Builders<DTO_Users>.Filter.In(x => x.Account.Email, email);
+                var filter = Builders<DTO_Users>.Filter.In(x => x.Id, id);
                 var result = await collection.DeleteManyAsync(filter);
 
                 if (result.DeletedCount == 0)

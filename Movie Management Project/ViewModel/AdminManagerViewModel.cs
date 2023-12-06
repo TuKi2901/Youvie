@@ -238,14 +238,16 @@ namespace Movie_Management_Project.ViewModel
             {
                 if (SelectedAdmins.Count == 0) { throw new Exception("Must choose Admins you want to delete!!"); }
 
-                List<string> emails = new List<string>();
+                List<string> idAdmin = new List<string>();
+                List<string> idAccount = new List<string>();
 
                 foreach (var admin in SelectedAdmins)
                 {
-                    emails.Add(admin.Account.Email);
+                    idAdmin.Add(admin.Id);
+                    idAccount.Add(admin.Account.Id);
                 }
 
-                string check = await _bus.BusDeleteAdmin(emails);
+                string check = await _bus.BusDeleteAdmin(idAdmin, idAccount);
 
                 if (check != string.Empty)
                 {
