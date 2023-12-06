@@ -63,7 +63,7 @@ namespace Movie_Management_Project.ViewModel
                     MediainNominated.Add(media);
                 }
 
-                for (int i = medias.Count - 1; i >= 0; i--)
+                for (int i = medias.Count - 1; i >= 5; i--)
                 {
                     MediainPopular.Add(medias[i]);
                 }
@@ -88,7 +88,7 @@ namespace Movie_Management_Project.ViewModel
                     throw new Exception("You must choose the media you want!");
                 }
 
-                await Shell.Current.DisplayAlert("Error!", SelectedMedia.MediaName, "Ok");
+                //await Shell.Current.DisplayAlert("Error!", SelectedMedia.MediaName, "Ok");
 
                 PlayMediaViewModel playMediaViewModel = new PlayMediaViewModel(SelectedMedia.Id);
                 await Shell.Current.Navigation.PushAsync(new Play(playMediaViewModel));

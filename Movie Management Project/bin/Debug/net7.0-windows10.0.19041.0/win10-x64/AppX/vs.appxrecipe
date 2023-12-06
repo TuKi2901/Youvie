@@ -29,13 +29,13 @@
     <AppXManifest Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-05T19:54:25.373</Modified>
+      <Modified>2023-12-06T01:10:02.439</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-05T19:54:25.115</Modified>
+      <Modified>2023-12-06T01:10:02.193</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.runtimeconfig.json">
       <PackagePath>GUI.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.dll">
       <PackagePath>GUI.dll</PackagePath>
-      <Modified>2023-12-05T19:54:23.758</Modified>
+      <Modified>2023-12-06T01:10:00.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>GUI.exe</PackagePath>
-      <Modified>2023-12-05T19:54:23.761</Modified>
+      <Modified>2023-12-06T01:10:00.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\GUI.deps.json">
       <PackagePath>GUI.deps.json</PackagePath>
@@ -999,11 +999,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\BUS\bin\Debug\net7.0\BUS.dll">
       <PackagePath>BUS.dll</PackagePath>
-      <Modified>2023-12-05T18:55:30.630</Modified>
+      <Modified>2023-12-06T00:56:24.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DAL\bin\Debug\net7.0\DAL.dll">
       <PackagePath>DAL.dll</PackagePath>
-      <Modified>2023-12-05T19:42:15.765</Modified>
+      <Modified>2023-12-06T01:04:29.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\DTO\bin\Debug\net7.0\DTO.dll">
       <PackagePath>DTO.dll</PackagePath>

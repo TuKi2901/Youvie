@@ -12,7 +12,6 @@ namespace Movie_Management_Project
         public AppShell()
         {
             InitializeComponent();
-            Navigating += OnNavigating; 
         }
 
         //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện
@@ -32,14 +31,6 @@ namespace Movie_Management_Project
                     busyIndicator.IsRunning = false;
                     busyIndicator.IsVisible = false;
                 }
-            }
-        }
-
-        private void OnNavigating(object sender, ShellNavigatingEventArgs e)
-        {
-            if (Shell.Current.CurrentPage is Login)
-            {
-                UserName = Login.User.UserName;
             }
         }
 
