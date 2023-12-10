@@ -95,7 +95,7 @@
                             Text="Save" Grid.Column="3" Margin="0,0,15,0" Command="{Binding SaveUpdateAdminCommand}"/>
 
                             <Button x:Name="btnRefreshAdmin"
-                            Text="Refresh" Grid.Column="4" Command="{Binding RefreshCommand}"/>
+                            Text="Refresh" Grid.Column="4" Clicked="btnRefreshAdmin_Clicked"/>
                         </Grid>
                     </Grid>
 
@@ -124,10 +124,10 @@
                        Grid.Row="2" Grid.Column="0"
                        ColumnDefinitions="*"
                        RowDefinitions="Auto, *">
-                    <ScrollView>
+                    <ScrollView x:Name="scrollview">
                         <StackLayout>
                             <ContentView IsVisible="{Binding IsNotBusy}" x:Name="DataGridAdmins">
-                                <material:DataGrid ItemsSource="{Binding DsAdmins}" SelectedItems="{Binding SelectedAdmins}" HorizontalOptions="Center">
+                                <material:DataGrid x:Name="datagrid" ItemsSource="{Binding DsAdmins}" SelectedItems="{Binding SelectedAdmins}" HorizontalOptions="Center">
                                     <material:DataGrid.Columns>
                                         <material:DataGridSelectionColumn />
                                         <material:DataGridColumn Binding="{Binding Account.Email}" Title="Email" />

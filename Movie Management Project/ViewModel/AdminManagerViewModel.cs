@@ -19,7 +19,8 @@ namespace Movie_Management_Project.ViewModel
         private string _gender;
         private string _search;
         public ObservableCollection<DTO_Admins> SelectedAdmins { get; set; } = new ObservableCollection<DTO_Admins>();
-        private ObservableCollection<DTO_Admins> dsAdmins = new();
+        public static ObservableCollection<DTO_Admins> dsAdmins = new();
+
         public ICommand AddAdminCommand { get; }
         public ICommand DeleteAdminCommand { get; }
         public ICommand SaveUpdateAdminCommand { get; }
@@ -138,7 +139,7 @@ namespace Movie_Management_Project.ViewModel
             try
             {
 
-                IsBusy = true;
+                IsBusy = false;
                 Email = string.Empty;
                 AdminName = string.Empty;
                 Password = string.Empty;
@@ -148,10 +149,11 @@ namespace Movie_Management_Project.ViewModel
                 _gender = string.Empty;
 
                 SelectedAdmins.Clear();
-
-
                 DsAdmins.Clear();
-
+                //AdminManager.data.ItemsSource = null;
+                //AdminsDataGrid();
+                //AdminManager.data.ItemsSource = DsAdmins;
+                
                 //var admins = await _bus.BusGetAllAdmins();
 
                 ////foreach (var admin in admins)
@@ -175,6 +177,12 @@ namespace Movie_Management_Project.ViewModel
                 ///
 
                 //await Shell.Current.Navigation.PopToRootAsync(true);
+
+
+
+
+
+
                 await Shell.Current.Navigation.PushAsync(new AdminManager());
             }
             catch (Exception ex)

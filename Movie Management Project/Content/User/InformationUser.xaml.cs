@@ -1,8 +1,6 @@
-using DTO;
-using Microsoft.Maui;
-using Microsoft.Maui.Controls;
+﻿using DTO;
 using Movie_Management_Project.Content.Guest;
-using System.Xml.Linq;
+
 
 namespace Movie_Management_Project.Content.User;
 
@@ -52,6 +50,17 @@ public partial class InformationUser : ContentPage
 
     private void btnLogout_Clicked(object sender, EventArgs e)
     {
-
+        try
+        {
+            if(Login.IsLogin == 1)
+            {
+                Login.IsLogin = 0;
+                Navigation.PopToRootAsync();
+            }
+        }
+        catch
+        {
+            throw new Exception("Đăng xuất thất bại");
+        }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//using Serilog;
+using Serilog;
 using System.Threading.Tasks;
 
 namespace Movie_Management_Project.ViewModel
@@ -14,7 +14,9 @@ namespace Movie_Management_Project.ViewModel
             // Hiển thị thông báo lỗi cho người dùng, ví dụ: sử dụng MessageBox, Toast, Snackbar, AlertDialog, vv.
             // Tùy thuộc vào nền tảng và công nghệ bạn đang sử dụng
             // Ví dụ trong Console
+
             Shell.Current.DisplayAlert("Error!", $"{errorMessage}", "OK");
+            
         }
 
         public void LogError(string errorMessage)
