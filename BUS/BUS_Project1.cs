@@ -365,7 +365,6 @@ namespace BUS
         }
         #endregion 
 
-
         public async Task<dynamic> CheckUserOrAdmin(string email, string pass)
         {
             try

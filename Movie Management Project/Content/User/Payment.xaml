@@ -15,7 +15,7 @@
                 FontSize="32"
                 HorizontalOptions="Center"
                 HorizontalTextAlignment="Center"
-                Margin="0,0,0,50"/>
+                Margin="0,0,0,50" TextColor="Yellow"/>
 
             <Grid>
                 <CollectionView x:Name="cvPayment"
@@ -47,7 +47,7 @@
                                           RowDefinitions="Auto,Auto,Auto,Auto"
                                           RowSpacing="30">
 
-                                        <Label Text="Freemium"
+                                        <Label Text="Free Fire"
                                                Grid.ColumnSpan="2"
                                                Grid.Row="0"
                                                FontSize="Small"
@@ -108,7 +108,7 @@
                            Margin="0,50,0,0"
                            Grid.Column="0"
                            Grid.Row="1"
-                           Source="momo.png"
+                           Source="momo1.png"
                            HeightRequest="250"/>
 
                 </Grid>

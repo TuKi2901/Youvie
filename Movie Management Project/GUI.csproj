@@ -84,6 +84,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\Icon\login.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\login.svg" />
 	  <None Remove="Resources\Images\SignUp.png" />
 	  <None Remove="Resources\Images\user_manager.png" />

@@ -1,4 +1,5 @@
 ﻿
+using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.Content.User;
 using System.Collections.ObjectModel;
 using System.Data;
@@ -21,7 +22,7 @@ public partial class MediaManager : ContentPage
 
     private void btnAdmin_Clicked(object sender, EventArgs e)
     {
-        Navigation.PopToRootAsync();
+        Navigation.PushAsync(new Login());
     }
 
     private void btnUser_Clicked(object sender, EventArgs e)

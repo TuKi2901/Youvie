@@ -288,6 +288,11 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
+                if (SelectedAdmins.Count < 1)
+                {
+                    throw new Exception("Must update before save!!");
+                }
+
                 DTO_Admins admin = SelectedAdmins[0];
                 admin.AdminName = AdminName;
                 admin.Gender = _gender;
