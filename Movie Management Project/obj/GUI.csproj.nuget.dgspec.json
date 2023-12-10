@@ -342,6 +342,10 @@
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "UraniumUI": {
               "target": "Package",
               "version": "[2.5.6, )"
@@ -525,6 +529,10 @@
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "UraniumUI": {
               "target": "Package",
               "version": "[2.5.6, )"
@@ -641,6 +649,10 @@
               "version": "[7.0.100-1.23211.1, )",
               "autoReferenced": true
             },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "UraniumUI": {
               "target": "Package",
               "version": "[2.5.6, )"
@@ -755,6 +767,10 @@
               "target": "Package",
               "version": "[1.2.221209.1, )",
               "autoReferenced": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
             },
             "UraniumUI": {
               "target": "Package",

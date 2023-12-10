@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nFmU7magai0Fy0PuPifcwehNWX6Xq/laRy0LQyLQZfnhzoWSpFbBzVDGPt+YUY6Y0SGF6B6UgdknCLVwpkio8Q==",
+  "dgSpecHash": "u5NPFJ9GsMtr2zXM+6wD2q0aE7CgllIno7VVXn7S55cOm/SUw4G/rzFt8VgS+bQZiSB0gu8pVKaGSEAY1TRjSA==",
   "success": true,
   "projectFilePath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.driver.core\\2.22.0\\mongodb.driver.core.2.22.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\mongodb.libmongocrypt\\1.8.0\\mongodb.libmongocrypt.1.8.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\plainer.maui\\1.6.4\\plainer.maui.1.6.4.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\serilog\\3.1.1\\serilog.3.1.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\sharpcompress\\0.30.1\\sharpcompress.0.30.1.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\snappier\\1.0.0\\snappier.1.0.0.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",

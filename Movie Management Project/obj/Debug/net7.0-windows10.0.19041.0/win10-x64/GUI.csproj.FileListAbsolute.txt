@@ -822,3 +822,4 @@ E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Deb
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-150.png
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-200.png
 E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-400.png
+E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Serilog.dll
