@@ -1,6 +1,8 @@
-﻿using DTO;
+using DTO;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls;
 using Movie_Management_Project.Content.Guest;
-
+using System.Xml.Linq;
 
 namespace Movie_Management_Project.Content.User;
 
@@ -48,20 +50,8 @@ public partial class InformationUser : ContentPage
         }
     }
 
-    private async void btnLogout_Clicked(object sender, EventArgs e)
+    private void btnLogout_Clicked(object sender, EventArgs e)
     {
-        try
-        {
-            if(Login.IsLogin == 1)
-            {
-                Login.IsLogin = 0;
-                await DisplayAlert("Notification", "Logout sucessfully !!!", "OK");
-                await Navigation.PopToRootAsync();
-            }
-        }
-        catch
-        {
-            throw new Exception("Đăng xuất thất bại");
-        }
+
     }
 }

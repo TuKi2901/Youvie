@@ -36,6 +36,7 @@ namespace Movie_Management_Project
 
         private void btnUser_Loaded(object sender, EventArgs e)
         {
+            btnUser.Text = Login.User.UserName;
         }
 
         private async void btnHome_Clicked(object sender, EventArgs e)

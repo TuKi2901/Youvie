@@ -191,18 +191,18 @@ namespace BUS
             }
         }
 
-        public async Task<string> BusDeleteAdmin(List<string> email)
+        public async Task<string> BusDeleteAdmin(List<string> idAdmin, List<string> idAccount)
         {
             try
             {
-                bool checkDeleteAccount = await dal_accounts.DeleteAccount(email);
+                bool checkDeleteAccount = await dal_accounts.DeleteAccount(idAccount);
 
                 if (!checkDeleteAccount)
                 {
                     throw new Exception($"Can't delete Accounts");
                 }
 
-                bool checkDeleteUser = await dal_admins.DeleteAdmin(email);
+                bool checkDeleteUser = await dal_admins.DeleteAdmin(idAdmin);
 
                 if (!checkDeleteUser)
                 {

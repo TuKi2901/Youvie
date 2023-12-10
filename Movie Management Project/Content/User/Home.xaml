@@ -70,16 +70,16 @@
 
             <!--List phim-->
             <CollectionView x:Name="cvPopular"
-                ItemsSource="{Binding Items}" 
+                ItemsSource="{Binding MediainPopular}" 
                 Margin="50,0,50,50"
-                SelectionMode="Single">
+                SelectionMode="Single" SelectedItem="{Binding SelectedMedia}">
                 <CollectionView.ItemsLayout>
                     <!--Xếp từng thuộc tính phim thành hàng dọc -> đưa tất cả thuộc tính thành hàng ngang -->
                     <LinearItemsLayout Orientation="Horizontal"/>
                 </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid Margin="50,0,50,0">
+                        <Grid Margin="50,0,50,0" ColumnSpacing="100">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
@@ -88,14 +88,15 @@
                                 <ColumnDefinition Width="Auto"/>
                             </Grid.ColumnDefinitions>
 
-                            <Image 
+                            <ImageButton 
                                    Grid.Row="0" Grid.Column="0"
-                                   Source="dotnet_bot.png"
-                                   HeightRequest="220"
-                                   WidthRequest="220"
-                                   />
+                                   Source="{Binding Image}"
+                                   HeightRequest="500"
+                                   WidthRequest="300"
+                                   Command="{Binding BindingContext.SelectedMediaCommand, Source={x:Reference Name=cvPopular}}"
+                                   CommandParameter="{Binding .}"/>
                             <Label Grid.Row="1" Grid.Column="0"
-                                   Text="{Binding Name}"
+                                   Text="{Binding MediaName}"
                                    FontSize="Small"
                                    HorizontalOptions="Center"
                                    Padding="20"

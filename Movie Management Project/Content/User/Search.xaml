@@ -31,8 +31,8 @@
                             <Image 
                        Grid.Row="0" Grid.Column="0"
                        Source="dotnet_bot.png"
-                       HeightRequest="220"
-                       WidthRequest="220"
+                       HeightRequest="500"
+                       WidthRequest="300"
                        />
                             <Label Grid.Row="1" Grid.Column="0"
                        Text="{Binding Name}"

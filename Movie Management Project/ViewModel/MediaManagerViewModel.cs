@@ -157,7 +157,7 @@ namespace Movie_Management_Project.ViewModel
         {
             List<string> categorys = new List<string>()
             {
-                "Action",
+                "Acion",
                 "Honor",
                 "Romantic",
                 "Anime",
