@@ -48,14 +48,15 @@ public partial class InformationUser : ContentPage
         }
     }
 
-    private void btnLogout_Clicked(object sender, EventArgs e)
+    private async void btnLogout_Clicked(object sender, EventArgs e)
     {
         try
         {
             if(Login.IsLogin == 1)
             {
                 Login.IsLogin = 0;
-                Navigation.PopToRootAsync();
+                await DisplayAlert("Notification", "Logout sucessfully !!!", "OK");
+                await Navigation.PopToRootAsync();
             }
         }
         catch
