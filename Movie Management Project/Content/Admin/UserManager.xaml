@@ -7,8 +7,7 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              xmlns:source="d:\fpt polytechnic\duan1\project\youvie\movie management project\resources"
              Title="UserManager"
-             Shell.NavBarIsVisible="True"
-             >
+             Shell.NavBarIsVisible="True">
     <Shell.TitleView>
         <Grid>
             <ContentView>
@@ -16,7 +15,6 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
-
                     </Grid.ColumnDefinitions>
                     <Button x:Name="btnAdmin" 
                     Text="Admin" Clicked="btnAdmin_Clicked" 

@@ -14,7 +14,6 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
-
                     </Grid.ColumnDefinitions>
                     <Button x:Name="btnAdmin" 
                         Text="Admin" Clicked="btnAdmin_Clicked" 
