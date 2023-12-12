@@ -173,7 +173,7 @@ namespace Movie_Management_Project.ViewModel
                 ////DsAdmins.Clear();
 
                 ////DsAdmins = admins1;
-                ///
+                //
 
                 //await Shell.Current.Navigation.PopToRootAsync(true);
 
