@@ -50,29 +50,6 @@
 
 
 
-            <Grid>
-                <Button
-Text="Forgot Password"
-x:Name="btnForgotPassword"
-Clicked="btnForgotPassword_Clicked"
-FontSize="Small"
-TextColor="Blue"
-BorderColor="Transparent"
-Background="Transparent"
-HorizontalOptions="End"/>
-
-
-                <Button
-Text="Create an account"
-Clicked="btnSignUp_Clicked"
-x:Name="btnSignUp"
-TextColor="Blue"
-BorderColor="Transparent"
-Background="Transparent"
-HorizontalOptions="Start"
-                    FontSize="Small"/>
-            </Grid>
-
 
 
 

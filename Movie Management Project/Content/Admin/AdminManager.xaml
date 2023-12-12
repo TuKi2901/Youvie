@@ -30,7 +30,7 @@
 
                     <Button x:Name="lbAdminName"
                             Text="{Binding AdminName}"
-                            Grid.ColumnSpan="3" Background="Transparent" TextColor="Green" BorderColor="Transparent" 
+                            Grid.ColumnSpan="3" Background="Transparent" TextColor="Red" BorderColor="Transparent" 
                             FontSize="Default" VerticalOptions="Center" HorizontalOptions="Center"
                            />
 
