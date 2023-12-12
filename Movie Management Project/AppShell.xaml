@@ -12,15 +12,13 @@
     Shell.FlyoutItemIsVisible="False"
     Shell.FlyoutBehavior="Disabled"
     BackgroundColor="White">
-    
+
 
     <ShellItem Title="Guest" Route="guest" >
-
         <ShellContent ContentTemplate="{DataTemplate Guest:Login}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:SignUp}"/>
         <ShellContent ContentTemplate="{DataTemplate Guest:ForgotPassword}"/>
     </ShellItem>
-
 
 
     <ShellItem Title="User" Route="user">
@@ -46,21 +44,21 @@
                 <Button x:Name="btnHome"
                 Text="Home" Clicked="btnHome_Clicked" 
                 Grid.Column="0" 
-                Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                Background="Transparent" TextColor="Purple" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <Button x:Name="btnTVShows" 
                 Text="TV Shows" Clicked="btnTVShows_Clicked" 
                 Grid.Column="1" 
-                Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                Background="Transparent" TextColor="DeepSkyBlue" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <Button x:Name="btnMovies" 
                 Text="Movies" Clicked="btnMovies_Clicked" 
-                Grid.Column="2" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                Grid.Column="2" Background="Transparent" TextColor="Red" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <Button x:Name="btnLastest" 
                 Text="Latest" Clicked="btnLastest_Clicked" 
                 Grid.Column="3" 
-                Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                Background="Transparent" TextColor="Green" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <SearchBar x:Name="searchBarSearch"
                    Placeholder="Search" Grid.Column="4" VerticalOptions="Center"/>

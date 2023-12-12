@@ -22,15 +22,15 @@
                     <Button x:Name="btnAdmin" 
                     Text="Admin" Clicked="btnAdmin_Clicked" 
                     Grid.Column="0" 
-                    Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                    Background="Transparent" TextColor="Red" BorderColor="Transparent" 
                     FontSize="Default" VerticalOptions="Center"/>
                     <Button x:Name="btnMedia" 
                     Text="Media" Clicked="btnMedia_Clicked" 
-                    Grid.Column="1" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                    Grid.Column="1" Background="Transparent" TextColor="DeepSkyBlue" BorderColor="Transparent" 
                     FontSize="Default" VerticalOptions="Center"/>
                     <Button x:Name="lbAdminName"
  Text="{Binding AdminName}"
- Grid.ColumnSpan="3" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+ Grid.ColumnSpan="3" Background="Transparent" TextColor="Green" BorderColor="Transparent" 
  FontSize="Default" VerticalOptions="Center" HorizontalOptions="Center"
 />
 
@@ -53,8 +53,8 @@
     <ScrollView>
         <VerticalStackLayout>
             <Grid x:Name="titleUser" ColumnDefinitions="*,*" HorizontalOptions="Center">
-                <Image Source="user_manager.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center"/>
+                <Image Source="user_manager1.png" Grid.Column="0" HeightRequest="100" Margin="0,0,0,0" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Text="User Manager" FontSize="Large" HorizontalOptions="Center" Grid.Column="1" Margin="0,0,0,0" VerticalOptions="Center" TextColor="Green"/>
             </Grid>
 
             <SearchBar x:Name="searchBarUser" 
@@ -95,21 +95,21 @@
                         </Grid>
                         <Grid x:Name="gridPasswordUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="2">
                             <Label Text="Password: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" IsPassword="True" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser"/>
+                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser" IsPassword="True"/>
                         </Grid>
                         <Grid x:Name="gridCRUDUser"
                                 Grid.Column="0" Grid.Row="4" 
                                 ColumnDefinitions="100, 100, 100, 100, 100" RowDefinitions="Auto" Margin="0,0,0,0" HorizontalOptions="Center">
                             <Button x:Name="btnAddUser"
-                                    Text="Add" Grid.Column="0" Margin="0,0,15,0" Command="{Binding AddUserCommand}"/>
+                                    Text="Add" Grid.Column="0" Margin="0,0,15,0" Command="{Binding AddUserCommand}" BackgroundColor="Green"/>
                             <Button x:Name="btnDeleteUser"
-                                    Text="Delete" Grid.Column="1" Margin="0,0,15,0" Command="{Binding DeleteUserCommand}"/>
+                                    Text="Delete" Grid.Column="1" Margin="0,0,15,0" Command="{Binding DeleteUserCommand}" BackgroundColor="Green"/>
                             <Button x:Name="btnUpdateUser"  
-                                    Text="Update" Grid.Column="2" Margin="0,0,15,0" Command="{Binding UpdateUserCommand}"/>
+                                    Text="Update" Grid.Column="2" Margin="0,0,15,0" Command="{Binding UpdateUserCommand}" BackgroundColor="Green"/>
                             <Button x:Name="btnSaveUser"
-                                    Text="Save" Grid.Column="3" Margin="0,0,15,0" Command="{Binding SaveUpdateCommand}"/>
+                                    Text="Save" Grid.Column="3" Margin="0,0,15,0" Command="{Binding SaveUpdateCommand}" BackgroundColor="Green"/>
                             <Button x:Name="btnRefreshUser"
-                                    Text="Refresh" Grid.Column="4" Margin="0,0,15,0" Command="{Binding RefreshCommand}"/>
+                                    Text="Refresh" Grid.Column="4" Margin="0,0,15,0" Command="{Binding RefreshCommand}" BackgroundColor="Green"/>
                         </Grid>
                     </Grid>
 

@@ -396,6 +396,11 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
+                if (SelectedMedias.Count < 1)
+                {
+                    throw new Exception("Must update before save!!");
+                }
+
                 DTO_Medias media = SelectedMedias[0];
                 media.MediaName = MediaName;
                 media.Country = Country;

@@ -51,10 +51,10 @@
                           RowSpacing="10">
                         <Label x:Name="lbNameFilm" 
                                Grid.Column="0" Grid.Row="0"
-                               Text="Attack on Titan"
-                               FontSize="Medium"
+                               Text="{Binding NameMedia}"
+                               FontSize="Large"
                                LineBreakMode="WordWrap"
-                               HorizontalOptions="Start"/>
+                               HorizontalOptions="Start" TextColor="Red"/>
                         <CollectionView x:Name="cvSideInfo"
                                         ItemsSource="{Binding dsMedias}"
                                         Grid.Column="0"
@@ -71,17 +71,17 @@
                                                Grid.Row="0" Grid.Column="0"
                                                Text="{Binding ReleaseDate.Year}"
                                                FontSize="Small"
-                                               LineBreakMode="WordWrap"/>
+                                               LineBreakMode="WordWrap" TextColor="Green"/>
                                         <Label x:Name="lbCountry"
                                                Grid.Row="0" Grid.Column="1"
                                                Text="{Binding Country}"
                                                FontSize="Small"
-                                               LineBreakMode="WordWrap"/>
+                                               LineBreakMode="WordWrap" TextColor="Green"/>
                                         <Label x:Name="lbEpisodeNumber"
                                                Grid.Row="0" Grid.Column="2"
                                                Text="{Binding ListEpisode.Count}"
                                                FontSize="Small"
-                                               LineBreakMode="WordWrap"/>       
+                                               LineBreakMode="WordWrap" TextColor="Green"/>       
                                     </Grid>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
@@ -103,7 +103,7 @@
                                                Text="{Binding}" 
                                                Grid.Row="0" Grid.Column="0"  
                                                FontSize="Small"
-                                               Margin="0,0,5,0"/>
+                                               Margin="0,0,5,0" TextColor="Green"/>
                                     </Grid>
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
@@ -136,7 +136,7 @@
 
 
 
-            <Grid ColumnDefinitions="Auto" RowDefinitions="Auto, Auto" HorizontalOptions="Center">
+            <Grid ColumnDefinitions="Auto" RowDefinitions="Auto, Auto" HorizontalOptions="Center" IsVisible="{Binding IsNotBusy}">
                 <Frame x:Name="frameWriteComment"
                    Grid.Column="0" Grid.Row="0"
     Background="Transparent" Margin="0,0,0,50"  WidthRequest="1250" HorizontalOptions="Center">
@@ -144,7 +144,7 @@
 
 
                     <Grid x:Name="gridWriteComment"
-                          ColumnDefinitions="Auto, 1000, Auto"
+                          ColumnDefinitions="Auto, *, 70"
                           RowDefinitions="120"
                           HorizontalOptions="Start"
                           ColumnSpacing="40">
@@ -168,7 +168,7 @@
                         </Grid>
 
                         <Editor Grid.Row="0" Grid.Column="1"
-                               WidthRequest="1000" HeightRequest="70"
+                                WidthRequest="1000" HeightRequest="70"
                                             x:Name="edWriteComment"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center"

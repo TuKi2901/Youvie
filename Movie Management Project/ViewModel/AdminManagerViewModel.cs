@@ -18,8 +18,7 @@ namespace Movie_Management_Project.ViewModel
         private string _gender;
         private string _search;
         public ObservableCollection<DTO_Admins> SelectedAdmins { get; set; } = new ObservableCollection<DTO_Admins>();
-        public static ObservableCollection<DTO_Admins> dsAdmins = new();
-
+        private ObservableCollection<DTO_Admins> dsAdmins = new();
         public ICommand AddAdminCommand { get; }
         public ICommand DeleteAdminCommand { get; }
         public ICommand SaveUpdateAdminCommand { get; }
@@ -138,7 +137,7 @@ namespace Movie_Management_Project.ViewModel
             try
             {
 
-                IsBusy = false;
+                IsBusy = true;
                 Email = string.Empty;
                 AdminName = string.Empty;
                 Password = string.Empty;
@@ -148,11 +147,10 @@ namespace Movie_Management_Project.ViewModel
                 _gender = string.Empty;
 
                 SelectedAdmins.Clear();
+
+
                 DsAdmins.Clear();
-                //AdminManager.data.ItemsSource = null;
-                //AdminsDataGrid();
-                //AdminManager.data.ItemsSource = DsAdmins;
-                
+
                 //var admins = await _bus.BusGetAllAdmins();
 
                 ////foreach (var admin in admins)
@@ -173,15 +171,9 @@ namespace Movie_Management_Project.ViewModel
                 ////DsAdmins.Clear();
 
                 ////DsAdmins = admins1;
-                //
+                ///
 
                 //await Shell.Current.Navigation.PopToRootAsync(true);
-
-
-
-
-
-
                 await Shell.Current.Navigation.PushAsync(new AdminManager());
             }
             catch (Exception ex)
@@ -245,14 +237,16 @@ namespace Movie_Management_Project.ViewModel
             {
                 if (SelectedAdmins.Count == 0) { throw new Exception("Must choose Admins you want to delete!!"); }
 
-                List<string> emails = new List<string>();
+                List<string> idAdmin = new List<string>();
+                List<string> idAccount = new List<string>();
 
                 foreach (var admin in SelectedAdmins)
                 {
-                    emails.Add(admin.Account.Email);
+                    idAdmin.Add(admin.Id);
+                    idAccount.Add(admin.Account.Id);
                 }
 
-                string check = await _bus.BusDeleteAdmin(emails);
+                string check = await _bus.BusDeleteAdmin(idAdmin, idAccount);
 
                 if (check != string.Empty)
                 {
@@ -293,6 +287,11 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
+                if (SelectedAdmins.Count < 1)
+                {
+                    throw new Exception("Must update before save!!");
+                }
+
                 DTO_Admins admin = SelectedAdmins[0];
                 admin.AdminName = AdminName;
                 admin.Gender = _gender;

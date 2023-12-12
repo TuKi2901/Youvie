@@ -263,7 +263,6 @@ namespace Movie_Management_Project.ViewModel
             {
                 string randomPassword = RandomPassword();
                 if (IsValidEmail(Email) == false)
-
                     throw new Exception("Email is invalid");
                 if (await _bus.BusForgotPassword(Email, randomPassword) != string.Empty)
                     throw new Exception("Mail is not exists");
@@ -326,7 +325,6 @@ namespace Movie_Management_Project.ViewModel
                 dTO_Users.Birthday = Birthday;
                 dTO_Users.Country = Country;
                 dTO_Users.Gender = _gender;
-
                 DTO_Accounts dTO_Accounts = new DTO_Accounts();
                 dTO_Accounts.Email = Email;
                 dTO_Accounts.Password = Password;
@@ -351,7 +349,7 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
-                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }
+                if (SelectedUsers.Count == 0) { throw new Exception("Must choose Users you want to delete!!"); }    
 
                 List<string> userIds = new List<string>();
                 List<string> accountIds = new List<string>();
@@ -425,7 +423,7 @@ namespace Movie_Management_Project.ViewModel
                 UserName = SelectedUsers[0].UserName;
                 PhoneNumber = SelectedUsers[0].PhoneNumber;
                 _gender = SelectedUsers[0].Gender;
-                if (_gender == "Male") { IsMale = true; IsFemale = false; } else if (_gender == "Female") { IsMale = false; IsFemale = true; }
+                if (_gender == "Male") { IsMale = true; IsFemale = false; }  else if (_gender == "Female") { IsMale = false; IsFemale = true; }
                 Country = SelectedUsers[0].Country;
                 Birthday = SelectedUsers[0].Birthday;
             }
@@ -439,6 +437,11 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
+                if (SelectedUsers.Count < 1)
+                {
+                    throw new Exception("Must update before save!!");
+                }
+
                 DTO_Users user = SelectedUsers[0];
                 user.UserName = UserName;
                 user.PhoneNumber = PhoneNumber;
@@ -482,7 +485,7 @@ namespace Movie_Management_Project.ViewModel
                     dsUsers.Add(user);
                 }
 
-                await Shell.Current.DisplayAlert("Notification!", $"Find user success!!!", "Ok");
+                await Task.Delay(500);
             }
             catch (Exception ex)
             {

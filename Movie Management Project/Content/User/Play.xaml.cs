@@ -14,5 +14,4 @@ public partial class Play : ContentPage
 	{
 		InitializeComponent();
     }
-
 }
