@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u5NPFJ9GsMtr2zXM+6wD2q0aE7CgllIno7VVXn7S55cOm/SUw4G/rzFt8VgS+bQZiSB0gu8pVKaGSEAY1TRjSA==",
+  "dgSpecHash": "9idt5wKvoz93F0a40NFlXVeIXPUkJSU4//22WOjrCAsY+VvqQIZLJ1a9TMNMbRvYSs+1A8RJziEMycDyuI/9Og==",
   "success": true,
   "projectFilePath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
   "expectedPackageFiles": [
@@ -145,8 +145,8 @@
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.core.ref.ios\\7.0.101\\microsoft.maui.core.ref.ios.7.0.101.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.ios.ref\\16.4.7125\\microsoft.ios.ref.16.4.7125.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.controls.ref.ios\\7.0.101\\microsoft.maui.controls.ref.ios.7.0.101.nupkg.sha512",
+    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.ios.runtime.ios-arm64\\16.4.7125\\microsoft.ios.runtime.ios-arm64.16.4.7125.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.essentials.runtime.ios\\7.0.101\\microsoft.maui.essentials.runtime.ios.7.0.101.nupkg.sha512",
-    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64\\16.4.7125\\microsoft.ios.runtime.iossimulator-x64.16.4.7125.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.core.runtime.ios\\7.0.101\\microsoft.maui.core.runtime.ios.7.0.101.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maui.controls.ref.maccatalyst\\7.0.101\\microsoft.maui.controls.ref.maccatalyst.7.0.101.nupkg.sha512",
     "C:\\Users\\TuanDepTrai\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64\\16.4.7125\\microsoft.maccatalyst.runtime.maccatalyst-x64.16.4.7125.nupkg.sha512",

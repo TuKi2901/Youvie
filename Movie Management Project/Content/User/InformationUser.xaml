@@ -154,7 +154,7 @@
                                 Grid.Column="1"
                                 HorizontalOptions="Center"
                                 FontSize="Small"
-                                Command="{Binding }" BackgroundColor="Yellow"/>
+                                Command="{Binding ChangePasswordCommand}" BackgroundColor="Yellow"/>
                                 
 
                     </Grid>

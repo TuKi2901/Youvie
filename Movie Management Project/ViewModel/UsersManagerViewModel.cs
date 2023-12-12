@@ -503,7 +503,7 @@ namespace Movie_Management_Project.ViewModel
             {
                 if (Password == null)
                 {
-                    await Shell.Current.DisplayAlert("Notification!", "Please Input Your Password", "Ok");
+                    await Shell.Current.DisplayAlert("Error!", "Please Input Your Password", "Ok");
                 }
                 else if (NewPassword == null)
                 {

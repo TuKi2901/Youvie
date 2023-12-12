@@ -29,7 +29,7 @@
                             FontSize="Default" VerticalOptions="Center"/>
 
                     <Button x:Name="lbAdminName"
-                            Text="{Binding AdminName}"
+                            Text="{Binding NameAdmin}"
                             Grid.ColumnSpan="3" Background="Transparent" TextColor="Red" BorderColor="Transparent" 
                             FontSize="Default" VerticalOptions="Center" HorizontalOptions="Center"
                            />

@@ -23,10 +23,10 @@ public partial class AdminManager : ContentPage
 
         // Kích hoạt animation khi trang xuất hiện
         if (Login.Admin == null)
-            _viewModel.AdminName = "Unknown";
+            _viewModel.NameAdmin = "Unknown";
         else
         {
-            _viewModel.AdminName = Login.Admin.AdminName;
+            _viewModel.NameAdmin = Login.Admin.AdminName;
         }
     }
 

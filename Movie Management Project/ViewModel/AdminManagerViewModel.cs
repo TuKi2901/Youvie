@@ -48,6 +48,12 @@ namespace Movie_Management_Project.ViewModel
             set
             { SetProperty(ref _adminname, value); }
         }
+        public string NameAdmin
+        {
+            get { return _adminname; }
+            set
+            { SetProperty(ref _adminname, value); }
+        }
         public string Email
         {
             get { return _email; }

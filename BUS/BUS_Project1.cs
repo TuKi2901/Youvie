@@ -146,7 +146,6 @@ namespace BUS
             }
         }
 
-
         public async Task<string> BusChangePassword(string email, string password)
         {
             try
@@ -158,8 +157,6 @@ namespace BUS
 
                 if (await dal_accounts.UpdateAccount(accounts) == false || await dal_users.UpdatePasswordUser(email, accounts.Password)==false)
                     throw new Exception("Error at DAL_Accounts or DAL_Users"); 
-                
-                
 
                 return string.Empty;
             }
@@ -168,7 +165,6 @@ namespace BUS
                 throw new Exception($"BusChangePassword is error\n{ex.Message}");
             }
         }
-
 
         public async Task<DTO_Users> BusGetUserById(string idUser)
         {
