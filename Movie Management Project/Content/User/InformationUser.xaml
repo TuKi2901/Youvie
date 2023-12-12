@@ -5,7 +5,7 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="InformationUser">
     <ContentPage.BindingContext>
-        <viewmodel:HomeMainViewModel/>
+        <viewmodel:UsersManagerViewModel/>
     </ContentPage.BindingContext>
     
     <ScrollView>
@@ -119,6 +119,7 @@
                           IsVisible="false">
 
                         <Entry x:Name="txtOldPassword"
+                               Text="{Binding Password}"
                                IsPassword="True"
                                WidthRequest="530"
                                Grid.Row="0"
@@ -128,6 +129,7 @@
                                FontSize="Small"/>
 
                         <Entry x:Name="txtNewPassword"
+                               Text="{Binding NewPassword}"
                                IsPassword="True"
                                WidthRequest="530"
                                Grid.Row="1"
@@ -138,6 +140,7 @@
 
                         <Entry x:Name="txtConfirmPassword"
                                IsPassword="True"
+                               Text="{Binding ConfirmPassword}"
                                WidthRequest="530"
                                Grid.Row="2"
                                Grid.Column="1"
@@ -151,7 +154,7 @@
                                 Grid.Column="1"
                                 HorizontalOptions="Center"
                                 FontSize="Small"
-                                Command="{Binding }"/>
+                                Command="{Binding ChangePasswordCommand}" />
                                 
 
                     </Grid>

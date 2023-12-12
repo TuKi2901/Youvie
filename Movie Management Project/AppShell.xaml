@@ -6,12 +6,13 @@
     xmlns:User="clr-namespace:Movie_Management_Project.Content.User"
     xmlns:Guest="clr-namespace:Movie_Management_Project.Content.Guest"
     xmlns:Admin="clr-namespace:Movie_Management_Project.Content.Admin"
+    xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
     xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
     Shell.TabBarIsVisible="False"
     Shell.FlyoutItemIsVisible="False"
     Shell.FlyoutBehavior="Disabled"
     BackgroundColor="White">
-
+    
 
     <ShellItem Title="Guest" Route="guest" >
 
@@ -64,7 +65,7 @@
                 <SearchBar x:Name="searchBarSearch"
                    Placeholder="Search" Grid.Column="4" VerticalOptions="Center"/>
                 <Button x:Name="btnUser" 
-                Text="Unknown" Loaded="btnUser_Loaded" Clicked="btnUser_Clicked"
+                Text="{Binding UserName}" Loaded="btnUser_Loaded" Clicked="btnUser_Clicked"
                 Grid.Column="5" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                 FontSize="Default" VerticalOptions="Center"/>
                 <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>

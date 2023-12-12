@@ -16,6 +16,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
 
                     </Grid.ColumnDefinitions>
                     <Button x:Name="btnAdmin" 
@@ -27,6 +28,18 @@
                     Text="Media" Clicked="btnMedia_Clicked" 
                     Grid.Column="1" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
                     FontSize="Default" VerticalOptions="Center"/>
+                    <Button x:Name="lbAdminName"
+ Text="{Binding AdminName}"
+ Grid.ColumnSpan="3" Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+ FontSize="Default" VerticalOptions="Center" HorizontalOptions="Center"
+/>
+
+                    <Button x:Name="btnLogout"
+ Text="Logout"
+ Grid.Column="2"
+ Clicked="btnLogout_Clicked" 
+ Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+ FontSize="Default" VerticalOptions="Center" HorizontalOptions="End"/>
                     <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
                 </Grid>
             </ContentView>
@@ -82,7 +95,7 @@
                         </Grid>
                         <Grid x:Name="gridPasswordUser" ColumnDefinitions="150,*" Margin="0,0,0,30" Grid.Row="2">
                             <Label Text="Password: " VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
-                            <Entry Grid.Column="1" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser"/>
+                            <Entry Grid.Column="1" IsPassword="True" Grid.Row="0" VerticalOptions="Center" Text="{Binding Password}" x:Name="txtPasswordUser"/>
                         </Grid>
                         <Grid x:Name="gridCRUDUser"
                                 Grid.Column="0" Grid.Row="4" 

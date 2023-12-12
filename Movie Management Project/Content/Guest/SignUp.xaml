@@ -84,7 +84,7 @@
                 VerticalTextAlignment="Center"/>
                 <Entry 
                 Placeholder=""
-                IsPassword="False"
+                IsPassword="True"
                 x:Name="txtPassword"
                 WidthRequest="500"
                 Grid.Column="0"
@@ -103,7 +103,7 @@
                 VerticalTextAlignment="Center"/>
                 <Entry 
                 Placeholder=""
-                IsPassword="False"
+                IsPassword="True"
                 x:Name="txtConfirmPassword"
                 WidthRequest="500"
                 Grid.Column="0"

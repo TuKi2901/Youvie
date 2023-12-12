@@ -3,16 +3,15 @@ using DTO;
 using System.Collections.ObjectModel;
 using System.Net.Mail;
 using System.Windows.Input;
-
 using Movie_Management_Project.Content.Admin;
 using System.Diagnostics.Metrics;
+using Movie_Management_Project.Content.Guest;
 
 namespace Movie_Management_Project.ViewModel
 {
     public partial class AdminManagerViewModel : BaseViewModel
     {
         private BUS_Project1 _bus = new BUS_Project1();
-
         private string _email;
         private string _password;
         private string _adminname;

@@ -13,6 +13,7 @@ namespace Movie_Management_Project.Content.Guest;
 public partial class Login : ContentPage
 {
     public static DTO_Users User;
+    public static DTO_Admins Admin;
     public static int IsLogin;
 
     BUS_Project1 bus_project1 = new BUS_Project1();
@@ -68,6 +69,8 @@ public partial class Login : ContentPage
 
             if (check is DTO_Admins)
             {
+                DTO_Admins admin = check;
+                Admin = check;
                 IsLogin = 1;
                 await Navigation.PushAsync(new AdminManager());
             }

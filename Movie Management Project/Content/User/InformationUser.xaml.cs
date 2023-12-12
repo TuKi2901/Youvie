@@ -1,7 +1,6 @@
 ﻿using DTO;
 using Movie_Management_Project.Content.Guest;
-
-
+using Movie_Management_Project.ViewModel;
 namespace Movie_Management_Project.Content.User;
 
 public partial class InformationUser : ContentPage
@@ -52,7 +51,7 @@ public partial class InformationUser : ContentPage
     {
         try
         {
-            if(Login.IsLogin == 1)
+            if (Login.IsLogin == 1)
             {
                 Login.IsLogin = 0;
                 Navigation.PopToRootAsync();
@@ -60,7 +59,8 @@ public partial class InformationUser : ContentPage
         }
         catch
         {
-            throw new Exception("Đăng xuất thất bại");
+            throw new Exception("Logout unsucess");
         }
     }
+
 }

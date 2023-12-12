@@ -1,6 +1,5 @@
 ﻿using DAL;
 using DTO;
-
 namespace BUS
 {
     public class BUS_Project1
@@ -146,6 +145,30 @@ namespace BUS
                 throw new Exception($"BusForgotPassword is error\n{ex.Message}");
             }
         }
+
+
+        public async Task<string> BusChangePassword(string email, string password)
+        {
+            try
+            {
+                DTO_Accounts accounts = new DTO_Accounts();
+
+                accounts.Email = email;
+                accounts.Password = BCrypt.Net.BCrypt.HashPassword(password);
+
+                if (await dal_accounts.UpdateAccount(accounts) == false || await dal_users.UpdatePasswordUser(email, accounts.Password)==false)
+                    throw new Exception("Error at DAL_Accounts or DAL_Users"); 
+                
+                
+
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"BusChangePassword is error\n{ex.Message}");
+            }
+        }
+
 
         public async Task<DTO_Users> BusGetUserById(string idUser)
         {

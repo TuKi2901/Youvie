@@ -3,6 +3,7 @@ using DTO;
 using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.Content.User;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows.Input;
 
 namespace Movie_Management_Project.ViewModel
@@ -11,7 +12,7 @@ namespace Movie_Management_Project.ViewModel
     {
         BUS_Project1 _bus = new BUS_Project1();
 
-        private DTO_Users _idUser;
+        //private DTO_Users _idUser;
         private DTO_Medias _selectedMedia;
 
         public ObservableCollection<DTO_Medias> MediainNominated { get; } = new();
@@ -26,16 +27,31 @@ namespace Movie_Management_Project.ViewModel
 
         public HomeMainViewModel()
         {
-            _idUser = Login.User;
             NominatedCollection();
             SelectedMediaCommand = new Command(SelectedMediaFuntion);
         }
 
+        private string _userName;
+        public string UserName
+        {
+            get { return _userName; }
+            set
+            {
+                if (_userName != value)
+                {
+                    _userName = value;
+                    OnPropertyChanged(nameof(UserName));
+                }
+            }
+        }
         //public HomeMainViewModel(string userId)
         //{
         //    NominatedCollection();
         //    SelectedMediaCommand = new Command(SelectedMediaFuntion);
         //}
+
+
+
 
         public async void NominatedCollection()
         {
