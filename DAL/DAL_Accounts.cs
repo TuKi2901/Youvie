@@ -69,7 +69,7 @@ namespace DAL
             try
             {
                 var collection = db.GetCollection<DTO_Accounts>(collectionName);
-
+                
                 var filter = Builders<DTO_Accounts>.Filter.In(x => x.Id, accountId);
 
                 var result = await collection.DeleteManyAsync(filter);

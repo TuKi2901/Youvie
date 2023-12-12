@@ -3,6 +3,7 @@ using DTO;
 using Movie_Management_Project.Content.Guest;
 using Movie_Management_Project.Content.User;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Windows.Input;
 
 namespace Movie_Management_Project.ViewModel
@@ -39,11 +40,27 @@ namespace Movie_Management_Project.ViewModel
             SelectedMediaCommand = new Command(SelectedMediaFuntion);
         }
 
+        private string _userName;
+        public string UserName
+        {
+            get { return _userName; }
+            set
+            {
+                if (_userName != value)
+                {
+                    _userName = value;
+                    OnPropertyChanged(nameof(UserName));
+                }
+            }
+        }
         //public HomeMainViewModel(string userId)
         //{
         //    NominatedCollection();
         //    SelectedMediaCommand = new Command(SelectedMediaFuntion);
         //}
+
+
+
 
         public async void NominatedCollection()
         {

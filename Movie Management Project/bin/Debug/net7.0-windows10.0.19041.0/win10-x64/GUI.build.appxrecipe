@@ -796,35 +796,11 @@
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-100.png">
       <PackagePath>admin_manager.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-125.png">
-      <PackagePath>admin_manager.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-150.png">
-      <PackagePath>admin_manager.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-200.png">
-      <PackagePath>admin_manager.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager.scale-400.png">
-      <PackagePath>admin_manager.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\admin_manager1.scale-100.png">
       <PackagePath>admin_manager1.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-100.png">
       <PackagePath>advisor.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-125.png">
-      <PackagePath>advisor.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-150.png">
-      <PackagePath>advisor.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-200.png">
-      <PackagePath>advisor.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\advisor.scale-400.png">
-      <PackagePath>advisor.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\alternative.scale-100.png">
       <PackagePath>alternative.scale-100.png</PackagePath>
@@ -976,41 +952,11 @@
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-100.png">
       <PackagePath>branding.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-125.png">
-      <PackagePath>branding.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-150.png">
-      <PackagePath>branding.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-200.png">
-      <PackagePath>branding.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\branding.scale-400.png">
-      <PackagePath>branding.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\coronavirus.scale-100.png">
-      <PackagePath>coronavirus.scale-100.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\country.scale-100.png">
       <PackagePath>country.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\crown.scale-100.png">
       <PackagePath>crown.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
-      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
-      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
-      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
-      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
-      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\equality.scale-100.png">
       <PackagePath>equality.scale-100.png</PackagePath>
@@ -1018,185 +964,14 @@
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-100.png">
       <PackagePath>forgotpass.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-125.png">
-      <PackagePath>forgotpass.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-150.png">
-      <PackagePath>forgotpass.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-200.png">
-      <PackagePath>forgotpass.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass.scale-400.png">
-      <PackagePath>forgotpass.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\forgotpass1.scale-100.png">
       <PackagePath>forgotpass1.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.ico">
-      <PackagePath>login.ico</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-100.png">
       <PackagePath>login.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-125.png">
-      <PackagePath>login.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-150.png">
-      <PackagePath>login.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-200.png">
-      <PackagePath>login.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login.scale-400.png">
-      <PackagePath>login.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login1.scale-100.png">
       <PackagePath>login1.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login123123.scale-100.png">
-      <PackagePath>login123123.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login12341234123.scale-100.png">
-      <PackagePath>login12341234123.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLargeTile.scale-100.png">
-      <PackagePath>loginLargeTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLargeTile.scale-125.png">
-      <PackagePath>loginLargeTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLargeTile.scale-150.png">
-      <PackagePath>loginLargeTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLargeTile.scale-200.png">
-      <PackagePath>loginLargeTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLargeTile.scale-400.png">
-      <PackagePath>loginLargeTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-lightunplated_targetsize-16.png">
-      <PackagePath>loginLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-lightunplated_targetsize-24.png">
-      <PackagePath>loginLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-lightunplated_targetsize-256.png">
-      <PackagePath>loginLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-lightunplated_targetsize-32.png">
-      <PackagePath>loginLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-lightunplated_targetsize-48.png">
-      <PackagePath>loginLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-unplated_targetsize-16.png">
-      <PackagePath>loginLogo.altform-unplated_targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-unplated_targetsize-24.png">
-      <PackagePath>loginLogo.altform-unplated_targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-unplated_targetsize-256.png">
-      <PackagePath>loginLogo.altform-unplated_targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-unplated_targetsize-32.png">
-      <PackagePath>loginLogo.altform-unplated_targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.altform-unplated_targetsize-48.png">
-      <PackagePath>loginLogo.altform-unplated_targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.scale-100.png">
-      <PackagePath>loginLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.scale-125.png">
-      <PackagePath>loginLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.scale-150.png">
-      <PackagePath>loginLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.scale-200.png">
-      <PackagePath>loginLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.scale-400.png">
-      <PackagePath>loginLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.targetsize-16.png">
-      <PackagePath>loginLogo.targetsize-16.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.targetsize-24.png">
-      <PackagePath>loginLogo.targetsize-24.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.targetsize-256.png">
-      <PackagePath>loginLogo.targetsize-256.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.targetsize-32.png">
-      <PackagePath>loginLogo.targetsize-32.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginLogo.targetsize-48.png">
-      <PackagePath>loginLogo.targetsize-48.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginMediumTile.scale-100.png">
-      <PackagePath>loginMediumTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginMediumTile.scale-125.png">
-      <PackagePath>loginMediumTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginMediumTile.scale-150.png">
-      <PackagePath>loginMediumTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginMediumTile.scale-200.png">
-      <PackagePath>loginMediumTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginMediumTile.scale-400.png">
-      <PackagePath>loginMediumTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginSmallTile.scale-100.png">
-      <PackagePath>loginSmallTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginSmallTile.scale-125.png">
-      <PackagePath>loginSmallTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginSmallTile.scale-150.png">
-      <PackagePath>loginSmallTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginSmallTile.scale-200.png">
-      <PackagePath>loginSmallTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginSmallTile.scale-400.png">
-      <PackagePath>loginSmallTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginStoreLogo.scale-100.png">
-      <PackagePath>loginStoreLogo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginStoreLogo.scale-125.png">
-      <PackagePath>loginStoreLogo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginStoreLogo.scale-150.png">
-      <PackagePath>loginStoreLogo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginStoreLogo.scale-200.png">
-      <PackagePath>loginStoreLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginStoreLogo.scale-400.png">
-      <PackagePath>loginStoreLogo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginWideTile.scale-100.png">
-      <PackagePath>loginWideTile.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginWideTile.scale-125.png">
-      <PackagePath>loginWideTile.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginWideTile.scale-150.png">
-      <PackagePath>loginWideTile.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginWideTile.scale-200.png">
-      <PackagePath>loginWideTile.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginWideTile.scale-400.png">
-      <PackagePath>loginWideTile.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\login].scale-100.png">
-      <PackagePath>login].scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-100.png">
       <PackagePath>mail.scale-100.png</PackagePath>
@@ -1204,35 +979,11 @@
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-100.png">
       <PackagePath>media_manager.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-125.png">
-      <PackagePath>media_manager.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-150.png">
-      <PackagePath>media_manager.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-200.png">
-      <PackagePath>media_manager.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager.scale-400.png">
-      <PackagePath>media_manager.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\media_manager1.scale-100.png">
       <PackagePath>media_manager1.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-100.png">
       <PackagePath>momo.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-125.png">
-      <PackagePath>momo.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-150.png">
-      <PackagePath>momo.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-200.png">
-      <PackagePath>momo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo.scale-400.png">
-      <PackagePath>momo.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\momo1.scale-100.png">
       <PackagePath>momo1.scale-100.png</PackagePath>
@@ -1242,18 +993,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-100.png">
       <PackagePath>password.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-125.png">
-      <PackagePath>password.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-150.png">
-      <PackagePath>password.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-200.png">
-      <PackagePath>password.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-400.png">
-      <PackagePath>password.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password1.scale-100.png">
       <PackagePath>password1.scale-100.png</PackagePath>
@@ -1267,18 +1006,6 @@
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-100.png">
       <PackagePath>signup.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-125.png">
-      <PackagePath>signup.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-150.png">
-      <PackagePath>signup.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-200.png">
-      <PackagePath>signup.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup.scale-400.png">
-      <PackagePath>signup.scale-400.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\signup1.scale-100.png">
       <PackagePath>signup1.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -1287,18 +1014,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-100.png">
       <PackagePath>user_manager.scale-100.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-125.png">
-      <PackagePath>user_manager.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-150.png">
-      <PackagePath>user_manager.scale-150.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-200.png">
-      <PackagePath>user_manager.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager.scale-400.png">
-      <PackagePath>user_manager.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\FPT Polytechnic\Ky 4\DuAn1\Code\DuAn1\Youvie\Movie Management Project\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\user_manager1.scale-100.png">
       <PackagePath>user_manager1.scale-100.png</PackagePath>

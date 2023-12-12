@@ -6,14 +6,16 @@ using System.Net.Mail;
 using System.Net;
 using System.Security.Cryptography;
 using System.Windows.Input;
-
+using DAL;
+using Movie_Management_Project.Content.Guest;
+using Movie_Management_Project.Content.User;
 
 namespace Movie_Management_Project.ViewModel
 {
     public partial class UsersManagerViewModel : BaseViewModel
     {
+        DTO_Users user = Login.User;
         private BUS_Project1 _bus = new BUS_Project1();
-
         private string _userName;
         private string _email;
         private string _password;
@@ -22,6 +24,9 @@ namespace Movie_Management_Project.ViewModel
         private string _phoneNumber;
         private string _gender;
         private string _search;
+        private string _newpassword;
+        private string _confirmpassword;
+        private string _adminname;
 
         public ObservableCollection<DTO_Users> SelectedUsers { get; set; } = new ObservableCollection<DTO_Users>();
         public ObservableCollection<DTO_Users> dsUsers { get; } = new();
@@ -32,7 +37,15 @@ namespace Movie_Management_Project.ViewModel
         public ICommand SaveUpdateCommand { get; }
         public ICommand FindUserCommand { get; }
         public ICommand ForgotPasswordCommand { get; }
-        public ICommand Login { get; }
+        public ICommand LoginCommand { get; }
+        public ICommand ChangePasswordCommand { get; }
+
+        //private readonly ICommand newPassword;
+
+        //public ICommand GetNewPassword()
+        //{
+        //    return newPassword;
+        //}
 
         public UsersManagerViewModel()
         {
@@ -40,6 +53,7 @@ namespace Movie_Management_Project.ViewModel
             #region Guest
             //Login = new Command(Login);
             ForgotPasswordCommand = new Command(ForgotPassword);
+            ChangePasswordCommand = new Command(ChangePasswordVM);
             #endregion
 
             #region User Manager
@@ -53,6 +67,20 @@ namespace Movie_Management_Project.ViewModel
         }
 
         #region SetProperty
+
+        public string AdminName
+        {
+            get { return _adminname; }
+            set
+            {
+                if (_adminname != value)
+                {
+                    _adminname = value;
+                    OnPropertyChanged(nameof(AdminName));
+                }
+            }
+        }
+
         public string UserName
         {
             get { return _userName; }
@@ -90,6 +118,21 @@ namespace Movie_Management_Project.ViewModel
             set
             { SetProperty(ref _phoneNumber, value); }
         }
+
+        public string NewPassword
+        {
+            get { return _newpassword; }
+            set
+            { SetProperty(ref _newpassword, value); }
+        }
+        public string ConfirmPassword
+        {
+            get { return _confirmpassword; }
+            set
+            { SetProperty(ref _confirmpassword, value); }
+        }
+
+
         private bool isMale;
 
         public bool IsMale
@@ -225,7 +268,7 @@ namespace Movie_Management_Project.ViewModel
                     throw new Exception("Mail is not exists");
                 if (SendMail(Email, randomPassword) != string.Empty)
                     throw new Exception("Send Mail is error");
-                await Shell.Current.DisplayAlert("Notification!", $"New password sent your mail, Plese check your mail!!!", "Ok");
+                await Shell.Current.DisplayAlert("Notification!", $"New password sent your mail, Please check your mail!!!", "Ok");
 
             }
             catch (Exception ex)
@@ -282,7 +325,6 @@ namespace Movie_Management_Project.ViewModel
                 dTO_Users.Birthday = Birthday;
                 dTO_Users.Country = Country;
                 dTO_Users.Gender = _gender;
-                
                 DTO_Accounts dTO_Accounts = new DTO_Accounts();
                 dTO_Accounts.Email = Email;
                 dTO_Accounts.Password = Password;
@@ -452,6 +494,50 @@ namespace Movie_Management_Project.ViewModel
             finally
             {
                 IsBusy = false;
+            }
+        }
+
+        private async void ChangePasswordVM()
+        {
+            try
+            {
+                if (Password == null)
+                {
+                    await Shell.Current.DisplayAlert("Notification!", "Please Input Your Password", "Ok");
+                }
+                else if (NewPassword == null)
+                {
+                    await Shell.Current.DisplayAlert("Notification!", "Please Input New Password", "Ok");
+                }
+                else if (ConfirmPassword == null)
+                {
+                    await Shell.Current.DisplayAlert("Notification!", "Please Input Confirm Password", "Ok");
+                }
+                else if (NewPassword != ConfirmPassword)
+                {
+                    await Shell.Current.DisplayAlert("Notification!", "Confirm Password was wrong", "Ok");
+                }
+                else
+                {
+                    bool checkPassword = BCrypt.Net.BCrypt.Verify(Password, user.Account.Password);
+                    if (checkPassword)
+                    {
+                        if (await _bus.BusChangePassword(user.Account.Email, NewPassword)==string.Empty)
+                        {
+                            await Shell.Current.DisplayAlert("Notification!", $"Change Password Success", "Ok");
+                            Password = null;
+                            NewPassword = null;
+                            ConfirmPassword = null;
+                        }
+                    }
+                    else
+                    await Shell.Current.DisplayAlert("Notification!", "Your Password is not correct", "Ok");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Notification!", $"Change Password Unsuccess {ex.Message}", "Ok");
             }
         }
     }

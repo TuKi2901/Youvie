@@ -50,31 +50,34 @@
 
 
 
+
+
+
             <Grid>
                 <Button
-Text="Forgot Password"
-x:Name="btnForgotPassword"
-Clicked="btnForgotPassword_Clicked"
-FontSize="Small"
-TextColor="Blue"
-BorderColor="Transparent"
-Background="Transparent"
-HorizontalOptions="End"/>
+                    Text="Forgot Password"
+                    x:Name="btnForgotPassword"
+                    Clicked="btnForgotPassword_Clicked"
+                    FontSize="Small"
+                    TextColor="Blue"
+                    BorderColor="Transparent"
+                    Background="Transparent"
+                    HorizontalOptions="End"/>
 
 
                 <Button
-Text="Create an account"
-Clicked="btnSignUp_Clicked"
-x:Name="btnSignUp"
-TextColor="Blue"
-BorderColor="Transparent"
-Background="Transparent"
-HorizontalOptions="Start"
-                    FontSize="Small"/>
+                    Text="Create an account"
+                    Clicked="btnSignUp_Clicked"
+                    x:Name="btnSignUp"
+                    TextColor="Blue"
+                    BorderColor="Transparent"
+                    Background="Transparent"
+                    HorizontalOptions="Start"
+                                        FontSize="Small"/>
             </Grid>
 
 
-
+ 
             <Button
                 Text="Login"
                 x:Name="btnLogin"
@@ -82,7 +85,7 @@ HorizontalOptions="Start"
                 Margin="0,20,0,40"
                 BackgroundColor="LightSeaGreen"
                 HorizontalOptions="Center"
-                Command="{Binding Login}"
+                Command="{Binding LoginCommand}"
                 Clicked="btnLogin_Clicked"
                 />
 
