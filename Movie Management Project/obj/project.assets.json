@@ -39117,25 +39117,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TuanDepTrai\\.nuget\\packages\\": {},
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
+      "projectUniqueName": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
       "projectName": "GUI",
-      "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\GUI.csproj",
-      "packagesPath": "C:\\Users\\TuanDepTrai\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\Movie Management Project\\obj\\",
+      "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\GUI.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\Movie Management Project\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\NuGet.Config",
-        "C:\\Users\\TuanDepTrai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -39154,44 +39154,44 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj"
             },
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj"
             }
           }
         },
         "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj"
             },
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj"
             }
           }
         },
         "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj"
             },
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj"
             }
           }
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\BUS\\BUS.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\BUS\\BUS.csproj"
             },
-            "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj": {
-              "projectPath": "E:\\FPT Polytechnic\\Ky 4\\DuAn1\\Code\\DuAn1\\Youvie\\DTO\\DTO.csproj"
+            "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\FPT Polytechnic\\DuAn1\\Project\\Youvie\\DTO\\DTO.csproj"
             }
           }
         }
