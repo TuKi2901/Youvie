@@ -13,11 +13,22 @@ namespace Movie_Management_Project.Content.Guest;
 public partial class Login : ContentPage
 {
     public static DTO_Users User;
+    public static DTO_Admins Admin;
+    public static int IsLogin;
 
     BUS_Project1 bus_project1 = new BUS_Project1();
     public Login()
     {
         InitializeComponent();
+    }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        // Xóa dữ liệu khi trang Login sắp hiển thị
+        txtEmail.Text = null;
+        txtPassword.Text = null;
     }
 
     private async void btnSignUp_Clicked(object sender, EventArgs e)
@@ -50,14 +61,17 @@ public partial class Login : ContentPage
             if (check is DTO_Users)
             {
                 DTO_Users user = check;
+                IsLogin = 1;
 
                 User = user;
-                //HomeMainViewModel homeMainViewModel = new HomeMainViewModel(user.Id);
                 await Navigation.PushAsync(new Home());
             }
 
             if (check is DTO_Admins)
             {
+                DTO_Admins admin = check;
+                Admin = check;
+                IsLogin = 1;
                 await Navigation.PushAsync(new AdminManager());
             }
         }

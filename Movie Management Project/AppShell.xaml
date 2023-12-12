@@ -6,6 +6,7 @@
     xmlns:User="clr-namespace:Movie_Management_Project.Content.User"
     xmlns:Guest="clr-namespace:Movie_Management_Project.Content.Guest"
     xmlns:Admin="clr-namespace:Movie_Management_Project.Content.Admin"
+    xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
     xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
     Shell.TabBarIsVisible="False"
     Shell.FlyoutItemIsVisible="False"

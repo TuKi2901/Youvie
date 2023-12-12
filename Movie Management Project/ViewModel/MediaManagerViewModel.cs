@@ -23,7 +23,7 @@ namespace Movie_Management_Project.ViewModel
         private string _description;
         private string _image;
         private string _search;
-
+        private string _adminname;
         public ObservableCollection<DTO_Medias> SelectedMedias { get; set; } = new ObservableCollection<DTO_Medias>();
         public ObservableCollection<DTO_Medias> dsMedias { get; } = new();
         public ObservableCollection<string> dsCategorys { get; } = new();
@@ -42,6 +42,20 @@ namespace Movie_Management_Project.ViewModel
         public ICommand FindMediaCommand { get; }
 
         #region Set Properties
+
+        public string AdminName
+        {
+            get { return _adminname; }
+            set
+            {
+                if (_adminname != value)
+                {
+                    _adminname = value;
+                    OnPropertyChanged(nameof(AdminName));
+                }
+            }
+        }
+
         public string ChooseCategory
         {
             get { return _chooseCategory; }
@@ -157,7 +171,7 @@ namespace Movie_Management_Project.ViewModel
         {
             List<string> categorys = new List<string>()
             {
-                "Acion",
+                "Action",
                 "Honor",
                 "Romantic",
                 "Anime",

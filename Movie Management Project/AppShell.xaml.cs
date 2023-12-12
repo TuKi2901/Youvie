@@ -7,11 +7,24 @@ namespace Movie_Management_Project
 {
     public partial class AppShell : Shell
     {
-        public string UserName { get; set; }
-
+        private HomeMainViewModel _viewModel;
         public AppShell()
         {
             InitializeComponent();
+            _viewModel = new HomeMainViewModel();
+            BindingContext = _viewModel;
+            Navigating += OnNavigating; 
+        }
+        private void OnNavigating(object sender, ShellNavigatingEventArgs e)
+        {
+
+            // Kích hoạt animation khi trang xuất hiện
+            if (Login.User == null)
+                _viewModel.UserName = "Unknown";
+            else
+            {
+                _viewModel.UserName = Login.User.UserName;
+            }
         }
 
         //Chuyển Page, fix lỗi ấn nhanh button không bắt được sự kiện
@@ -34,9 +47,17 @@ namespace Movie_Management_Project
             }
         }
 
+        //private void OnNavigating(object sender, ShellNavigatingEventArgs e)
+        //{
+        //    if (Shell.Current.CurrentPage is Login)
+        //    {
+        //        UserName = Login.User.UserName;
+        //    }
+        //}
+
         private void btnUser_Loaded(object sender, EventArgs e)
         {
-            btnUser.Text = Login.User.UserName;
+
         }
 
         private async void btnHome_Clicked(object sender, EventArgs e)

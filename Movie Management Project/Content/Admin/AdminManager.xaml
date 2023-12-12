@@ -15,6 +15,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
 
                     </Grid.ColumnDefinitions>
                     <Button x:Name="btnMedia" 
@@ -26,6 +27,19 @@
                             Text="User" Clicked="btnUser_Clicked" 
                             Grid.Column="1" Background="Transparent" TextColor="Green" BorderColor="Transparent" 
                             FontSize="Default" VerticalOptions="Center"/>
+
+                    <Button x:Name="lbAdminName"
+                            Text="{Binding AdminName}"
+                            Grid.ColumnSpan="3" Background="Transparent" TextColor="Green" BorderColor="Transparent" 
+                            FontSize="Default" VerticalOptions="Center" HorizontalOptions="Center"
+                           />
+
+                    <Button x:Name="btnLogout"
+                            Text="Logout"
+                            Grid.Column="2"
+                            Clicked="btnLogout_Clicked" 
+                            Background="Transparent" TextColor="Black" BorderColor="Transparent" 
+                            FontSize="Default" VerticalOptions="Center" HorizontalOptions="End"/>
                     <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
                 </Grid>
             </ContentView>
