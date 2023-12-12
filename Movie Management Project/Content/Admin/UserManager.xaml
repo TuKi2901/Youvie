@@ -7,8 +7,7 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              xmlns:source="d:\fpt polytechnic\duan1\project\youvie\movie management project\resources"
              Title="UserManager"
-             Shell.NavBarIsVisible="True"
-             >
+             Shell.NavBarIsVisible="True">
     <Shell.TitleView>
         <Grid>
             <ContentView>
@@ -16,8 +15,6 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="*"/>
-
                     </Grid.ColumnDefinitions>
                     <Button x:Name="btnAdmin" 
                     Text="Admin" Clicked="btnAdmin_Clicked" 
@@ -28,18 +25,6 @@
                     Text="Media" Clicked="btnMedia_Clicked" 
                     Grid.Column="1" Background="Transparent" TextColor="DeepSkyBlue" BorderColor="Transparent" 
                     FontSize="Default" VerticalOptions="Center"/>
-                    <Button x:Name="lbAdminName"
- Text="{Binding AdminName}"
- Grid.ColumnSpan="3" Background="Transparent" TextColor="DeepSkyBlue" BorderColor="Transparent" 
- FontSize="Default" VerticalOptions="Center" HorizontalOptions="Center"
-/>
-
-                    <Button x:Name="btnLogout"
- Text="Logout"
- Grid.Column="2"
- Clicked="btnLogout_Clicked" 
- Background="Transparent" TextColor="Black" BorderColor="Transparent" 
- FontSize="Default" VerticalOptions="Center" HorizontalOptions="End"/>
                     <ActivityIndicator x:Name="busyIndicator" IsVisible="False" IsRunning="False"/>
                 </Grid>
             </ContentView>
