@@ -395,6 +395,11 @@ namespace Movie_Management_Project.ViewModel
         {
             try
             {
+                if (SelectedUsers.Count < 1)
+                {
+                    throw new Exception("Must update before save!!");
+                }
+
                 DTO_Users user = SelectedUsers[0];
                 user.UserName = UserName;
                 user.PhoneNumber = PhoneNumber;
@@ -438,7 +443,7 @@ namespace Movie_Management_Project.ViewModel
                     dsUsers.Add(user);
                 }
 
-                await Shell.Current.DisplayAlert("Notification!", $"Find user success!!!", "Ok");
+                await Task.Delay(500);
             }
             catch (Exception ex)
             {

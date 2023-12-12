@@ -11,7 +11,7 @@
         VerticalOptions="Center">
             <Image 
                 x:Name="imgSignUp"
-                Source="signup.png"
+                Source="signup1.png"
                 HeightRequest="150"/>
             <Label
             Text="Sign up"

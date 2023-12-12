@@ -5,7 +5,8 @@
              xmlns:viewmodel="clr-namespace:Movie_Management_Project.ViewModel"
              Title="Login"
              x:Name="formSignUp"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             >
     <ContentPage.BindingContext>
         <viewmodel:UsersManagerViewModel></viewmodel:UsersManagerViewModel>
     </ContentPage.BindingContext>
@@ -17,9 +18,10 @@
                              WidthRequest="700">
             <Image 
                 x:Name="imgLogin"
-                Source="login.png"
+                Source="login1.png"
                 HeightRequest="150"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                xmlns:local="using:Movie_Management_Project.Content.Guest"/>
             <Label 
                 Text="Login"
                 FontSize="32"
@@ -78,7 +80,7 @@ HorizontalOptions="Start"
                 x:Name="btnLogin"
                 FontSize="Small"
                 Margin="0,20,0,40"
-                BackgroundColor="#512BD4"
+                BackgroundColor="LightSeaGreen"
                 HorizontalOptions="Center"
                 Command="{Binding Login}"
                 Clicked="btnLogin_Clicked"
